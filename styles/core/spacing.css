@@ -1,0 +1,39 @@
+.pad-top-sm {
+  padding-top: var(--spacing-03); /* 0.5rem */
+}
+
+.pad-left-sm {
+  padding-left: var(--spacing-03);
+}
+
+.pad-right-sm {
+  padding-right: var(--spacing-03);
+}
+
+.pad-bottom-sm {
+  padding-bottom: var(--spacing-03);
+}
+
+.pad-full-sm {
+  padding: var(--spacing-03);
+}
+
+.pad-top-med {
+  padding-top: var(--spacing-05); /* 1rem */
+}
+
+.pad-left-med {
+  padding-left: var(--spacing-05);
+}
+
+.pad-right-med {
+  padding-right: var(--spacing-05);
+}
+
+.pad-bottom-med {
+  padding-bottom: var(--spacing-05);
+}
+
+.pad-full-med {
+  padding: var(--spacing-05);
+}
