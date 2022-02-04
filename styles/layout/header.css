@@ -27,7 +27,6 @@
 
 .page-navbar-options li {
   padding: 0 var(--spacing-03);
-  font-weight: 600;
 }
 
 .page-navbar-options li:hover {

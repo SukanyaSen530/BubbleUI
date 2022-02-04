@@ -25,7 +25,7 @@
 .default-btn {
   border: none;
   vertical-align: center;
-  padding: 0.3rem 1.5rem;
+  padding: 0.3rem var(--spacing-06);
   border-radius: 5px;
   background-color: var(--default);
   color: white;
