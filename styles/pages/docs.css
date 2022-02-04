@@ -13,32 +13,32 @@
   position: absolute;
   min-height: 100%;
   width: calc(100% - 10rem);
-  left: 10rem;
+  left: var(--spacing-13);
   transition: all 0.4s ease;
-  margin-top: 2rem;
+  margin-top: var(--spacing-07);
   overflow-x: hidden;
 }
 
 .docs-content > section {
-  padding: 0 1rem;
-  margin: 0.5rem 0;
+  padding: 0 var(--spacing-05);
+  margin: var(--spacing-03) 0;
   text-align: justify;
 }
 
 .docs-content > section p {
   font-size: 0.9rem;
-  padding-bottom: 01rem;
-  line-height: 1.5rem;
+  padding-bottom: var(--spacing-05);
+  line-height: var(--spacing-06);
 }
 
 .docs-content > section .section-heading {
   color: var(--light-default);
-  margin-bottom: 1rem;
+  margin-bottom: var(--spacing-05);
 }
 
 .code-frame {
   border: 1px solid var(--border-color);
-  padding: 0.5rem;
+  padding: var(--spacing-03);
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -49,13 +49,13 @@
 .pallete {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 1rem;
+  margin-bottom: var(--spacing-05);
 }
 
 .pallete div {
   width: 100px;
   height: 100px;
-  padding: 0.5rem;
+  padding: var(--spacing-03);
   font-size: 0.7rem;
   display: flex;
   flex-direction: column;
@@ -71,7 +71,7 @@
 }
 
 .component-display {
-  padding: 1rem;
+  padding: var(--spacing-05);
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   border-radius: 5px;

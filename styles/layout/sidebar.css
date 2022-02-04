@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   height: 100%;
-  width: 10rem;
+  width: var(--spacing-13);
   background-color: var(--default);
   transition: all 0.5s ease;
   overflow-x: hidden;
@@ -20,19 +20,22 @@
 }
 
 .logo-container {
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
+}
+
+.sidebar.active .logo-container {
+  justify-content: center;
 }
 
 .logo-container .logo {
   height: var(--spacing-08);
-  margin-right: 3px;
 }
 
 .logo-container #hamburger-btn {
   color: white;
   font-size: 1.1rem;
-  padding: var(--spacing-03);
+  padding: var(--spacing-04);
   border-radius: 5px;
   transition: all 0.4s ease-in-out;
 }
@@ -43,6 +46,10 @@
 
 .sidebar .menu-list {
   margin-top: var(--spacing-05);
+}
+
+.sidebar.active .menu-list {
+  margin-top: var(--spacing-07);
 }
 
 .sidebar .menu-list li {
@@ -94,13 +101,13 @@
 .sidebar .menu-list li .tooltip {
   position: fixed;
   font-size: 0.8rem;
-  width: 100px;
-  left: var(--spacing-10);
-  top: 5%;
+  width: 80px;
+  left: var(--spacing-02);
+  top: 4.1rem;
   transform: translateY(-50%);
   border-radius: 5px;
   line-height: var(--spacing-06);
-  padding: 0.2rem 1rem;
+  padding: 0.3rem;
   text-align: center;
   background-color: var(--slate-500);
   color: white;
@@ -108,11 +115,10 @@
   opacity: 0;
   pointer-events: none;
   z-index: 990;
-  display: flex;
 }
 
 .sidebar.active .menu-list li:hover .tooltip {
-  top: 5%;
+  top: 4.1rem;
   opacity: 1;
   transition: all 0.5s ease;
 }
