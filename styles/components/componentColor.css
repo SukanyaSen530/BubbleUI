@@ -1,0 +1,119 @@
+/* Default Colors */
+
+.primary {
+  background-color: var(--primary);
+}
+
+.success {
+  background-color: var(--success);
+}
+
+.warning {
+  background-color: var(--warning);
+}
+
+.info {
+  background-color: var(--info);
+}
+
+.dark {
+  background-color: var(--dark);
+  color: whitesmoke;
+}
+
+.default {
+  background-color: var(--default);
+  color: whitesmoke;
+}
+
+.secondary {
+  background-color: var(--secondary);
+}
+
+.danger {
+  background-color: var(--danger);
+}
+
+/* Light Version */
+
+.primaryLight {
+  background-color: var(--primaryLight);
+  color: var(--primaryDark);
+}
+
+.successLight {
+  background-color: var(--successLight);
+  color: var(--successDark);
+}
+
+.warningLight {
+  background-color: var(--warningLight);
+  color: var(--warningDark);
+}
+
+.infoLight {
+  background-color: var(--infoLight);
+  color: var(--infoDark);
+}
+
+.defaultLight {
+  background-color: var(--defaultLight);
+  color: whitesmoke;
+}
+
+.secondaryLight {
+  background-color: var(--secondaryLight);
+  color: var(--secondaryDark);
+}
+
+.dangerLight {
+  background-color: var(--dangerLight);
+  color: var(--dangerDark);
+}
+
+/* Dark Versions */
+
+.primaryDark {
+  background-color: var(--primaryDark);
+  color: whitesmoke;
+}
+
+.successDark {
+  background-color: var(--successDark);
+  color: whitesmoke;
+}
+
+.warningDark {
+  background-color: var(--warningDark);
+  color: whitesmoke;
+}
+
+.infoDark {
+  background-color: var(--infoDark);
+  color: whitesmoke;
+}
+
+.defaultDark {
+  background-color: var(--defaultDark);
+  color: whitesmoke;
+}
+
+.secondaryDark {
+  background-color: var(--secondaryDark);
+  color: whitesmoke;
+}
+
+.dangerDark {
+  background-color: var(--dangerDark);
+  color: whitesmoke;
+}
+
+/* Text Colors */
+
+.text-primary {
+  color: var(--primaryDark);
+}
+
+.text-danger {
+  color: var(--dangerDark);
+}

@@ -1,48 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Comforter&display=swap");
+
 /* Common */
-@import url(../core/reset.css);
 @import url(../core/utilities.css);
 @import url(../core/variable.css);
-@import url(../core/spacing.css);
 
-@import url("https://fonts.googleapis.com/css2?family=Comforter&display=swap");
+/* Spacing */
+@import url(../components/componentvariables.css);
+
+/* Reset */
+@import url(../components/componentReset.css);
+
+/* Layout */
+@import url(../layout/header.css);
 
 body {
   position: relative;
   color: rgb(96, 108, 118);
-}
-
-.page-navbar {
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
-  position: sticky;
-  top: 0;
-  background-color: whitesmoke;
-}
-
-.brand-logo img {
-  height: var(--spacing-06);
-  padding-left: var(--spacing-05);
-}
-
-.brand-name {
-  font-weight: 900;
-  font-size: var(--spacing-06);
-  padding-left: var(--spacing-03);
-  font-family: "Comforter", cursive;
-  color: var(--default);
-}
-
-.page-navbar-options {
-  margin-left: auto;
-  margin-right: 1rem;
-}
-
-.page-navbar-options li {
-  padding: 0 var(--spacing-03);
-}
-
-.page-navbar-options li:hover {
-  color: var(--default);
-  cursor: pointer;
 }
 
 .landing-page {
@@ -62,5 +35,5 @@ body {
 .landing-page-content {
   font-size: 0.9rem;
   text-align: justify;
-  margin: var(--spacing-05) 0;
+  margin: var(--spacing-07) 0;
 }

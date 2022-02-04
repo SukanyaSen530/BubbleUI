@@ -1,21 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/pages/docs.css" />
-    <!-- font-awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
-      crossorigin="anonymous"
-    />
-    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
-    <title>Bubble UI Docs</title>
-  </head>
-  <body>
-    
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/pages/docs.css" />
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+  <title>Bubble UI Docs</title>
+</head>
+
+<body>
+  <!-- SIDEBAR -->
+  <aside class="sidebar active" id="sidebar">
+    <div class="logo-container flex-row">
+
+      <img class="logo" src="assets/images/logo2.png" alt="Bubble UI Logo" />
+
+      <span id="hamburger-btn"> <i class="fas fa-bars"></i> </span>
+    </div>
+
+    <ul class="menu-list">
+      <li class="sidebar-link-heading">Get Started</li>
+      <li>
+        <a href="#Installation">
+          <i class="fas fa-circle-notch"></i>
+          <span class="sidebar-link-name">Installation</span>
+        </a>
+        <span class="tooltip">Installation</span>
+      </li>
+      <li>
+        <a href="#Colors">
+          <i class="fas fa-palette"></i>
+          <span class="sidebar-link-name">Colors</span>
+        </a>
+        <span class="tooltip">Colors</span>
+      </li>
+      <li>
+        <a href="#Typography">
+          <i class="fas fa-paragraph"></i>
+          <span class="sidebar-link-name">Typography</span>
+        </a>
+        <span class="tooltip">Typography</span>
+      </li>
+
+      <li class="sidebar-link-heading">Components</li>
+      <li>
+        <a href="#Avatars">
+          <i class="far fa-user"></i>
+          <span class="sidebar-link-name">Avatars</span>
+        </a>
+        <span class="tooltip">Avatars</span>
+      </li>
+      <li>
+        <a href="#Alerts">
+          <i class="far fa-bell"></i>
+          <span class="sidebar-link-name">Alerts</span>
+        </a>
+        <span class="tooltip">Alerts</span>
+      </li>
+      <li>
+        <a href="#Badges">
+          <i class="far fa-id-badge"></i>
+          <span class="sidebar-link-name">Badges</span>
+        </a>
+        <span class="tooltip">Badges</span>
+      </li>
+      <li>
+        <a href="#Buttons">
+          <i class="fas fa-play-circle"></i>
+          <span class="sidebar-link-name">Buttons</span>
+        </a>
+        <span class="tooltip">Buttons</span>
+      </li>
+      <li>
+        <a href="#Cards">
+          <i class="far fa-id-card"></i>
+          <span class="sidebar-link-name">Cards</span>
+        </a>
+        <span class="tooltip">Cards</span>
+      </li>
+      <li>
+        <a href="#Images">
+          <i class="far fa-image"></i>
+          <span class="sidebar-link-name">Images</span>
+        </a>
+        <span class="tooltip">Images</span>
+      </li>
+      <li>
+        <a href="#Inputs">
+          <i class="far fa-keyboard"></i>
+          <span class="sidebar-link-name">Inputs</span>
+        </a>
+        <span class="tooltip">Inputs</span>
+      </li>
+    </ul>
+  </aside>
+
+  <!-- COMPONENTS -->
+  <main class="docs-content">
+
+    <section id="Installation" class="">
+      <h4 class="section-heading">Installation</h4>
+      <p>
+        To start using the components in your project import the stylesheet in your css or html file.
+      </p>
+
+      <div class="code-frame">
+        <!-- Change when real CDN generated, testing IFRAME -->
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-dark&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=7px&ph=8px&ln=false&fl=1&fm=dm&fs=13px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522logo-container%2520flex-row%2520flex-center%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522logo%2520flex-row%2522%253E%250A%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522assets%252Fimages%252Flogo2.png%2522%2520alt%253D%2522Bubble%2520UI%2520Logo%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%2520class%253D%2522logo-name%2522%253EBubble%2520UI%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cspan%2520id%253D%2522hamburger-btn%2522%253E%2520%253Ci%2520class%253D%2522fas%2520fa-bars%2522%253E%253C%252Fi%253E%2520%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+          style="width: 505px; height: 218px; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+      </div>
+
+      <h4 class="section-heading">Customization</h3>
+        <p>By Default these reset styles will be applied to your project when you import Bubble UI.</p>
+
+        <div class="code-frame">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-dark&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=7px&ph=8px&ln=false&fl=1&fm=dm&fs=13px&lh=133%25&si=false&es=2x&wm=false&code=*%2520%257B%250A%2520%2520margin%253A%25200%253B%250A%2520%2520padding%253A%25200%253B%250A%2520%2520box-sizing%253A%2520border-box%253B%250A%2520%2520font-size%253A%2520100%2525%253B%250A%2520%2520font-family%253A%2520%2522Roboto%2522%252C%2520%2522Helvetica%2520Neue%2522%252C%2520%2522Helvetica%2522%252C%2520%2522Arial%2522%252C%2520sans-serif%253B%250A%257D%250A%250Ahtml%2520%257B%250A%2520%2520scroll-behavior%253A%2520smooth%253B%250A%257D%250A%250Abody%2520%257B%250A%2520%2520line-height%253A%25201%253B%250A%257D%250A%250Aol%252C%250Aul%2520%257B%250A%2520%2520list-style%253A%2520none%253B%250A%257D%250A%250Aa%2520%257B%250A%2520%2520text-decoration%253A%2520none%253B%250A%257D"
+            style="width: 598px; height: 503px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+
+        <p>You can also add your own classes to customize the components as per your need.</p>
+
+        <!-- Code -->
+    </section>
+
+    <section id="Colors" class="">
+      <h4 class="section-heading">Colors</h4>
+      <p>Bubble provides 22 colours to create a small pallete for the components available. You can use the variables
+        names provided for your own custom styles.</p>
+
+      <div class="pallete">
+        <div class="primary">
+          --primary
+          <span>#3b82f6</span>
+        </div>
+        <div class="secondary">
+          --secondary
+          <span>##6b7280</span>
+        </div>
+        <div class="success">
+          --success
+          <span>#22c55e</span>
+        </div>
+        <div class="danger">
+          --danger
+          <span>#ef4444</span>
+        </div>
+        <div class="warning">
+          --warning
+          <span>#eab308</span>
+        </div>
+        <div class="info">
+          --info
+          <span>#06b6d4</span>
+        </div>
+        <div class="default">
+          --default
+          <span>#19374d</span>
+        </div>
+        <div class="dark">
+          --dark
+          <span>#000000</span>
+        </div>
+
+        <div class="primaryLight">
+          --primaryLight
+          <span>#bfdbfe</span>
+        </div>
+        <div class="secondaryLight">
+          --secondaryLight
+          <span>#e5e7eb</span>
+        </div>
+        <div class="successLight">
+          --successLight
+          <span>#bbf7d0</span>
+        </div>
+        <div class="dangerLight">
+          --dangerLight
+          <span>#fecaca</span>
+        </div>
+        <div class="warningLight">
+          --warningLight
+          <span>#fde68a</span>
+        </div>
+        <div class="infoLight">
+          --infoLight
+          <span>#a5f3fc</span>
+        </div>
+        <div class="defaultLight">
+          --defaultLight
+          <span>#254e6e</span>
+        </div>
+
+        <div class="primaryDark">
+          --primaryDark
+          <span>#1e3a8a</span>
+        </div>
+        <div class="secondaryDark">
+          --secondaryDark
+          <span>#111827</span>
+        </div>
+        <div class="successDark">
+          --successDark
+          <span>#14532d</span>
+        </div>
+        <div class="dangerDark">
+          --dangerDark
+          <span>#7f1d1d</span>
+        </div>
+        <div class="warningDark">
+          --warningDark
+          <span>#78350f</span>
+        </div>
+        <div class="infoDark">
+          --infoDark
+          <span>#155e75</span>
+        </div>
+        <div class="defaultDark">
+          --defaultDark
+          <span>#0d1e2999</span>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="Typography" class="">
+      <h4 class="section-heading">Typography</h4>
+      <p>Default Font is set to Roboto. Has 6 font weights - <span class="code-highlight">100; 300; 400; 500;
+          700; 900</span>
+      </p>
+
+      <p>For heading u can use <span class="code-highlight">h1, h2, h3, h4, h5, h6</span> elements. The same
+        font-styling is present for class names <span class="code-highlight">h1, h2, h3, h4, h5, h6 class </span>. You
+        can add one of these classes to style the text.</p>
+
+      <p>You can add the color classes to change the colour of text. Classes are available for all the variants.</p>
+
+      <div class="component-display">
+        <h1>H1-Heading</h1>
+        <div class="divider"></div>
+
+        <h2>H2-Heading</h2>
+        <div class="divider"></div>
+
+        <h3>H3-Heading</h3>
+        <div class="divider"></div>
+
+        <h4>H4-Heading</h4>
+        <div class="divider"></div>
+
+        <h5>H5-Heading</h5>
+        <div class="divider"></div>
+
+        <h6>H6-Heading</h6>
+        <div class="divider"></div>
+
+        <div class="h2">H2-Heading</div>
+        <p class="text-strike">Strike through line.</p>
+        <p class="text-danger">Text with danger (dark) color.</p>
+        <div>
+
+          <div class="code-frame">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-dark&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=7px&ph=8px&ln=false&fl=1&fm=dm&fs=13px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Ch1%253EH1-Heading%253C%252Fh1%253E%250A%2520%253Ch2%253EH2-Heading%253C%252Fh2%253E%250A%2520%253Ch3%253EH3-Heading%253C%252Fh3%253E%250A%2520%253Ch4%253EH4-Heading%253C%252Fh4%253E%250A%2520%253Ch5%253EH5-Heading%253C%252Fh5%253E%250A%2520%253Ch6%253EH6-Heading%253C%252Fh6%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%253Cdiv%2520class%253D%2522h2%2522%253EH2-Heading%253C%252Fdiv%253E%250A%2520%2520%250A%2520%2520%253C--Other%2520Classes---%253E%250A%2520%2520%253Cp%2520class%253D%2522text-strike%2522%253EStrike%2520through%2520line.%253C%252Fp%253E%250A%2520%2520%253Cp%2520class%253D%2522text-primary%2522%253EText%2520with%2520primary%2520%28dark%29%2520color.%253C%252Fp%253E%250A%2520%2520%253Cp%2520class%253D%2522text-danger%2522%253EText%2520with%2520danger%2520%28dark%29%2520color.%253C%252Fp%253E"
+              style="width: 490px; height: 313px; border:0; transform: scale(1); overflow:hidden;"
+              sandbox="allow-scripts allow-same-origin">
+            </iframe>
+          </div>
+    </section>
+
+    <!-- Components Description-->
+    <section id="Avatars">
+      <h4 class="section-heading">Avatars</h4>
+      <p></p>
+
+      <div class="component-display"></div>
+      </div>
+    </section>
+
+    <section id="Alerts">
+      <h4 class="section-heading">Alerts</h4>
+      <p></p>
+
+      <div class="component-display"></div>
+      </div>
+    </section>
+
+    <section id="Badges">
+      <h4 class="section-heading">Badges</h4>
+      <p></p>
+
+      <div class="component-display"></div>
+      </div>
+    </section>
+
+    <section id="Buttons">
+      <h4 class="section-heading">Buttons</h4>
+      <p></p>
+
+      <div class="component-display"></div>
+      </div>
+    </section>
+
+    <section id="Cards">
+      <h4 class="section-heading">Cards</h4>
+      <p></p>
+
+      <div class="component-display"></div>
+      </div>
+    </section>
+
+    <section id="Images">
+      <h4 class="section-heading">Images</h4>
+      <p></p>
+
+      <div class="component-display"></div>
+      </div>
+    </section>
+
+    <section id="Inputs">
+      <h4 class="section-heading">Inputs</h4>
+      <p></p>
+
+      <div class="component-display"></div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="docs-footer">
+      <p>Sukanya Sen <i class="fas fa-dove"></i></p>
+      <div class="footer-icons">
+        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in" target="_blank"></i></a>
+        <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="./scripts/doc.js"></script>
+</body>
+
 </html>

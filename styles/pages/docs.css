@@ -1,7 +1,83 @@
 /* Layout */
-@import url(../layout/header.css);
 @import url(../layout/sidebar.css);
 @import url(../layout/footer.css);
 
+/* Common CSS */
+@import url(../core/variable.css);
+@import url(../core/utilities.css);
+
 /* Components */
 @import url(../components/index.css);
+
+.docs-content {
+  position: absolute;
+  min-height: 100%;
+  width: calc(100% - 10rem);
+  left: 10rem;
+  transition: all 0.4s ease;
+  margin-top: 2rem;
+  overflow-x: hidden;
+}
+
+.docs-content > section {
+  padding: 0 1rem;
+  margin: 0.5rem 0;
+  text-align: justify;
+}
+
+.docs-content > section p {
+  font-size: 0.9rem;
+  padding-bottom: 01rem;
+  line-height: 1.5rem;
+}
+
+.docs-content > section .section-heading {
+  color: var(--light-default);
+  margin-bottom: 1rem;
+}
+
+.code-frame {
+  border: 1px solid var(--border-color);
+  padding: 0.5rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.pallete {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.pallete div {
+  width: 100px;
+  height: 100px;
+  padding: 0.5rem;
+  font-size: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.code-highlight {
+  color: var(--light-default);
+  background: rgb(0, 0, 0, 0.2);
+  padding: 0.1rem;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.component-display {
+  padding: 1rem;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  border-radius: 5px;
+}
+
+.divider {
+  height: 0;
+  border-top: 1px solid gray;
+}

@@ -1,0 +1,40 @@
+.page-navbar {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+  position: sticky;
+  top: 0;
+  background-color: whitesmoke;
+  padding: 0.5rem;
+}
+
+.brand-logo img {
+  height: var(--spacing-06);
+  padding-left: var(--spacing-05);
+}
+
+.brand-name {
+  font-weight: 900;
+  font-size: var(--spacing-06);
+  padding-left: var(--spacing-03);
+  font-family: "Comforter", cursive;
+  color: var(--default);
+}
+
+.page-navbar-options {
+  margin-left: auto;
+  margin-right: 1rem;
+  padding: 0.5rem;
+}
+
+.page-navbar-options li {
+  padding: 0 var(--spacing-03);
+  font-weight: 600;
+}
+
+.page-navbar-options li:hover {
+  color: var(--default);
+  cursor: pointer;
+}
+
+.page-navbar-options li a:visited {
+  color: rgb(96, 108, 118);
+}
