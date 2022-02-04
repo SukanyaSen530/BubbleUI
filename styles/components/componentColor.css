@@ -18,12 +18,12 @@
 
 .dark {
   background-color: var(--dark);
-  color: whitesmoke;
+  color: var(--light);
 }
 
 .default {
   background-color: var(--default);
-  color: whitesmoke;
+  color: var(--light);
 }
 
 .secondary {
@@ -58,7 +58,7 @@
 
 .defaultLight {
   background-color: var(--defaultLight);
-  color: whitesmoke;
+  color: var(--light);
 }
 
 .secondaryLight {
@@ -75,37 +75,37 @@
 
 .primaryDark {
   background-color: var(--primaryDark);
-  color: whitesmoke;
+  color: var(--light);
 }
 
 .successDark {
   background-color: var(--successDark);
-  color: whitesmoke;
+  color: var(--light);
 }
 
 .warningDark {
   background-color: var(--warningDark);
-  color: whitesmoke;
+  color: var(--light);
 }
 
 .infoDark {
   background-color: var(--infoDark);
-  color: whitesmoke;
+  color: var(--light);
 }
 
 .defaultDark {
   background-color: var(--defaultDark);
-  color: whitesmoke;
+  color: var(--light);
 }
 
 .secondaryDark {
   background-color: var(--secondaryDark);
-  color: whitesmoke;
+  color: var(--light);
 }
 
 .dangerDark {
   background-color: var(--dangerDark);
-  color: whitesmoke;
+  color: var(--light);
 }
 
 /* Text Colors */

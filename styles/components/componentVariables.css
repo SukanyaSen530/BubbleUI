@@ -33,6 +33,8 @@
   --default: #19374d;
   --defaultDark: #0d1e2999;
 
+  --light: whitesmoke;
+
   /* spacing */
   --spacing-01: 0.125rem;
   --spacing-02: 0.25rem;
