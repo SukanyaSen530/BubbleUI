@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+:root {
+  /* Component Variation */
+  --successLight: #bbf7d0;
+  --success: #22c55e;
+  --successDark: #14532d;
+
+  --dangerLight: #fecaca;
+  --danger: #ef4444;
+  --dangerDark: #7f1d1d;
+
+  --secondaryLight: #e5e7eb;
+  --secondary: #6b7280;
+  --secondaryDark: #111827;
+
+  --infoLight: #a5f3fc;
+  --info: #06b6d4;
+  --infoDark: #155e75;
+
+  --dark: #000000;
+  --darkLight: rgb(0, 0, 0, 0.3);
+
+  --warningLight: #fde68a;
+  --warning: #f59e0b;
+  --warningDark: #78350f;
+
+  --primaryLight: #bfdbfe;
+  --primary: #3b82f6;
+  --primaryDark: #1e3a8a;
+
+  --defaultLight: #254e6e;
+  --default: #19374d;
+  --defaultDark: #0d1e2999;
+
+  --light: whitesmoke;
+
+  /* spacing */
+  --spacing-01: 0.125rem;
+  --spacing-02: 0.25rem;
+  --spacing-03: 0.5rem;
+  --spacing-04: 0.75rem;
+  --spacing-05: 1rem;
+  --spacing-06: 1.5rem;
+  --spacing-07: 2rem;
+  --spacing-08: 2.5rem;
+  --spacing-09: 3rem;
+  --spacing-10: 4rem;
+  --spacing-11: 5rem;
+  --spacing-12: 6rem;
+  --spacing-13: 10rem;
+
+  /* Z index */
+  --z-index: 100;
+}

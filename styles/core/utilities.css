@@ -1,0 +1,37 @@
+.flex-row {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.max-width-height {
+  width: 100vh;
+  height: 100vh;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.default-btn {
+  border: none;
+  vertical-align: center;
+  padding: 0.3rem var(--spacing-06);
+  border-radius: 5px;
+  background-color: var(--default);
+  color: white;
+}
+
+.default-btn:hover {
+  background-color: var(--light-default);
+  transition: 0.5s all;
+}

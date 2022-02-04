@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}

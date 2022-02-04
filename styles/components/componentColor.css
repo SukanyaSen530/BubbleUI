@@ -1,0 +1,119 @@
+/* Default Colors */
+
+.primary {
+  background-color: var(--primary);
+}
+
+.success {
+  background-color: var(--success);
+}
+
+.warning {
+  background-color: var(--warning);
+}
+
+.info {
+  background-color: var(--info);
+}
+
+.dark {
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+.default {
+  background-color: var(--default);
+  color: var(--light);
+}
+
+.secondary {
+  background-color: var(--secondary);
+}
+
+.danger {
+  background-color: var(--danger);
+}
+
+/* Light Version */
+
+.primaryLight {
+  background-color: var(--primaryLight);
+  color: var(--primaryDark);
+}
+
+.successLight {
+  background-color: var(--successLight);
+  color: var(--successDark);
+}
+
+.warningLight {
+  background-color: var(--warningLight);
+  color: var(--warningDark);
+}
+
+.infoLight {
+  background-color: var(--infoLight);
+  color: var(--infoDark);
+}
+
+.defaultLight {
+  background-color: var(--defaultLight);
+  color: var(--light);
+}
+
+.secondaryLight {
+  background-color: var(--secondaryLight);
+  color: var(--secondaryDark);
+}
+
+.dangerLight {
+  background-color: var(--dangerLight);
+  color: var(--dangerDark);
+}
+
+/* Dark Versions */
+
+.primaryDark {
+  background-color: var(--primaryDark);
+  color: var(--light);
+}
+
+.successDark {
+  background-color: var(--successDark);
+  color: var(--light);
+}
+
+.warningDark {
+  background-color: var(--warningDark);
+  color: var(--light);
+}
+
+.infoDark {
+  background-color: var(--infoDark);
+  color: var(--light);
+}
+
+.defaultDark {
+  background-color: var(--defaultDark);
+  color: var(--light);
+}
+
+.secondaryDark {
+  background-color: var(--secondaryDark);
+  color: var(--light);
+}
+
+.dangerDark {
+  background-color: var(--dangerDark);
+  color: var(--light);
+}
+
+/* Text Colors */
+
+.text-primary {
+  color: var(--primaryDark);
+}
+
+.text-danger {
+  color: var(--dangerDark);
+}
