@@ -1,5 +1,5 @@
 .avatar {
-  border-radius: 50%;
+  border-radius: var(--border-radius-circle);
   display: inline-block;
   margin: 0 0.2rem;
   position: relative;
@@ -8,7 +8,7 @@
 /* IMAGE AVATAR */
 
 .avatar-img {
-  border-radius: 50%;
+  border-radius: var(--border-radius-circle);
   height: 100%;
   width: 100%;
   object-fit: contain;
@@ -26,41 +26,42 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 2rem;
+  width: var(--spacing-07);
   text-align: center;
 }
 
 .avatar.avatar-icon > i {
-  font-size: 1.5rem;
+  font-size: var(--spacing-06);
+  color: (--light);
 }
 
 .avatar.avatar-icon > img {
-  font-size: 1.5rem;
-  height: 1.5rem;
+  font-size: var(--spacing-06);
+  height: var(--spacing-06);
 }
 
 /* SIZES */
 .avatar-sm {
-  height: 3rem;
-  width: 3rem;
+  height: var(--spacing-09); /* 3rem */
+  width: var(--spacing-09);
 }
 
 .avatar-md {
-  height: 4rem;
-  width: 4rem;
+  height: var(--spacing-10); /* 4rem */
+  width: var(--spacing-10);
 }
 
 .avatar-lg {
-  height: 5rem;
-  width: 5rem;
+  height: var(--spacing-11); /* 5rem */
+  width: var(--spacing-11);
 }
 
 /* SQUARE */
 
 .avatar.square {
-  border-radius: 10px;
+  border-radius: var(--border-radius-md);
 }
 
 .avatar.square > .avatar-img {
-  border-radius: 10px;
+  border-radius: var(--border-radius-md);
 }
