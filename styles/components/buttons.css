@@ -1,0 +1,11 @@
+.button {
+  border: transparent;
+  padding: 0.2rem var(--spacing-06);
+  border-radius: var(--border-radius-sm);
+  transition: all 0.4s ease;
+  font-size: 0.9rem;
+}
+
+.button:hover {
+  background-color: rgb(0, 0, 0, 0.2);
+}
