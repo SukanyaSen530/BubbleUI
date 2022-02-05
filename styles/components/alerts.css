@@ -1,0 +1,159 @@
+.alert {
+  padding: var(--spacing-03);
+  background: rgb(241, 241, 241);
+  margin: var(--spacing-03) 0;
+  border-radius: var(--border-radius-sm);
+  display: flex;
+  width: 100%;
+  font-size: 0.8rem;
+  align-items: center;
+}
+
+/* BASIC VARIANTS */
+
+.alert.alert-success {
+  background-color: var(--successLight);
+  color: var(--successDark);
+}
+
+.alert.alert-error {
+  background-color: var(--dangerLight);
+  color: var(--dangerDark);
+}
+
+.alert.alert-warning {
+  background-color: var(--warningLight);
+  color: var(--warningDark);
+}
+
+.alert.alert-info {
+  background-color: var(--infoLight);
+  color: var(--infoDark);
+}
+
+/* COMMON ICONS FOR FILLED & BASIC VARIANTS */
+
+.alert.alert-success::before,
+.alert.alert-success-filled::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f058";
+  font-weight: 900;
+  margin-right: 5px;
+}
+
+.alert.alert-error::before,
+.alert.alert-error-filled::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f06a";
+  font-weight: 900;
+  margin-right: 5px;
+}
+
+.alert.alert-warning::before,
+.alert.alert-warning-filled::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f071";
+  font-weight: 900;
+  margin-right: 5px;
+}
+
+.alert.alert-info::before,
+.alert.alert-info-filled::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f05a";
+  font-weight: 900;
+  margin-right: 5px;
+}
+
+/* OUTLINE VARIANTS */
+
+.alert.alert-success-outline {
+  border: 1px solid var(--successDark);
+  color: var(--successDark);
+}
+
+.alert.alert-warning-outline {
+  border: 1px solid var(--warningDark);
+  color: var(--warningDark);
+}
+
+.alert.alert-info-outline {
+  border: 1px solid var(--infoDark);
+  color: var(--infoDark);
+}
+
+.alert.alert-error-outline {
+  border: 1px solid var(--dangerDark);
+  color: var(--dangerDark);
+}
+
+.alert.alert-success-outline::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f058";
+  font-weight: 900;
+  color: var(--success);
+  margin-right: 5px;
+}
+
+.alert.alert-error-outline::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f06a";
+  font-weight: 900;
+  color: var(--danger);
+  margin-right: 5px;
+}
+
+.alert.alert-warning-outline::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f071";
+  font-weight: 900;
+  color: var(--warning);
+  margin-right: 5px;
+}
+
+.alert.alert-info-outline::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f05a";
+  font-weight: 900;
+  color: var(--info);
+  margin-right: 5px;
+}
+
+/* FILLED VARIANTS */
+.alert.alert-success-filled {
+  background-color: var(--success);
+  color: var(--light);
+}
+
+.alert.alert-error-filled {
+  background-color: var(--danger);
+  color: var(--light);
+}
+
+.alert.alert-warning-filled {
+  background-color: var(--warning);
+  color: var(--light);
+}
+
+.alert.alert-info-filled {
+  background-color: var(--info);
+  color: var(--light);
+}
+
+/* ACTION ALERT */
+
+.alert .alert-cancel {
+  margin-left: auto;
+  border-radius: var(--border-radius-circle);
+  border: transparent;
+  background: transparent;
+  height: var(--spacing-06);
+  width: var(--spacing-06);
+  vertical-align: middle;
+  transition: all 0.2s;
+}
+
+.alert .alert-cancel:hover {
+  background: rgb(0, 0, 0, 0.2);
+  color: white;
+}
