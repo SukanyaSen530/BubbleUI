@@ -1,0 +1,54 @@
+.badge {
+  position: relative;
+  width: fit-content;
+  display: inline-block;
+  margin: var(--spacing-03);
+}
+
+/* Status Badge */
+
+.badge .offline,
+.badge .busy,
+.badge .online {
+  display: inline;
+  position: absolute;
+  border-radius: var(--border-radius-circle);
+  border: 3px solid white;
+  height: 1.3rem;
+  width: 1.3rem;
+  display: inline-block;
+  bottom: 0;
+  right: 0;
+}
+
+.badge .offline {
+  background: var(--secondary);
+}
+
+.badge .online {
+  background: var(--success);
+}
+
+.badge .busy {
+  background: var(--danger);
+}
+
+/* Icon Badges */
+.badge .badge-icon {
+  width: var(--spacing-06);
+  height: var(--spacing-06);
+}
+
+.badge .badge-count {
+  color: var(--light);
+  height: 1.3rem;
+  width: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  position: absolute;
+  top: -10px;
+  right: -15px;
+  font-size: 0.7rem;
+}
