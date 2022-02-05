@@ -1,0 +1,66 @@
+.avatar {
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 0.2rem;
+  position: relative;
+}
+
+/* IMAGE AVATAR */
+
+.avatar-img {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* LETTER AVATAR & ICON AVATAR */
+
+.avatar.avatar-letter > *,
+.avatar.avatar-icon > * {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 2rem;
+  text-align: center;
+}
+
+.avatar.avatar-icon > i {
+  font-size: 1.5rem;
+}
+
+.avatar.avatar-icon > img {
+  font-size: 1.5rem;
+  height: 1.5rem;
+}
+
+/* SIZES */
+.avatar-sm {
+  height: 3rem;
+  width: 3rem;
+}
+
+.avatar-md {
+  height: 4rem;
+  width: 4rem;
+}
+
+.avatar-lg {
+  height: 5rem;
+  width: 5rem;
+}
+
+/* SQUARE */
+
+.avatar.square {
+  border-radius: 10px;
+}
+
+.avatar.square > .avatar-img {
+  border-radius: 10px;
+}

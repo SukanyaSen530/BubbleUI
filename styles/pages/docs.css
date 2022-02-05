@@ -36,13 +36,14 @@
 }
 
 .code-frame {
-  border: 1px solid var(--border-color);
+  border: 2px solid var(--light);
   padding: var(--spacing-03);
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .pallete {
