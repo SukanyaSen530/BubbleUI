@@ -27,23 +27,23 @@
 
 .docs-content > section p {
   font-size: 0.9rem;
-  padding-bottom: var(--spacing-05);
+  padding-bottom: var(--spacing-03);
   line-height: var(--spacing-06);
 }
 
 .docs-content > section .section-heading {
   color: var(--light-default);
-  margin-bottom: var(--spacing-05);
 }
 
 .code-frame {
-  border: 1px solid var(--border-color);
+  border: 2px solid var(--light);
   padding: var(--spacing-03);
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .pallete {
@@ -75,6 +75,7 @@
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 .divider {
