@@ -1,11 +1,151 @@
-.button {
+.btn,
+a.btn {
   border: transparent;
-  padding: 0.2rem var(--spacing-06);
+  padding: 0.4rem var(--spacing-06);
   border-radius: var(--border-radius-sm);
   transition: all 0.4s ease;
   font-size: 0.9rem;
+  margin: 0 var(--spacing-02);
+  cursor: pointer;
 }
 
-.button:hover {
-  background-color: rgb(0, 0, 0, 0.2);
+.btn:disabled,
+.btn[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  box-shadow: none;
+}
+
+/* CONTAIN VARIANTS */
+.btn.btn-contained:hover {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+/* OUTLINE VARIANTS */
+
+.btn.btn-success-outline {
+  border: 1px solid var(--successDark);
+  color: var(--successDark);
+  background-color: var(--light);
+}
+
+.btn.btn-warning-outline {
+  border: 1px solid var(--warning);
+  color: var(--warningDark);
+  background-color: var(--light);
+}
+
+.btn.btn-info-outline {
+  border: 1px solid var(--infoDark);
+  color: var(--infoDark);
+  background-color: var(--light);
+}
+
+.btn.btn-error-outline {
+  border: 1px solid var(--dangerDark);
+  color: var(--dangerDark);
+  background-color: var(--light);
+}
+
+.btn.btn-default-outline {
+  border: 1px solid var(--default);
+  color: var(--default);
+  background-color: var(--light);
+}
+
+.btn.btn-success-outline:hover {
+  background: var(--successDark);
+  color: var(--light);
+}
+
+.btn.btn-warning-outline:hover {
+  background: var(--warning);
+  color: var(--light);
+}
+
+.btn.btn-info-outline:hover {
+  background: var(--infoDark);
+  color: var(--light);
+}
+
+.btn.btn-error-outline:hover {
+  background: var(--dangerDark);
+  color: var(--light);
+}
+
+.btn.btn-default-outline:hover {
+  background: var(--default);
+  color: var(--light);
+}
+
+/* TEXT */
+
+.btn-link {
+  padding: 0.3rem var(--spacing-05);
+  border-radius: 3px;
+  border-bottom: 2px solid white;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-link:hover {
+  border-bottom: 2px solid var(--secondary);
+}
+
+/* ICON  & FLOAT*/
+
+.btn-icon,
+.btn-float {
+  display: inline-block;
+  width: var(--spacing-08);
+  height: var(--spacing-08);
+  border-radius: var(--border-radius-circle);
+  border: transparent;
+  font-size: 1.1rem;
+  margin: 0 0.2rem;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.25s ease;
+}
+
+.btn-float {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  transition: transform 0.25s;
+}
+
+.btn-float:hover {
+  transform: translateY(-0.25em);
+}
+
+.btn-icon:hover {
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+/* BLOCK */
+.btn.block-btn {
+  width: 100%;
+}
+
+/* SIZES */
+
+.btn.btn-sm {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+.btn.btn-md {
+  font-size: 1.2rem;
+}
+
+.btn.btn-lg {
+  font-size: 1.6rem;
 }
