@@ -1,5 +1,5 @@
-.button,
-a.button {
+.btn,
+a.btn {
   border: transparent;
   padding: 0.4rem var(--spacing-06);
   border-radius: var(--border-radius-sm);
@@ -9,8 +9,8 @@ a.button {
   cursor: pointer;
 }
 
-.button:disabled,
-.button[disabled] {
+.btn:disabled,
+.btn[disabled] {
   border: 1px solid #999999;
   background-color: #cccccc;
   color: #666666;
@@ -18,7 +18,7 @@ a.button {
 }
 
 /* CONTAIN VARIANTS */
-.button.button-contained:hover {
+.btn.btn-contained:hover {
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
     rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
     rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
@@ -26,73 +26,78 @@ a.button {
 
 /* OUTLINE VARIANTS */
 
-.button.button-success-outline {
+.btn.btn-success-outline {
   border: 1px solid var(--successDark);
   color: var(--successDark);
+  background-color: var(--light);
 }
 
-.button.button-warning-outline {
+.btn.btn-warning-outline {
   border: 1px solid var(--warning);
   color: var(--warningDark);
+  background-color: var(--light);
 }
 
-.button.button-info-outline {
+.btn.btn-info-outline {
   border: 1px solid var(--infoDark);
   color: var(--infoDark);
+  background-color: var(--light);
 }
 
-.button.button-error-outline {
+.btn.btn-error-outline {
   border: 1px solid var(--dangerDark);
   color: var(--dangerDark);
+  background-color: var(--light);
 }
 
-.button.button-default-outline {
+.btn.btn-default-outline {
   border: 1px solid var(--default);
   color: var(--default);
+  background-color: var(--light);
 }
 
-.button.button-success-outline:hover {
+.btn.btn-success-outline:hover {
   background: var(--successDark);
   color: var(--light);
 }
 
-.button.button-warning-outline:hover {
+.btn.btn-warning-outline:hover {
   background: var(--warning);
   color: var(--light);
 }
 
-.button.button-info-outline:hover {
+.btn.btn-info-outline:hover {
   background: var(--infoDark);
   color: var(--light);
 }
 
-.button.button-error-outline:hover {
+.btn.btn-error-outline:hover {
   background: var(--dangerDark);
   color: var(--light);
 }
 
-.button.button-default-outline:hover {
+.btn.btn-default-outline:hover {
   background: var(--default);
   color: var(--light);
 }
 
 /* TEXT */
 
-.button-link {
+.btn-link {
   padding: 0.3rem var(--spacing-05);
   border-radius: 3px;
   border-bottom: 2px solid white;
   transition: all 0.4s ease-in-out;
 }
 
-.button-link:hover {
+.btn-link:hover {
   border-bottom: 2px solid var(--secondary);
 }
 
 /* ICON  & FLOAT*/
 
-.button-icon,
-.button-float {
+.btn-icon,
+.btn-float {
   display: inline-block;
   width: var(--spacing-08);
   height: var(--spacing-08);
@@ -109,38 +114,38 @@ a.button {
   transition: box-shadow 0.25s ease;
 }
 
-.button-float {
+.btn-float {
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   transition: transform 0.25s;
 }
 
-.button-float:hover {
+.btn-float:hover {
   transform: translateY(-0.25em);
 }
 
-.button-icon:hover {
+.btn-icon:hover {
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
     rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 
 /* BLOCK */
-.button.block-button {
+.btn.block-btn {
   width: 100%;
 }
 
 /* SIZES */
 
-.button.button-sm {
+.btn.btn-sm {
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
 }
 
-.button.button-md {
+.btn.btn-md {
   font-size: 1.2rem;
 }
 
-.button.button-lg {
+.btn.btn-lg {
   font-size: 1.6rem;
 }
