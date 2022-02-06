@@ -310,7 +310,11 @@
         classes to apply color to the avatars. This can be used with maximum of 2 letters. </p>
 
       <div class="component-display flex-row flex-center">
-        <figure class="avatar avatar-letter avatar-sm warning ">
+        <figure class="avatar avatar-letter avatar-sm infoLight">
+          <span>S</span>
+        </figure>
+
+        <figure class="avatar avatar-letter avatar-sm success ">
           <span>RK</span>
         </figure>
 
@@ -346,7 +350,7 @@
           <img class="avatar-icon" src="./assets/svgs/camera.svg" alt="Demo Image">
         </figure>
 
-        <figure class="avatar avatar-icon avatar-md secondary">
+        <figure class="avatar avatar-icon avatar-md warningLight">
           <i class="far fa-bell"></i>
         </figure>
 
@@ -568,7 +572,7 @@
       <p>Add <span class="code-highlight">.badge</span>,to button to get a button with a badge.</p>
 
       <div class="component-display flex-row flex-center">
-        <button class="button badge">
+        <button class="button button-contained default badge">
           Click Me! <span class="badge-count info">3+</span>
         </button>
       </div>
@@ -602,10 +606,159 @@
 
     <section id="Buttons">
       <h4 class="section-heading">Buttons</h4>
-      <p>Buttons allow users to take actions, and make choices, with a single tap.</p>
+      <p>Buttons allow users to take actions, and make choices, with a single tap. </p>
 
-      <div class="component-display"></div>
+      <h5>Contained Buttons</h5>
+      <p>These buttons are filled. They contain actions that are primary to your app. Available for both button and link
+        elements. Has disabled state.</p>
+
+      <p> Classes: <span class="code-highlight">button</span>,
+        <span class="code-highlight">button-contained </span></p>
+
+      <div class="component-display flex-row flex-center">
+        <button class="button button-contained default">
+          Button
+        </button>
+
+        <a class="button button-contained warning">
+          Link
+        </a>
+
+        <a class="button button-contained warning" disabled>
+          Link Disabled
+        </a>
       </div>
+
+      <h5>Outlined Buttons</h5>
+      <p>Supports 5 colors - success, warning, info, error and default. They contain actions that are important but
+        aren't the primary action in an app. Available both for button and link elements.</p>
+      </p>
+      <p> Classes: <span class="code-highlight">button</span> (common for all variants) folowed by,
+        <span class="code-highlight">button-success-outline </span>,
+        <span class="code-highlight">button-warning-outline</span>,
+        <span class="code-highlight">button-default-outline</span>,
+        <span class="code-highlight">button-error-outline</span>,
+        <span class="code-highlight">button-info-outline</span>.</p>
+
+      <div class="component-display flex-row flex-center">
+        <button class="button button-success-outline">
+          Button
+        </button>
+
+        <button class="button button-warning-outline">
+          Button
+        </button>
+
+        <button class="button button-default-outline">
+          Button
+        </button>
+
+        <a class="button button-error-outline">
+          Link
+        </a>
+
+        <a class="button button-info-outline">
+          Link
+        </a>
+      </div>
+
+      <h5>Link</h5>
+      <p>This is only for link elements.</p>
+      <p> Class: <span class="code-highlight">button-link</span>.</p>
+
+      <div class="component-display flex-row flex-center">
+        <a class="button-link">
+          Link
+        </a>
+      </div>
+
+      <h5>Icon Buttons</h5>
+      <p>Available both for button and link element.</p>
+      </p>
+      <p> Class: <span class="code-highlight">button-icon</span>.</p>
+
+      <div class="component-display flex-row flex-center">
+        <a class="button-icon primary">
+          <i class="fas fa-headset"></i>
+        </a>
+
+        <button class="button-icon danger">
+          <i class="fas fa-cloud-download-alt"></i>
+        </button>
+      </div>
+
+      <h5>Floating Action Button</h5>
+      <p>Available both for button and link element.</p>
+      <p> Class: <span class="code-highlight">button-float</span>.</p>
+
+      <div class="component-display flex-row flex-center">
+        <button class="button-float secondary">
+          -
+        </button>
+
+        <a class="button-float primaryLight">
+          +
+        </a>
+      </div>
+
+      <h5>Button with Icons</h5>
+      <p>Add font awesome icons inside button element. Available both for button and link element.</p>
+      <p> Classes: <span class="code-highlight">button</span>,
+        <span class="code-highlight">button-contained</span>.</p>
+
+      <div class="component-display flex-row flex-center">
+        <button class="button button-contained primary">
+          <i class="fab fa-android"></i>
+          Click Me!
+        </button>
+
+        <a class="button button-contained primaryLight">
+          <i class="fas fa-cart-plus"></i>
+          Click Me!
+        </a>
+      </div>
+
+      <h5>Block Buttons</h5>
+      <p>Takes full width of container. Generally used in forms.</p>
+      <p> Classes: <span class="code-highlight">button</span>,
+        <span class="code-highlight">block-button</span>.</p>
+
+      <div class="component-display flex-row flex-center">
+        <button class="button block-button button-contained success">
+          Block Button
+        </button>
+      </div>
+
+      <h5>Different Sizes</h5>
+      <p>Three sizes are available.</p>
+      <p> Classes: <span class="code-highlight">button</span> (common),
+        <span class="code-highlight">button-sm</span>, <span class="code-highlight">button-md</span>, <span
+          class="code-highlight">button-lg</span>.
+      </p>
+
+
+      <div class="component-display flex-row flex-center">
+        <button class="button button-sm button-contained primary">
+          Small
+        </button>
+
+        <button class="button button-md button-contained danger">
+          Medium
+        </button>
+
+        <button class="button button-lg button-contained warning">
+          Large
+        </button>
+      </div>
+
+      <div class="code-frame">
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=9px&ph=9px&ln=false&fl=1&fm=Hack&fs=12.5px&lh=148%25&si=false&es=2x&wm=false&code=%2520%253C%21--%2520Contained%2520Buttons%2520%2520%2520--%253E%250A%250A%253Cbutton%2520class%253D%2522button%2520button-contained%2520default%2522%253E%250A%2520%2520%2520%2520Button%250A%253C%252Fbutton%253E%250A%250A%253Ca%2520class%253D%2522button%2520button-contained%2520warning%2522%253E%250A%2520%2520%2520%2520Link%250A%253C%252Fa%253E%250A%250A%253Ca%2520class%253D%2522button%2520button-contained%2520warning%2522%2520disabled%253E%250A%2520%2520%2520%2520Link%2520Disabled%250A%253C%252Fa%253E%250A%250A%253C%21--%2520Outline%2520Buttons%2520--%253E%250A%250A%253Cbutton%2520class%253D%2522button%2520button-success-outline%2522%253E%250A%2520%2520%2520%2520Button%250A%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522button%2520button-warning-outline%2522%253E%250A%2520%2520%2520%2520Button%250A%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522button%2520button-default-outline%2522%253E%250A%2520%2520%2520%2520Button%250A%253C%252Fbutton%253E%250A%250A%253Ca%2520class%253D%2522button%2520button-error-outline%2522%253E%250A%2520%2520%2520%2520Link%250A%253C%252Fa%253E%250A%250A%253Ca%2520class%253D%2522button%2520button-info-outline%2522%253E%250A%2520%2520%2520%2520Link%250A%253C%252Fa%253E%250A%250A%253C%21--%2520Link%2520--%253E%250A%250A%253Ca%2520class%253D%2522button-link%2522%253E%250A%2520%2520%2520%2520Link%250A%253C%252Fa%253E%250A%250A%250A%253C%21--%2520Icon%2520Button%2520--%253E%250A%250A%253Ca%2520class%253D%2522button-icon%2520primary%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-headset%2522%253E%253C%252Fi%253E%250A%253C%252Fa%253E%250A%250A%253Cbutton%2520class%253D%2522button-icon%2520danger%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-cloud-download-alt%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E%250A%250A%253C%21--%2520Floating%2520Action%2520Button%2520--%253E%250A%250A%253Cbutton%2520class%253D%2522button-float%2520secondary%2522%253E%250A%2520%2520%2520%2520-%250A%253C%252Fbutton%253E%250A%250A%253Ca%2520class%253D%2522button-float%2520primaryLight%2522%253E%250A%2520%2520%2520%2520%252B%250A%253C%252Fa%253E%250A%250A%253C%21--%2520Button%2520with%2520Icons%2520--%253E%250A%250A%253Cbutton%2520class%253D%2522button%2520button-contained%2520primary%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fab%2520fa-android%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520Click%2520Me%21%250A%253C%252Fbutton%253E%250A%250A%253Ca%2520class%253D%2522button%2520button-contained%2520primaryLight%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-cart-plus%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520Click%2520Me%21%250A%253C%252Fa%253E%250A%250A%253C%21--%2520Block%2520Buttons%2520--%253E%250A%250A%253Cbutton%2520class%253D%2522button%2520block-button%2520button-contained%2520success%2522%253E%250A%2520%2520%2520%2520Block%2520Button%250A%253C%252Fbutton%253E%250A%250A%253C%21--%2520Different%2520Sizes%2520--%253E%250A%250A%253Cbutton%2520class%253D%2522button%2520button-sm%2520button-contained%2520primary%2522%253E%250A%2520%2520%2520%2520Small%250A%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522button%2520button-md%2520button-contained%2520danger%2522%253E%250A%2520%2520%2520%2520Medium%250A%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522button%2520button-lg%2520button-contained%2520warning%2522%253E%250A%2520%2520%2520%2520Large%250A%253C%252Fbutton%253E"
+          style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+      </div>
+
     </section>
 
 

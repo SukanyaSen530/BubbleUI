@@ -2,18 +2,22 @@
 
 .primary {
   background-color: var(--primary);
+  color: var(--light);
 }
 
 .success {
   background-color: var(--success);
+  color: var(--light);
 }
 
 .warning {
   background-color: var(--warning);
+  color: var(--light);
 }
 
 .info {
   background-color: var(--info);
+  color: var(--light);
 }
 
 .dark {
@@ -28,10 +32,12 @@
 
 .secondary {
   background-color: var(--secondary);
+  color: var(--light);
 }
 
 .danger {
   background-color: var(--danger);
+  color: var(--light);
 }
 
 /* Light Version */
