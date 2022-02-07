@@ -1,5 +1,19 @@
 .star-rating-container {
   display: flex;
+  border: 1px solid var(--secondaryLight);
+  display: inline-block;
+  padding: 0.2rem;
+  border-radius: var(--border-radius-sm);
+}
+
+.star-rating-container > i {
+  margin: 0 0.2rem;
+  color: var(--warning);
+}
+
+.star-rating-container > i:hover {
+  color: var(--warning);
+  font-weight: 700;
 }
 
 .single-star-rating {

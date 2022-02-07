@@ -8,6 +8,7 @@
   flex-direction: column;
   text-align: justify;
   transition: 0.4s box-shadow ease;
+  position: relative;
 }
 
 .card .card-actions {
@@ -30,13 +31,13 @@
 }
 
 .card .card-details {
-  margin: 0.7rem 0.5rem;
+  margin: 0.7rem var(--spacing-03);
 }
 
 .card .card-content {
   font-size: 0.8rem;
   color: var(--secondary);
-  margin: 0 0.5rem;
+  margin: 0 var(--spacing-03);
 }
 
 .card .card-image {
@@ -54,7 +55,7 @@
 }
 
 .card.card-horizontal .card-image {
-  height: 6rem;
+  height: var(--spacing-12);
 }
 
 /* CARD-HOVER */
@@ -140,5 +141,3 @@
 .card.card-overlay:hover .overlay {
   opacity: 1;
 }
-
-/* CARD BADGE */
