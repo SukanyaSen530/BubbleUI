@@ -49,55 +49,62 @@
         <span class="tooltip">Typography</span>
       </li>
 
-      <li class="sidebar-link-heading">Components</li>
+      <li class="sidebar-link-heading">Component</li>
       <li>
         <a href="#Avatars">
           <i class="far fa-user"></i>
-          <span class="sidebar-link-name">Avatars</span>
+          <span class="sidebar-link-name">Avatar</span>
         </a>
-        <span class="tooltip">Avatars</span>
+        <span class="tooltip">Avatar</span>
       </li>
       <li>
         <a href="#Alerts">
           <i class="far fa-bell"></i>
-          <span class="sidebar-link-name">Alerts</span>
+          <span class="sidebar-link-name">Alert</span>
         </a>
-        <span class="tooltip">Alerts</span>
+        <span class="tooltip">Alert</span>
       </li>
       <li>
         <a href="#Badges">
           <i class="far fa-id-badge"></i>
-          <span class="sidebar-link-name">Badges</span>
+          <span class="sidebar-link-name">Badge</span>
         </a>
-        <span class="tooltip">Badges</span>
+        <span class="tooltip">Badge</span>
       </li>
       <li>
         <a href="#Buttons">
           <i class="fas fa-play-circle"></i>
-          <span class="sidebar-link-name">Buttons</span>
+          <span class="sidebar-link-name">Button</span>
         </a>
-        <span class="tooltip">Buttons</span>
+        <span class="tooltip">Button</span>
       </li>
       <li>
         <a href="#Cards">
           <i class="far fa-id-card"></i>
-          <span class="sidebar-link-name">Cards</span>
+          <span class="sidebar-link-name">Card</span>
         </a>
-        <span class="tooltip">Cards</span>
+        <span class="tooltip">Card</span>
+      </li>
+      <li>
+        <a href="#Rating">
+          <i class="far fa-star"></i>
+          <span class="sidebar-link-name">Rating</span>
+        </a>
+        <span class="tooltip">Rating</span>
       </li>
       <li>
         <a href="#Images">
           <i class="far fa-image"></i>
-          <span class="sidebar-link-name">Images</span>
+          <span class="sidebar-link-name">Image</span>
         </a>
-        <span class="tooltip">Images</span>
+        <span class="tooltip">Image</span>
       </li>
       <li>
         <a href="#Inputs">
           <i class="far fa-keyboard"></i>
-          <span class="sidebar-link-name">Inputs</span>
+          <span class="sidebar-link-name">Input</span>
         </a>
-        <span class="tooltip">Inputs</span>
+        <span class="tooltip">Input</span>
       </li>
     </ul>
   </aside>
@@ -767,6 +774,223 @@
 
     <section id="Cards">
       <h4 class="section-heading">Cards</h4>
+      <p>Cards contain content and actions about a single subject.</p>
+
+      <h5>Text Only Card</h5>
+      <p>Text</p>
+      <div class="component-display flex-row flex-center">
+
+        <article class="card">
+          <header class="card-header" tabindex="0">
+            <div class="card-details">
+              <h5 class="h5">Our Changing Planet</h5>
+              <h6>by Kurt Wagner</h6>
+            </div>
+            <p class="card-content"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga inventore asperiores
+              quibusdam impedit, sapiente sunt fugit doloremque at commodi repellendus atque. </p>
+          </header>
+
+          <footer class="card-actions">
+            <div class="card-buttongroup">
+              <button class="btn btn-contained btn-sm
+              primaryLight">Read</button>
+              <button class="btn btn-contained btn-sm primaryLight">Bookmark</button>
+            </div>
+
+            <div class="card-buttongroup">
+              <button class="btn-float btn-sm secondaryLight">
+                <i class="far fa-heart"></i>
+              </button>
+              <button class="btn-float btn-sm secondaryLight">
+                <i class="fas fa-share-alt"></i>
+              </button>
+              <button class="btn-float btn-sm secondaryLight">
+                <i class="fas fa-ellipsis-v"></i>
+              </button>
+            </div>
+
+          </footer>
+        </article>
+
+
+      </div>
+
+      <h5>Media Card (Vertical)</h5>
+      <p>Text</p>
+      <div class="component-display flex-row flex-center">
+
+        <article class="card">
+          <header class="card-header" tabindex="0">
+            <div class="card-image">
+              <img src="https://www.worldatlas.com/r/w1200/upload/19/32/19/shutterstock-1227184378.jpg" alt=""
+                class="img-responsive">
+            </div>
+            <div class="card-details">
+              <h4>Example Title</h4>
+            </div>
+            <p class="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga inventore asperiores
+              quibusdam impedit</p>
+          </header>
+          <footer class="card-actions">
+            <div class="card-buttongroup">
+              <button class="btn btn-contained btn-sm secondary">Share</button>
+          </footer>
+        </article>
+
+      </div>
+
+      <h5>Media Card (Horizontal)</h5>
+      <p>Choose a horizontal image for this card to keep the aspect ratio.</p>
+      <div class="component-display flex-row flex-center">
+
+        <article class="card card-horizontal">
+          <header class="card-header" tabindex="0">
+            <div class="card-image">
+              <img src="./assets/images/gojo.jpg" alt="" class="img-responsive">
+            </div>
+            <div class="card-details">
+              <h4 class="card-title text-primary">Jujutsu Kaisen</h4>
+            </div>
+            <p class="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga inventore asperiores
+              quibusdam impedit</p>
+          </header>
+          <footer class="card-actions">
+            <div class="card-buttongroup">
+              <button class="btn-icon btn-sm primaryLight">
+                <i class="far fa-heart"></i>
+              </button>
+              <button class="btn-icon btn-sm primaryLight">
+                <i class="fas fa-share-alt"></i>
+              </button>
+            </div>
+          </footer>
+        </article>
+
+
+      </div>
+
+      <h5>Card with Shadow</h5>
+      <p>By default all cards have shadow. If you want shadow on hover, use this card.</p>
+      <div class="component-display flex-row flex-center">
+
+        <article class="card card-hover">
+          <header class="card-header" tabindex="0">
+            <div class="card-image">
+              <img src="https://earthsky.org/upl/2019/04/bluejay-e1554247141817.jpg" alt="" class="img-responsive">
+            </div>
+            <div class="card-details">
+              <h4>Lorem Ipsum</h4>
+            </div>
+            <p class="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga inventore asperiores
+              quibusdam impedit</p>
+          </header>
+        </article>
+
+      </div>
+
+      <h5>Card with Dismiss Button</h5>
+      <p></p>
+      <div class="component-display flex-row flex-center">
+
+        <article class="card card-dismiss">
+          <header class="card-header" tabindex="0">
+            <div class="card-image">
+              <img src="./assets/images/img-res.jpg" alt="" class="img-responsive">
+            </div>
+            <div class="card-details">
+              <!-- Add the title inside a container for using this layout -->
+              <div>
+                <h5 class="h5">Tokyo Ghoul</h5>
+                <h6>by Sui Ishida</h6>
+              </div>
+              <button class="btn-float btn-sm dangerDark">
+                <i class="fas fa-times"></i>
+              </button>
+
+            </div>
+            <p class="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga inventore asperiores
+              quibusdam impedit</p>
+          </header>
+
+          <footer class="card-actions">
+            <div class="card-buttongroup">
+              <button class="btn btn-contained dangerDark btn-sm">Share</button>
+          </footer>
+        </article>
+
+      </div>
+
+      <h5>Card with Text Overlay</h5>
+      <p>Hover on the card to see the overlay.</p>
+      <div class="component-display flex-row flex-center">
+
+        <article class="card card-dismiss card-overlay">
+          <header class="card-header" tabindex="0">
+            <div class="card-image">
+              <img src="./assets/images/img-res.jpg" alt="" class="img-responsive">
+            </div>
+            <div class="card-details">
+
+              <!-- Add the title inside a container for using this layout -->
+              <div>
+                <h5 class="h5">Tokyo Ghoul</h5>
+                <h6>by Sui Ishida</h6>
+              </div>
+              <button class="btn-float btn-sm dangerDark">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+
+            <p class="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga inventore asperiores
+              quibusdam impedit</p>
+          </header>
+
+          <footer class="card-actions">
+            <div class="card-buttongroup">
+              <button class="btn btn-contained dangerDark btn-sm">Share</button>
+          </footer>
+          <!-- Add this to get the overlay text, at the end of the card content -->
+          <div class="overlay">
+            <p class="overlay-text">Not Available </p>
+          </div>
+        </article>
+
+      </div>
+
+      <h5>Card with Badge</h5>
+      <p>Example of a Ecomm card with badge.</p>
+      <div class="component-display flex-row flex-center">
+
+        <article class="card" tabindex="0">
+          <header class="card-header">
+            <div class="card-image">
+              <img src="./assets/images/headphones.jpg" alt="" class="img-responsive">
+            </div>
+            <div class="card-details">
+              <h5 class=" card-title">Boat Earphones</h5>
+              <p class="single-star-rating">4.2</p>
+            </div>
+
+            <p class="card-content"> Black Colour, On the Ear
+            </p>
+
+            <!-- Custom Styles for the EComm Card (Not Available in Library) -->
+            <figure class="price-container">
+              <p class="price">₹1,799</p>
+              <p class="real-price text-strike">₹2,199</p>
+              <p class="price-off">18% off</p>
+            </figure>
+          </header>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- Rating -->
+
+    <section id="Rating">
+      <h4 class="section-heading">Rating</h4>
       <p></p>
 
       <div class="component-display"></div>
@@ -778,6 +1002,7 @@
     <section id="Images">
 
       <h4 class="section-heading">Images</h4>
+      <p>Images are one of the important part of web.</p>
 
       <h5>Responsive Image</h5>
       <p>Responsive Image will take full height and width of the parent container.</p>

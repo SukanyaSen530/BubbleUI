@@ -138,14 +138,32 @@ a.btn {
 /* SIZES */
 
 .btn.btn-sm {
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
+  padding: 0.3rem 0.5rem;
+  font-weight: 400;
+  font-size: 0.8rem;
 }
 
 .btn.btn-md {
   font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .btn.btn-lg {
   font-size: 1.6rem;
+  font-weight: 600;
+}
+
+/* Sizes - FLOAT & ICON (small & large)*/
+
+.btn-float.btn-sm,
+.btn-icon.btn-sm {
+  height: var(--spacing-07);
+  width: var(--spacing-07);
+  font-size: 0.9rem;
+}
+
+.btn-float.btn-lg,
+.btn-icon.btn-lg {
+  height: var(--spacing-09);
+  width: var(--spacing-09);
 }
