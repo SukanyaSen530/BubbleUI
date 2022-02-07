@@ -12,6 +12,11 @@
   justify-content: center;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+
 .max-width-height {
   width: 100vh;
   height: 100vh;
@@ -38,4 +43,9 @@
 .center {
   margin: 0.5rem 0;
   text-align: center;
+}
+
+.flexible-height-width {
+  height: 80vh;
+  width: 80vw;
 }
