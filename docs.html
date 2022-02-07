@@ -291,7 +291,7 @@
       <h5>Image Avatars</h5>
       <p>Image avatars can be created with class <span class="code-highlight"> .avatar-img</span></p>
 
-      <div class="component-display flex-row flex-center">
+      <div class="component-display flex-row flex-center flex-wrap">
         <figure class="avatar avatar-md">
           <img class="avatar-img" src="./assets/images/rengoku.jpg" alt="Demo Image">
         </figure>
@@ -309,7 +309,7 @@
       <p>Letter avatars can be created with class <span class="code-highlight"> .avatar-letter</span>. Add the color
         classes to apply color to the avatars. This can be used with maximum of 2 letters. </p>
 
-      <div class="component-display flex-row flex-center">
+      <div class="component-display flex-row flex-center flex-wrap">
         <figure class="avatar avatar-letter avatar-sm infoLight">
           <span>S</span>
         </figure>
@@ -327,7 +327,7 @@
       <p>Different sizes are available for the avatars, classes - <span class="code-highlight"> .avatar-sm</span>, <span
           class="code-highlight"> .avatar-md</span>, <span class="code-highlight"> .avatar-lg</span></p>
 
-      <div class="component-display flex-row flex-center">
+      <div class="component-display flex-row flex-center flex-wrap">
         <figure class="avatar avatar-sm">
           <img class="avatar-img" src="./assets/images/rengoku.jpg" alt="Demo Image">
         </figure>
@@ -345,7 +345,7 @@
       <p>Icon avatars have class <span class="code-highlight">
           .avatar-icon</span>. You can use svgs and icons from font awesome.</p>
 
-      <div class="component-display flex-row flex-center">
+      <div class="component-display flex-row flex-center flex-wrap">
         <figure class="avatar avatar-icon  avatar-sm primary">
           <img class="avatar-icon" src="./assets/svgs/camera.svg" alt="Demo Image">
         </figure>
@@ -364,7 +364,7 @@
         existing class, will generate a square shaped
         avatar.</p>
 
-      <div class="component-display flex-row flex-center">
+      <div class="component-display flex-row flex-center flex-wrap">
         <figure class="avatar square avatar-sm">
           <img class="avatar-img" src="./assets/images/rengoku.jpg" alt="Demo Image">
         </figure>
@@ -520,7 +520,7 @@
         <span class="code-highlight">.busy</span>. Add these classes to child of parent - <span
           class="code-highlight">.badge</span> class.</p>
 
-      <div class="component-display flex-row flex-center">
+      <div class="component-display flex-row flex-center flex-wrap">
         <article class="badge">
           <figure class="avatar avatar-sm">
             <img class="avatar-img" src="./assets/images/rengoku.jpg" alt="Demo Image">
@@ -529,7 +529,7 @@
         </article>
 
         <article class="badge">
-          <figure class="avatar avatar-md">
+          <figure class="avatar avatar-md square">
             <img class="avatar-img" src="./assets/images/tengen.png" alt="Demo Image">
           </figure>
           <span class="offline"></span>
@@ -546,7 +546,7 @@
 
       <h5>Icon Badges</h5>
 
-      <div class="component-display flex-row flex-center">
+      <div class="component-display flex-row flex-center flex-wrap">
         <article class="badge">
           <img class="badge-icon" src="./assets/svgs/cart.svg" alt="Demo Image">
           <span class="badge-count primary">9</span>
@@ -581,7 +581,7 @@
       <h5>Text with a Badge</h5>
       <p>Badges can be added to normal texts.</p>
 
-      <div class="component-display flex-row flex-center">
+      <div class="component-display flex-row flex-center flex-wrap">
         <p class="badge">
           Text with a badge
           <span class="badge-count success">9</span>
@@ -616,7 +616,7 @@
       <p> Classes: <span class="code-highlight">btn</span>,
         <span class="code-highlight">btn-contained </span></p>
 
-      <div class="component-display flex-row flex-center">
+      <div class="component-display flex-row flex-center flex-wrap">
         <button class="btn btn-contained default">
           Button
         </button>
@@ -641,7 +641,7 @@
         <span class="code-highlight">btn-error-outline</span>,
         <span class="code-highlight">btn-info-outline</span>.</p>
 
-      <div class="component-display flex-row flex-center">
+      <div class="component-display flex-row flex-center flex-wrap">
         <button class="btn btn-success-outline">
           Button
         </button>
@@ -707,7 +707,7 @@
       <p> Classes: <span class="code-highlight">btn</span>,
         <span class="code-highlight">btn-contained</span>.</p>
 
-      <div class="component-display flex-row flex-center">
+      <div class="component-display flex-row flex-center flex-wrap">
         <button class="btn btn-contained primary">
           <i class="fab fa-android"></i>
           Click Me!
@@ -738,7 +738,7 @@
       </p>
 
 
-      <div class="component-display flex-row flex-center">
+      <div class="component-display flex-row flex-center flex-wrap">
         <button class="btn btn-sm btn-contained primary">
           Small
         </button>
@@ -773,13 +773,42 @@
       </div>
     </section>
 
-    <section id="Images">
-      <h4 class="section-heading">Images</h4>
-      <p></p>
+    <!-- -----Images------- -->
 
-      <div class="component-display"></div>
+    <section id="Images">
+
+      <h4 class="section-heading">Images</h4>
+
+      <h5>Responsive Image</h5>
+      <p>Responsive Image will take full height and width of the parent container.</p>
+      <p> Class: <span class="code-highlight">img-responsive</span>
+      </p>
+
+      <div class="component-display flexible-height-width">
+        <img src="./assets/images/img-res.jpg" alt="Demo Image" class="img-responsive">
       </div>
+      </div>
+
+      <h5>Round Image</h5>
+      <p>Available in default dimension of 10rem x 10rem.</p>
+      <p> Class: <span class="code-highlight">img-round</span>
+      </p>
+
+      <div class="component-display flex-row flex-center">
+        <img src="./assets/images/Mitsuri.jpg" alt="Demo Image" class="img-round">
+      </div>
+
+      <div class="code-frame">
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=9px&ph=9px&ln=false&fl=1&fm=Hack&fs=12.5px&lh=148%25&si=false&es=2x&wm=false&code=%253C%21--%2520Responsive%2520Image%2520%2520%2520--%253E%250A%250A%253Cimg%2520src%253D%2522..%2522%2520alt%253D%2522..%2522%2520class%253D%2522img-responsive%2522%253E%250A%250A%2520%253C%21--%2520Round%2520Image%2520--%253E%250A%250A%253Cimg%2520src%253D%2522..%2522%2520alt%253D%2522..%2522%2520class%253D%2522img-round%2522%253E%250A%2520"
+          style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+      </div>
+
     </section>
+
+    <!-- -----Input------- -->
 
     <section id="Inputs">
       <h4 class="section-heading">Inputs</h4>
