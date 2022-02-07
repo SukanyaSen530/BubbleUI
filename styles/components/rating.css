@@ -1,0 +1,20 @@
+.star-rating-container {
+  display: flex;
+}
+
+.single-star-rating {
+  background: var(--success);
+  border-radius: var(--border-radius-sm);
+  padding: 0.1rem 0 0.1rem 0.3rem;
+  color: var(--light);
+  display: inline-block;
+  font-size: 0.6rem;
+}
+
+.single-star-rating:after {
+  font-family: "Font Awesome 5 Free";
+  content: " \f005";
+  font-weight: 900;
+  color: var(--light);
+  margin-right: 5px;
+}
