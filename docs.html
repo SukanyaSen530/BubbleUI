@@ -49,55 +49,62 @@
         <span class="tooltip">Typography</span>
       </li>
 
-      <li class="sidebar-link-heading">Components</li>
+      <li class="sidebar-link-heading">Component</li>
       <li>
         <a href="#Avatars">
           <i class="far fa-user"></i>
-          <span class="sidebar-link-name">Avatars</span>
+          <span class="sidebar-link-name">Avatar</span>
         </a>
-        <span class="tooltip">Avatars</span>
+        <span class="tooltip">Avatar</span>
       </li>
       <li>
         <a href="#Alerts">
           <i class="far fa-bell"></i>
-          <span class="sidebar-link-name">Alerts</span>
+          <span class="sidebar-link-name">Alert</span>
         </a>
-        <span class="tooltip">Alerts</span>
+        <span class="tooltip">Alert</span>
       </li>
       <li>
         <a href="#Badges">
           <i class="far fa-id-badge"></i>
-          <span class="sidebar-link-name">Badges</span>
+          <span class="sidebar-link-name">Badge</span>
         </a>
-        <span class="tooltip">Badges</span>
+        <span class="tooltip">Badge</span>
       </li>
       <li>
         <a href="#Buttons">
           <i class="fas fa-play-circle"></i>
-          <span class="sidebar-link-name">Buttons</span>
+          <span class="sidebar-link-name">Button</span>
         </a>
-        <span class="tooltip">Buttons</span>
+        <span class="tooltip">Button</span>
       </li>
       <li>
         <a href="#Cards">
           <i class="far fa-id-card"></i>
-          <span class="sidebar-link-name">Cards</span>
+          <span class="sidebar-link-name">Card</span>
         </a>
-        <span class="tooltip">Cards</span>
+        <span class="tooltip">Card</span>
+      </li>
+      <li>
+        <a href="#Rating">
+          <i class="far fa-star"></i>
+          <span class="sidebar-link-name">Rating</span>
+        </a>
+        <span class="tooltip">Rating</span>
       </li>
       <li>
         <a href="#Images">
           <i class="far fa-image"></i>
-          <span class="sidebar-link-name">Images</span>
+          <span class="sidebar-link-name">Image</span>
         </a>
-        <span class="tooltip">Images</span>
+        <span class="tooltip">Image</span>
       </li>
       <li>
         <a href="#Inputs">
           <i class="far fa-keyboard"></i>
-          <span class="sidebar-link-name">Inputs</span>
+          <span class="sidebar-link-name">Input</span>
         </a>
-        <span class="tooltip">Inputs</span>
+        <span class="tooltip">Input</span>
       </li>
     </ul>
   </aside>
@@ -613,7 +620,7 @@
       <p>These buttons are filled. They contain actions that are primary to your app. Available for both button and link
         elements. Has disabled state.</p>
 
-      <p> Classes: <span class="code-highlight">btn</span>,
+      <p> Classes: <span class="code-highlight">btn</span> (common),
         <span class="code-highlight">btn-contained </span></p>
 
       <div class="component-display flex-row flex-center flex-wrap">
@@ -704,7 +711,7 @@
 
       <h5>Button with Icons</h5>
       <p>Add font awesome icons inside button element. Available both for button and link element.</p>
-      <p> Classes: <span class="code-highlight">btn</span>,
+      <p> Classes: <span class="code-highlight">btn</span> (common),
         <span class="code-highlight">btn-contained</span>.</p>
 
       <div class="component-display flex-row flex-center flex-wrap">
@@ -721,7 +728,7 @@
 
       <h5>Block Buttons</h5>
       <p>Takes full width of container. Generally used in forms.</p>
-      <p> Classes: <span class="code-highlight">btn</span>,
+      <p> Classes: <span class="code-highlight">btn</span> (common),
         <span class="code-highlight">block-btn</span>.</p>
 
       <div class="component-display flex-row flex-center">
@@ -767,10 +774,319 @@
 
     <section id="Cards">
       <h4 class="section-heading">Cards</h4>
-      <p></p>
+      <p>Cards contain content and actions about a single subject.</p>
 
-      <div class="component-display"></div>
+      <h5>Text Only Card</h5>
+      <div class="component-display flex-row flex-center">
+
+        <article class="card">
+          <header class="card-header" tabindex="0">
+            <div class="card-details">
+              <h5 class="h5">Our Changing Planet</h5>
+              <h6 class="h6">by Kurt Wagner</h6>
+            </div>
+            <p class="card-content"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga inventore asperiores
+              quibusdam impedit, sapiente sunt fugit doloremque at commodi repellendus atque. </p>
+          </header>
+
+          <footer class="card-actions">
+            <div class="card-buttongroup">
+              <button class="btn btn-contained btn-sm
+              primaryLight">Read</button>
+              <button class="btn btn-contained btn-sm primaryLight">Bookmark</button>
+            </div>
+
+            <div class="card-buttongroup">
+              <button class="btn-float btn-sm secondaryLight">
+                <i class="far fa-heart"></i>
+              </button>
+              <button class="btn-float btn-sm secondaryLight">
+                <i class="fas fa-share-alt"></i>
+              </button>
+              <button class="btn-float btn-sm secondaryLight">
+                <i class="fas fa-ellipsis-v"></i>
+              </button>
+            </div>
+
+          </footer>
+        </article>
+
       </div>
+
+      <div class="code-frame">
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=9px&ph=9px&ln=false&fl=1&fm=Hack&fs=12.5px&lh=148%25&si=false&es=2x&wm=false&code=%253Carticle%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%2520%253Cheader%2520class%253D%2522card-header%2522%2520tabindex%253D%25220%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-details%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%2520class%253D%2522h5%2522%253EOur%2520Changing%2520Planet%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch6%2520class%253D%2522h6%2522%253Eby%2520Kurt%2520Wagner%253C%252Fh6%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-content%2522%253E%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Fuga%2520inventore%2520asperiores%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520quibusdam%2520impedit%252C%2520sapiente%2520sunt%2520fugit%2520doloremque%2520at%2520commodi%2520repellendus%2520atque.%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fheader%253E%250A%250A%2520%2520%2520%2520%253Cfooter%2520class%253D%2522card-actions%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-buttongroup%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-contained%2520btn-sm%250A%2520%2520%2520%2520%2520%2520%2520%2520primaryLight%2522%253ERead%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-contained%2520btn-sm%2520primaryLight%2522%253EBookmark%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-buttongroup%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-float%2520btn-sm%2520secondaryLight%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-float%2520btn-sm%2520secondaryLight%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-share-alt%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-float%2520btn-sm%2520secondaryLight%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-ellipsis-v%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253C%252Ffooter%253E%250A%253C%252Farticle%253E"
+          style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+      </div>
+
+      <h5>Media Card (Vertical)</h5>
+      <p>By default, every card is vertical card.</p>
+      <div class="component-display flex-row flex-center">
+
+        <article class="card">
+          <header class="card-header" tabindex="0">
+            <div class="card-image">
+              <img src="https://www.worldatlas.com/r/w1200/upload/19/32/19/shutterstock-1227184378.jpg" alt="Demo Image"
+                class="img-responsive">
+            </div>
+            <div class="card-details">
+              <h4 class="h4">Example Title</h4>
+            </div>
+            <p class="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga inventore asperiores
+              quibusdam impedit</p>
+          </header>
+          <footer class="card-actions">
+            <div class="card-buttongroup">
+              <button class="btn btn-contained btn-sm secondary">Share</button>
+          </footer>
+        </article>
+
+      </div>
+
+      <div class="code-frame">
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=9px&ph=9px&ln=false&fl=1&fm=Hack&fs=12.5px&lh=148%25&si=false&es=2x&wm=false&code=%253Carticle%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%2520%253Cheader%2520class%253D%2522card-header%2522%2520tabindex%253D%25220%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fwww.worldatlas.com%252Fr%252Fw1200%252Fupload%252F19%252F32%252F19%252Fshutterstock-1227184378.jpg%2522%2520alt%253D%2522%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522img-responsive%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-details%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%2520class%253D%2522h4%2522%253EExample%2520Title%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-content%2522%253ELorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Fuga%2520inventore%2520asperiores%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520quibusdam%2520impedit%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fheader%253E%250A%2520%2520%2520%2520%253Cfooter%2520class%253D%2522card-actions%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-buttongroup%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-contained%2520btn-sm%2520secondary%2522%253EShare%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Ffooter%253E%250A%253C%252Farticle%253E"
+          style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+      </div>
+
+      <h5>Media Card (Horizontal)</h5>
+      <p>Choose a horizontal image for this card to keep the aspect ratio.</p>
+      <div class="component-display flex-row flex-center">
+
+        <article class="card card-horizontal">
+          <header class="card-header" tabindex="0">
+            <div class="card-image">
+              <img src="./assets/images/gojo.jpg" alt="Demo Image" class="img-responsive">
+            </div>
+            <div class="card-details">
+              <h4 class="card-title text-primary h4">Jujutsu Kaisen</h4>
+            </div>
+            <p class="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga inventore asperiores
+              quibusdam impedit</p>
+          </header>
+          <footer class="card-actions">
+            <div class="card-buttongroup">
+              <button class="btn-icon btn-sm primaryLight">
+                <i class="far fa-heart"></i>
+              </button>
+              <button class="btn-icon btn-sm primaryLight">
+                <i class="fas fa-share-alt"></i>
+              </button>
+            </div>
+          </footer>
+        </article>
+
+      </div>
+
+      <div class="code-frame">
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=9px&ph=9px&ln=false&fl=1&fm=Hack&fs=12.5px&lh=148%25&si=false&es=2x&wm=false&code=%253Carticle%2520class%253D%2522card%2520card-horizontal%2522%253E%250A%2520%2520%2520%2520%253Cheader%2520class%253D%2522card-header%2522%2520tabindex%253D%25220%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522..%2522%2520alt%253D%2522..%2522%2520class%253D%2522img-responsive%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-details%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%2520class%253D%2522card-title%2520text-primary%2520h4%2522%253EJujutsu%2520Kaisen%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-content%2522%253ELorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Fuga%2520inventore%2520asperiores%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520quibusdam%2520impedit%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fheader%253E%250A%2520%2520%2520%2520%253Cfooter%2520class%253D%2522card-actions%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-buttongroup%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-icon%2520btn-sm%2520primaryLight%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-icon%2520btn-sm%2520primaryLight%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-share-alt%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Ffooter%253E%250A%253C%252Farticle%253E"
+          style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+      </div>
+
+      <h5>Card with Shadow</h5>
+      <p>All cards have shadow. If you want shadow on hover, use this card.</p>
+      <div class="component-display flex-row flex-center">
+
+        <article class="card card-hover">
+          <header class="card-header" tabindex="0">
+            <div class="card-image">
+              <img src="https://earthsky.org/upl/2019/04/bluejay-e1554247141817.jpg" alt="Demo Image"
+                class="img-responsive">
+            </div>
+            <div class="card-details">
+              <h4 class="h4">Lorem Ipsum</h4>
+            </div>
+            <p class="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga inventore asperiores
+              quibusdam impedit</p>
+          </header>
+        </article>
+
+      </div>
+
+      <div class="code-frame">
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=9px&ph=9px&ln=false&fl=1&fm=Hack&fs=12.5px&lh=148%25&si=false&es=2x&wm=false&code=%253Carticle%2520class%253D%2522card%2520card-hover%2522%253E%250A%2520%2520%2520%2520%253Cheader%2520class%253D%2522card-header%2522%2520tabindex%253D%25220%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522..%2522%2520alt%253D%2522..%2522%2520class%253D%2522img-responsive%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-details%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%2520class%253D%2522h4%2522%253ELorem%2520Ipsum%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-content%2522%253ELorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Fuga%2520inventore%2520asperiores%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520quibusdam%2520impedit%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fheader%253E%250A%253C%252Farticle%253E"
+          style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+      </div>
+
+      <h5>Card with Dismiss Button</h5>
+
+      <div class="component-display flex-row flex-center">
+
+        <article class="card card-dismiss">
+          <header class="card-header" tabindex="0">
+            <div class="card-image">
+              <img src="./assets/images/img-res.jpg" alt="Demo Image" class="img-responsive">
+            </div>
+            <div class="card-details">
+              <!-- Add the title inside a container for using this layout -->
+              <div>
+                <h5 class="h5">Tokyo Ghoul</h5>
+                <h6 class="h6">by Sui Ishida</h6>
+              </div>
+              <button class="btn-float btn-sm dangerDark">
+                <i class="fas fa-times"></i>
+              </button>
+
+            </div>
+            <p class="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga inventore asperiores
+              quibusdam impedit</p>
+          </header>
+
+          <footer class="card-actions">
+            <div class="card-buttongroup">
+              <button class="btn btn-contained dangerDark btn-sm">Share</button>
+          </footer>
+        </article>
+
+      </div>
+
+      <div class="code-frame">
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=9px&ph=9px&ln=false&fl=1&fm=Hack&fs=12.5px&lh=148%25&si=false&es=2x&wm=false&code=%253Carticle%2520class%253D%2522card%2520card-dismiss%2522%253E%250A%2520%2520%2520%2520%253Cheader%2520class%253D%2522card-header%2522%2520tabindex%253D%25220%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522..%2522%2520alt%253D%2522..%2522%2520class%253D%2522img-responsive%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-details%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Add%2520the%2520title%2520inside%2520a%2520container%2520for%2520using%2520this%2520layout%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%2520class%253D%2522h5%2522%253ETokyo%2520Ghoul%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch6%2520class%253D%2522h6%2522%253Eby%2520Sui%2520Ishida%253C%252Fh6%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-float%2520btn-sm%2520dangerDark%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-content%2522%253ELorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Fuga%2520inventore%2520asperiores%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520quibusdam%2520impedit%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fheader%253E%250A%250A%2520%2520%2520%2520%253Cfooter%2520class%253D%2522card-actions%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-buttongroup%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-contained%2520dangerDark%2520btn-sm%2522%253EShare%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Ffooter%253E%250A%253C%252Farticle%253E"
+          style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+      </div>
+
+      <h5>Card with Text Overlay</h5>
+      <p>Hover on the card to see the overlay.</p>
+
+      <div class="component-display flex-row flex-center">
+
+        <article class="card card-dismiss card-overlay">
+          <header class="card-header" tabindex="0">
+            <div class="card-image">
+              <img src="./assets/images/img-res.jpg" alt="Demo Image" class="img-responsive">
+            </div>
+            <div class="card-details">
+
+              <!-- Add the title inside a container for using this layout -->
+              <div>
+                <h5 class="h5">Tokyo Ghoul</h5>
+                <h6 class="h6">by Sui Ishida</h6>
+              </div>
+              <button class="btn-float btn-sm dangerDark">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+
+            <p class="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga inventore asperiores
+              quibusdam impedit</p>
+          </header>
+
+          <footer class="card-actions">
+            <div class="card-buttongroup">
+              <button class="btn btn-contained dangerDark btn-sm">Share</button>
+          </footer>
+          <!-- Add this to get the overlay text, at the end of the card content -->
+          <div class="overlay">
+            <p class="overlay-text">Not Available </p>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="code-frame">
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=9px&ph=9px&ln=false&fl=1&fm=Hack&fs=12.5px&lh=148%25&si=false&es=2x&wm=false&code=%253Carticle%2520class%253D%2522card%2520card-dismiss%2520card-overlay%2522%253E%250A%2520%2520%2520%2520%253Cheader%2520class%253D%2522card-header%2522%2520tabindex%253D%25220%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522..%2522%2520alt%253D%2522..%2522%2520class%253D%2522img-responsive%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-details%2522%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Add%2520the%2520title%2520inside%2520a%2520container%2520for%2520using%2520this%2520layout%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%2520class%253D%2522h5%2522%253ETokyo%2520Ghoul%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch6%2520class%253D%2522h6%2522%253Eby%2520Sui%2520Ishida%253C%252Fh6%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-float%2520btn-sm%2520dangerDark%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-content%2522%253ELorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Fuga%2520inventore%2520asperiores%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520quibusdam%2520impedit%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fheader%253E%250A%250A%2520%2520%2520%2520%253Cfooter%2520class%253D%2522card-actions%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-buttongroup%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-contained%2520dangerDark%2520btn-sm%2522%253EShare%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Ffooter%253E%250A%2520%2520%2520%2520%253C%21--%2520Add%2520this%2520to%2520get%2520the%2520overlay%2520text%252C%2520at%2520the%2520end%2520of%2520the%2520card%2520content%2520--%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522overlay%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522overlay-text%2522%253ENot%2520Available%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Farticle%253E"
+          style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+      </div>
+
+      <h5>Card with Badge</h5>
+      <p>Example of a Ecomm card with badge.</p>
+
+      <div class="component-display flex-row flex-center">
+
+        <article class="card" tabindex="0">
+          <header class="card-header">
+            <div class="card-image">
+              <img src="./assets/images/headphones.jpg" alt="Demo Image" class="img-responsive">
+            </div>
+            <div class="card-details">
+              <h5 class="h5">Boat Earphones</h5>
+              <p class="single-star-rating">4.2</p>
+            </div>
+
+            <p class="card-content"> Black Colour, On the Ear
+            </p>
+
+            <!-- Custom Styles for the EComm Card (Not Available in Library) -->
+            <figure class="price-container">
+              <p class="price">₹1,799</p>
+              <p class="real-price text-strike">₹2,199</p>
+              <p class="price-off">18% off</p>
+            </figure>
+          </header>
+
+          <!-- Add this to get the Badge on Card -->
+          <p class="text-badge success">Limited Offer</p>
+        </article>
+
+      </div>
+
+      <div class="code-frame">
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=9px&ph=9px&ln=false&fl=1&fm=Hack&fs=12.5px&lh=148%25&si=false&es=2x&wm=false&code=%253Carticle%2520class%253D%2522card%2522%2520tabindex%253D%25220%2522%253E%250A%2520%2520%2520%2520%253Cheader%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522..%2522%2520alt%253D%2522..%2522%2520class%253D%2522img-responsive%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-details%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%2520class%253D%2522h5%2522%253EBoat%2520Earphones%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522single-star-rating%2522%253E4.2%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-content%2522%253E%2520Black%2520Colour%252C%2520On%2520the%2520Ear%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Custom%2520Styles%2520for%2520the%2520EComm%2520Card%2520%28Not%2520Available%2520in%2520Library%29%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cfigure%2520class%253D%2522price-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522price%2522%253E%25E2%2582%25B91%252C799%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522real-price%2520text-strike%2522%253E%25E2%2582%25B92%252C199%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522price-off%2522%253E18%2525%2520off%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ffigure%253E%250A%2520%2520%2520%2520%253C%252Fheader%253E%250A%250A%2520%2520%2520%2520%253C%21--%2520Add%2520this%2520to%2520get%2520the%2520Badge%2520on%2520Card%2520--%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522text-badge%2520success%2522%253ELimited%2520Offer%253C%252Fp%253E%250A%253C%252Farticle%253E"
+          style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+      </div>
+
+    </section>
+
+
+    <!-- Rating -->
+
+    <section id="Rating">
+      <h4 class="section-heading">Rating</h4>
+      <p>Allows the user to submit a rating of a product or experience.</p>
+
+      <h5>Normal Rating</h5>
+      <p>Use font awesome star icons to generate this star rating component.</p>
+      <p>Class : <span class="code-highlight">star-rating-container</span></p>
+
+      <div class="component-display">
+
+        <div class="star-rating-container">
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+
+      </div>
+
+      <h5>Average Rating</h5>
+      <p>For this you don't need to add any icon. Just add the class and it will add the star.</p>
+      <p>Class : <span class="code-highlight">single-star-rating</span></p>
+
+      <div class="component-display">
+
+        <p class="single-star-rating">4.5</p>
+
+      </div>
+
+      <div class="code-frame">
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=9px&ph=9px&ln=false&fl=1&fm=Hack&fs=12.5px&lh=148%25&si=false&es=2x&wm=false&code=%253C%21--%2520Normal%2520Rating%2520%2520%2520--%253E%250A%250A%253Cdiv%2520class%253D%2522star-rating-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-star%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520Average%2520Rating%2520--%253E%250A%250A%253Cp%2520class%253D%2522single-star-rating%2522%253E4.5%253C%252Fp%253E%250A%2520"
+          style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+      </div>
+
     </section>
 
     <!-- -----Images------- -->
@@ -778,6 +1094,7 @@
     <section id="Images">
 
       <h4 class="section-heading">Images</h4>
+      <p>Images are one of the important part of web.</p>
 
       <h5>Responsive Image</h5>
       <p>Responsive Image will take full height and width of the parent container.</p>

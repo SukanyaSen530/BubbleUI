@@ -52,3 +52,9 @@ h6,
 .text-strike {
   text-decoration: line-through;
 }
+
+p {
+  font-size: 0.9rem;
+  padding-bottom: var(--spacing-02);
+  line-height: 1.2rem;
+}

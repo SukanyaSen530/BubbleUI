@@ -24,12 +24,6 @@
   text-align: justify;
 }
 
-.docs-content > section p {
-  font-size: 0.9rem;
-  padding-bottom: var(--spacing-03);
-  line-height: var(--spacing-06);
-}
-
 .docs-content > section .section-heading {
   color: var(--light-default);
 }
@@ -66,7 +60,6 @@
 .code-highlight {
   color: var(--primary);
   background: rgb(0, 0, 0, 0.1);
-  padding: 0.1rem;
   border-radius: var(--border-radius-sm);
   font-weight: 400;
 }
@@ -81,6 +74,28 @@
 .divider {
   height: 0;
   border-top: 1px solid gray;
+}
+
+/* ECOMM CARD Custom Styles */
+.price-container {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 0 0.5rem;
+  align-items: center;
+}
+
+.price {
+  font-weight: 500;
+}
+
+.real-price {
+  color: var(--secondary);
+}
+
+.price-off {
+  color: var(--success);
+  font-size: 0.8rem;
 }
 
 @media only screen and (max-width: 700px) {
