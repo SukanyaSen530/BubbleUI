@@ -18,27 +18,25 @@
   overflow-x: hidden;
 }
 
-.docs-content > section {
+.component-section {
   padding: 0 var(--spacing-07);
   margin: var(--spacing-07) 0;
   text-align: justify;
 }
 
-.docs-content > section .section-heading {
+.section-heading {
   color: var(--light-default);
+  padding: 2rem 0 1rem;
+  font-size: 2.5rem;
 }
 
-.code-frame {
-  border: 2px solid var(--light);
-  padding: var(--spacing-03);
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-  width: 100%;
-  height: 300px;
-  overflow-x: auto;
+.section-heading:after {
+  content: "";
+  border-bottom: 5px solid var(--secondary);
+  width: 4rem;
+  display: block;
+  margin-top: 5px;
+  border-radius: VAR(--border-radius-sm);
 }
 
 .pallete {
@@ -57,11 +55,17 @@
   justify-content: space-between;
 }
 
-.code-highlight {
-  color: var(--primary);
-  background: rgb(0, 0, 0, 0.1);
-  border-radius: var(--border-radius-sm);
-  font-weight: 400;
+.code-frame {
+  border: 2px solid var(--light);
+  padding: var(--spacing-03);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 300px;
+  overflow-x: auto;
 }
 
 .component-display {
@@ -74,6 +78,7 @@
 .divider {
   height: 0;
   border-top: 1px solid gray;
+  margin: 0.5rem 0;
 }
 
 /* ECOMM CARD Custom Styles */

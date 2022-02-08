@@ -112,7 +112,7 @@
   <!-- COMPONENTS -->
   <main class="docs-content">
 
-    <section id="Installation" class="">
+    <section id="Installation" class="component-section">
       <h4 class="section-heading">Installation</h4>
       <p>
         To start using the components in your project import the stylesheet in your css or html file.
@@ -135,12 +135,9 @@
           </iframe>
         </div>
 
-        <p>You can also add your own classes to customize the components as per your need.</p>
-
-        <!-- Code -->
     </section>
 
-    <section id="Colors" class="">
+    <section id="Colors" class="component-section">
       <h4 class="section-heading">Colors</h4>
       <p>Bubble provides 22 colours to create a small pallete for the components available. You can use the variables
         names provided for your own custom styles.</p>
@@ -240,57 +237,127 @@
 
     </section>
 
-    <section id="Typography" class="">
+    <section id="Typography" class="component-section">
       <h4 class="section-heading">Typography</h4>
       <p>Default Font is set to Roboto. Has 6 font weights - <span class="code-highlight">100; 300; 400; 500;
-          700; 900</span>
-      </p>
+          700; 900</span>.</p>
 
-      <p>For heading u can use <span class="code-highlight">h1, h2, h3, h4, h5, h6</span> elements. The same
-        font-styling is present for class names <span class="code-highlight">h1, h2, h3, h4, h5, h6 class </span>. You
-        can add one of these classes to style the text.</p>
-
-      <p>You can add the color classes to change the colour of text. Classes are available for all the variants.</p>
+      <h5>Headings</h5>
+      <p>Classes : <span class="code-highlight">
+          h1</span>, <span class="code-highlight">
+          h2</span>, <span class="code-highlight">
+          h3</span>, <span class="code-highlight">
+          h4</span>, <span class="code-highlight">
+          h5</span>, <span class="code-highlight">
+          h6</span></p>
 
       <div class="component-display">
-        <h1>H1-Heading</h1>
+        <h1 class="h1">H1-Heading</h1>
         <div class="divider"></div>
 
-        <h2>H2-Heading</h2>
+        <h2 class="h2">H2-Heading</h2>
         <div class="divider"></div>
 
-        <h3>H3-Heading</h3>
+        <h3 class="h3">H3-Heading</h3>
         <div class="divider"></div>
 
-        <h4>H4-Heading</h4>
+        <h4 class="h4">H4-Heading</h4>
         <div class="divider"></div>
 
-        <h5>H5-Heading</h5>
+        <h5 class="h5">H5-Heading</h5>
         <div class="divider"></div>
 
-        <h6>H6-Heading</h6>
+        <h6 class="h6">H6-Heading</h6>
+      </div>
+
+      <h5>Aligned Texts</h5>
+      <p>Classes : <span class="code-highlight">
+          center-aligned</span>, <span class="code-highlight">
+          left-aligned</span>, <span class="code-highlight">
+          right-aligned</span></p>
+
+      <div class="component-display">
+        <p class="left-aligned">Left Aligned</p>
         <div class="divider"></div>
 
-        <div class="h2">H2-Heading</div>
-        <p class="text-strike">Strike through line.</p>
-        <p class="text-danger">Text with danger (dark) color.</p>
+        <p class="center-aligned">Center Aligned</p>
+        <div class="divider"></div>
+
+        <span class="right-aligned">Right Aligned</span>
+      </div>
+
+      <h5>Coloured Texts</h5>
+      <p>Classes : <span class="code-highlight">
+          primary-text</span>, <span class="code-highlight">
+          danger-text</span>, <span class="code-highlight">
+          warning-text</span>, <span class="code-highlight">
+          success-text</span>, <span class="code-highlight">
+          secondary-text</span>, <span class="code-highlight">
+          default-text</span>, <span class="code-highlight">
+          info-text</span>. </p>
+
+
+      <div class="component-display">
+        <p class="primary-text">HI! I am Blue :)</p>
+        <div class="divider"></div>
+
+        <p class="danger-text">Use me for error messages!</p>
+        <div class="divider"></div>
+
+        <p class="warning-text">Use me for warning messages!</p>
+        <div class="divider"></div>
+
+        <p class="success-text">Use me for success messages!</p>
+        <div class="divider"></div>
+
+        <p class="secondary-text">Gray!</p>
+        <div class="divider"></div>
+
+        <p class="default-text">I am the default color of this library!</p>
+        <div class="divider"></div>
+
+        <p class="info-text">Use me for info messages!</p>
+      </div>
+
+      <h5>Different Sizes Texts</h5>
+      <p>Classes : <span class="code-highlight">
+          para-sm</span>, <span class="code-highlight">
+          para-md</span>, <span class="code-highlight">
+          para-lg</span>.</p>
+
+      <div class="component-display">
+        <p class="para-sm">Small para Text</p>
+        <div class="divider"></div>
+
+        <p class="para-md">Medium para Text</p>
+        <div class="divider"></div>
+
+        <span class="para-lg">Large para Text</span>
+      </div>
+
+      <h5>Text Emphasis</h5>
+      <p>Classes : <span class="code-highlight">
+          text-strike</span>, <span class="code-highlight">
+          code-highlight</span>, <span class="code-highlight">
+          divider</span> .</p>
+      <p class="text-danger">Note: Divider will give a underline after any text or section, use it with div element.
+      </p>
+
+      <div class="component-display">
+        <p class="text-strike para-sm">Text Striked Off</p>
+        <div class="divider"></div>
+
+        <p>Use This if you want to <span class="code-highlight">hightlight</span> some code or words.</p>
       </div>
 
 
-      <div class="code-frame">
-        <iframe
-          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=one-dark&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=7px&ph=8px&ln=false&fl=1&fm=dm&fs=13px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Ch1%253EH1-Heading%253C%252Fh1%253E%250A%2520%253Ch2%253EH2-Heading%253C%252Fh2%253E%250A%2520%253Ch3%253EH3-Heading%253C%252Fh3%253E%250A%2520%253Ch4%253EH4-Heading%253C%252Fh4%253E%250A%2520%253Ch5%253EH5-Heading%253C%252Fh5%253E%250A%2520%253Ch6%253EH6-Heading%253C%252Fh6%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%253Cdiv%2520class%253D%2522h2%2522%253EH2-Heading%253C%252Fdiv%253E%250A%2520%2520%250A%2520%2520%253C--Other%2520Classes---%253E%250A%2520%2520%253Cp%2520class%253D%2522text-strike%2522%253EStrike%2520through%2520line.%253C%252Fp%253E%250A%2520%2520%253Cp%2520class%253D%2522text-primary%2522%253EText%2520with%2520primary%2520%28dark%29%2520color.%253C%252Fp%253E%250A%2520%2520%253Cp%2520class%253D%2522text-danger%2522%253EText%2520with%2520danger%2520%28dark%29%2520color.%253C%252Fp%253E"
-          style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
-          sandbox="allow-scripts allow-same-origin">
-        </iframe>
-      </div>
     </section>
 
     <!-- Components Description-->
 
     <!-- Avatars -->
 
-    <section id="Avatars">
+    <section id="Avatars" class="component-section">
       <h4 class="section-heading">Avatars</h4>
       <p>Avatar are images which can be used to show user's profile image. Use base class <span class="code-highlight">
           .avatar</span> to generate a avatar.</p>
@@ -398,7 +465,7 @@
 
     <!-- Alerts -->
 
-    <section id="Alerts">
+    <section id="Alerts" class="component-section">
 
       <h4 class="section-heading">Alerts</h4>
       <p>Bubble has 4 types of Alerts - success, warning, info and warning. To get the icons use the font awesome cdn.
@@ -515,7 +582,7 @@
 
     <!-- Badges -->
 
-    <section id="Badges">
+    <section id="Badges" class="component-section">
       <h4 class="section-heading">Badges</h4>
 
       <p>Badges are used to display a notification count or status information. Base class used <span
@@ -612,7 +679,7 @@
 
     <!-- -----Buttons------- -->
 
-    <section id="Buttons">
+    <section id="Buttons" class="component-section">
       <h4 class="section-heading">Buttons</h4>
       <p>Buttons allow users to take actions, and make choices, with a single tap. </p>
 
@@ -772,7 +839,7 @@
 
     <!-- -----Cards------- -->
 
-    <section id="Cards">
+    <section id="Cards" class="component-section">
       <h4 class="section-heading">Cards</h4>
       <p>Cards contain content and actions about a single subject.</p>
 
@@ -1049,7 +1116,7 @@
 
     <!-- Rating -->
 
-    <section id="Rating">
+    <section id="Rating" class="component-section">
       <h4 class="section-heading">Rating</h4>
       <p>Allows the user to submit a rating of a product or experience.</p>
 
@@ -1091,7 +1158,7 @@
 
     <!-- -----Images------- -->
 
-    <section id="Images">
+    <section id="Images" class="component-section">
 
       <h4 class="section-heading">Images</h4>
       <p>Images are one of the important part of web.</p>
@@ -1127,7 +1194,7 @@
 
     <!-- -----Input------- -->
 
-    <section id="Inputs">
+    <section id="Inputs" class="component-section">
       <h4 class="section-heading">Inputs</h4>
       <p>Form Inputs let users enter and edit data.</p>
 
