@@ -113,13 +113,3 @@
   background-color: var(--dangerDark);
   color: var(--light);
 }
-
-/* Text Colors */
-
-.text-primary {
-  color: var(--primaryDark);
-}
-
-.text-danger {
-  color: var(--dangerDark);
-}

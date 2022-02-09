@@ -1,0 +1,59 @@
+/* ORDERED NESTED LIST */
+
+.nested-list {
+  counter-reset: decimal;
+}
+
+.nested-list > li {
+  margin: 0.2rem 0;
+  position: relative;
+}
+
+.nested-list > li:before {
+  counter-increment: decimal;
+  content: "(" counter(decimal, decimal) ") ";
+}
+
+.nested-list > li > ol {
+  counter-reset: roman;
+}
+
+.nested-list > li > ol > li {
+  margin: 0.2rem 0;
+  margin-left: var(--spacing-06);
+}
+
+.nested-list > li > ol > li:before {
+  counter-increment: roman;
+  content: "(" counter(roman, lower-roman) ") ";
+}
+
+/* ICON UNORDERED LIST */
+
+.heart-list,
+.check-list {
+  margin: 0.3rem 0;
+}
+
+.heart-list > li::before,
+.check-list > li::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f06a";
+  color: var(--default);
+  margin-right: 5px;
+}
+
+.check-list > li::before {
+  content: "\f00c";
+  font-weight: 700;
+}
+
+.heart-list > li::before {
+  content: "\f004";
+}
+
+/* STACKED LIST */
+
+.stacked-list {
+  list-style: none;
+}

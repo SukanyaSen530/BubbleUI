@@ -1,3 +1,5 @@
+/* Common Styles */
+
 h1,
 .h1,
 h2,
@@ -10,51 +12,128 @@ h5,
 .h5,
 h6,
 .h6 {
-  margin: 0.5rem 0;
-}
-
-h1,
-.h1 {
-  font-size: 2.8rem;
-  font-weight: 700;
-}
-
-h2,
-.h2 {
-  font-size: 2.4rem;
-  font-weight: 600;
-}
-
-h3,
-.h3 {
-  font-size: 2rem;
-  font-weight: 500;
-}
-
-h4,
-.h4 {
-  font-size: 1.6rem;
-  font-weight: 500;
-}
-
-h5,
-.h5 {
-  font-size: 1.2rem;
-  font-weight: 500;
-}
-
-h6,
-.h6 {
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-
-.text-strike {
-  text-decoration: line-through;
+  margin: var(--spacing-03) 0;
 }
 
 p {
   font-size: 0.9rem;
   padding-bottom: var(--spacing-02);
   line-height: 1.2rem;
+}
+
+/* Headings */
+
+.h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.h2 {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.h3 {
+  font-size: var(--spacing-07);
+  font-weight: 500;
+}
+
+.h4 {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.h5 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.h6 {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Aligned Texts */
+
+.center-aligned,
+.left-aligned,
+.right-aligned {
+  display: block;
+}
+
+.center-aligned {
+  text-align: center;
+}
+
+.left-aligned {
+  text-align: left;
+}
+
+.right-aligned {
+  text-align: right;
+}
+
+/* Colored Classes */
+
+.primary-text {
+  color: var(--primary);
+}
+
+.warning-text {
+  color: var(--warning);
+}
+
+.danger-text {
+  color: var(--danger);
+}
+
+.secondary-text {
+  color: var(--secondary);
+}
+
+.success-text {
+  color: var(--success);
+}
+
+.default-text {
+  color: var(--default);
+}
+
+.info-text {
+  color: var(--info);
+}
+
+/* Different Sizes */
+
+.para-sm {
+  font-size: 0.8rem;
+}
+
+.para-md {
+  font-size: 1.2rem;
+}
+
+.para-lg {
+  font-size: 1.6rem;
+}
+
+/* Special Classes */
+
+.text-strike {
+  text-decoration: line-through;
+}
+
+.code-highlight {
+  color: var(--primary);
+  background: rgb(0, 0, 0, 0.1);
+  border-radius: var(--border-radius-sm);
+  font-weight: 400;
+  padding-right: 0.4rem;
+  padding-left: 0.4em;
+}
+
+.divider {
+  height: 0;
+  border-top: 1px solid var(--secondary);
+  margin: var(--spacing-03) 0;
 }
