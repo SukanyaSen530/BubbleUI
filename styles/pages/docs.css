@@ -27,7 +27,6 @@
 .section-heading {
   color: var(--light-default);
   padding: 2rem 0 1rem;
-  font-size: 2.5rem;
 }
 
 .section-heading:after {
@@ -37,6 +36,17 @@
   display: block;
   margin-top: 5px;
   border-radius: VAR(--border-radius-sm);
+}
+
+.component-description {
+  font-size: 0.9rem;
+  line-height: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--slate-600);
+}
+
+.component-type {
+  margin-bottom: 0.8rem;
 }
 
 .pallete {
@@ -73,12 +83,6 @@
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
   border-radius: var(--border-radius-sm);
   margin: var(--spacing-06);
-}
-
-.divider {
-  height: 0;
-  border-top: 1px solid gray;
-  margin: 0.5rem 0;
 }
 
 /* ECOMM CARD Custom Styles */
