@@ -9,7 +9,7 @@
   text-align: justify;
   transition: 0.4s box-shadow ease;
   position: relative;
-  padding: var(----spacing-03);
+  padding: var(--spacing-03);
 }
 
 .modal .modal-header {
