@@ -112,11 +112,26 @@
         <span class="tooltip">Lists</span>
       </li>
       <li>
+      <li>
+        <a href="#Modal">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          <span class="sidebar-link-name">Modal</span>
+        </a>
+        <span class="tooltip">Modal</span>
+      </li>
+      <li>
         <a href="#Rating">
           <i class="far fa-star"></i>
           <span class="sidebar-link-name">Rating</span>
         </a>
         <span class="tooltip">Rating</span>
+      </li>
+      <li>
+        <a href="#Snackbar">
+          <i class="fa-solid fa-bars-progress"></i>
+          <span class="sidebar-link-name">Snackbar</span>
+        </a>
+        <span class="tooltip">Snackbar</span>
       </li>
     </ul>
   </aside>
@@ -1449,7 +1464,7 @@
                 </article>
 
                 <div class="notification">
-                  <p class="notification-message"><strong>Tengen Uzui</strong> joined to 🔥Final Game!</p>
+                  <p class="notification-message"><strong>Tengen Uzui</strong> joined the 🔥Final Game!</p>
                   <span class="social-info">2h ago</span>
                   <span class="social-info seperator">Social Media Plan</span>
                 </div>
@@ -1463,11 +1478,11 @@
                   <figure class="avatar avatar-sm square">
                     <img class="avatar-img" src="./assets/images/Tomioka.jpg" alt="Demo Image">
                   </figure>
-                  <span class="online"></span>
+                  <span class="offline"></span>
                 </article>
 
                 <div class="notification">
-                  <p class="notification-message"><strong>Mitsuri</strong> uploaded a pic!</p>
+                  <p class="notification-message"><strong>Tomioka Giyu</strong> uploaded a pic!</p>
                   <span class="social-info">4h ago</span>
                   <span class="social-info seperator">Facebook</span>
                 </div>
@@ -1481,11 +1496,11 @@
                   <figure class="avatar avatar-sm square">
                     <img class="avatar-img" src="./assets/images/Mitsuri.jpg" alt="Demo Image">
                   </figure>
-                  <span class="online"></span>
+                  <span class="busy"></span>
                 </article>
 
                 <div class="notification">
-                  <p class="notification-message"><strong>Tengen Uzui</strong> mentioned you in a post! </p>
+                  <p class="notification-message"><strong>Mitsuri Kanroji</strong> mentioned you in a post! </p>
                   <span class="social-info">7h ago</span>
                   <span class="social-info seperator">Instagram</span>
                 </div>
@@ -1506,7 +1521,69 @@
 
     </section>
 
-    <!-- Rating -->
+    <!---------- Modal ----------->
+
+    <section id="Modal" class="component-section">
+      <h2 class="section-heading h2">Modal</h2>
+      <p class="component-description">
+        Modal / Dialogs are used to show user some option or data which need immediate attention.
+      </p>
+
+      <h4 class="h4 component-type">Simple Modal</h4>
+
+      <div class="component-display flex-row flex-center">
+
+        <article class="modal">
+          <div class="modal-header">
+            <h5 class="h5">Modal Title</h5>
+            <button class="btn-icon btn-sm secondaryLight">x</button>
+          </div>
+          <div class="divider"></div>
+          <p class="modal-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque accusamus deleniti
+            quo soluta, laudantium est eaque debitis esse impedit doloremque animi minima voluptas tempore quidem,
+            sit, praesentium repudiandae placeat rem.</p>
+        </article>
+
+      </div>
+
+      <div class="code-frame">
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=9px&ph=9px&ln=false&fl=1&fm=Hack&fs=12.5px&lh=148%25&si=false&es=2x&wm=false&code=%253Carticle%2520class%253D%2522modal%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-header%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%2520class%253D%2522h5%2522%253EModal%2520Title%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-icon%2520secondaryLight%2522%253Ex%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522divider%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522modal-content%2522%253ELorem%2520ipsum%252C%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Itaque%2520accusamus%2520deleniti%250A%2520%2520%2520%2520%2520%2520%2520%2520quo%2520soluta%252C%2520laudantium%2520est%2520eaque%2520debitis%2520esse%2520impedit%2520doloremque%2520animi%2520minima%2520voluptas%2520tempore%2520quidem%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520sit%252C%2520praesentium%2520repudiandae%2520placeat%2520rem.%253C%252Fp%253E%250A%253C%252Farticle%253E"
+          style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+      </div>
+
+      <h4 class="h4 component-type">Confirmation Modal</h4>
+
+      <div class="component-display flex-row flex-center">
+        <article class="modal">
+          <div class="modal-header">
+            <h5 class="h5">Modal Title</h5>
+            <button class="btn-icon btn-sm secondaryLight">x</button>
+          </div>
+          <div class="divider"></div>
+          <p class="modal-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque accusamus deleniti
+            quo soluta</p>
+          <div class="divider"></div>
+          <div class="modal-footer">
+            <button class="btn btn-contained btn-sm secondaryLight">Cancel</button>
+            <button class="btn btn-contained btn-sm secondary">Accept</button>
+          </div>
+        </article>
+      </div>
+
+      <div class="code-frame">
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=9px&ph=9px&ln=false&fl=1&fm=Hack&fs=12.5px&lh=148%25&si=false&es=2x&wm=false&code=%253Carticle%2520class%253D%2522modal%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-header%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%2520class%253D%2522h5%2522%253EModal%2520Title%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-icon%2520btn-sm%2520secondaryLight%2522%253Ex%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522divider%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522modal-content%2522%253ELorem%2520ipsum%252C%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Itaque%2520accusamus%2520deleniti%250A%2520%2520%2520%2520%2520%2520%2520%2520quo%2520soluta%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522divider%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-footer%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-contained%2520btn-sm%2520secondaryLight%2522%253ECancel%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-contained%2520btn-sm%2520secondary%2522%253EAccept%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Farticle%253E"
+          style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+      </div>
+
+    </section>
+
+    <!--------- Rating ----------->
 
     <section id="Rating" class="component-section">
       <h2 class="section-heading h2">Rating</h2>
@@ -1542,6 +1619,43 @@
       <div class="code-frame">
         <iframe
           src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=9px&ph=9px&ln=false&fl=1&fm=Hack&fs=12.5px&lh=148%25&si=false&es=2x&wm=false&code=%253C%21--%2520Normal%2520Rating%2520%2520%2520--%253E%250A%250A%253Cdiv%2520class%253D%2522star-rating-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-star%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520Average%2520Rating%2520--%253E%250A%250A%253Cp%2520class%253D%2522single-star-rating%2522%253E4.5%253C%252Fp%253E%250A%2520"
+          style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+      </div>
+
+    </section>
+
+
+    <!--------- Snackbar --------->
+    <section id="Snackbar" class="component-section">
+      <h2 class="section-heading h2">Snackbar</h2>
+      <p class="component-description">Currently has 2 variants - Dark and Light.</p>
+
+      <h4 class="h4 component-type">Light Snackbar</h4>
+
+      <div class="component-display flex-row flex-center">
+        <article class="snackbar">
+          <p class="snackbar-text">Can't send photo. Retry in 5 seconds. </p>
+          <button class="btn-icon btn-sm secondaryDark">x</button>
+        </article>
+
+      </div>
+
+      <h4 class="h4 component-type">Dark Snackbar</h4>
+
+      <div class="component-display flex-row flex-center">
+
+        <article class="snackbar dark">
+          <p class="snackbar-text">Your Photo has been archived! </p>
+          <button class="btn btn-contained btn-sm">Undo</button>
+        </article>
+
+      </div>
+
+      <div class="code-frame">
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=9px&ph=9px&ln=false&fl=1&fm=Hack&fs=12.5px&lh=148%25&si=false&es=2x&wm=false&code=%253C%21--%2520Light%2520Snackbar%2520--%253E%250A%250A%253Carticle%2520class%253D%2522snackbar%2522%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522snackbar-text%2522%253ECan%27t%2520send%2520photo.%2520Retry%2520in%25205%2520seconds.%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-icon%2520btn-sm%2520secondaryDark%2522%253Ex%253C%252Fbutton%253E%250A%253C%252Farticle%253E%250A%250A%253C%21--%2520Dark%2520Snackbar%2520--%253E%250A%250A%253Carticle%2520class%253D%2522snackbar%2520dark%2522%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522snackbar-text%2522%253EYour%2520Photo%2520has%2520been%2520archived%21%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-contained%2520btn-sm%2522%253EUndo%253C%252Fbutton%253E%250A%253C%252Farticle%253E"
           style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
           sandbox="allow-scripts allow-same-origin">
         </iframe>

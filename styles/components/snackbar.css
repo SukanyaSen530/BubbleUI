@@ -1,0 +1,31 @@
+.snackbar {
+  background-color: rgb(221, 221, 221);
+  padding: var(--spacing-03);
+  border-radius: var(--border-radius-md);
+  margin: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: fit-content;
+}
+
+.snackbar .snackbar-text {
+  font-size: 0.8rem;
+  margin-right: 10px;
+  line-height: 1;
+}
+
+.snackbar.dark {
+  background-color: rgb(46, 46, 46);
+}
+
+.snackbar.dark .btn {
+  background: transparent;
+  color: var(--warning);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.snackbar.dark .btn:hover {
+  background: rgb(255, 255, 255, 0.2);
+}

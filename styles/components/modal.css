@@ -1,0 +1,29 @@
+.modal {
+  background-color: var(--light);
+  width: 20rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-radius: var(--border-radius-sm);
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  transition: 0.4s box-shadow ease;
+  position: relative;
+  padding: var(----spacing-03);
+}
+
+.modal .modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.3rem;
+}
+
+.modal .modal-content {
+  font-size: 0.85rem;
+}
+
+.modal .modal-footer {
+  display: flex;
+  justify-content: flex-end;
+}
