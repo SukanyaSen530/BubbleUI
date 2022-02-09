@@ -13,5 +13,7 @@
 @import url(./images.css);
 @import url(./inputs.css);
 @import url(./lists.css);
+@import url(./modal.css);
 @import url(./rating.css);
+@import url(./snackbar.css);
 @import url(./textUtilities.css);
