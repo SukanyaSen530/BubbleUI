@@ -7,9 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./styles/pages/docs.css" />
   <!-- font-awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-    integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
-  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+  <script src="https://kit.fontawesome.com/b428bff4ec.js" crossorigin="anonymous"></script>
   <title>Bubble UI Docs</title>
 </head>
 
@@ -644,7 +642,7 @@
 
       <h4 class="h4 component-type">Icon Badges</h4>
 
-      <div class="component-display flex-row flex-center flex-wrap">
+      <div class="component-display flex-col flex-center">
         <article class="badge">
           <img class="badge-icon" src="./assets/svgs/cart.svg" alt="Demo Image">
           <span class="badge-count primary">9</span>
@@ -680,7 +678,7 @@
       <h4 class="h4 component-type">Text with a Badge</h4>
       <p class="component-description">Badges can be added to normal texts.</p>
 
-      <div class="component-display flex-row flex-center flex-wrap">
+      <div class="component-display flex-col flex-center">
         <p class="badge">
           Text with a badge
           <span class="badge-count success">9</span>
@@ -1139,6 +1137,39 @@
         </iframe>
       </div>
 
+
+      <h4 class="h4 component-type">Notification Card</h4>
+      <p class="component-description">Used to show notification.</p>
+
+      <div class="component-display flex-row flex-center">
+
+        <article class="card notification-card" tabindex="0">
+          <header class="card-header">
+            <article class="badge">
+              <figure class="avatar avatar-sm square">
+                <img class="avatar-img" src="./assets/images/tengen.png" alt="Demo Image">
+              </figure>
+              <span class="online"></span>
+            </article>
+
+            <div class="notification">
+              <p class="notification-message"><strong>Tengen Uzui</strong> joined to 🔥 Final Presentation</p>
+              <span class="social-info">2h ago</span>
+              <span class="social-info seperator">Social Media Plan</span>
+            </div>
+          </header>
+        </article>
+
+      </div>
+
+      <div class="code-frame">
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=9px&ph=9px&ln=false&fl=1&fm=Hack&fs=12.5px&lh=148%25&si=false&es=2x&wm=false&code=%253Carticle%2520class%253D%2522card%2520notification-card%2522%2520tabindex%253D%25220%2522%253E%250A%2520%2520%2520%2520%253Cheader%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Carticle%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cfigure%2520class%253D%2522avatar%2520avatar-sm%2520square%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2522%2520src%253D%2522..%2522%2520alt%253D%2522..%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ffigure%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522online%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Farticle%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522notification%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522notification-message%2522%253E%253Cstrong%253ETengen%2520Uzui%253C%252Fstrong%253E%2520joined%2520to%2520%25F0%259F%2594%25A5%2520Final%2520Presentation%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522social-info%2522%253E2h%2520ago%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522social-info%2520seperator%2522%253ESocial%2520Media%2520Plan%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fheader%253E%250A%253C%252Farticle%253E"
+          style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+      </div>
+
     </section>
 
     <!-- -------- Chips---------- -->
@@ -1353,27 +1384,126 @@
       </p>
 
 
-      <h4 class="h4 component-type">Ordered Lists</h4>
-      <p class="component-description">Use font awesome star icons to generate this star rating component.</p>
-      <p>Class : <span class="code-highlight">star-rating-container</span></p>
+      <h4 class="h4 component-type">Nested Ordered Lists</h4>
+      <p class="component-description">Supprts 2 levels of nesting.</p>
+      <p>Class : <span class="code-highlight">nested-list</span></p>
+
       <div class="component-display flex-row flex-center">
+        <ol class="nested-list">
+          <li>Apple</li>
+          <li>Mango</li>
+          <li> Vegetables
+            <ol>
+              <li>Tomato</li>
+              <li>Potato</li>
+            </ol>
+          </li>
+          <li>Grape</li>
+        </ol>
 
       </div>
 
-      <h4 class="h4 component-type">Unordered Lists</h4>
-      <p class="component-description">Use font awesome star icons to generate this star rating component.</p>
-      <p>Class : <span class="code-highlight">star-rating-container</span></p>
-      <div class="component-display flex-row flex-center">
+      <div class="code-frame">
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=9px&ph=9px&ln=false&fl=1&fm=Hack&fs=12.5px&lh=148%25&si=false&es=2x&wm=false&code=%253Col%2520class%253D%2522nested-list%2522%253E%250A%2520%2520%2520%2520%253Cli%253EApple%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EMango%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253E%2520Vegetables%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Col%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253ETomato%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253EPotato%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fol%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EGrape%253C%252Fli%253E%250A%253C%252Fol%253E"
+          style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+      </div>
 
+      <h4 class="h4 component-type">Icon Unordered Lists</h4>
+      <p class="component-description">Supports Two icons and only 1 level of nesting.</p>
+      <p>Classes : <span class="code-highlight">check-list</span>, <span class="code-highlight">heart-list</span></p>
+
+      <div class="component-display flex-col flex-center">
+        <ul class="check-list">
+          <li>Eggs</li>
+          <li>Milk</li>
+          <li>Bread</li>
+        </ul>
+
+        <ul class="heart-list">
+          <li>Eggs</li>
+          <li>Milk</li>
+          <li>Bread</li>
+        </ul>
       </div>
 
 
-      <h4 class="h4 component-type">Stacked Lists</h4>
-      <p class="component-description">Use font awesome star icons to generate this star rating component.</p>
-      <p>Class : <span class="code-highlight">star-rating-container</span></p>
+      <h4 class="h4 component-type">Stacked Notification Lists</h4>
+      <p class="component-description">Add desired component inside "li" element. For Example - Notification Card is
+        used for this demo.</p>
+      <p>Class : <span class="code-highlight">stacked-list</span></p>
+
       <div class="component-display flex-row flex-center">
 
+        <ul class="stacked-list">
+          <li>
+            <article class="card notification-card" tabindex="0">
+              <header class="card-header">
+                <article class="badge">
+                  <figure class="avatar avatar-sm square">
+                    <img class="avatar-img" src="./assets/images/tengen.png" alt="Demo Image">
+                  </figure>
+                  <span class="online"></span>
+                </article>
+
+                <div class="notification">
+                  <p class="notification-message"><strong>Tengen Uzui</strong> joined to 🔥Final Game!</p>
+                  <span class="social-info">2h ago</span>
+                  <span class="social-info seperator">Social Media Plan</span>
+                </div>
+              </header>
+            </article>
+          </li>
+          <li>
+            <article class="card notification-card" tabindex="0">
+              <header class="card-header">
+                <article class="badge">
+                  <figure class="avatar avatar-sm square">
+                    <img class="avatar-img" src="./assets/images/Tomioka.jpg" alt="Demo Image">
+                  </figure>
+                  <span class="online"></span>
+                </article>
+
+                <div class="notification">
+                  <p class="notification-message"><strong>Mitsuri</strong> uploaded a pic!</p>
+                  <span class="social-info">4h ago</span>
+                  <span class="social-info seperator">Facebook</span>
+                </div>
+              </header>
+            </article>
+          </li>
+          <li>
+            <article class="card notification-card" tabindex="0">
+              <header class="card-header">
+                <article class="badge">
+                  <figure class="avatar avatar-sm square">
+                    <img class="avatar-img" src="./assets/images/Mitsuri.jpg" alt="Demo Image">
+                  </figure>
+                  <span class="online"></span>
+                </article>
+
+                <div class="notification">
+                  <p class="notification-message"><strong>Tengen Uzui</strong> mentioned you in a post! </p>
+                  <span class="social-info">7h ago</span>
+                  <span class="social-info seperator">Instagram</span>
+                </div>
+              </header>
+            </article>
+          </li>
+        </ul>
+
       </div>
+
+      <div class="code-frame">
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=9px&ph=9px&ln=false&fl=1&fm=Hack&fs=12.5px&lh=148%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522stacked-list%2522%253E%250A%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Carticle%2520class%253D%2522card%2520notification-card%2522%2520tabindex%253D%25220%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cheader%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Carticle%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cfigure%2520class%253D%2522avatar%2520avatar-sm%2520square%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2522%2520src%253D%2522.%252Fassets%252Fimages%252Ftengen.png%2522%2520alt%253D%2522Demo%2520Image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ffigure%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522online%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Farticle%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522notification%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522notification-message%2522%253E%253Cstrong%253ETengen%2520Uzui%253C%252Fstrong%253E%2520joined%2520to%2520%25F0%259F%2594%25A5%2520Final%2520Game%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522social-info%2522%253E2h%2520ago%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522social-info%2520seperator%2522%253ESocial%2520Media%2520Plan%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fheader%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Farticle%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Carticle%2520class%253D%2522card%2520notification-card%2522%2520tabindex%253D%25220%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cheader%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Carticle%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cfigure%2520class%253D%2522avatar%2520avatar-sm%2520square%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2522%2520src%253D%2522.%252Fassets%252Fimages%252FTomioka.jpg%2522%2520alt%253D%2522Demo%2520Image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ffigure%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522online%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Farticle%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522notification%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522notification-message%2522%253E%253Cstrong%253EMitsuri%253C%252Fstrong%253E%2520uploaded%2520a%2520pic%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522social-info%2522%253E4h%2520ago%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522social-info%2520seperator%2522%253EFacebook%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fheader%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Farticle%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%253C%252Ful%253E"
+          style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+      </div>
+
     </section>
 
     <!-- Rating -->

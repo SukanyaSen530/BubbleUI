@@ -141,3 +141,38 @@
 .card.card-overlay:hover .overlay {
   opacity: 1;
 }
+
+/* NOTIFICATION */
+
+.card.notification-card {
+  padding: 0.3rem;
+  transition: background 0.4s ease;
+}
+
+.card.notification-card:hover {
+  background: rgba(245, 232, 206, 0.3);
+}
+
+.card.notification-card .card-header {
+  display: flex;
+  align-items: center;
+}
+
+.card.notification-card .notification {
+  margin-left: 0.3rem;
+}
+
+.card.notification-card .notification-message {
+  font-size: 0.8rem;
+  line-height: 1.1;
+}
+
+.card.notification-card .social-info {
+  color: var(--secondary);
+  font-size: 0.7rem;
+}
+
+.card.notification-card .seperator:before {
+  content: "@";
+  margin: 0 0.1rem;
+}
