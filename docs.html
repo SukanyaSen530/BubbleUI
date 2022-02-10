@@ -120,6 +120,13 @@
         <span class="tooltip">Modal</span>
       </li>
       <li>
+        <a href="#Navbar">
+          <i class="fa-solid fa-compass"></i>
+          <span class="sidebar-link-name">Navbar</span>
+        </a>
+        <span class="tooltip">Navbar</span>
+      </li>
+      <li>
         <a href="#Rating">
           <i class="far fa-star"></i>
           <span class="sidebar-link-name">Rating</span>
@@ -1284,9 +1291,9 @@
       <p class="component-description">Supports 3 colours (Primary, Warning, Secondary). By default it has the default
         colour.</p>
 
-      <div class="component-display">
+      <div class="component-display flex-col flex-center">
 
-        <div class="input-group">
+        <div class=" input-group">
           <label for="full_name" class="input-group-label">Full Name</label>
           <input type="text" name="full_name" id="F]full_name" placeholder="Full Name" class="input-group-input">
         </div>
@@ -1345,7 +1352,7 @@
       <h4 class="h4 component-type">Validation</h4>
       <p class="component-description">Has 2 states - Success & Error</p>
 
-      <div class="component-display">
+      <div class="component-display flex-col flex-center">
 
         <div class="input-group primary error">
           <label for="full_name" class="input-group-label">Full Name</label>
@@ -1583,6 +1590,127 @@
 
     </section>
 
+    <!--------- Navbar ----------->
+
+    <section id="Navbar" class="component-section">
+      <h2 class="section-heading h2">Navbar</h2>
+      <p class="component-description">
+        Navigation bar is used to navigate to diffrent pages of a website.
+      </p>
+
+      <h4 class="h4 component-type">Basic Navbar</h4>
+      <p class="component-description">
+        The items will stack on smaller screens.
+      </p>
+
+      <div class="component-display flex-row flex-center">
+
+        <nav class="navbar">
+          <div class="brand">
+            <!-- Optional -->
+            <img src="./assets/images/logo2.png" alt="" class="brand-icon">
+            <h6 class="h6 brand-name">Ecomm</h6>
+          </div>
+
+          <div class="search-box navbar-search">
+            <i class="fas fa-search search-icon"></i>
+            <input type="search" name="search" id="search" class="search-bar" placeholder="Search for products">
+          </div>
+
+          <ul class="nav-links">
+            <button class="btn-icon">
+              <i class="fa-solid fa-user"></i>
+            </button>
+
+            <button class="btn-float btn-sm badge">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span class="badge-count danger">3</span>
+            </button>
+
+            <button class="btn-float default btn-sm badge">
+              <i class="fa-solid fa-hand-holding-heart"></i>
+              <span class="badge-count danger">1</span>
+            </button>
+          </ul>
+        </nav>
+
+      </div>
+
+      <div class="code-frame">
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=9px&ph=9px&ln=false&fl=1&fm=Hack&fs=12.5px&lh=148%25&si=false&es=2x&wm=false&code=%253Cnav%2520class%253D%2522navbar%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522brand%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Optional%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fassets%252Fimages%252Flogo2.png%2522%2520alt%253D%2522%2522%2520class%253D%2522brand-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch6%2520class%253D%2522h6%2520brand-name%2522%253EEcomm%253C%252Fh6%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522search-box%2520navbar-search%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-search%2520search-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522search%2522%2520name%253D%2522search%2522%2520id%253D%2522search%2522%2520class%253D%2522search-bar%2522%2520placeholder%253D%2522Search%2520for%2520products%2522%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cul%2520class%253D%2522nav-links%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-user%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-float%2520btn-sm%2520badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-cart-shopping%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-count%2520danger%2522%253E3%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-float%2520default%2520btn-sm%2520badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-hand-holding-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-count%2520danger%2522%253E1%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Ful%253E%250A%253C%252Fnav%253E"
+          style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+      </div>
+
+
+      <h4 class="h4 component-type">Navbar with Hamburger Icon</h4>
+      <p class="component-description">You need to add JS for this navbar.</p>
+
+      <div class="component-display flex-row flex-center">
+
+        <nav class="navbar navbar-resp">
+          <section class="navbar-toggle-section">
+
+            <div class="brand">
+              <!-- Optional -->
+              <img src="./assets/images/logo2.png" alt="" class="brand-icon">
+              <h6 class="h6 brand-name">Ecomm</h6>
+            </div>
+
+            <button class="navbar-toggle-btn" id="navbar-res-hamburger"><i class="fa-solid fa-bars"></i></button>
+
+          </section>
+
+
+          <div class="search-box navbar-search">
+            <i class="fas fa-search search-icon"></i>
+            <input type="search" name="search" id="search" class="search-bar" placeholder="Search for products">
+          </div>
+
+          <ul class="nav-links">
+            <button class="btn-icon">
+              <i class="fa-solid fa-user"></i>
+            </button>
+
+            <button class="btn-float btn-sm badge">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span class="badge-count danger">3</span>
+            </button>
+
+            <button class="btn-float default btn-sm badge">
+              <i class="fa-solid fa-hand-holding-heart"></i>
+              <span class="badge-count danger">1</span>
+            </button>
+
+            <button class="btn-icon secondaryLight btn-sm badge">
+              <i class="fa-solid fa-right-from-bracket"></i>
+            </button>
+          </ul>
+        </nav>
+
+      </div>
+
+      <div class="code-frame">
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=9px&ph=9px&ln=false&fl=1&fm=Hack&fs=12.5px&lh=148%25&si=false&es=2x&wm=false&code=%253Cnav%2520class%253D%2522navbar%2520navbar-resp%2522%253E%250A%2520%2520%2520%2520%253Csection%2520class%253D%2522navbar-toggle-section%2522%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522brand%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Optional%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fassets%252Fimages%252Flogo2.png%2522%2520alt%253D%2522%2522%2520class%253D%2522brand-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch6%2520class%253D%2522h6%2520brand-name%2522%253EEcomm%253C%252Fh6%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522navbar-toggle-btn%2522%2520id%253D%2522navbar-res-hamburger%2522%253E%253Ci%2520class%253D%2522fa-solid%2520fa-bars%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%253C%252Fsection%253E%250A%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522search-box%2520navbar-search%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-search%2520search-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522search%2522%2520name%253D%2522search%2522%2520id%253D%2522search%2522%2520class%253D%2522search-bar%2522%2520placeholder%253D%2522Search%2520for%2520products%2522%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cul%2520class%253D%2522nav-links%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-user%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-float%2520btn-sm%2520badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-cart-shopping%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-count%2520danger%2522%253E3%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-float%2520default%2520btn-sm%2520badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-hand-holding-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-count%2520danger%2522%253E1%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-icon%2520secondaryLight%2520btn-sm%2520badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-right-from-bracket%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Ful%253E%250A%253C%252Fnav%253E"
+          style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+      </div>
+
+      <div class="code-frame">
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=9px&ph=9px&ln=false&fl=1&fm=Hack&fs=12.5px&lh=148%25&si=false&es=2x&wm=false&code=%252F%252FGet%2520the%2520Hamburger%2520Icon%2520Button%250Aconst%2520resposiveNavbarHamburger%2520%253D%2520document.querySelector%28%250A%2520%2520%2522%2523navbar-res-hamburger%2522%250A%29%253B%250A%250A%252F%252FGet%2520the%2520Navbar%250Aconst%2520navbarResponsive%2520%253D%2520document.querySelector%28%2522.navbar.navbar-resp%2522%29%253B%250A%250A%250AresposiveNavbarHamburger.addEventListener%28%2522click%2522%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520navbarResponsive.classList.toggle%28%2522active%2522%29%253B%250A%257D%29%253B"
+          style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+      </div>
+
+    </section>
+
+
     <!--------- Rating ----------->
 
     <section id="Rating" class="component-section">
@@ -1606,7 +1734,8 @@
       </div>
 
       <h4 class="h4 component-type">Average Rating</h4>
-      <p class="component-description">For this you don't need to add any icon. Just add the class and it will add the
+      <p class="component-description">For this you don't need to add any icon. Just add the class and it will add
+        the
         star.</p>
       <p>Class : <span class="code-highlight">single-star-rating</span></p>
 

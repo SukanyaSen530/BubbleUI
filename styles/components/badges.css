@@ -52,6 +52,11 @@
   font-size: 0.7rem;
 }
 
+.badge.btn-icon .badge-count,
+.badge.btn-float .badge-count {
+  right: -10px;
+}
+
 /* Text Badge */
 
 .text-badge {
