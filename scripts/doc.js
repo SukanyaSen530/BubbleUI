@@ -18,3 +18,14 @@ demoAlertCloseBtn.addEventListener("click", () => {
 showAlert.addEventListener("click", () => {
   demoAlert.style.visibility = "visible";
 });
+
+// DEMO FOR NAVBAR
+
+const resposiveNavbarHamburger = document.querySelector(
+  "#navbar-res-hamburger"
+);
+const navbarResponsive = document.querySelector(".navbar.navbar-resp");
+resposiveNavbarHamburger.addEventListener("click", () => {
+  console.log(navbarResponsive);
+  navbarResponsive.classList.toggle("active");
+});
