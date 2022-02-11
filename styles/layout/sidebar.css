@@ -4,7 +4,7 @@
   left: 0;
   height: 100%;
   width: var(--spacing-13);
-  background-color: var(--default);
+  background-color: var(--defaultDark);
   transition: all 0.5s ease;
   overflow-x: hidden;
   overflow-y: auto;
@@ -63,7 +63,7 @@
   height: var(--spacing-06);
   margin: var(--spacing-05) 0;
   width: 90%;
-  color: rgb(152, 162, 170);
+  color: rgb(210, 216, 221);
   border-radius: 5px;
 }
 

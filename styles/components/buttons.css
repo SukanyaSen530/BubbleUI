@@ -17,41 +17,114 @@ a.btn {
   box-shadow: none;
 }
 
-/* CONTAIN VARIANTS */
+/* CONTAIN VARIANTS HOVER STATES */
+
 .btn.btn-contained:hover {
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
     rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
     rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
 
+.btn.btn-contained.primaryLight:hover {
+  background-color: var(--blue-300);
+}
+
+.btn.btn-contained.primary:hover {
+  background-color: var(--blue-600);
+}
+
+.btn.btn-contained.primaryDark:hover {
+  background-color: var(--blue-900);
+}
+
+.btn.btn-contained.dangerLight:hover {
+  background-color: var(--red-300);
+}
+
+.btn.btn-contained.danger:hover {
+  background-color: var(--red-600);
+}
+
+.btn.btn-contained.dangerDark:hover {
+  background-color: var(--red-900);
+}
+
+.btn.btn-contained.warningLight:hover {
+  background-color: var(--amber-300);
+}
+
+.btn.btn-contained.warning:hover {
+  background-color: var(--amber-500);
+}
+
+.btn.btn-contained.warningDark:hover {
+  background-color: var(--amber-900);
+}
+
+.btn.btn-contained.successLight:hover {
+  background-color: var(--green-300);
+}
+
+.btn.btn-contained.success:hover {
+  background-color: var(--green-600);
+}
+
+.btn.btn-contained.successDark:hover {
+  background-color: var(--green-900);
+}
+
+.btn.btn-contained.infoLight:hover {
+  background-color: var(--cyan-300);
+}
+
+.btn.btn-contained.info:hover {
+  background-color: var(--cyan-500);
+}
+
+.btn.btn-contained.infoDark:hover {
+  background-color: var(--cyan-900);
+}
+
+.btn.btn-contained.secondaryLight:hover {
+  background-color: var(--grey-300);
+}
+
+.btn.btn-contained.secondary:hover {
+  background-color: var(--grey-500);
+}
+
+.btn.btn-contained.secondaryDark:hover {
+  background-color: var(--grey-900);
+}
+
 /* OUTLINE VARIANTS */
 
 .btn.btn-success-outline {
-  border: 1px solid var(--successDark);
+  border: 1.5px solid var(--successDark);
   color: var(--successDark);
   background-color: var(--light);
 }
 
 .btn.btn-warning-outline {
-  border: 1px solid var(--warning);
+  border: 1.5px solid var(--warning);
   color: var(--warningDark);
   background-color: var(--light);
 }
 
 .btn.btn-info-outline {
-  border: 1px solid var(--infoDark);
+  border: 1.5px solid var(--infoDark);
   color: var(--infoDark);
   background-color: var(--light);
 }
 
 .btn.btn-error-outline {
-  border: 1px solid var(--dangerDark);
-  color: var(--dangerDark);
+  border: 1.5px solid var(--dangerDark);
+  color: var(--danger);
   background-color: var(--light);
 }
 
 .btn.btn-default-outline {
-  border: 1px solid var(--default);
+  border: 1.5px solid var(--default);
   color: var(--default);
   background-color: var(--light);
 }
