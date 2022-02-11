@@ -1,20 +1,49 @@
 .star-rating-container {
-  display: flex;
-  border: 1px solid var(--secondaryLight);
+  border: transparent;
   display: inline-block;
-  padding: 0.2rem;
+  padding: 0.4rem;
   border-radius: var(--border-radius-sm);
+  transform: rotateY(180deg);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
-.star-rating-container > i {
-  margin: 0 0.2rem;
-  color: var(--warning);
+.star-rating-container .rating-radio {
+  display: none;
 }
 
-.star-rating-container > i:hover {
-  color: var(--warning);
-  font-weight: 700;
+.star-rating-container label {
+  display: inline-flex;
+  cursor: pointer;
+  width: 1.1rem;
 }
+
+.star-rating-container label:before {
+  content: "\f005";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  font-size: 1.1rem;
+  position: relative;
+}
+
+.star-rating-container label:after {
+  content: "\f005";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  font-size: 1.1rem;
+  color: var(--warning);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.star-rating-container label:hover:after,
+.star-rating-container label:hover ~ label:after,
+.star-rating-container .rating-radio:checked ~ label:after {
+  opacity: 1;
+}
+
+/* SINGLE */
 
 .single-star-rating {
   background: var(--success);
