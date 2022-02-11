@@ -107,6 +107,13 @@
   font-size: 0.8rem;
 }
 
+.grid-item {
+  background-color: rgb(250, 119, 141);
+  color: white;
+  text-align: center;
+  padding: 0.2rem;
+}
+
 @media only screen and (max-width: 700px) {
   .component-display {
     margin: var(--spacing-06) auto;
