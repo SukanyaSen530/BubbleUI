@@ -25,95 +25,128 @@ a.btn {
     rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
 
-.btn.btn-contained.primaryLight:hover {
+.btn.btn-contained.primaryLight:hover,
+.btn-icon.primaryLight:hover {
   background-color: var(--blue-300);
 }
 
-.btn.btn-contained.primary:hover {
+.btn.btn-contained.primary:hover,
+.btn-icon.primary:hover {
   background-color: var(--blue-600);
 }
 
-.btn.btn-contained.primaryDark:hover {
+.btn.btn-contained.primaryDark:hover,
+.btn-icon.primaryDark:hover {
   background-color: var(--blue-900);
 }
 
-.btn.btn-contained.dangerLight:hover {
+.btn.btn-contained.dangerLight:hover,
+.btn-icon.dangerLight:hover {
   background-color: var(--red-300);
 }
 
-.btn.btn-contained.danger:hover {
+.btn.btn-contained.danger:hover,
+.btn-icon.danger:hover {
   background-color: var(--red-600);
 }
 
-.btn.btn-contained.dangerDark:hover {
+.btn.btn-contained.dangerDark:hover,
+.btn-icon.dangerDark:hover {
   background-color: var(--red-900);
 }
 
-.btn.btn-contained.warningLight:hover {
+.btn.btn-contained.warningLight:hover,
+.btn-icon.warningLight:hover {
   background-color: var(--amber-300);
 }
 
-.btn.btn-contained.warning:hover {
+.btn.btn-contained.warning:hover,
+.btn-icon.warning:hover {
   background-color: var(--amber-500);
 }
 
-.btn.btn-contained.warningDark:hover {
+.btn.btn-contained.warningDark:hover,
+.btn-icon.warningDark:hover {
   background-color: var(--amber-900);
 }
 
-.btn.btn-contained.successLight:hover {
+.btn.btn-contained.successLight:hover,
+.btn-icon.successLight:hover {
   background-color: var(--green-300);
 }
 
-.btn.btn-contained.success:hover {
+.btn.btn-contained.success:hover,
+.btn-icon.success:hover {
   background-color: var(--green-600);
 }
 
-.btn.btn-contained.successDark:hover {
+.btn.btn-contained.successDark:hover,
+.btn-icon.successDark:hover {
   background-color: var(--green-900);
 }
 
-.btn.btn-contained.infoLight:hover {
+.btn.btn-contained.infoLight:hover,
+.btn-icon.infoLight:hover {
   background-color: var(--cyan-300);
 }
 
-.btn.btn-contained.info:hover {
+.btn.btn-contained.info:hover,
+.btn-icon.info:hover {
   background-color: var(--cyan-500);
 }
 
-.btn.btn-contained.infoDark:hover {
+.btn.btn-contained.infoDark:hover,
+.btn-icon.infoDark:hover {
   background-color: var(--cyan-900);
 }
 
-.btn.btn-contained.secondaryLight:hover {
+.btn.btn-contained.secondaryLight:hover,
+.btn-icon.secondaryLight:hover {
   background-color: var(--grey-300);
 }
 
-.btn.btn-contained.secondary:hover {
+.btn.btn-contained.secondary:hover,
+.btn-icon.secondary:hover {
   background-color: var(--grey-500);
 }
 
-.btn.btn-contained.secondaryDark:hover {
+.btn.btn-contained.secondaryDark:hover,
+.btn-icon.secondaryDark:hover {
   background-color: var(--grey-900);
+}
+
+.btn.btn-contained.defaultLight:hover,
+.btn-icon.defaultLight:hover {
+  background-color: var(--purple-300);
+}
+
+.btn.btn-contained.default:hover,
+.btn-icon.default:hover {
+  background-color: var(--purple-600);
+}
+
+.btn.btn-contained.defaultDark:hover,
+.btn-icon.defaultDark:hover {
+  background-color: var(--purple-1000);
 }
 
 /* OUTLINE VARIANTS */
 
 .btn.btn-success-outline {
   border: 1.5px solid var(--successDark);
-  color: var(--successDark);
+  color: var(--success);
   background-color: var(--light);
 }
 
 .btn.btn-warning-outline {
-  border: 1.5px solid var(--warning);
-  color: var(--warningDark);
+  border: 1.5px solid var(--warningDark);
+  color: var(--warning);
   background-color: var(--light);
 }
 
 .btn.btn-info-outline {
   border: 1.5px solid var(--infoDark);
-  color: var(--infoDark);
+  color: var(--info);
   background-color: var(--light);
 }
 
@@ -124,13 +157,13 @@ a.btn {
 }
 
 .btn.btn-default-outline {
-  border: 1.5px solid var(--default);
+  border: 1.5px solid var(--defaultDark);
   color: var(--default);
   background-color: var(--light);
 }
 
 .btn.btn-success-outline:hover {
-  background: var(--successDark);
+  background: var(--success);
   color: var(--light);
 }
 
@@ -140,12 +173,12 @@ a.btn {
 }
 
 .btn.btn-info-outline:hover {
-  background: var(--infoDark);
+  background: var(--info);
   color: var(--light);
 }
 
 .btn.btn-error-outline:hover {
-  background: var(--dangerDark);
+  background: var(--danger);
   color: var(--light);
 }
 
@@ -184,7 +217,7 @@ a.btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition: box-shadow 0.25s ease;
+  transition: all 0.25s ease;
 }
 
 .btn-float {
