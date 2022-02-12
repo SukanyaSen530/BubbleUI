@@ -1,8 +1,10 @@
 .navbar {
   width: 100%;
+  background-color: var(--light-default);
   padding: 0.4rem;
   display: flex;
   align-items: center;
+  color: var(--light);
   justify-content: space-between;
   height: 60px;
   border-radius: 0 0 var(--border-radius-sm) var(--border-radius-sm);

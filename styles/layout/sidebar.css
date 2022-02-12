@@ -4,7 +4,7 @@
   left: 0;
   height: 100%;
   width: var(--spacing-13);
-  background-color: var(--grey-600);
+  background-color: var(--defaultDark);
   transition: all 0.5s ease;
   overflow-x: hidden;
   overflow-y: auto;
@@ -12,60 +12,56 @@
 }
 
 .sidebar.active {
-  width: 4.5rem;
-  padding: 0.5rem;
-}
-
-.sidebar .logo {
-  height: var(--spacing-10);
+  width: 4.8rem;
 }
 
 .sidebar.active .logo {
   display: none;
 }
 
-.sidebar .logo-container {
+.logo-container {
   justify-content: space-evenly;
   align-items: center;
 }
 
 .sidebar.active .logo-container {
   justify-content: center;
-  gap: 0;
 }
 
-.sidebar #hamburger-btn {
-  color: var(--light);
+.logo-container .logo {
+  height: var(--spacing-08);
+}
+
+.logo-container #hamburger-btn {
+  color: white;
   font-size: 1.1rem;
   padding: var(--spacing-04);
   border-radius: 5px;
   transition: all 0.4s ease-in-out;
 }
 
-.sidebar #hamburger-btn:hover {
+.logo-container #hamburger-btn:hover {
   background: rgba(255, 255, 255, 0.2);
-}
-
-.sidebar.active #hamburger-btn {
-  margin-top: 1rem;
-}
-
-.sidebar.active.hide #hamburger-btn {
-  display: none;
 }
 
 .sidebar .menu-list {
   margin-top: var(--spacing-05);
 }
 
+.sidebar.active .menu-list {
+  margin-top: var(--spacing-07);
+}
+
 .sidebar .menu-list li {
   margin-top: var(--spacing-03);
+  width: 100%;
   cursor: pointer;
 }
 
 .sidebar .menu-list .sidebar-link-heading {
   border-bottom: 1px solid white;
   height: var(--spacing-06);
+  margin: var(--spacing-05) 0;
   width: 90%;
   color: rgb(210, 216, 221);
   border-radius: 5px;
@@ -78,6 +74,7 @@
 .sidebar .menu-list li a {
   display: flex;
   align-items: center;
+  width: 100%;
   border-radius: 5px;
   color: whitesmoke;
   transition: all 0.4s ease;
@@ -106,13 +103,13 @@
   font-size: 0.8rem;
   width: 80px;
   left: var(--spacing-02);
-  top: 4rem;
+  top: 4.1rem;
   transform: translateY(-50%);
   border-radius: 5px;
   line-height: var(--spacing-06);
   padding: 0.3rem;
   text-align: center;
-  background-color: var(--purple-800);
+  background-color: var(--slate-500);
   color: white;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   opacity: 0;
@@ -121,14 +118,14 @@
 }
 
 .sidebar.active .menu-list li:hover .tooltip {
-  top: 4rem;
+  top: 4.1rem;
   opacity: 1;
   transition: all 0.5s ease;
 }
 
 .sidebar.active ~ .docs-content {
-  width: calc(100% - 4.5rem);
-  left: 4.5rem;
+  width: calc(100% - 4.8rem);
+  left: 4.8rem;
 }
 
 .sidebar::-webkit-scrollbar {
@@ -136,7 +133,7 @@
 }
 
 .sidebar::-webkit-scrollbar-track {
-  background: var(--grey-700);
+  background: var(--default);
 }
 
 .sidebar::-webkit-scrollbar-thumb {

@@ -1,45 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Comforter&display=swap");
+
 /* Common */
 @import url(../core/utilities.css);
 @import url(../core/variable.css);
 
+/* Spacing */
+@import url(../components/componentvariables.css);
+
+/* Reset */
+@import url(../components/componentReset.css);
+
 /* Layout */
 @import url(../layout/header.css);
 
-/* Components */
-@import url(../components/index.css);
-
 body {
   position: relative;
-  background-color: var(--purple-100);
+  color: rgb(96, 108, 118);
 }
 
 .landing-page {
-  height: calc(100vh - 64px);
+  height: 90vh;
 }
 
-.landing-page:before {
-  content: " ";
-  display: block;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 80%;
-  opacity: 0.2;
-  background-image: url(../../assets/svgs/landing_page_img.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  z-index: -1;
+.landing-page-logo {
+  height: var(--spacing-11);
+}
+
+.landing-page-brand-name {
+  font-size: var(--spacing-07);
+  font-weight: 200;
+  color: var(--default);
 }
 
 .landing-page-content {
-  font-size: 2.5rem;
-  line-height: 2.5rem;
-  font-weight: 700;
+  font-size: 0.9rem;
+  text-align: justify;
   margin: var(--spacing-07) 0;
-  color: var(--grey-600);
-}
-
-.text-emphasis {
-  color: var(--purple-1000);
 }

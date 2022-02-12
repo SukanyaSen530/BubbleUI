@@ -29,6 +29,19 @@
   margin: auto;
 }
 
+.default-btn {
+  border: transparent;
+  padding: 0.3rem var(--spacing-06);
+  border-radius: var(--border-radius-sm);
+  background-color: var(--default);
+  color: white;
+}
+
+.default-btn:hover {
+  background-color: var(--light-default);
+  transition: 0.5s all;
+}
+
 .center {
   margin: 0.5rem 0;
   text-align: center;
