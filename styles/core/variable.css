@@ -2,7 +2,8 @@
   /* color pallet */
 
   /* CTA for Application */
-  --light-default: rgb(37, 78, 110);
-  --default: rgb(25, 55, 77);
-  --dark-default: rgb(13, 30, 41);
+  --purple-200: #dac3e8;
+  --purple-400: #c19ee0;
+  --purple-700: #9163cb;
+  --purple-800: #815ac0;
 }

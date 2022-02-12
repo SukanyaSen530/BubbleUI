@@ -15,7 +15,7 @@
 
 body {
   position: relative;
-  color: rgb(96, 108, 118);
+  background-color: var(--defaultLight);
 }
 
 .landing-page {

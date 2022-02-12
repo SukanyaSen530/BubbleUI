@@ -27,11 +27,17 @@
 
 .page-navbar-options li {
   padding: 0 var(--spacing-03);
+  font-size: 2rem;
+  color: var(--default);
+  transition: 0.5s color;
 }
 
-.page-navbar-options li:hover {
+.page-navbar-options li > a:active {
+  color: var(--purple-800);
+}
+
+.page-navbar-options li > a:visited {
   color: var(--default);
-  cursor: pointer;
 }
 
 .page-navbar-options li a:visited {

@@ -47,6 +47,7 @@
 
 .component-type {
   margin-bottom: 0.8rem;
+  color: var(--purple-600);
 }
 
 .pallete {
