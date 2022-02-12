@@ -21,7 +21,7 @@
 .page-navbar-options li > a:link {
   padding: 0 var(--spacing-03);
   font-size: 2rem;
-  color: var(--purple-500);
+  color: var(--default);
   transition: 0.5s color;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .page-navbar-options li > a:visited {
-  color: var(--purple-500);
+  color: var(--default);
 }
 
 .page-navbar-options li > a:hover {

@@ -10,7 +10,7 @@
 
 body {
   position: relative;
-  background-color: var(--purple-100);
+  background-color: var(--defaultLight);
 }
 
 .landing-page {
