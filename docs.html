@@ -13,11 +13,11 @@
 
 <body>
   <!-- SIDEBAR -->
-  <aside class="sidebar active" id="sidebar">
+  <aside class="sidebar" id="sidebar">
     <div class="logo-container flex-row">
 
       <a href="./index.html">
-        <img class="logo" src="assets/images/logo2.png" alt="Bubble UI Logo" />
+        <img class="logo" src="./assets/images/logo.png" alt="Bubble UI Logo" />
       </a>
 
       <span id="hamburger-btn"> <i class="fas fa-bars"></i> </span>
@@ -161,8 +161,6 @@
 
       <div class="code-frame">
         <!-- Change when real CDN generated, testing IFRAME -->
-
-        </iframe>
       </div>
 
       <section id="Colors" class="component-section">
@@ -600,10 +598,16 @@
             </button>
           </article>
 
-          <footer class="center">
+          <<<<<<< HEAD <footer class="center">
             <button class="btn btn-contained btn-sm primary" id="alert-demo-undoBtn">Bring Back Alert</button>
-          </footer>
+            </footer>
         </div>
+        =======
+        <footer class="center">
+          <button class="btn btn-contained btn-sm primary" id="alert-demo-undoBtn">Bring Back Alert</button>
+        </footer>
+        </div>
+        >>>>>>> ee63e20 (refactor - docs page)
 
         <div class="code-frame">
           <iframe
@@ -787,98 +791,104 @@
           </a>
         </div>
 
-        <h4 class="h4 component-type">Icon Buttons</h4>
-        <p class="component-description">Available both for button and link element.</p>
-        </p>
-        <p> Class: <span class="code-highlight">btn-icon</span>.</p>
+        <<<<<<< HEAD <h4 class="h4 component-type">Icon Buttons</h4>
+          <p class="component-description">Available both for button and link element.</p>
+          </p>
+          <p> Class: <span class="code-highlight">btn-icon</span>.</p>
+          =======
+          <div class="component-display flex-row flex-center">
+            <a class="btn-icon default">
+              <i class="fas fa-headset"></i>
+            </a>
+            >>>>>>> ee63e20 (refactor - docs page)
 
-        <div class="component-display flex-row flex-center">
-          <a class="btn-icon default">
-            <i class="fas fa-headset"></i>
-          </a>
+            <div class="component-display flex-row flex-center">
+              <a class="btn-icon default">
+                <i class="fas fa-headset"></i>
+              </a>
 
-          <button class="btn-icon danger">
-            <i class="fas fa-cloud-download-alt"></i>
-          </button>
-        </div>
+              <button class="btn-icon danger">
+                <i class="fas fa-cloud-download-alt"></i>
+              </button>
+            </div>
 
-        <h4 class="h4 component-type">Floating Action Button</h4>
-        <p class="component-description">Available both for button and link element.</p>
-        <p> Class: <span class="code-highlight">btn-float</span>.</p>
+            <h4 class="h4 component-type">Floating Action Button</h4>
+            <p class="component-description">Available both for button and link element.</p>
+            <p> Class: <span class="code-highlight">btn-float</span>.</p>
 
-        <div class="component-display flex-row flex-center">
-          <button class="btn-float secondary">
-            -
-          </button>
+            <div class="component-display flex-row flex-center">
+              <button class="btn-float secondary">
+                -
+              </button>
 
-          <a class="btn-float primaryLight">
-            +
-          </a>
-        </div>
+              <a class="btn-float primaryLight">
+                +
+              </a>
+            </div>
 
-        <h4 class="h4 component-type">Button with Icons</h4>
-        <p class="component-description">Add font awesome icons inside button element. Available both for button and
-          link
-          element.</p>
-        <p> Classes: <span class="code-highlight">btn</span> (common),
-          <span class="code-highlight">btn-contained</span>.</p>
+            <h4 class="h4 component-type">Button with Icons</h4>
+            <p class="component-description">Add font awesome icons inside button element. Available both for button and
+              link
+              element.</p>
+            <p> Classes: <span class="code-highlight">btn</span> (common),
+              <span class="code-highlight">btn-contained</span>.</p>
 
-        <div class="component-display flex-row flex-center flex-wrap">
-          <button class="btn btn-contained secondary">
-            <i class="fab fa-android"></i>
-            Click Me!
-          </button>
+            <div class="component-display flex-row flex-center flex-wrap">
+              <button class="btn btn-contained secondary">
+                <i class="fab fa-android"></i>
+                Click Me!
+              </button>
 
-          <a class="btn btn-contained secondaryDark">
-            <i class="fas fa-cart-plus"></i>
-            Click Me!
-          </a>
+              <a class="btn btn-contained secondaryDark">
+                <i class="fas fa-cart-plus"></i>
+                Click Me!
+              </a>
 
-          <a class="btn btn-contained secondaryLight">
-            <i class="fa-brands fa-amazon-pay"></i> Pay
-          </a>
-        </div>
+              <a class="btn btn-contained secondaryLight">
+                <i class="fa-brands fa-amazon-pay"></i> Pay
+              </a>
+            </div>
 
-        <h4 class="h4 component-type">Block Buttons</h4>
-        <p class="component-description">Takes full width of container. Generally used in forms.</p>
-        <p> Classes: <span class="code-highlight">btn</span> (common),
-          <span class="code-highlight">block-btn</span>.</p>
+            <h4 class="h4 component-type">Block Buttons</h4>
+            <p class="component-description">Takes full width of container. Generally used in forms.</p>
+            <p> Classes: <span class="code-highlight">btn</span> (common),
+              <span class="code-highlight">block-btn</span>.</p>
 
-        <div class="component-display flex-row flex-center">
-          <button class="btn block-btn btn-contained success">
-            Block Button
-          </button>
-        </div>
+            <div class="component-display flex-row flex-center">
+              <button class="btn block-btn btn-contained success">
+                Block Button
+              </button>
+            </div>
 
-        <h4 class="h4 component-type">Different Sizes</h4>
-        <p class="component-description">Three sizes are available.</p>
-        <p> Classes: <span class="code-highlight">btn</span> (common),
-          <span class="code-highlight">btn-sm</span>, <span class="code-highlight">btn-md</span>, <span
-            class="code-highlight">btn-lg</span>.
-        </p>
+            <h4 class="h4 component-type">Different Sizes</h4>
+            <p class="component-description">Three sizes are available.</p>
+            <p> Classes: <span class="code-highlight">btn</span> (common),
+              <span class="code-highlight">btn-sm</span>, <span class="code-highlight">btn-md</span>, <span
+                class="code-highlight">btn-lg</span>.
+            </p>
 
 
-        <div class="component-display flex-row flex-center flex-wrap">
-          <button class="btn btn-sm btn-contained primary">
-            Small
-          </button>
+            <div class="component-display flex-row flex-center flex-wrap">
+              <button class="btn btn-sm btn-contained primary">
+                Small
+              </button>
 
-          <button class="btn btn-md btn-contained danger">
-            Medium
-          </button>
+              <button class="btn btn-md btn-contained danger">
+                Medium
+              </button>
 
-          <button class="btn btn-lg btn-contained warning">
-            Large
-          </button>
-        </div>
+              <button class="btn btn-lg btn-contained warning">
+                Large
+              </button>
+            </div>
 
-        <div class="code-frame">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=9px&ph=9px&ln=false&fl=1&fm=Hack&fs=12.5px&lh=148%25&si=false&es=2x&wm=false&code=%253C%21--%2520Contained%2520Buttons%2520%2520%2520--%253E%250A%250A%2520%253Cbutton%2520class%253D%2522btn%2520btn-contained%2520default%2522%253E%250A%2520%2520%2520%2520%2520Button%250A%2520%253C%252Fbutton%253E%250A%250A%2520%253Ca%2520class%253D%2522btn%2520btn-contained%2520warning%2522%253E%250A%2520%2520%2520%2520%2520Link%250A%2520%253C%252Fa%253E%250A%250A%2520%253Ca%2520class%253D%2522btn%2520btn-contained%2520warning%2522%2520disabled%253E%250A%2520%2520%2520%2520%2520Link%2520Disabled%250A%2520%253C%252Fa%253E%250A%250A%2520%253C%21--%2520Outline%2520Buttons%2520--%253E%250A%250A%2520%253Cbutton%2520class%253D%2522btn%2520btn-success-outline%2522%253E%250A%2520%2520%2520%2520%2520Button%250A%2520%253C%252Fbutton%253E%250A%250A%2520%253Cbutton%2520class%253D%2522btn%2520btn-warning-outline%2522%253E%250A%2520%2520%2520%2520%2520Button%250A%2520%253C%252Fbutton%253E%250A%250A%2520%253Cbutton%2520class%253D%2522btn%2520btn-default-outline%2522%253E%250A%2520%2520%2520%2520%2520Button%250A%2520%253C%252Fbutton%253E%250A%250A%2520%253Ca%2520class%253D%2522btn%2520btn-error-outline%2522%253E%250A%2520%2520%2520%2520%2520Link%250A%2520%253C%252Fa%253E%250A%250A%2520%253Ca%2520class%253D%2522btn%2520btn-info-outline%2522%253E%250A%2520%2520%2520%2520%2520Link%250A%2520%253C%252Fa%253E%250A%250A%2520%253C%21--%2520Link%2520--%253E%250A%250A%2520%253Ca%2520class%253D%2522btn-link%2522%253E%250A%2520%2520%2520%2520%2520Link%250A%2520%253C%252Fa%253E%250A%250A%250A%2520%253C%21--%2520Icon%2520Button%2520--%253E%250A%250A%2520%253Ca%2520class%253D%2522btn-icon%2520primary%2522%253E%250A%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-headset%2522%253E%253C%252Fi%253E%250A%2520%253C%252Fa%253E%250A%250A%2520%253Cbutton%2520class%253D%2522btn-icon%2520danger%2522%253E%250A%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-cloud-download-alt%2522%253E%253C%252Fi%253E%250A%2520%253C%252Fbutton%253E%250A%250A%2520%253C%21--%2520Floating%2520Action%2520Button%2520--%253E%250A%250A%2520%253Cbutton%2520class%253D%2522btn-float%2520secondary%2522%253E%250A%2520%2520%2520%2520%2520-%250A%2520%253C%252Fbutton%253E%250A%250A%2520%253Ca%2520class%253D%2522btn-float%2520primaryLight%2522%253E%250A%2520%2520%2520%2520%2520%252B%250A%2520%253C%252Fa%253E%250A%250A%2520%253C%21--%2520Button%2520with%2520Icons%2520--%253E%250A%250A%2520%253Cbutton%2520class%253D%2522btn%2520btn-contained%2520primary%2522%253E%250A%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fab%2520fa-android%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520Click%2520Me%21%250A%2520%253C%252Fbutton%253E%250A%250A%2520%253Ca%2520class%253D%2522btn%2520btn-contained%2520primaryLight%2522%253E%250A%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-cart-plus%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520Click%2520Me%21%250A%2520%253C%252Fa%253E%250A%250A%2520%253C%21--%2520Block%2520Buttons%2520--%253E%250A%250A%2520%253Cbutton%2520class%253D%2522btn%2520block-btn%2520btn-contained%2520success%2522%253E%250A%2520%2520%2520%2520%2520Block%2520Button%250A%2520%253C%252Fbutton%253E%250A%250A%2520%253C%21--%2520Different%2520Sizes%2520--%253E%250A%250A%2520%253Cbutton%2520class%253D%2522btn%2520btn-sm%2520btn-contained%2520primary%2522%253E%250A%2520%2520%2520%2520%2520Small%250A%2520%253C%252Fbutton%253E%250A%250A%2520%253Cbutton%2520class%253D%2522btn%2520btn-md%2520btn-contained%2520danger%2522%253E%250A%2520%2520%2520%2520%2520Medium%250A%2520%253C%252Fbutton%253E%250A%250A%2520%253Cbutton%2520class%253D%2522btn%2520btn-lg%2520btn-contained%2520warning%2522%253E%250A%2520%2520%2520%2520%2520Large%250A%2520%253C%252Fbutton%253E"
-            style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
-            sandbox="allow-scripts allow-same-origin">
-          </iframe>
-        </div>
+            <div class="code-frame">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=9px&ph=9px&ln=false&fl=1&fm=Hack&fs=12.5px&lh=148%25&si=false&es=2x&wm=false&code=%253C%21--%2520Contained%2520Buttons%2520%2520%2520--%253E%250A%250A%2520%253Cbutton%2520class%253D%2522btn%2520btn-contained%2520default%2522%253E%250A%2520%2520%2520%2520%2520Button%250A%2520%253C%252Fbutton%253E%250A%250A%2520%253Ca%2520class%253D%2522btn%2520btn-contained%2520warning%2522%253E%250A%2520%2520%2520%2520%2520Link%250A%2520%253C%252Fa%253E%250A%250A%2520%253Ca%2520class%253D%2522btn%2520btn-contained%2520warning%2522%2520disabled%253E%250A%2520%2520%2520%2520%2520Link%2520Disabled%250A%2520%253C%252Fa%253E%250A%250A%2520%253C%21--%2520Outline%2520Buttons%2520--%253E%250A%250A%2520%253Cbutton%2520class%253D%2522btn%2520btn-success-outline%2522%253E%250A%2520%2520%2520%2520%2520Button%250A%2520%253C%252Fbutton%253E%250A%250A%2520%253Cbutton%2520class%253D%2522btn%2520btn-warning-outline%2522%253E%250A%2520%2520%2520%2520%2520Button%250A%2520%253C%252Fbutton%253E%250A%250A%2520%253Cbutton%2520class%253D%2522btn%2520btn-default-outline%2522%253E%250A%2520%2520%2520%2520%2520Button%250A%2520%253C%252Fbutton%253E%250A%250A%2520%253Ca%2520class%253D%2522btn%2520btn-error-outline%2522%253E%250A%2520%2520%2520%2520%2520Link%250A%2520%253C%252Fa%253E%250A%250A%2520%253Ca%2520class%253D%2522btn%2520btn-info-outline%2522%253E%250A%2520%2520%2520%2520%2520Link%250A%2520%253C%252Fa%253E%250A%250A%2520%253C%21--%2520Link%2520--%253E%250A%250A%2520%253Ca%2520class%253D%2522btn-link%2522%253E%250A%2520%2520%2520%2520%2520Link%250A%2520%253C%252Fa%253E%250A%250A%250A%2520%253C%21--%2520Icon%2520Button%2520--%253E%250A%250A%2520%253Ca%2520class%253D%2522btn-icon%2520primary%2522%253E%250A%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-headset%2522%253E%253C%252Fi%253E%250A%2520%253C%252Fa%253E%250A%250A%2520%253Cbutton%2520class%253D%2522btn-icon%2520danger%2522%253E%250A%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-cloud-download-alt%2522%253E%253C%252Fi%253E%250A%2520%253C%252Fbutton%253E%250A%250A%2520%253C%21--%2520Floating%2520Action%2520Button%2520--%253E%250A%250A%2520%253Cbutton%2520class%253D%2522btn-float%2520secondary%2522%253E%250A%2520%2520%2520%2520%2520-%250A%2520%253C%252Fbutton%253E%250A%250A%2520%253Ca%2520class%253D%2522btn-float%2520primaryLight%2522%253E%250A%2520%2520%2520%2520%2520%252B%250A%2520%253C%252Fa%253E%250A%250A%2520%253C%21--%2520Button%2520with%2520Icons%2520--%253E%250A%250A%2520%253Cbutton%2520class%253D%2522btn%2520btn-contained%2520primary%2522%253E%250A%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fab%2520fa-android%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520Click%2520Me%21%250A%2520%253C%252Fbutton%253E%250A%250A%2520%253Ca%2520class%253D%2522btn%2520btn-contained%2520primaryLight%2522%253E%250A%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-cart-plus%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520Click%2520Me%21%250A%2520%253C%252Fa%253E%250A%250A%2520%253C%21--%2520Block%2520Buttons%2520--%253E%250A%250A%2520%253Cbutton%2520class%253D%2522btn%2520block-btn%2520btn-contained%2520success%2522%253E%250A%2520%2520%2520%2520%2520Block%2520Button%250A%2520%253C%252Fbutton%253E%250A%250A%2520%253C%21--%2520Different%2520Sizes%2520--%253E%250A%250A%2520%253Cbutton%2520class%253D%2522btn%2520btn-sm%2520btn-contained%2520primary%2522%253E%250A%2520%2520%2520%2520%2520Small%250A%2520%253C%252Fbutton%253E%250A%250A%2520%253Cbutton%2520class%253D%2522btn%2520btn-md%2520btn-contained%2520danger%2522%253E%250A%2520%2520%2520%2520%2520Medium%250A%2520%253C%252Fbutton%253E%250A%250A%2520%253Cbutton%2520class%253D%2522btn%2520btn-lg%2520btn-contained%2520warning%2522%253E%250A%2520%2520%2520%2520%2520Large%250A%2520%253C%252Fbutton%253E"
+                style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+              </iframe>
+            </div>
 
       </section>
 
@@ -1815,76 +1825,94 @@
             </iframe>
           </div>
 
+          <<<<<<< HEAD=======<ul class="nav-links">
+            <button class="btn-icon">
+              <i class="fa-solid fa-user"></i>
+            </button>
 
-          <h4 class="h4 component-type">Navbar with Hamburger Icon</h4>
-          <p class="component-description">You need to add JS for this navbar.</p>
+            <button class="btn-float btn-sm badge">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span class="badge-count danger">3</span>
+            </button>
 
-          <div class="component-display flex-row flex-center">
+            <button class="btn-float primaryDark btn-sm badge">
+              <i class="fa-solid fa-hand-holding-heart"></i>
+              <span class="badge-count danger">1</span>
+            </button>
+            </ul>
+        </nav>
 
-            <nav class="navbar navbar-resp">
-              <section class="navbar-toggle-section">
+        </div>
+        >>>>>>> ee63e20 (refactor - docs page)
+
+        <h4 class="h4 component-type">Navbar with Hamburger Icon</h4>
+        <p class="component-description">You need to add JS for this navbar.</p>
+
+        <div class="component-display flex-row flex-center">
+
+          <nav class="navbar navbar-resp">
+            <section class="navbar-toggle-section">
+
+              <nav class="navbar navbar-resp primaryDark">
+                <section class="navbar-toggle-section">
+
+                  <div class="brand">
+                    <!-- Optional -->
+                    <img src="./assets/images/logo2.png" alt="" class="brand-icon">
+                    <h6 class="h6 brand-name">Ecomm</h6>
+                  </div>
+
+                  <button class="navbar-toggle-btn" id="navbar-res-hamburger"><i class="fa-solid fa-bars"></i></button>
+
+                </section>
+
 
                 <nav class="navbar navbar-resp primaryDark">
                   <section class="navbar-toggle-section">
 
-                    <div class="brand">
-                      <!-- Optional -->
-                      <img src="./assets/images/logo2.png" alt="" class="brand-icon">
-                      <h6 class="h6 brand-name">Ecomm</h6>
-                    </div>
+                    <ul class="nav-links">
+                      <button class="btn-icon">
+                        <i class="fa-solid fa-user"></i>
+                      </button>
 
-                    <button class="navbar-toggle-btn" id="navbar-res-hamburger"><i
-                        class="fa-solid fa-bars"></i></button>
+                      <button class="btn-float btn-sm badge">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="badge-count danger">3</span>
+                      </button>
 
-                  </section>
+                      <button class="btn-float default btn-sm badge">
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                        <span class="badge-count danger">1</span>
+                      </button>
 
+                      <button class="btn-float primaryLight btn-sm badge">
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                        <span class="badge-count danger">1</span>
+                      </button>
 
-                  <nav class="navbar navbar-resp primaryDark">
-                    <section class="navbar-toggle-section">
+                      <button class="btn-icon secondaryLight btn-sm badge">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                      </button>
+                    </ul>
+                </nav>
 
-                      <ul class="nav-links">
-                        <button class="btn-icon">
-                          <i class="fa-solid fa-user"></i>
-                        </button>
+        </div>
 
-                        <button class="btn-float btn-sm badge">
-                          <i class="fa-solid fa-cart-shopping"></i>
-                          <span class="badge-count danger">3</span>
-                        </button>
+        <div class="code-frame">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=9px&ph=9px&ln=false&fl=1&fm=Hack&fs=12.5px&lh=148%25&si=false&es=2x&wm=false&code=%253Cnav%2520class%253D%2522navbar%2520navbar-resp%2522%253E%250A%2520%2520%2520%2520%253Csection%2520class%253D%2522navbar-toggle-section%2522%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522brand%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Optional%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fassets%252Fimages%252Flogo2.png%2522%2520alt%253D%2522%2522%2520class%253D%2522brand-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch6%2520class%253D%2522h6%2520brand-name%2522%253EEcomm%253C%252Fh6%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522navbar-toggle-btn%2522%2520id%253D%2522navbar-res-hamburger%2522%253E%253Ci%2520class%253D%2522fa-solid%2520fa-bars%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%253C%252Fsection%253E%250A%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522search-box%2520navbar-search%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-search%2520search-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522search%2522%2520name%253D%2522search%2522%2520id%253D%2522search%2522%2520class%253D%2522search-bar%2522%2520placeholder%253D%2522Search%2520for%2520products%2522%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cul%2520class%253D%2522nav-links%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-user%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-float%2520btn-sm%2520badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-cart-shopping%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-count%2520danger%2522%253E3%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-float%2520default%2520btn-sm%2520badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-hand-holding-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-count%2520danger%2522%253E1%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-icon%2520secondaryLight%2520btn-sm%2520badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-right-from-bracket%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Ful%253E%250A%253C%252Fnav%253E"
+            style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
 
-                        <button class="btn-float default btn-sm badge">
-                          <i class="fa-solid fa-hand-holding-heart"></i>
-                          <span class="badge-count danger">1</span>
-                        </button>
-
-                        <button class="btn-float primaryLight btn-sm badge">
-                          <i class="fa-solid fa-hand-holding-heart"></i>
-                          <span class="badge-count danger">1</span>
-                        </button>
-
-                        <button class="btn-icon secondaryLight btn-sm badge">
-                          <i class="fa-solid fa-right-from-bracket"></i>
-                        </button>
-                      </ul>
-                  </nav>
-
-          </div>
-
-          <div class="code-frame">
-            <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=9px&ph=9px&ln=false&fl=1&fm=Hack&fs=12.5px&lh=148%25&si=false&es=2x&wm=false&code=%253Cnav%2520class%253D%2522navbar%2520navbar-resp%2522%253E%250A%2520%2520%2520%2520%253Csection%2520class%253D%2522navbar-toggle-section%2522%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522brand%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Optional%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fassets%252Fimages%252Flogo2.png%2522%2520alt%253D%2522%2522%2520class%253D%2522brand-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch6%2520class%253D%2522h6%2520brand-name%2522%253EEcomm%253C%252Fh6%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522navbar-toggle-btn%2522%2520id%253D%2522navbar-res-hamburger%2522%253E%253Ci%2520class%253D%2522fa-solid%2520fa-bars%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%253C%252Fsection%253E%250A%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522search-box%2520navbar-search%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-search%2520search-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522search%2522%2520name%253D%2522search%2522%2520id%253D%2522search%2522%2520class%253D%2522search-bar%2522%2520placeholder%253D%2522Search%2520for%2520products%2522%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cul%2520class%253D%2522nav-links%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-user%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-float%2520btn-sm%2520badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-cart-shopping%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-count%2520danger%2522%253E3%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-float%2520default%2520btn-sm%2520badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-hand-holding-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-count%2520danger%2522%253E1%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-icon%2520secondaryLight%2520btn-sm%2520badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-right-from-bracket%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Ful%253E%250A%253C%252Fnav%253E"
-              style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
-              sandbox="allow-scripts allow-same-origin">
-            </iframe>
-          </div>
-
-          <div class="code-frame">
-            <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=9px&ph=9px&ln=false&fl=1&fm=Hack&fs=12.5px&lh=148%25&si=false&es=2x&wm=false&code=%252F%252FGet%2520the%2520Hamburger%2520Icon%2520Button%250Aconst%2520resposiveNavbarHamburger%2520%253D%2520document.querySelector%28%250A%2520%2520%2522%2523navbar-res-hamburger%2522%250A%29%253B%250A%250A%252F%252FGet%2520the%2520Navbar%250Aconst%2520navbarResponsive%2520%253D%2520document.querySelector%28%2522.navbar.navbar-resp%2522%29%253B%250A%250A%250AresposiveNavbarHamburger.addEventListener%28%2522click%2522%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520navbarResponsive.classList.toggle%28%2522active%2522%29%253B%250A%257D%29%253B"
-              style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
-              sandbox="allow-scripts allow-same-origin">
-            </iframe>
-          </div>
+        <div class="code-frame">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=9px&ph=9px&ln=false&fl=1&fm=Hack&fs=12.5px&lh=148%25&si=false&es=2x&wm=false&code=%252F%252FGet%2520the%2520Hamburger%2520Icon%2520Button%250Aconst%2520resposiveNavbarHamburger%2520%253D%2520document.querySelector%28%250A%2520%2520%2522%2523navbar-res-hamburger%2522%250A%29%253B%250A%250A%252F%252FGet%2520the%2520Navbar%250Aconst%2520navbarResponsive%2520%253D%2520document.querySelector%28%2522.navbar.navbar-resp%2522%29%253B%250A%250A%250AresposiveNavbarHamburger.addEventListener%28%2522click%2522%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520navbarResponsive.classList.toggle%28%2522active%2522%29%253B%250A%257D%29%253B"
+            style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
 
       </section>
 

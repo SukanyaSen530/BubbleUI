@@ -5,6 +5,16 @@ hamburgerBtn.addEventListener("click", () => {
   sidebar.classList.toggle("active");
 });
 
+let classesToAdd = ["active", "hide"];
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth < 750) {
+    sidebar.classList.add(...classesToAdd);
+  } else {
+    sidebar.classList.remove(...classesToAdd);
+  }
+});
+
 // DEMO FOR ALERT
 
 demoAlertCloseBtn = document.querySelector("#demo-alert .alert-cancel");
