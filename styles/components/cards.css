@@ -52,10 +52,17 @@
 /* HORIZONTAL */
 .card.card-horizontal {
   width: 22rem;
+  display: flex;
+  flex-direction: row;
 }
 
 .card.card-horizontal .card-image {
-  height: var(--spacing-12);
+  flex: 0 0 100px;
+  height: auto;
+}
+
+.card.card-horizontal .card-image > img {
+  border-radius: var(--border-radius-sm) 0 0 var(--border-radius-sm);
 }
 
 /* CARD-HOVER */

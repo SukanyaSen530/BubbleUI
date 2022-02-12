@@ -52,6 +52,13 @@
   content: "\f004";
 }
 
+/* SPACED LIST */
+.spaced-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 /* STACKED LIST */
 
 .stacked-list {

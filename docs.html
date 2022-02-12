@@ -749,7 +749,7 @@
           Link
         </a>
 
-        <a class="btn btn-contained warning" disabled>
+        <a class="btn btn-contained" disabled>
           Link Disabled
         </a>
       </div>
@@ -834,14 +834,18 @@
         <span class="code-highlight">btn-contained</span>.</p>
 
       <div class="component-display flex-row flex-center flex-wrap">
-        <button class="btn btn-contained primary">
+        <button class="btn btn-contained secondary">
           <i class="fab fa-android"></i>
           Click Me!
         </button>
 
-        <a class="btn btn-contained primaryLight">
+        <a class="btn btn-contained secondaryDark">
           <i class="fas fa-cart-plus"></i>
           Click Me!
+        </a>
+
+        <a class="btn btn-contained secondaryLight">
+          <i class="fa-brands fa-amazon-pay"></i> Pay
         </a>
       </div>
 
@@ -977,33 +981,35 @@
       <div class="component-display flex-row flex-center">
 
         <article class="card card-horizontal">
-          <header class="card-header" tabindex="0">
-            <div class="card-image">
-              <img src="./assets/images/gojo.jpg" alt="Demo Image" class="img-responsive">
-            </div>
-            <div class="card-details">
-              <h4 class="card-title text-primary h4">Jujutsu Kaisen</h4>
-            </div>
-            <p class="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga inventore asperiores
-              quibusdam impedit</p>
-          </header>
-          <footer class="card-actions">
-            <div class="card-buttongroup">
-              <button class="btn-icon btn-sm primaryLight">
-                <i class="far fa-heart"></i>
-              </button>
-              <button class="btn-icon btn-sm primaryLight">
-                <i class="fas fa-share-alt"></i>
-              </button>
-            </div>
-          </footer>
+          <div class="card-image">
+            <img src="./assets/images/gojo.jpg" alt="Demo Image" class="img-responsive">
+          </div>
+          <section class="card-content">
+            <header class="card-header" tabindex="0">
+              <div class="card-details">
+                <h4 class="card-title primary-text h4">Sataro Gojo</h4>
+              </div>
+              <p class="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga inventore asperiores
+                quibusdam impedit</p>
+            </header>
+            <footer class="card-actions">
+              <div class="card-buttongroup">
+                <button class="btn-icon btn-sm primaryLight">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button class="btn-icon btn-sm primaryLight">
+                  <i class="fas fa-share-alt"></i>
+                </button>
+              </div>
+            </footer>
+          </section>
         </article>
 
       </div>
 
       <div class="code-frame">
         <iframe
-          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=9px&ph=9px&ln=false&fl=1&fm=Hack&fs=12.5px&lh=148%25&si=false&es=2x&wm=false&code=%253Carticle%2520class%253D%2522card%2520card-horizontal%2522%253E%250A%2520%2520%2520%2520%253Cheader%2520class%253D%2522card-header%2522%2520tabindex%253D%25220%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522..%2522%2520alt%253D%2522..%2522%2520class%253D%2522img-responsive%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-details%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%2520class%253D%2522card-title%2520text-primary%2520h4%2522%253EJujutsu%2520Kaisen%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-content%2522%253ELorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Fuga%2520inventore%2520asperiores%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520quibusdam%2520impedit%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fheader%253E%250A%2520%2520%2520%2520%253Cfooter%2520class%253D%2522card-actions%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-buttongroup%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-icon%2520btn-sm%2520primaryLight%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-icon%2520btn-sm%2520primaryLight%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-share-alt%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Ffooter%253E%250A%253C%252Farticle%253E"
+          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=9px&ph=9px&ln=false&fl=1&fm=Hack&fs=12.5px&lh=148%25&si=false&es=2x&wm=false&code=%253Carticle%2520class%253D%2522card%2520card-horizontal%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fassets%252Fimages%252Fgojo.jpg%2522%2520alt%253D%2522Demo%2520Image%2522%2520class%253D%2522img-responsive%2522%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Csection%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cheader%2520class%253D%2522card-header%2522%2520tabindex%253D%25220%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-details%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%2520class%253D%2522card-title%2520text-primary%2520h4%2522%253ESataro%2520Gojo%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-content%2522%253ELorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Fuga%2520inventore%2520asperiores%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520quibusdam%2520impedit%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fheader%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cfooter%2520class%253D%2522card-actions%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-buttongroup%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-icon%2520btn-sm%2520primaryLight%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-icon%2520btn-sm%2520primaryLight%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-share-alt%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ffooter%253E%250A%2520%2520%2520%2520%253C%252Fsection%253E%250A%253C%252Farticle%253E"
           style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
           sandbox="allow-scripts allow-same-origin">
         </iframe>
@@ -1552,6 +1558,24 @@
         </ul>
       </div>
 
+      <h4 class="h4 component-type">Spaced Lists</h4>
+      <p class="component-description">The child items take the space available.</p>
+      <p>Classes : <span class="code-highlight">spaced-list</span></p>
+
+      <div class="component-display flex-col flex-center">
+        <ul class="spaced-list">
+          <li>Eggs</li>
+          <li>Milk</li>
+          <li>Bread</li>
+          <li>Sugar</li>
+          <li>Chocolate Powder</li>
+          <li>Flour</li>
+          <li>Wipped Cream</li>
+          <li>Vanilla Extract</li>
+          <li>Food Color</li>
+        </ul>
+      </div>
+
 
       <h4 class="h4 component-type">Stacked Notification Lists</h4>
       <p class="component-description">Add desired component inside "li" element. For Example - Notification Card is
@@ -1824,13 +1848,18 @@
 
       <div class="component-display flex-row flex-center">
 
-        <div class="star-rating-container">
-          <i class="far fa-star"></i>
-          <i class="far fa-star"></i>
-          <i class="far fa-star"></i>
-          <i class="far fa-star"></i>
-          <i class="far fa-star"></i>
-        </div>
+        <fieldset class="star-rating-container">
+          <input type="radio" name="star" id="star1" class="rating-radio">
+          <label for="star1"></label>
+          <input type="radio" name="star" id="star2" class="rating-radio">
+          <label for="star2"></label>
+          <input type="radio" name="star" id="star3" class="rating-radio">
+          <label for="star3"></label>
+          <input type="radio" name="star" id="star4" class="rating-radio">
+          <label for="star4"></label>
+          <input type="radio" name="star" id="star5" class="rating-radio">
+          <label for="star5"></label>
+        </fieldset>
 
       </div>
 
@@ -1848,7 +1877,7 @@
 
       <div class="code-frame">
         <iframe
-          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=9px&ph=9px&ln=false&fl=1&fm=Hack&fs=12.5px&lh=148%25&si=false&es=2x&wm=false&code=%253C%21--%2520Normal%2520Rating%2520%2520%2520--%253E%250A%250A%253Cdiv%2520class%253D%2522star-rating-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-star%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520Average%2520Rating%2520--%253E%250A%250A%253Cp%2520class%253D%2522single-star-rating%2522%253E4.5%253C%252Fp%253E%250A%2520"
+          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=9px&ph=9px&ln=false&fl=1&fm=Hack&fs=12.5px&lh=148%25&si=false&es=2x&wm=false&code=%253C%21--%2520Normal%2520Rating%2520--%253E%250A%250A%253Cfieldset%2520class%253D%2522star-rating-container%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522star%2522%2520id%253D%2522star1%2522%2520class%253D%2522rating-radio%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522star1%2522%253E%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522star%2522%2520id%253D%2522star2%2522%2520class%253D%2522rating-radio%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522star2%2522%253E%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522star%2522%2520id%253D%2522star3%2522%2520class%253D%2522rating-radio%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522star3%2522%253E%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522star%2522%2520id%253D%2522star4%2522%2520class%253D%2522rating-radio%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522star4%2522%253E%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522star%2522%2520id%253D%2522star5%2522%2520class%253D%2522rating-radio%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522star5%2522%253E%253C%252Flabel%253E%250A%253C%252Ffieldset%253E%250A%250A%253C%21--%2520Average%2520Rating%2520--%253E%250A%250A%253Cp%2520class%253D%2522single-star-rating%2522%253E4.5%253C%252Fp%253E"
           style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
           sandbox="allow-scripts allow-same-origin">
         </iframe>

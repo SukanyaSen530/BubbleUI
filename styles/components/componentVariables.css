@@ -2,38 +2,87 @@
 
 :root {
   /* Component Variation */
-  --successLight: #bbf7d0;
+  --successLight: #dcfce7;
   --success: #22c55e;
-  --successDark: #14532d;
+  --successDark: #15803d;
 
   --dangerLight: #fecaca;
   --danger: #ef4444;
-  --dangerDark: #7f1d1d;
+  --dangerDark: #b91c1c;
 
   --secondaryLight: #e5e7eb;
-  --secondary: #6b7280;
-  --secondaryDark: #111827;
+  --secondary: #9ca3af;
+  --secondaryDark: #374151;
 
-  --infoLight: #a5f3fc;
-  --info: #06b6d4;
-  --infoDark: #155e75;
+  --infoLight: #cffafe;
+  --info: #22d3ee;
+  --infoDark: #0891b2;
+
+  --warningLight: #fef3c7;
+  --warning: #fbbf24;
+  --warningDark: #d97706;
+
+  --primaryLight: #dbeafe;
+  --primary: #60a5fa;
+  --primaryDark: #1d4ed8;
+
+  --defaultLight: #90bada;
+  --default: #19374d;
+  --defaultDark: #07395a;
 
   --dark: #000000;
   --darkLight: rgb(0, 0, 0, 0.3);
 
-  --warningLight: #fde68a;
-  --warning: #f59e0b;
-  --warningDark: #78350f;
-
-  --primaryLight: #bfdbfe;
-  --primary: #3b82f6;
-  --primaryDark: #1e3a8a;
-
-  --defaultLight: #254e6e;
-  --default: #19374d;
-  --defaultDark: #0d1e2999;
-
   --light: whitesmoke;
+
+  /* light and dark variations of the colors */
+
+  --red-100: #fee2e2;
+  --red-300: #fca5a5;
+  --red-400: #f87171;
+  --red-600: #dc2626;
+  --red-800: #991b1b;
+  --red-900: #7f1d1d;
+
+  --blue-200: #bfdbfe;
+  --blue-300: #93c5fd;
+  --blue-500: #3b82f6;
+  --blue-600: #2563eb;
+  --blue-800: #1e40af;
+  --blue-900: #1e3a8a;
+
+  --cyan-200: #a5f3fc;
+  --cyan-300: #67e8f9;
+  --cyan-500: #06b6d4;
+  --cyan-700: #0e7490;
+  --cyan-800: #155e75;
+  --cyan-900: #164e63;
+
+  --green-200: #bbf7d0;
+  --green-300: #86efac;
+  --green-400: #4ade80;
+  --green-600: #16a34a;
+  --green-800: #166534;
+  --green-900: #14532d;
+
+  --amber-200: #fde68a;
+  --amber-300: #fcd34d;
+  --amber-500: #f59e0b;
+  --amber-700: #b45309;
+  --amber-800: #92400e;
+  --amber-900: #78350f;
+
+  --grey-100: #f3f4f6;
+  --grey-300: #d1d5db;
+  --grey-500: #6b7280;
+  --grey-600: #4b5563;
+  --grey-800: #1f2937;
+  --grey-900: #111827;
+
+  --slate-400: #94a3b8;
+  --slate-500: #64748b;
+  --slate-600: #475569;
+  --slate-700: #334155;
 
   /* spacing */
   --spacing-01: 0.125rem;
