@@ -10,11 +10,7 @@
 
 body {
   position: relative;
-<<<<<<< HEAD
   background-color: var(--defaultLight);
-=======
-  background-color: var(--purple-100);
->>>>>>> e42ba40 (feat - redesigned landing page)
 }
 
 .landing-page {

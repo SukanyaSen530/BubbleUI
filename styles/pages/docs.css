@@ -47,11 +47,7 @@
 
 .component-type {
   margin-bottom: 0.8rem;
-<<<<<<< HEAD
-  color: var(--purple-600);
-=======
   color: var(--purple-500);
->>>>>>> ee63e20 (refactor - docs page)
 }
 
 .pallete {
