@@ -25,7 +25,7 @@
   top: 3px;
   font-size: 0.7rem;
   font-weight: 500;
-  color: var(--defaultLight);
+  color: var(--default);
 }
 
 .input-group.required .input-group-label::after {

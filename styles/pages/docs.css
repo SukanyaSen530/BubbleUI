@@ -20,12 +20,12 @@
 
 .component-section {
   padding: 0 var(--spacing-07);
-  margin: var(--spacing-07) 0;
+  margin: var(--spacing-06) 0;
   text-align: justify;
 }
 
 .section-heading {
-  color: var(--light-default);
+  color: var(--purple-800);
   padding: 2rem 0 1rem;
 }
 
@@ -35,19 +35,19 @@
   width: 4rem;
   display: block;
   margin-top: 5px;
-  border-radius: VAR(--border-radius-sm);
+  border-radius: var(--border-radius-sm);
 }
 
 .component-description {
   font-size: 0.9rem;
   line-height: 1.8rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.7rem;
   color: var(--slate-600);
 }
 
 .component-type {
   margin-bottom: 0.8rem;
-  color: var(--purple-600);
+  color: var(--purple-500);
 }
 
 .pallete {
@@ -109,8 +109,8 @@
 }
 
 .grid-item {
-  background-color: rgb(250, 119, 141);
-  color: white;
+  background-color: rgb(110, 139, 128);
+  color: var(--light);
   text-align: center;
   padding: 0.2rem;
 }
