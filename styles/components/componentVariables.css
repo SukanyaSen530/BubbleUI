@@ -26,9 +26,9 @@
   --primary: #60a5fa;
   --primaryDark: #1d4ed8;
 
-  --defaultLight: #dec9e9;
-  --default: #b185db;
-  --defaultDark: #7251b5;
+  --defaultLight: #90bada;
+  --default: #19374d;
+  --defaultDark: #07395a;
 
   --dark: #000000;
   --darkLight: rgb(0, 0, 0, 0.3);
@@ -83,10 +83,6 @@
   --slate-500: #64748b;
   --slate-600: #475569;
   --slate-700: #334155;
-
-  --purple-300: #d2b7e5;
-  --purple-600: #a06cd5;
-  --purple-1000: #6247aa;
 
   /* spacing */
   --spacing-01: 0.125rem;
