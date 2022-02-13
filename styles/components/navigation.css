@@ -6,6 +6,7 @@
   justify-content: space-between;
   height: 60px;
   border-radius: 0 0 var(--border-radius-sm) var(--border-radius-sm);
+  flex-wrap: wrap;
 }
 
 .navbar .brand {
@@ -18,10 +19,6 @@
   margin-right: 0.3rem;
 }
 
-.navbar .navbar-search {
-  width: 40%;
-}
-
 .navbar .nav-links {
   display: flex;
   list-style: none;
@@ -30,17 +27,7 @@
 
 @media (max-width: 600px) {
   .navbar {
-    flex-direction: column;
     height: auto;
-    gap: 5px;
-  }
-  .navbar .navbar-search {
-    width: 100%;
-  }
-  .navbar .nav-links {
-    width: 100%;
-    margin: auto;
-    justify-content: space-around;
   }
 }
 
@@ -56,6 +43,10 @@
   transition: background 0.4s ease;
   display: none;
   margin-left: auto;
+}
+
+.navbar-resp .navbar-search {
+  width: 40%;
 }
 
 .navbar-resp .navbar-toggle-btn:hover {
