@@ -28,14 +28,6 @@ Copy & Paste these two links in the head section of your page!<br>
 
 # Component List
 
-### [Avatars](https://bubbles-nine.netlify.app/docs.html#Avatars)
-
-- Image Avatars
-- Letter Avatars
-- Icon Avatars
-- Variants: Circular & Square
-- Sizes: (Small, Medium, Large)
-
 ### [Alerts](https://bubbles-nine.netlify.app/docs.html#Alerts)
 
 - Basic Alerts
@@ -43,6 +35,14 @@ Copy & Paste these two links in the head section of your page!<br>
 - Filled Alerts
 - Action Alert
 - Types: (Error, Warning, Info, Success)
+
+### [Avatars](https://bubbles-nine.netlify.app/docs.html#Avatars)
+
+- Image Avatars
+- Letter Avatars
+- Icon Avatars
+- Variants: Circular & Square
+- Sizes: (Small, Medium, Large)
 
 ### [Badges](https://bubbles-nine.netlify.app/docs.html#Badges)
 
