@@ -2,13 +2,13 @@
   <img src="./assets/images/logoWithName.png" width="400" title="hover text">
 </p>
 
-# [Bubbles](https://bubbles-nine.vercel.app/)
+# [Bubbles](https://bubbles-nine.netlify.app/)
 
 ### Design Your Websites Faster with Bubbles!
 
 ## Stack Used
 
-HTML-5, CSS-3, Vanilla JavaScript <br><br>
+HTML-5, CSS-3, VanCancel changesilla JavaScript <br><br>
 
 ## Installation<br>
 
@@ -17,7 +17,7 @@ Copy & Paste these two links in the head section of your page!<br>
 ```html
 <link
   rel="stylesheet"
-  href="https://bubbles-nine.vercel.app/styles/components/index.css"
+  href="https://bubbles-nine.netlify.app/styles/components/index.css"
 />
 
 <link
@@ -28,7 +28,7 @@ Copy & Paste these two links in the head section of your page!<br>
 
 # Component List
 
-### [Avatars](https://bubbles-nine.vercel.app/docs.html#Avatars)
+### [Avatars](https://bubbles-nine.netlify.app/docs.html#Avatars)
 
 - Image Avatars
 - Letter Avatars
@@ -36,7 +36,7 @@ Copy & Paste these two links in the head section of your page!<br>
 - Variants: Circular & Square
 - Sizes: (Small, Medium, Large)
 
-### [Alerts](https://bubbles-nine.vercel.app/docs.html#Alerts)
+### [Alerts](https://bubbles-nine.netlify.app/docs.html#Alerts)
 
 - Basic Alerts
 - Outlined Alerts
@@ -44,14 +44,14 @@ Copy & Paste these two links in the head section of your page!<br>
 - Action Alert
 - Types: (Error, Warning, Info, Success)
 
-### [Badges](https://bubbles-nine.vercel.app/docs.html#Badges)
+### [Badges](https://bubbles-nine.netlify.app/docs.html#Badges)
 
 - Status Badges
 - Icon Badges
 - Button Badges
 - Text With a Badge
 
-### [Buttons](https://bubbles-nine.vercel.app/docs.html#Buttons)
+### [Buttons](https://bubbles-nine.netlify.app/docs.html#Buttons)
 
 - Contained Buttons
 - Outlined Button
@@ -62,7 +62,7 @@ Copy & Paste these two links in the head section of your page!<br>
 - Block Buttons
 - Sizes: (Default, Small, Medium, Large)
 
-### [Cards](https://bubbles-nine.vercel.app/docs.html#Cards)
+### [Cards](https://bubbles-nine.netlify.app/docs.html#Cards)
 
 - Text Only Card
 - Media Card (Vertical)
@@ -73,24 +73,24 @@ Copy & Paste these two links in the head section of your page!<br>
 - Card with Badge
 - Notification Card
 
-### [Chips](https://bubbles-nine.vercel.app/docs.html#Chips)
+### [Chips](https://bubbles-nine.netlify.app/docs.html#Chips)
 
 - Basic Chips
 - Stacked Chips
 - Chips with Cancel Icon
 
-### [Grids](https://bubbles-nine.vercel.app/docs.html#Grids)
+### [Grids](https://bubbles-nine.netlify.app/docs.html#Grids)
 
 - Column Grid Classes (Min 1 Item - Max 6 Items)
 - Row Grid Classes (Min 1 Item - Max 6 Items)
 - Gap Classes
 
-### [Image](https://binary-ui.netlify.app/docs.html#image)
+### [Image](https://bubbles-nine.netlify.app/docs.html#image)
 
 - Responsive Image
 - Round Image
 
-### [Inputs](https://bubbles-nine.vercel.app/docs.html#Inputs)
+### [Inputs](https://bubbles-nine.netlify.app/docs.html#Inputs)
 
 - Input Types: Text, Number, TextArea, Email, Checkbox, Radio
 - Without Validation
@@ -99,29 +99,29 @@ Copy & Paste these two links in the head section of your page!<br>
 - With Validation
 - Supports 4 colours (Primary, Warning, Secondary, Default)
 
-### [Lists](https://bubbles-nine.vercel.app/docs.html#Lists)
+### [Lists](https://bubbles-nine.netlify.app/docs.html#Lists)
 
 - Nested Ordered Lists (2 Levels of Nesting)
 - Icon Unordered Lists (2 Icons - check and heart)
 - Spaced List
 - Stacked Notification Lists
 
-### [Modal](https://bubbles-nine.vercel.app/docs.html#Modal)
+### [Modal](https://bubbles-nine.netlify.app/docs.html#Modal)
 
 - Simple Modal
 - Confirmation Modal
 
-### [Navbar](https://bubbles-nine.vercel.app/docs.html#Navbar)
+### [Navbar](https://bubbles-nine.netlify.app/docs.html#Navbar)
 
 - Simple Navbar
 - Navbar With Hamburger Icon
 
-### [Rating](https://bubbles-nine.vercel.app/docs.html#Rating)
+### [Rating](https://bubbles-nine.netlify.app/docs.html#Rating)
 
 - Normal Rating
 - Average Rating
 
-### [Snackbar](https://bubbles-nine.vercel.app/docs.html#Snackbar)
+### [Snackbar](https://bubbles-nine.netlify.app/docs.html#Snackbar)
 
 - Light
 - Dark
