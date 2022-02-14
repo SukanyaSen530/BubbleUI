@@ -64,7 +64,7 @@
 
 .defaultLight {
   background-color: var(--defaultLight);
-  color: var(--light);
+  color: var(--defaultDark);
 }
 
 .secondaryLight {
