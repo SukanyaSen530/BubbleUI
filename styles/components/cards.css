@@ -56,6 +56,10 @@
   flex-direction: row;
 }
 
+.card.card-horizontal .content {
+  padding: var(--spacing-03);
+}
+
 .card.card-horizontal .card-image {
   flex: 0 0 100px;
   height: auto;

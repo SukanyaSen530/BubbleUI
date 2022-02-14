@@ -52,18 +52,18 @@
 
       <li class="sidebar-link-heading">Component</li>
       <li>
-        <a href="#Avatars">
-          <i class="far fa-user"></i>
-          <span class="sidebar-link-name">Avatar</span>
-        </a>
-        <span class="tooltip">Avatar</span>
-      </li>
-      <li>
         <a href="#Alerts">
           <i class="far fa-bell"></i>
           <span class="sidebar-link-name">Alert</span>
         </a>
         <span class="tooltip">Alert</span>
+      </li>
+      <li>
+        <a href="#Avatars">
+          <i class="far fa-user"></i>
+          <span class="sidebar-link-name">Avatar</span>
+        </a>
+        <span class="tooltip">Avatar</span>
       </li>
       <li>
         <a href="#Badges">
@@ -163,7 +163,7 @@
       </p>
 
       <iframe
-        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=9px&ph=9px&ln=false&fl=1&fm=Hack&fs=12.5px&lh=148%25&si=false&es=2x&wm=false&code=%250A%2520%2520%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fbubbles-nine.vercel.app%252Fstyles%252Fcomponents%252Findex.css%2522%253E%250A%250A%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fcdnjs.cloudflare.com%252Fajax%252Flibs%252Ffont-awesome%252F4.7.0%252Fcss%252Ffont-awesome.min.css%2522%253E%2520"
+        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=9px&ph=9px&ln=false&fl=1&fm=Hack&fs=12.5px&lh=148%25&si=false&es=2x&wm=false&code=%250A%2520%2520%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fbubbles-nine.netlify.app%252Fstyles%252Fcomponents%252Findex.css%2522%253E%250A%250A%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fcdnjs.cloudflare.com%252Fajax%252Flibs%252Ffont-awesome%252F4.7.0%252Fcss%252Ffont-awesome.min.css%2522%253E%2520"
         style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
         sandbox="allow-scripts allow-same-origin">
       </iframe>
@@ -386,119 +386,6 @@
 
     </section>
 
-    <!------- Avatars -------->
-
-    <section id="Avatars" class="component-section">
-      <h2 class="section-heading h2">Avatars</h2>
-      <p class="component-description">Avatar are images which can be used to show user's profile image. Use base
-        class
-        <span class="code-highlight">
-          .avatar</span> to generate a avatar.</p>
-
-      <h4 class="h4 component-type">Image Avatars</h4>
-      <p class="component-description">Image avatars can be created with class <span class="code-highlight">
-          .avatar-img</span></p>
-
-      <div class="component-display flex-row flex-center flex-wrap">
-        <figure class="avatar avatar-md">
-          <img class="avatar-img" src="./assets/images/rengoku.jpg" alt="Demo Image">
-        </figure>
-
-        <figure class="avatar avatar-md">
-          <img class="avatar-img" src="./assets/images/tengen.png" alt="Demo Image">
-        </figure>
-
-        <figure class="avatar avatar-md">
-          <img class="avatar-img" src="./assets/images/Tomioka.jpg" alt="Demo Image">
-        </figure>
-      </div>
-
-      <h4 class="h4 component-type">Letter Avatars</h4>
-      <p class="component-description">Letter avatars can be created with class <span class="code-highlight">
-          .avatar-letter</span>. Add the color
-        classes to apply color to the avatars. This can be used with maximum of 2 letters. </p>
-
-      <div class="component-display flex-row flex-center flex-wrap">
-        <figure class="avatar avatar-letter avatar-sm infoLight">
-          <span>S</span>
-        </figure>
-
-        <figure class="avatar avatar-letter avatar-sm success ">
-          <span>RK</span>
-        </figure>
-
-        <figure class="avatar avatar-letter avatar-md danger ">
-          <span>TU</span>
-        </figure>
-      </div>
-
-      <h4 class="h4 component-type">Different Sizes</h4>
-      <p class="component-description">Different sizes are available for the avatars, classes - <span
-          class="code-highlight"> .avatar-sm</span>, <span class="code-highlight"> .avatar-md</span>, <span
-          class="code-highlight"> .avatar-lg</span></p>
-
-      <div class="component-display flex-row flex-center flex-wrap">
-        <figure class="avatar avatar-sm">
-          <img class="avatar-img" src="./assets/images/rengoku.jpg" alt="Demo Image">
-        </figure>
-
-        <figure class="avatar avatar-md">
-          <img class="avatar-img" src="./assets/images/tengen.png" alt="Demo Image">
-        </figure>
-
-        <figure class="avatar avatar-lg">
-          <img class="avatar-img" src="./assets/images/Tomioka.jpg" alt="Demo Image">
-        </figure>
-      </div>
-
-      <h4 class="h4 component-type">Icon Avatars</h4>
-      <p class="component-description">Icon avatars have class <span class="code-highlight">
-          .avatar-icon</span>. You can use svgs and icons from font awesome.</p>
-
-      <div class="component-display flex-row flex-center flex-wrap">
-        <figure class="avatar avatar-icon  avatar-sm primary">
-          <img class="avatar-icon" src="./assets/svgs/camera.svg" alt="Demo Image">
-        </figure>
-
-        <figure class="avatar avatar-icon avatar-md warningLight">
-          <i class="far fa-bell"></i>
-        </figure>
-
-        <figure class="avatar avatar-icon avatar-lg success">
-          <img src="./assets/svgs/folder.svg" alt="Demo Image">
-        </figure>
-      </div>
-
-      <h4 class="h4 component-type">Variants - Square</h4>
-      <p class="component-description">Adding a class <span class="code-highlight">.square</span> to
-        existing class, will generate a square shaped
-        avatar.</p>
-
-      <div class="component-display flex-row flex-center flex-wrap">
-        <figure class="avatar square avatar-sm">
-          <img class="avatar-img" src="./assets/images/rengoku.jpg" alt="Demo Image">
-        </figure>
-
-        <figure class="avatar square avatar-md">
-          <img class="avatar-img" src="./assets/images/tengen.png" alt="Demo Image">
-        </figure>
-
-        <figure class="avatar square avatar-lg">
-          <img class="avatar-img" src="./assets/images/Tomioka.jpg" alt="Demo Image">
-        </figure>
-      </div>
-
-      <div class="code-frame">
-        <iframe
-          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=9px&ph=9px&ln=false&fl=1&fm=Hack&fs=12.5px&lh=148%25&si=false&es=2x&wm=false&code=%2520%253C%21--%2520Image%2520Avatar%2520--%253E%250A%250A%2520%253Cfigure%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2522%2520src%253D%2522....%2522%2520alt%253D%2522....%2522%253E%250A%2520%253C%252Ffigure%253E%250A%250A%2520%253C%21--%2520Letter%2520Avatar%2520--%253E%250A%250A%2520%253Cfigure%2520class%253D%2522avatar%2520avatar-letter%2520avatar-sm%2520warning%2520%2522%253E%250A%2520%2520%2520%2520%2520%253Cspan%253ERK%253C%252Fspan%253E%250A%2520%253C%252Ffigure%253E%250A%250A%2520%253C%21--%2520Icon%2520Avatar%2520--%253E%250A%250A%2520%253C%21--%25201.%2520SVG%2520Image%2520%2520--%253E%250A%2520%253Cfigure%2520class%253D%2522avatar%2520avatar-icon%2520%2520avatar-sm%2520primary%2522%253E%250A%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-icon%2522%2520src%253D%2522.%252Fcamera.svg%2522%2520alt%253D%2522%2522%253E%250A%2520%253C%252Ffigure%253E%250A%250A%2520%253C%21--%25202.%2520Font%2520Awesome%2520Icon%2520--%253E%250A%2520%253Cfigure%2520class%253D%2522avatar%2520avatar-icon%2520avatar-md%2520secondary%2522%253E%250A%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-bell%2522%253E%253C%252Fi%253E%250A%2520%253C%252Ffigure%253E%250A%250A%2520%253C%21--%2520SQAURE%2520AVATAR%2520--%253E%250A%250A%2520%253Cfigure%2520class%253D%2522avatar%2520square%2520avatar-lg%2522%253E%250A%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2522%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%253E%250A%2520%253C%252Ffigure%253E%250A%250A%2520%253C%21--%2520Diferent%2520Sizes%2520Avatar%2520--%253E%250A%250A%2520%253Cfigure%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2522%2520src%253D%2522..%2522%2520alt%253D%2522..%2522%253E%250A%2520%253C%252Ffigure%253E%250A%250A%2520%253Cfigure%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2522%2520src%253D%2522..%2522%2520alt%253D%2522..%2522%253E%250A%2520%253C%252Ffigure%253E%250A%250A%2520%253Cfigure%2520class%253D%2522avatar%2520avatar-lg%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2522%2520src%253D%2522..%2522%2520alt%253D%2522..%2522%253E%250A%2520%253C%252Ffigure%253E"
-          style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
-          sandbox="allow-scripts allow-same-origin">
-        </iframe>
-      </div>
-
-      </div>
-    </section>
-
     <!-- Alerts -->
 
     <section id="Alerts" class="component-section">
@@ -618,6 +505,119 @@
         </iframe>
       </div>
 
+    </section>
+
+    <!------- Avatars -------->
+
+    <section id="Avatars" class="component-section">
+      <h2 class="section-heading h2">Avatars</h2>
+      <p class="component-description">Avatar are images which can be used to show user's profile image. Use base
+        class
+        <span class="code-highlight">
+          .avatar</span> to generate a avatar.</p>
+
+      <h4 class="h4 component-type">Image Avatars</h4>
+      <p class="component-description">Image avatars can be created with class <span class="code-highlight">
+          .avatar-img</span></p>
+
+      <div class="component-display flex-row flex-center flex-wrap">
+        <figure class="avatar avatar-md">
+          <img class="avatar-img" src="./assets/images/rengoku.jpg" alt="Demo Image">
+        </figure>
+
+        <figure class="avatar avatar-md">
+          <img class="avatar-img" src="./assets/images/tengen.png" alt="Demo Image">
+        </figure>
+
+        <figure class="avatar avatar-md">
+          <img class="avatar-img" src="./assets/images/Tomioka.jpg" alt="Demo Image">
+        </figure>
+      </div>
+
+      <h4 class="h4 component-type">Letter Avatars</h4>
+      <p class="component-description">Letter avatars can be created with class <span class="code-highlight">
+          .avatar-letter</span>. Add the color
+        classes to apply color to the avatars. This can be used with maximum of 2 letters. </p>
+
+      <div class="component-display flex-row flex-center flex-wrap">
+        <figure class="avatar avatar-letter avatar-sm infoLight">
+          <span>S</span>
+        </figure>
+
+        <figure class="avatar avatar-letter avatar-sm success ">
+          <span>RK</span>
+        </figure>
+
+        <figure class="avatar avatar-letter avatar-md danger ">
+          <span>TU</span>
+        </figure>
+      </div>
+
+      <h4 class="h4 component-type">Different Sizes</h4>
+      <p class="component-description">Different sizes are available for the avatars, classes - <span
+          class="code-highlight"> .avatar-sm</span>, <span class="code-highlight"> .avatar-md</span>, <span
+          class="code-highlight"> .avatar-lg</span></p>
+
+      <div class="component-display flex-row flex-center flex-wrap">
+        <figure class="avatar avatar-sm">
+          <img class="avatar-img" src="./assets/images/rengoku.jpg" alt="Demo Image">
+        </figure>
+
+        <figure class="avatar avatar-md">
+          <img class="avatar-img" src="./assets/images/tengen.png" alt="Demo Image">
+        </figure>
+
+        <figure class="avatar avatar-lg">
+          <img class="avatar-img" src="./assets/images/Tomioka.jpg" alt="Demo Image">
+        </figure>
+      </div>
+
+      <h4 class="h4 component-type">Icon Avatars</h4>
+      <p class="component-description">Icon avatars have class <span class="code-highlight">
+          .avatar-icon</span>. You can use svgs and icons from font awesome.</p>
+
+      <div class="component-display flex-row flex-center flex-wrap">
+        <figure class="avatar avatar-icon  avatar-sm primary">
+          <img class="avatar-icon" src="./assets/svgs/camera.svg" alt="Demo Image">
+        </figure>
+
+        <figure class="avatar avatar-icon avatar-md warningLight">
+          <i class="far fa-bell"></i>
+        </figure>
+
+        <figure class="avatar avatar-icon avatar-lg success">
+          <img src="./assets/svgs/folder.svg" alt="Demo Image">
+        </figure>
+      </div>
+
+      <h4 class="h4 component-type">Variants - Square</h4>
+      <p class="component-description">Adding a class <span class="code-highlight">.square</span> to
+        existing class, will generate a square shaped
+        avatar.</p>
+
+      <div class="component-display flex-row flex-center flex-wrap">
+        <figure class="avatar square avatar-sm">
+          <img class="avatar-img" src="./assets/images/rengoku.jpg" alt="Demo Image">
+        </figure>
+
+        <figure class="avatar square avatar-md">
+          <img class="avatar-img" src="./assets/images/tengen.png" alt="Demo Image">
+        </figure>
+
+        <figure class="avatar square avatar-lg">
+          <img class="avatar-img" src="./assets/images/Tomioka.jpg" alt="Demo Image">
+        </figure>
+      </div>
+
+      <div class="code-frame">
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=9px&ph=9px&ln=false&fl=1&fm=Hack&fs=12.5px&lh=148%25&si=false&es=2x&wm=false&code=%2520%253C%21--%2520Image%2520Avatar%2520--%253E%250A%250A%2520%253Cfigure%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2522%2520src%253D%2522....%2522%2520alt%253D%2522....%2522%253E%250A%2520%253C%252Ffigure%253E%250A%250A%2520%253C%21--%2520Letter%2520Avatar%2520--%253E%250A%250A%2520%253Cfigure%2520class%253D%2522avatar%2520avatar-letter%2520avatar-sm%2520warning%2520%2522%253E%250A%2520%2520%2520%2520%2520%253Cspan%253ERK%253C%252Fspan%253E%250A%2520%253C%252Ffigure%253E%250A%250A%2520%253C%21--%2520Icon%2520Avatar%2520--%253E%250A%250A%2520%253C%21--%25201.%2520SVG%2520Image%2520%2520--%253E%250A%2520%253Cfigure%2520class%253D%2522avatar%2520avatar-icon%2520%2520avatar-sm%2520primary%2522%253E%250A%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-icon%2522%2520src%253D%2522.%252Fcamera.svg%2522%2520alt%253D%2522%2522%253E%250A%2520%253C%252Ffigure%253E%250A%250A%2520%253C%21--%25202.%2520Font%2520Awesome%2520Icon%2520--%253E%250A%2520%253Cfigure%2520class%253D%2522avatar%2520avatar-icon%2520avatar-md%2520secondary%2522%253E%250A%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-bell%2522%253E%253C%252Fi%253E%250A%2520%253C%252Ffigure%253E%250A%250A%2520%253C%21--%2520SQAURE%2520AVATAR%2520--%253E%250A%250A%2520%253Cfigure%2520class%253D%2522avatar%2520square%2520avatar-lg%2522%253E%250A%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2522%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%253E%250A%2520%253C%252Ffigure%253E%250A%250A%2520%253C%21--%2520Diferent%2520Sizes%2520Avatar%2520--%253E%250A%250A%2520%253Cfigure%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2522%2520src%253D%2522..%2522%2520alt%253D%2522..%2522%253E%250A%2520%253C%252Ffigure%253E%250A%250A%2520%253Cfigure%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2522%2520src%253D%2522..%2522%2520alt%253D%2522..%2522%253E%250A%2520%253C%252Ffigure%253E%250A%250A%2520%253Cfigure%2520class%253D%2522avatar%2520avatar-lg%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2522%2520src%253D%2522..%2522%2520alt%253D%2522..%2522%253E%250A%2520%253C%252Ffigure%253E"
+          style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+      </div>
+
+      </div>
     </section>
 
     <!-- Badges -->
@@ -979,7 +979,7 @@
           <div class="card-image">
             <img src="./assets/images/gojo.jpg" alt="Demo Image" class="img-responsive">
           </div>
-          <section class="card-content">
+          <section class="content">
             <header class="card-header" tabindex="0">
               <div class="card-details">
                 <h4 class="card-title primary-text h4">Sataro Gojo</h4>
