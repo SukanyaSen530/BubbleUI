@@ -36,7 +36,7 @@
 
 .card .card-content {
   font-size: 0.8rem;
-  color: var(--secondary);
+  color: #4f5359;
   margin: 0 var(--spacing-03);
 }
 
@@ -192,7 +192,7 @@
 }
 
 .card.notification-card .social-info {
-  color: var(--secondary);
+  color: var(--secondaryDark);
   font-size: 0.7rem;
 }
 
