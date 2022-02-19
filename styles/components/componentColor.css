@@ -44,37 +44,37 @@
 
 .primaryLight {
   background-color: var(--primaryLight);
-  color: var(--primaryDark);
+  color: var(--blue-900);
 }
 
 .successLight {
   background-color: var(--successLight);
-  color: var(--successDark);
+  color: var(--green-900);
 }
 
 .warningLight {
   background-color: var(--warningLight);
-  color: var(--warningDark);
+  color: var(--amber-900);
 }
 
 .infoLight {
   background-color: var(--infoLight);
-  color: var(--infoDark);
+  color: var(--cyan-900);
 }
 
 .defaultLight {
   background-color: var(--defaultLight);
-  color: var(--defaultDark);
+  color: var(--pruple-1000);
 }
 
 .secondaryLight {
   background-color: var(--secondaryLight);
-  color: var(--secondaryDark);
+  color: var(--grey-900);
 }
 
 .dangerLight {
   background-color: var(--dangerLight);
-  color: var(--dangerDark);
+  color: var(--red-900);
 }
 
 /* Dark Versions */

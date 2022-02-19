@@ -13,22 +13,22 @@
 
 .alert.alert-success {
   background-color: var(--successLight);
-  color: var(--successDark);
+  color: var(--green-900);
 }
 
 .alert.alert-error {
   background-color: var(--dangerLight);
-  color: var(--dangerDark);
+  color: var(--red-900);
 }
 
 .alert.alert-warning {
   background-color: var(--warningLight);
-  color: var(--warningDark);
+  color: var(--amber-900);
 }
 
 .alert.alert-info {
   background-color: var(--infoLight);
-  color: var(--infoDark);
+  color: var(--cyan-900);
 }
 
 /* COMMON ICONS FOR FILLED & BASIC VARIANTS */
@@ -69,22 +69,22 @@
 
 .alert.alert-success-outline {
   border: 1px solid var(--successDark);
-  color: var(--successDark);
+  color: var(--green-900);
 }
 
 .alert.alert-warning-outline {
   border: 1px solid var(--warningDark);
-  color: var(--warningDark);
+  color: var(--amber-900);
 }
 
 .alert.alert-info-outline {
   border: 1px solid var(--infoDark);
-  color: var(--infoDark);
+  color: var(--cyan-900);
 }
 
 .alert.alert-error-outline {
   border: 1px solid var(--dangerDark);
-  color: var(--dangerDark);
+  color: var(--red-900);
 }
 
 .alert.alert-success-outline::before {
@@ -122,22 +122,18 @@
 /* FILLED VARIANTS */
 .alert.alert-success-filled {
   background-color: var(--success);
-  color: var(--light);
 }
 
 .alert.alert-error-filled {
   background-color: var(--danger);
-  color: var(--light);
 }
 
 .alert.alert-warning-filled {
   background-color: var(--warning);
-  color: var(--light);
 }
 
 .alert.alert-info-filled {
   background-color: var(--info);
-  color: var(--light);
 }
 
 /* ACTION ALERT */

@@ -100,11 +100,11 @@
 }
 
 .real-price {
-  color: var(--secondary);
+  color: var(--secondaryDark);
 }
 
 .price-off {
-  color: var(--success);
+  color: var(--successDark);
   font-size: 0.8rem;
 }
 

@@ -76,31 +76,31 @@ p {
 /* Colored Classes */
 
 .primary-text {
-  color: var(--primary);
+  color: var(--primaryDark);
 }
 
 .warning-text {
-  color: var(--warning);
+  color: var(--warningDark);
 }
 
 .danger-text {
-  color: var(--danger);
+  color: var(--dangerDark);
 }
 
 .secondary-text {
-  color: var(--secondary);
+  color: var(--secondaryDark);
 }
 
 .success-text {
-  color: var(--success);
+  color: var(--successDark);
 }
 
 .default-text {
-  color: var(--default);
+  color: var(--defaultDark);
 }
 
 .info-text {
-  color: var(--info);
+  color: var(--infoDark);
 }
 
 /* Different Sizes */
@@ -124,8 +124,8 @@ p {
 }
 
 .code-highlight {
-  color: var(--primary);
-  background: rgb(0, 0, 0, 0.1);
+  color: var(--dark);
+  background: rgb(0, 0, 0, 0.2);
   border-radius: var(--border-radius-sm);
   font-weight: 400;
   padding-right: 0.4rem;
