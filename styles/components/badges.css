@@ -63,9 +63,11 @@
   position: absolute;
   top: 2%;
   left: 2%;
-  padding: 0.2rem;
+  padding: 0.1rem 0.3rem;
   display: inline-block;
   width: fit-content;
   border-radius: var(--border-radius-sm);
   text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 500;
 }

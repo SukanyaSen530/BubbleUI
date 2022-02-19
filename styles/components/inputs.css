@@ -6,13 +6,14 @@
   border-top-right-radius: var(--border-radius-sm);
   position: relative;
   border-bottom: 2px solid var(--default);
-  width: 100%;
-  height: var(--spacing-08);
+  width: 90%;
+  height: var(--spacing-09);
 }
 
 .search-box {
   display: flex;
   align-items: center;
+  height: var(--spacing-09);
 }
 
 .input-group.textarea {
@@ -22,10 +23,9 @@
 
 .input-group .input-group-label {
   position: absolute;
-  top: 3px;
-  font-size: 0.7rem;
-  font-weight: 500;
+  top: 4px;
   color: var(--default);
+  font-size: 0.9rem;
 }
 
 .input-group.required .input-group-label::after {
@@ -37,7 +37,7 @@
 
 .input-group .input-group-input {
   position: absolute;
-  bottom: 5px;
+  bottom: 4px;
   background: transparent;
   border: transparent;
   width: 98%;
@@ -46,7 +46,7 @@
 .search-box .search-bar {
   background: transparent;
   border: transparent;
-  width: 100%;
+  width: 90%;
 }
 
 .input-group.textarea .input-group-input {
