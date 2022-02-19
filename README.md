@@ -8,7 +8,7 @@
 
 ## Stack Used
 
-HTML-5, CSS-3, VanCancel changesilla JavaScript <br><br>
+HTML-5, CSS-3, Vanilla JavaScript <br><br>
 
 ## Installation<br>
 
@@ -128,4 +128,4 @@ Copy & Paste these two links in the head section of your page!<br>
 
 # Demo
 
-![Demo](./assets/Demo-Gif.gif)<br><br>
+![Demo](./assets/DemoGif.gif)<br><br>
