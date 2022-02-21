@@ -2,9 +2,10 @@
   box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
   position: sticky;
   top: 0;
-  background-color: var(--light);
+  background-color: var(--white);
   padding: 0.2rem 1.5rem;
   height: 64px;
+  transition: 0.5s all ease;
 }
 
 .brand-logo img {

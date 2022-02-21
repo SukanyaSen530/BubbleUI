@@ -156,6 +156,8 @@
   <!-- COMPONENTS -->
   <main class="docs-content">
 
+    <button class="btn-float btn-lg default" id="docs-theme-button"><i class="fa-solid fa-moon"></i></button>
+
     <section id="Installation" class="component-section">
       <h2 class="section-heading h2">Installation</h2>
       <p class="component-description">
@@ -277,7 +279,7 @@
           700; 900</span>.</p>
 
       <h4 class="h4 component-type">Headings</h4>
-      <p>Classes : <span class="code-highlight">
+      <p class="class-description">Classes : <span class="code-highlight">
           h1</span>, <span class="code-highlight">
           h2</span>, <span class="code-highlight">
           h3</span>, <span class="code-highlight">
@@ -285,7 +287,7 @@
           h5</span>, <span class="code-highlight">
           h6</span></p>
 
-      <div class="component-display">
+      <div class="component-display component-text">
         <h1 class="h1">H1-Heading</h1>
         <div class="divider"></div>
 
@@ -305,12 +307,12 @@
       </div>
 
       <h4 class="h4 component-type">Aligned Texts</h4>
-      <p>Classes : <span class="code-highlight">
+      <p class="class-description">Classes : <span class="code-highlight">
           center-aligned</span>, <span class="code-highlight">
           left-aligned</span>, <span class="code-highlight">
           right-aligned</span></p>
 
-      <div class="component-display">
+      <div class="component-display component-text">
         <p class="left-aligned">Left Aligned</p>
         <div class="divider"></div>
 
@@ -321,7 +323,7 @@
       </div>
 
       <h4 class="h4 component-type">Coloured Texts</h4>
-      <p>Classes : <span class="code-highlight">
+      <p class="class-description">Classes : <span class="code-highlight">
           primary-text</span>, <span class="code-highlight">
           danger-text</span>, <span class="code-highlight">
           warning-text</span>, <span class="code-highlight">
@@ -354,12 +356,12 @@
       </div>
 
       <h4 class="h4 component-type">Different Sizes Texts</h4>
-      <p>Classes : <span class="code-highlight">
+      <p class="class-description">Classes : <span class="code-highlight">
           para-sm</span>, <span class="code-highlight">
           para-md</span>, <span class="code-highlight">
           para-lg</span>.</p>
 
-      <div class="component-display">
+      <div class="component-display component-text">
         <p class="para-sm">Small para Text</p>
         <div class="divider"></div>
 
@@ -370,19 +372,22 @@
       </div>
 
       <h4 class="h4 component-type">Text Emphasis</h4>
-      <p>Classes : <span class="code-highlight">
+      <p class="class-description">Classes : <span class="code-highlight">
           text-strike</span>, <span class="code-highlight">
           code-highlight</span>, <span class="code-highlight">
           divider</span> .</p>
-      <p class="primary-text">Note: Divider will give a underline after any text or section, use it with div element.
-      </p>
 
-      <div class="component-display">
+
+      <div class="component-display component-text">
         <p class="text-strike para-sm">Text Striked Off</p>
         <div class="divider"></div>
 
-        <p>Use This if you want to <span class="code-highlight">hightlight</span> some code or words.</p>
+        <p>Use This if you want to <span class="code-highlight ">hightlight</span> some code or
+          words.</p>
       </div>
+
+      <p class="warning-text">Note: Divider will give a underline after any text or section, use it with div element.
+      </p>
 
     </section>
 
@@ -476,7 +481,7 @@
       <p class="component-description">Alert with cancel option. Can be used with any of the above variant classes.
         Click the cancel button on second
         alert to check the demo.</p>
-      <p class="primary-text">Note: Only works for font awesome icon or X letter for cancel button.</p>
+      <p class="warning-text">Note: Only works for font awesome icon or X letter for cancel button.</p>
 
       <div class="component-display">
         <article class="alert alert-success-outline">
@@ -697,7 +702,7 @@
       <h4 class="h4 component-type">Text with a Badge</h4>
       <p class="component-description">Badges can be added to normal texts.</p>
 
-      <div class="component-display flex-col flex-center">
+      <div class="component-display flex-col flex-center component-text">
         <p class="badge">
           Text with a badge
           <span class="badge-count success">9</span>
@@ -730,7 +735,7 @@
         Available for both button and link
         elements. Has disabled state.</p>
 
-      <p> Classes: <span class="code-highlight">btn</span> (common),
+      <p class="class-description">Classes: <span class="code-highlight">btn</span> (common),
         <span class="code-highlight">btn-contained </span></p>
 
       <div class="component-display flex-row flex-center flex-wrap">
@@ -752,7 +757,8 @@
         actions that are important but
         aren't the primary action in an app. Available both for button and link elements.</p>
       </p>
-      <p> Classes: <span class="code-highlight">btn</span> (common for all variants) folowed by,
+      <p class="class-description">Classes: <span class="code-highlight">btn</span> (common for all variants) folowed
+        by,
         <span class="code-highlight">btn-success-outline </span>,
         <span class="code-highlight">btn-warning-outline</span>,
         <span class="code-highlight">btn-default-outline</span>,
@@ -783,7 +789,7 @@
 
       <h4 class="h4 component-type">Link</h4>
       <p class="component-description">This is only for link elements.</p>
-      <p> Class: <span class="code-highlight">btn-link</span>.</p>
+      <p class="class-description">Class: <span class="code-highlight">btn-link</span>.</p>
 
       <div class="component-display flex-row flex-center">
         <a class="btn-link">
@@ -794,7 +800,7 @@
       <h4 class="h4 component-type">Icon Buttons</h4>
       <p class="component-description">Available both for button and link element.</p>
       </p>
-      <p> Class: <span class="code-highlight">btn-icon</span>.</p>
+      <p class="class-description">Class: <span class="code-highlight">btn-icon</span>.</p>
 
       <div class="component-display flex-row flex-center">
         <a class="btn-icon default">
@@ -808,7 +814,7 @@
 
       <h4 class="h4 component-type">Floating Action Button</h4>
       <p class="component-description">Available both for button and link element.</p>
-      <p> Class: <span class="code-highlight">btn-float</span>.</p>
+      <p class="class-description">Class: <span class="code-highlight">btn-float</span>.</p>
 
       <div class="component-display flex-row flex-center">
         <button class="btn-float secondary">
@@ -824,7 +830,7 @@
       <p class="component-description">Add font awesome icons inside button element. Available both for button and
         link
         element.</p>
-      <p> Classes: <span class="code-highlight">btn</span> (common),
+      <p class="class-description">Classes: <span class="code-highlight">btn</span> (common),
         <span class="code-highlight">btn-contained</span>.</p>
 
       <div class="component-display flex-row flex-center flex-wrap">
@@ -845,7 +851,7 @@
 
       <h4 class="h4 component-type">Block Buttons</h4>
       <p class="component-description">Takes full width of container. Generally used in forms.</p>
-      <p> Classes: <span class="code-highlight">btn</span> (common),
+      <p class="class-description">Classes: <span class="code-highlight">btn</span> (common),
         <span class="code-highlight">block-btn</span>.</p>
 
       <div class="component-display flex-row flex-center">
@@ -856,7 +862,7 @@
 
       <h4 class="h4 component-type">Different Sizes</h4>
       <p class="component-description">Three sizes are available.</p>
-      <p> Classes: <span class="code-highlight">btn</span> (common),
+      <p class="class-description">Classes: <span class="code-highlight">btn</span> (common),
         <span class="code-highlight">btn-sm</span>, <span class="code-highlight">btn-md</span>, <span
           class="code-highlight">btn-lg</span>.
       </p>
@@ -1255,7 +1261,7 @@
       <h4 class="h4 component-type">Basic Chips</h4>
       <p class="component-description">Supports all colour classes.</p>
 
-      <p>Class : <span class="code-highlight">chip</span></p>
+      <p class="class-description">Class : <span class="code-highlight">chip</span></p>
 
       <div class="component-display flex-row flex-center flex-wrap">
 
@@ -1266,7 +1272,8 @@
 
       <h4 class="h4 component-type">Stacked Chips</h4>
       <p class="component-description">Takes full width of the container.</p>
-      <p>Classes : <span class="code-highlight">chip</span>, <span class="code-highlight">stacked</span></p>
+      <p class="class-description">Classes : <span class="code-highlight">chip</span>, <span
+          class="code-highlight">stacked</span></p>
 
       <div class="component-display flex-col flex-center">
         <span class="chip stacked warning">Warning</span>
@@ -1277,7 +1284,8 @@
       <h4 class="h4 component-type">Chips with Cancel Icon</h4>
       <p class="component-description">Supports All colours. No need to use any icon. Class provides the icon.</p>
 
-      <p>Classes : <span class="code-highlight">chip</span>, <span class="code-highlight">chip-cancel</span></p>
+      <p class="class-description">Classes : <span class="code-highlight">chip</span>, <span
+          class="code-highlight">chip-cancel</span></p>
 
       <div class="component-display flex-row flex-center">
 
@@ -1310,13 +1318,14 @@
 
       <h4 class="h4 component-type">Column</h4>
       <p class="component-description"> You can put min 1 and max 6 items in a column</p>
-      <p> Classes: <span class="code-highlight">grid</span> (Common), <span class="code-highlight">grid-c-1</span>
+      <p class="class-description">Classes: <span class="code-highlight">grid</span> (Common), <span
+          class="code-highlight">grid-c-1</span>
         ,<span class="code-highlight">grid-c-2</span> ,<span class="code-highlight">grid-c-3</span> ,<span
           class="code-highlight">grid-c-4</span> ,<span class="code-highlight">grid-c-5</span>, <span
           class="code-highlight">grid-c-6</span>
       </p>
 
-      <p>Classes applied for this are - grid, grid-c-6, gap-lg</p>
+      <p class="class-description">Classes applied for this are - grid, grid-c-6, gap-lg</p>
 
       <div class="component-display">
 
@@ -1337,7 +1346,7 @@
 
       </div>
 
-      <p>Classes applied for this are - grid, grid-c-5, gap-md</p>
+      <p class="class-description">Classes applied for this are - grid, grid-c-5, gap-md</p>
 
       <div class="component-display">
 
@@ -1358,7 +1367,7 @@
 
       </div>
 
-      <p>Classes applied for this are - grid, grid-c-4, gap-sm</p>
+      <p class="class-description">Classes applied for this are - grid, grid-c-4, gap-sm</p>
 
       <div class="component-display">
 
@@ -1381,7 +1390,8 @@
 
       <h4 class="h4 component-type">Row</h4>
       <p class="component-description"> You can put min 1 and max 6 items in a row.</p>
-      <p> Classes: <span class="code-highlight">grid</span> (Common), <span class="code-highlight">grid-r-1</span>
+      <p class="class-description">Classes: <span class="code-highlight">grid</span> (Common), <span
+          class="code-highlight">grid-r-1</span>
         ,<span class="code-highlight">grid-r-2</span> ,<span class="code-highlight">grid-r-3</span> ,<span
           class="code-highlight">grid-r-4</span> ,<span class="code-highlight">grid-r-5</span>, <span
           class="code-highlight">grid-r-6</span>
@@ -1391,7 +1401,7 @@
       <h4 class="h4 component-type">Gap Classes</h4>
       <p class="component-description"> Deifines the space between rows and columns.
       </p>
-      <p> Classes:<span class="code-highlight">gap-sm</span>(0.5rem)
+      <p class="class-description">Classes:<span class="code-highlight">gap-sm</span>(0.5rem)
         ,<span class="code-highlight">gap-md</span> (1rem) ,<span class="code-highlight">gap-lg</span>(1.5rem)
       </p>
 
@@ -1410,7 +1420,7 @@
       <h4 class="h4 component-type">Responsive Image</h4>
       <p class="component-description">Responsive Image will take full height and width of the parent container.
       </p>
-      <p> Class: <span class="code-highlight">img-responsive</span>
+      <p class="class-description">Class: <span class="code-highlight">img-responsive</span>
       </p>
 
       <div class="component-display flexible-height-width">
@@ -1420,7 +1430,7 @@
 
       <h4 class="h4 component-type">Round Image</h4>
       <p class="component-description">Available in default dimension of 10rem x 10rem.</p>
-      <p> Class: <span class="code-highlight">img-round</span>
+      <p class="class-description">Class: <span class="code-highlight">img-round</span>
       </p>
 
       <div class="component-display flex-row flex-center">
@@ -1448,7 +1458,7 @@
         default
         colour.</p>
 
-      <div class="component-display flex-col flex-center">
+      <div class="component-display flex-col flex-center component-text">
 
         <div class=" input-group">
           <label for="full_name" class="input-group-label">Full Name</label>
@@ -1565,9 +1575,9 @@
 
       <h4 class="h4 component-type">Nested Ordered Lists</h4>
       <p class="component-description">Supprts 2 levels of nesting.</p>
-      <p>Class : <span class="code-highlight">nested-list</span></p>
+      <p class="class-description">Class : <span class="code-highlight">nested-list</span></p>
 
-      <div class="component-display flex-row flex-center">
+      <div class="component-display flex-row flex-center component-text">
         <ol class="nested-list">
           <li>Apple</li>
           <li>Mango</li>
@@ -1592,10 +1602,11 @@
 
       <h4 class="h4 component-type">Icon Unordered Lists</h4>
       <p class="component-description">Supports Two icons and only 1 level of nesting.</p>
-      <p>Classes : <span class="code-highlight">check-list</span>, <span class="code-highlight">heart-list</span>
+      <p class="class-description">Classes : <span class="code-highlight">check-list</span>, <span
+          class="code-highlight">heart-list</span>
       </p>
 
-      <div class="component-display flex-col flex-center">
+      <div class="component-display flex-col flex-center component-text">
         <ul class="check-list">
           <li>Eggs</li>
           <li>Milk</li>
@@ -1611,9 +1622,9 @@
 
       <h4 class="h4 component-type">Spaced Lists</h4>
       <p class="component-description">The child items take the space available.</p>
-      <p>Classes : <span class="code-highlight">spaced-list</span></p>
+      <p class="class-description">Classes : <span class="code-highlight">spaced-list</span></p>
 
-      <div class="component-display flex-col flex-center">
+      <div class="component-display flex-col flex-center component-text">
         <ul class="spaced-list">
           <li>Eggs</li>
           <li>Milk</li>
@@ -1631,7 +1642,7 @@
       <h4 class="h4 component-type">Stacked Notification Lists</h4>
       <p class="component-description">Add desired component inside "li" element. For Example - Notification Card is
         used for this demo.</p>
-      <p>Class : <span class="code-highlight">stacked-list</span></p>
+      <p class="class-description">Class : <span class="code-highlight">stacked-list</span></p>
 
       <div class="component-display flex-row flex-center">
 
@@ -1884,7 +1895,7 @@
 
       <h4 class="h4 component-type">Normal Rating</h4>
       <p class="component-description">Use font awesome star icons to generate this star rating component.</p>
-      <p>Class : <span class="code-highlight">star-rating-container</span></p>
+      <p class="class-description">Class : <span class="code-highlight">star-rating-container</span></p>
 
       <div class="component-display flex-row flex-center">
 
@@ -1907,7 +1918,7 @@
       <p class="component-description">For this you don't need to add any icon. Just add the class and it will add
         the
         star.</p>
-      <p>Class : <span class="code-highlight">single-star-rating</span></p>
+      <p class="class-description">Class : <span class="code-highlight">single-star-rating</span></p>
 
       <div class="component-display flex-row flex-center">
 

@@ -21,7 +21,7 @@
 }
 
 .dark {
-  background-color: var(--dark);
+  background-color: black;
   color: var(--light);
 }
 
