@@ -62,7 +62,7 @@ body {
 }
 
 .component-text {
-  color: rgb(100, 99, 99);
+  color: var(--dark);
 }
 
 .component-type {
