@@ -10,4 +10,7 @@
   --purple-800: #815ac0;
   --purple-900: #7251b5;
   --purple-1000: #6247aa;
+
+  --box-shadow-dark: rgb(0 0 0 / 15%) 0px 2px 8px;
+  --box-shadow-light: rgb(255, 255, 255 / 40%) 0px 2px 8px;
 }

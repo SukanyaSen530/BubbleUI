@@ -9,6 +9,18 @@
 /* Components */
 @import url(../components/index.css);
 
+body {
+  background-color: var(--white);
+  transition: 0.5s all ease;
+}
+
+#docs-theme-button {
+  position: fixed;
+  left: 90%;
+  top: 2rem;
+  z-index: 1000;
+}
+
 .docs-content {
   position: absolute;
   min-height: 100%;
@@ -39,10 +51,18 @@
 }
 
 .component-description {
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.8rem;
   margin-bottom: 0.7rem;
   color: var(--slate-600);
+}
+
+.class-description {
+  color: var(--dark);
+}
+
+.component-text {
+  color: rgb(100, 99, 99);
 }
 
 .component-type {
@@ -81,7 +101,7 @@
 
 .component-display {
   padding: var(--spacing-05);
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  box-shadow: var(--box-shadow-dark);
   border-radius: var(--border-radius-sm);
   margin: var(--spacing-06);
 }
@@ -116,6 +136,10 @@
 }
 
 @media only screen and (max-width: 700px) {
+  #docs-theme-button {
+    left: 85%;
+  }
+
   .component-display {
     margin: var(--spacing-06) auto;
   }
