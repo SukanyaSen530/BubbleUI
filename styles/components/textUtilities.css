@@ -26,31 +26,37 @@ p {
 .h1 {
   font-size: 2.8rem;
   font-weight: 700;
+  line-height: 2.8rem;
 }
 
 .h2 {
   font-size: 2.4rem;
   font-weight: 600;
+  line-height: 2.4rem;
 }
 
 .h3 {
   font-size: var(--spacing-07);
   font-weight: 500;
+  line-height: var(--spacing-07);
 }
 
 .h4 {
   font-size: 1.6rem;
   font-weight: 500;
+  line-height: 1.6rem;
 }
 
 .h5 {
   font-size: 1.2rem;
   font-weight: 500;
+  line-height: 1.2rem;
 }
 
 .h6 {
   font-size: 0.9rem;
   font-weight: 500;
+  line-height: 0.9rem;
 }
 
 /* Aligned Texts */
@@ -107,14 +113,17 @@ p {
 
 .para-sm {
   font-size: 0.8rem;
+  line-height: 0.8rem;
 }
 
 .para-md {
+  font-size: 1.2rem;
   font-size: 1.2rem;
 }
 
 .para-lg {
   font-size: 1.6rem;
+  line-height: 1.6rem;
 }
 
 /* Special Classes */

@@ -9,6 +9,10 @@
 /* Components */
 @import url(../components/index.css);
 
+html {
+  font-size: 125%;
+}
+
 body {
   background-color: var(--white);
   transition: 0.5s all ease;
@@ -136,6 +140,10 @@ body {
 }
 
 @media only screen and (max-width: 700px) {
+  html {
+    font-size: 100%;
+  }
+
   #docs-theme-button {
     left: 85%;
   }
@@ -146,5 +154,11 @@ body {
 
   .flexible-height-width {
     height: 40vh;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  html {
+    font-size: 62.5%;
   }
 }

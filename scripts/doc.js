@@ -8,7 +8,7 @@ hamburgerBtn.addEventListener("click", () => {
 let classesToAdd = ["active", "hide"];
 
 window.addEventListener("resize", () => {
-  if (window.innerWidth < 750) {
+  if (window.innerWidth < 450) {
     sidebar.classList.add(...classesToAdd);
   } else {
     sidebar.classList.remove(...classesToAdd);
