@@ -126,6 +126,9 @@ Copy & Paste these two links in the head section of your page!<br>
 - Light
 - Dark
 
+### [Slider](https://bubbles-nine.netlify.app/docs.html#Inputs)
+It is inside Input section at the end.
+
 # Demo
 
 ![Demo](./assets/DemoGif.gif)<br><br>
