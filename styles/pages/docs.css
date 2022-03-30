@@ -114,10 +114,10 @@ body {
 /* ECOMM CARD Custom Styles */
 .price-container {
   display: flex;
-  justify-content: space-between;
-  width: 50%;
+  width: 100%;
   margin: 0 0.5rem;
   align-items: center;
+  gap: 1rem;
 }
 
 .price {
@@ -130,7 +130,7 @@ body {
 
 .price-off {
   color: var(--successDark);
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .grid-item {
