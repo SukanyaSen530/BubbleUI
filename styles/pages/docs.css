@@ -9,8 +9,6 @@
 /* Components */
 @import url(../components/index.css);
 
-
-
 body {
   background-color: var(--white);
   transition: 0.5s all ease;
@@ -24,7 +22,7 @@ body {
   left: 18rem;
   transition: all 0.4s ease;
   overflow-x: hidden;
-  padding: 0 3rem ;
+  padding: 0 3rem;
 }
 
 #docs-theme-button {
@@ -108,7 +106,7 @@ body {
   padding: var(--spacing-05);
   box-shadow: var(--box-shadow-dark);
   border-radius: var(--border-radius-sm);
-  margin: 3rem 0 ;
+  margin: 3rem 0;
 }
 
 /* ECOMM CARD Custom Styles */
@@ -141,7 +139,6 @@ body {
 }
 
 @media only screen and (max-width: 700px) {
-
   #docs-theme-button {
     left: 85%;
   }
@@ -153,6 +150,8 @@ body {
   .flexible-height-width {
     height: 40vh;
   }
+
+  .docs-content {
+    padding: 0 0.5rem;
+  }
 }
-
-
