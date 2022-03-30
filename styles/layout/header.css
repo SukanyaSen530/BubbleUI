@@ -5,6 +5,7 @@
   background-color: var(--white);
   padding: 0.2rem 1.5rem;
   transition: 0.5s all ease;
+  height: 8rem;
 }
 
 .brand-logo img {
