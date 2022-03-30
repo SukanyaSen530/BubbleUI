@@ -30,12 +30,12 @@ a {
 
 @media only screen and (max-width: 900px) {
   html {
-    font-size: 62.5%; /* 8px */
+    font-size: 56.25%; /* 9px */
   }
 }
 
 @media only screen and (max-width: 600px) {
   html {
-    font-size: 62.5%; /* 9px */
+    font-size: 50%; /* 8px */
   }
 }

@@ -1,7 +1,6 @@
 .avatar {
   border-radius: var(--border-radius-circle);
   display: inline-block;
-  margin: 0.1rem;
   position: relative;
 }
 
@@ -42,18 +41,18 @@
 
 /* SIZES */
 .avatar-sm {
-  height: var(--spacing-09); /* 3rem */
-  width: var(--spacing-09);
+  height: 5rem; /* 4rem */
+  width: 5rem;
 }
 
 .avatar-md {
-  height: var(--spacing-10); /* 4rem */
-  width: var(--spacing-10);
+  height: 6rem; /* 5rem */
+  width: 6rem;
 }
 
 .avatar-lg {
-  height: var(--spacing-11); /* 5rem */
-  width: var(--spacing-11);
+  height: 7rem; /* 6rem */
+  width: 7rem;
 }
 
 /* SQUARE */

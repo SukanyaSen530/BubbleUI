@@ -37,7 +37,8 @@
   font-family: "Font Awesome 5 Free";
   content: "\f058";
   font-weight: 900;
-  margin-right: 5px;
+  margin-right: 1rem;
+  font-size: 2rem;
 }
 
 .alert.alert-error::before,
@@ -45,7 +46,8 @@
   font-family: "Font Awesome 5 Free";
   content: "\f06a";
   font-weight: 900;
-  margin-right: 5px;
+  margin-right: 1rem;
+  font-size: 2rem;
 }
 
 .alert.alert-warning::before,
@@ -53,7 +55,8 @@
   font-family: "Font Awesome 5 Free";
   content: "\f071";
   font-weight: 900;
-  margin-right: 5px;
+  margin-right: 1rem;
+  font-size: 2rem;
 }
 
 .alert.alert-info::before,
@@ -61,7 +64,8 @@
   font-family: "Font Awesome 5 Free";
   content: "\f05a";
   font-weight: 900;
-  margin-right: 5px;
+   margin-right: 1rem;
+  font-size: 2rem;
 }
 
 /* OUTLINE VARIANTS */
@@ -91,7 +95,8 @@
   content: "\f058";
   font-weight: 900;
   color: var(--success);
-  margin-right: 5px;
+  margin-right: 1rem;
+  font-size: 2rem;
 }
 
 .alert.alert-error-outline::before {
@@ -99,7 +104,8 @@
   content: "\f06a";
   font-weight: 900;
   color: var(--danger);
-  margin-right: 5px;
+  margin-right: 1rem;
+  font-size: 2rem;
 }
 
 .alert.alert-warning-outline::before {
@@ -107,7 +113,8 @@
   content: "\f071";
   font-weight: 900;
   color: var(--warning);
-  margin-right: 5px;
+  margin-right: 1rem;
+  font-size: 2rem;
 }
 
 .alert.alert-info-outline::before {
@@ -115,7 +122,8 @@
   content: "\f05a";
   font-weight: 900;
   color: var(--info);
-  margin-right: 5px;
+  margin-right: 1rem;
+  font-size: 2rem;
 }
 
 /* FILLED VARIANTS */
