@@ -12,51 +12,50 @@ h5,
 .h5,
 h6,
 .h6 {
-  margin: var(--spacing-03) 0;
+  margin: var(--spacing-05) 0;
 }
 
 p {
-  font-size: 0.9rem;
-  padding-bottom: var(--spacing-02);
-  line-height: 1.2rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
 }
 
 /* Headings */
 
 .h1 {
-  font-size: 2.8rem;
+  font-size: 4.8rem;
   font-weight: 700;
-  line-height: 2.8rem;
+  line-height: 5.8rem;
 }
 
 .h2 {
-  font-size: 2.4rem;
+  font-size: 4rem;
   font-weight: 600;
-  line-height: 2.4rem;
+  line-height: 5.4rem;
 }
 
 .h3 {
-  font-size: var(--spacing-07);
+  font-size: 3.2rem;
   font-weight: 500;
-  line-height: var(--spacing-07);
+  line-height: 4.2rem;
 }
 
 .h4 {
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   font-weight: 500;
-  line-height: 1.6rem;
+  line-height: 3.4rem;
 }
 
 .h5 {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-weight: 500;
-  line-height: 1.2rem;
+  line-height: 2.6rem;
 }
 
 .h6 {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   font-weight: 500;
-  line-height: 0.9rem;
+  line-height: 2.2rem;
 }
 
 /* Aligned Texts */
@@ -112,18 +111,18 @@ p {
 /* Different Sizes */
 
 .para-sm {
-  font-size: 0.8rem;
-  line-height: 0.8rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
 }
 
 .para-md {
-  font-size: 1.2rem;
-  font-size: 1.2rem;
+  font-size: 2rem;
+  line-height: 3rem;
 }
 
 .para-lg {
-  font-size: 1.6rem;
-  line-height: 1.6rem;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
 }
 
 /* Special Classes */
@@ -137,12 +136,11 @@ p {
   background: rgb(0, 0, 0, 0.2);
   border-radius: var(--border-radius-sm);
   font-weight: 400;
-  padding-right: 0.4rem;
-  padding-left: 0.4em;
+  padding: 0.5rem;
 }
 
 .divider {
   height: 0;
   border-top: 1px solid var(--secondary);
-  margin: var(--spacing-03) 0;
+  margin: 1rem 0;
 }
