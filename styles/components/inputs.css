@@ -110,7 +110,7 @@
 }
 
 /* ERROR  & SUCCESS */
-.input-group.error {
+/* .input-group.error {
   border-bottom: 2px solid var(--danger);
   margin: 0.3rem 0 1rem;
 }
@@ -118,23 +118,23 @@
 .input-group.success {
   border-bottom: 2px solid var(--success);
   margin: 0.3rem 0 1rem;
-}
-
+} */
+/* 
 .error-message,
 .success-message {
   font-size: 1.2rem;
   font-weight: 400;
   position: absolute;
   bottom: -2.5rem;
-}
+} */
 
-.error-message {
+/* .error-message {
   color: var(--danger);
 }
 
 .success-message {
   color: var(--success);
-}
+} */
 
 /* RADIO & CHECKBOX */
 .input-small-group {

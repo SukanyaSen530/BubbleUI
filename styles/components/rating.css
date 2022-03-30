@@ -48,7 +48,7 @@
 .single-star-rating {
   background: var(--successDark);
   border-radius: var(--border-radius-sm);
-  padding: 0.3rem 1rem;
+  padding: 0 1rem;
   color: var(--light);
   display: inline-block;
   font-size: 1.2rem;

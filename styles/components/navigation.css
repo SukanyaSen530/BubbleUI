@@ -32,8 +32,8 @@
   background: transparent;
   color: white;
   border: transparent;
-  font-size: var(--spacing-06);
-  padding: 0.2rem 0.4rem;
+  font-size: 3rem;
+  padding: 0.5rem 1rem;
   border-radius: var(--border-radius-sm);
   transition: background 0.4s ease;
   display: none;

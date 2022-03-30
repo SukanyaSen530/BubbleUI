@@ -33,13 +33,13 @@
 }
 
 .card .card-details {
-  margin: 0.7rem var(--spacing-03);
+  margin: 1rem;
 }
 
 .card .card-content {
   font-size: 1.4rem;
   color: #4f5359;
-  margin: 0 var(--spacing-03);
+  margin: 0 1rem;
 }
 
 .card .card-image {
@@ -65,6 +65,12 @@
 .card.card-horizontal .card-image {
   flex: 0 0 180px;
   height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .card.card-horizontal .card-image {
+    flex: 0 0 100px;
+  }
 }
 
 .card.card-horizontal .card-image > img {

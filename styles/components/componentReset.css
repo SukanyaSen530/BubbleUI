@@ -23,18 +23,18 @@ a {
 
 @media only screen and (min-width: 1600px) {
   html {
-    font-size: 112.5%; /* 18px */
+    font-size: 75%; /* 12px */
   }
 }
 
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1200px) {
   html {
     font-size: 56.25%; /* 9px */
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   html {
     font-size: 50%; /* 8px */
   }
