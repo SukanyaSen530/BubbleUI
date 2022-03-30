@@ -9,13 +9,22 @@
 /* Components */
 @import url(../components/index.css);
 
-/* html {
-  font-size: 125%;
-} */
+
 
 body {
   background-color: var(--white);
   transition: 0.5s all ease;
+  font-size: 1.5rem;
+}
+
+.docs-content {
+  position: absolute;
+  min-height: 100%;
+  width: calc(100% - 18rem);
+  left: 18rem;
+  transition: all 0.4s ease;
+  overflow-x: hidden;
+  padding: 0 3rem ;
 }
 
 #docs-theme-button {
@@ -23,15 +32,6 @@ body {
   left: 90%;
   top: 2rem;
   z-index: 1000;
-}
-
-.docs-content {
-  position: absolute;
-  min-height: 100%;
-  width: calc(100% - 10rem);
-  left: var(--spacing-13);
-  transition: all 0.4s ease;
-  overflow-x: hidden;
 }
 
 .component-section {
@@ -42,7 +42,7 @@ body {
 
 .section-heading {
   color: var(--purple-800);
-  padding: 2rem 0 1rem;
+  padding: 2.5rem 0;
 }
 
 .section-heading:after {
@@ -55,9 +55,9 @@ body {
 }
 
 .component-description {
-  font-size: 1rem;
-  line-height: 1.8rem;
-  margin-bottom: 0.7rem;
+  font-size: 1.7rem;
+  line-height: 2.7rem;
+  margin-bottom: 1.7rem;
   color: var(--slate-600);
 }
 
@@ -67,10 +67,11 @@ body {
 
 .component-text {
   color: var(--dark);
+  margin-bottom: 1rem;
 }
 
 .component-type {
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
   color: var(--purple-500);
 }
 
@@ -81,10 +82,10 @@ body {
 }
 
 .pallete div {
-  width: 100px;
-  height: 100px;
+  width: 12rem;
+  height: 12rem;
   padding: var(--spacing-03);
-  font-size: 0.7rem;
+  font-size: 1.2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -107,7 +108,7 @@ body {
   padding: var(--spacing-05);
   box-shadow: var(--box-shadow-dark);
   border-radius: var(--border-radius-sm);
-  margin: var(--spacing-06);
+  margin: 3rem 0 ;
 }
 
 /* ECOMM CARD Custom Styles */
@@ -140,9 +141,6 @@ body {
 }
 
 @media only screen and (max-width: 700px) {
-  /* html {
-    font-size: 100%;
-  } */
 
   #docs-theme-button {
     left: 85%;
@@ -157,8 +155,4 @@ body {
   }
 }
 
-/* @media only screen and (max-width: 420px) {
-  html {
-    font-size: 62.5%;
-  }
-} */
+
