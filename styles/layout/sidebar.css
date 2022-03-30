@@ -9,6 +9,7 @@
   overflow-x: hidden;
   overflow-y: auto;
   padding: 1rem;
+  z-index: 10;
 }
 
 .sidebar.active {
@@ -62,6 +63,7 @@
 .sidebar .menu-list li {
   margin-top: var(--spacing-03);
   cursor: pointer;
+  position: relative;
 }
 
 .sidebar .menu-list .sidebar-link-heading {
@@ -105,27 +107,30 @@
 
 .sidebar .menu-list li .tooltip {
   position: fixed;
-  font-size: 0.8rem;
-  width: 80px;
-  left: var(--spacing-02);
-  top: 4rem;
+  width: 12rem;
+  left: 1rem;
+  top: 2rem;
   transform: translateY(-50%);
   border-radius: 5px;
   line-height: var(--spacing-06);
-  padding: 0.3rem;
+  padding: 1rem;
   text-align: center;
   background-color: var(--purple-800);
   color: white;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   opacity: 0;
   pointer-events: none;
-  z-index: 990;
+  z-index: 10;
 }
 
 .sidebar.active .menu-list li:hover .tooltip {
-  top: 4rem;
+  top: 2rem;
   opacity: 1;
   transition: all 0.5s ease;
+}
+
+.sidebar.active .menu-list li i{
+  margin-left: 1.3rem;
 }
 
 .sidebar.active ~ .docs-content {
