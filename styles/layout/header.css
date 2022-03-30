@@ -4,12 +4,11 @@
   top: 0;
   background-color: var(--white);
   padding: 0.2rem 1.5rem;
-  height: 64px;
   transition: 0.5s all ease;
 }
 
 .brand-logo img {
-  height: var(--spacing-10);
+  height: 8rem;
   padding-left: var(--spacing-05);
 }
 
@@ -21,7 +20,7 @@
 
 .page-navbar-options li > a:link {
   padding: 0 var(--spacing-03);
-  font-size: 2rem;
+  font-size: 3rem;
   color: var(--purple-500);
   transition: 0.5s color;
 }

@@ -1,6 +1,6 @@
 .card {
   background-color: var(--light);
-  width: 19rem;
+  width: 35rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   border-radius: var(--border-radius-sm);
@@ -9,6 +9,7 @@
   text-align: justify;
   transition: 0.4s box-shadow ease;
   position: relative;
+  height: auto;
 }
 
 .card .card-actions {
@@ -24,6 +25,7 @@
 
 .card .card-buttongroup {
   display: flex;
+  gap: 5px;
 }
 
 .card .card-buttongroup > button {
@@ -31,17 +33,17 @@
 }
 
 .card .card-details {
-  margin: 0.7rem var(--spacing-03);
+  margin: 1rem;
 }
 
 .card .card-content {
-  font-size: 0.8rem;
+  font-size: 1.4rem;
   color: #4f5359;
-  margin: 0 var(--spacing-03);
+  margin: 0 1rem;
 }
 
 .card .card-image {
-  height: 12rem;
+  height: 20rem;
 }
 
 .card .card-image > img {
@@ -51,7 +53,7 @@
 
 /* HORIZONTAL */
 .card.card-horizontal {
-  width: 22rem;
+  width: 44rem;
   display: flex;
   flex-direction: row;
 }
@@ -61,8 +63,14 @@
 }
 
 .card.card-horizontal .card-image {
-  flex: 0 0 100px;
+  flex: 0 0 180px;
   height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .card.card-horizontal .card-image {
+    flex: 0 0 100px;
+  }
 }
 
 .card.card-horizontal .card-image > img {
@@ -87,7 +95,6 @@
 }
 
 .card-dismiss.card .card-image {
-  height: 8rem;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
   order: 2;
@@ -169,7 +176,7 @@
 /* NOTIFICATION */
 
 .card.notification-card {
-  padding: 0.3rem;
+  padding: 1rem;
   transition: background 0.4s ease;
 }
 
@@ -183,17 +190,17 @@
 }
 
 .card.notification-card .notification {
-  margin-left: 0.3rem;
+  margin-left: 1rem;
 }
 
 .card.notification-card .notification-message {
-  font-size: 0.8rem;
+  font-size: 1.5rem;
   line-height: 1.1;
 }
 
 .card.notification-card .social-info {
   color: var(--secondaryDark);
-  font-size: 0.7rem;
+  font-size: 1rem;
 }
 
 .card.notification-card .seperator:before {

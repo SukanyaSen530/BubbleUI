@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   height: 100%;
-  width: var(--spacing-13);
+  width: 18rem;
   background-color: var(--grey-600);
   transition: all 0.5s ease;
   overflow-x: hidden;
@@ -12,12 +12,12 @@
 }
 
 .sidebar.active {
-  width: 4.5rem;
+  width: 6rem;
   padding: 0.5rem;
 }
 
 .sidebar .logo {
-  height: var(--spacing-10);
+  height: 7rem;
 }
 
 .sidebar.active .logo {
@@ -27,6 +27,7 @@
 .sidebar .logo-container {
   justify-content: space-evenly;
   align-items: center;
+  margin-top: 2rem;
 }
 
 .sidebar.active .logo-container {
@@ -36,7 +37,7 @@
 
 .sidebar #hamburger-btn {
   color: var(--light);
-  font-size: 1.1rem;
+  font-size: 3rem;
   padding: var(--spacing-04);
   border-radius: 5px;
   transition: all 0.4s ease-in-out;
@@ -47,7 +48,7 @@
 }
 
 .sidebar.active #hamburger-btn {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .sidebar.active.hide #hamburger-btn {
@@ -65,10 +66,11 @@
 
 .sidebar .menu-list .sidebar-link-heading {
   border-bottom: 1px solid white;
-  height: var(--spacing-06);
+  height: var(--spacing-08);
   width: 90%;
   color: rgb(210, 216, 221);
   border-radius: 5px;
+  margin: 2rem 0;
 }
 
 .sidebar.active .menu-list .sidebar-link-heading {
@@ -81,8 +83,8 @@
   border-radius: 5px;
   color: whitesmoke;
   transition: all 0.4s ease;
-  padding: var(--spacing-03) 0;
-  font-size: 0.8rem;
+  padding: var(--spacing-05) 0;
+  font-size: 2rem;
 }
 
 .sidebar.active .sidebar-link-name {
@@ -95,10 +97,10 @@
 }
 
 .sidebar .menu-list li a i {
-  min-width: var(--spacing-08);
+  margin: 0 1rem;
   border-radius: 5px;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 
 .sidebar .menu-list li .tooltip {
@@ -127,8 +129,8 @@
 }
 
 .sidebar.active ~ .docs-content {
-  width: calc(100% - 4.5rem);
-  left: 4.5rem;
+  width: calc(100% - 6rem);
+  left: 6rem;
 }
 
 .sidebar::-webkit-scrollbar {

@@ -6,14 +6,14 @@
   border-top-right-radius: var(--border-radius-sm);
   position: relative;
   border-bottom: 2px solid var(--default);
-  width: 90%;
-  height: var(--spacing-09);
+  width: 100%;
+  height: 5rem;
 }
 
 .search-box {
   display: flex;
   align-items: center;
-  height: var(--spacing-09);
+  height: 5rem;
 }
 
 .input-group.textarea {
@@ -25,7 +25,7 @@
   position: absolute;
   top: 4px;
   color: var(--default);
-  font-size: 0.9rem;
+  font-size: 1.5rem;
 }
 
 .input-group.required .input-group-label::after {
@@ -53,7 +53,7 @@
   position: static;
   width: 100%;
   margin-bottom: 0;
-  padding-top: 0.8rem;
+  padding-top: 2rem;
 }
 
 .input-group .input-group-input:focus,
@@ -65,7 +65,7 @@
 .search-bar::placeholder {
   color: var(--secondary);
   transition: 0.5s color ease;
-  font-size: 0.8rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
@@ -110,7 +110,7 @@
 }
 
 /* ERROR  & SUCCESS */
-.input-group.error {
+/* .input-group.error {
   border-bottom: 2px solid var(--danger);
   margin: 0.3rem 0 1rem;
 }
@@ -118,35 +118,36 @@
 .input-group.success {
   border-bottom: 2px solid var(--success);
   margin: 0.3rem 0 1rem;
-}
-
+} */
+/* 
 .error-message,
 .success-message {
-  font-size: 0.7rem;
+  font-size: 1.2rem;
   font-weight: 400;
   position: absolute;
-  bottom: -1.5rem;
-}
+  bottom: -2.5rem;
+} */
 
-.error-message {
+/* .error-message {
   color: var(--danger);
 }
 
 .success-message {
   color: var(--success);
-}
+} */
 
 /* RADIO & CHECKBOX */
 .input-small-group {
   display: inline-flex;
   flex-direction: row;
   margin: 0.5rem;
+  align-items: center;
 }
 
 .input-small-group .input-small-label {
   order: 2;
   margin-left: 5px;
-  font-size: 0.9rem;
+  font-size: 1.6rem;
 }
 
 .input-small-group .input-small {
@@ -156,9 +157,9 @@
 /* SEARCH-ICON */
 
 .search-icon {
-  font-size: 1rem;
+  font-size: 2rem;
   color: var(--defaultLight);
-  margin-right: 0.5rem;
+  margin-right: 1rem;
   padding-top: 5px;
 }
 
@@ -178,8 +179,8 @@
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 1.2rem;
-  height: 1.2rem;
+  width: 1.6rem;
+  height: 1.6rem;
   border-radius: var(--border-radius-sm);
   background: var(--default);
   cursor: pointer;
