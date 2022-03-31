@@ -117,17 +117,17 @@
 
 .btn.btn-contained.defaultLight:hover,
 .btn-icon.defaultLight:hover {
-  background-color: var(--purple-300);
+  background-color: var(--default);
 }
 
 .btn.btn-contained.default:hover,
 .btn-icon.default:hover {
-  background-color: var(--purple-600);
+  background-color: var(--defaultDark);
 }
 
 .btn.btn-contained.defaultDark:hover,
 .btn-icon.defaultDark:hover {
-  background-color: var(--purple-1000);
+  background-color: var(--default);
 }
 
 /* OUTLINE VARIANTS */
