@@ -1,11 +1,12 @@
 .btn,
-a.btn {
+.btn:link , .btn:visited{
   border: transparent;
-  padding: 0.4rem var(--spacing-06);
+  padding: 1rem 2rem;
   border-radius: var(--border-radius-sm);
   transition: all 0.4s ease;
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   margin: 0 var(--spacing-02);
+  border: 1.5px solid transparent;
   cursor: pointer;
 }
 
@@ -117,17 +118,17 @@ a.btn {
 
 .btn.btn-contained.defaultLight:hover,
 .btn-icon.defaultLight:hover {
-  background-color: var(--purple-300);
+  background-color: var(--default);
 }
 
 .btn.btn-contained.default:hover,
 .btn-icon.default:hover {
-  background-color: var(--purple-600);
+  background-color: var(--defaultDark);
 }
 
 .btn.btn-contained.defaultDark:hover,
 .btn-icon.defaultDark:hover {
-  background-color: var(--purple-1000);
+  background-color: var(--default);
 }
 
 /* OUTLINE VARIANTS */
@@ -189,11 +190,13 @@ a.btn {
 
 /* TEXT */
 
-.btn-link {
+.btn-link, btn-link:link, .btn.link:visited {
   padding: 0.3rem var(--spacing-05);
+  font-size: 1.5rem;
   border-radius: 3px;
   border-bottom: 2px solid white;
   transition: all 0.4s ease-in-out;
+  cursor: pointer;
 }
 
 .btn-link:hover {
@@ -205,11 +208,11 @@ a.btn {
 .btn-icon,
 .btn-float {
   display: inline-block;
-  width: var(--spacing-08);
-  height: var(--spacing-08);
+  width: 5rem;
+  height: 5rem;
   border-radius: var(--border-radius-circle);
   border: transparent;
-  font-size: 1.1rem;
+  font-size: 2rem;
   margin: 0 0.2rem;
   cursor: pointer;
   text-align: center;
@@ -219,6 +222,23 @@ a.btn {
   justify-content: center;
   transition: all 0.25s ease;
 }
+
+/* Sizes - FLOAT & ICON (small & large)*/
+
+.btn-float.btn-sm,
+.btn-icon.btn-sm {
+  height: 4rem;
+  width: 4rem;
+  font-size: 1.5rem;
+}
+
+.btn-float.btn-lg,
+.btn-icon.btn-lg {
+  height: 6rem;
+  width: 6rem;
+  font-size: 2.5rem;
+}
+
 
 .btn-float {
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
@@ -244,32 +264,19 @@ a.btn {
 /* SIZES */
 
 .btn.btn-sm {
-  padding: 0.3rem 0.5rem;
+  padding: 0.5rem 1rem;
   font-weight: 400;
-  font-size: 0.8rem;
+  font-size: 1.5rem;
 }
 
 .btn.btn-md {
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: 500;
 }
 
 .btn.btn-lg {
-  font-size: 1.6rem;
+  font-size: 3rem;
   font-weight: 600;
+  padding: 1rem 3rem;
 }
 
-/* Sizes - FLOAT & ICON (small & large)*/
-
-.btn-float.btn-sm,
-.btn-icon.btn-sm {
-  height: var(--spacing-07);
-  width: var(--spacing-07);
-  font-size: 0.9rem;
-}
-
-.btn-float.btn-lg,
-.btn-icon.btn-lg {
-  height: var(--spacing-09);
-  width: var(--spacing-09);
-}

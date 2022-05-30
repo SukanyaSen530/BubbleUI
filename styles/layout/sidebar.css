@@ -3,21 +3,22 @@
   top: 0;
   left: 0;
   height: 100%;
-  width: var(--spacing-13);
+  width: 18rem;
   background-color: var(--grey-600);
   transition: all 0.5s ease;
   overflow-x: hidden;
   overflow-y: auto;
   padding: 1rem;
+  z-index: 10;
 }
 
 .sidebar.active {
-  width: 4.5rem;
+  width: 6rem;
   padding: 0.5rem;
 }
 
 .sidebar .logo {
-  height: var(--spacing-10);
+  height: 7rem;
 }
 
 .sidebar.active .logo {
@@ -27,6 +28,7 @@
 .sidebar .logo-container {
   justify-content: space-evenly;
   align-items: center;
+  margin-top: 2rem;
 }
 
 .sidebar.active .logo-container {
@@ -36,7 +38,7 @@
 
 .sidebar #hamburger-btn {
   color: var(--light);
-  font-size: 1.1rem;
+  font-size: 3rem;
   padding: var(--spacing-04);
   border-radius: 5px;
   transition: all 0.4s ease-in-out;
@@ -47,7 +49,7 @@
 }
 
 .sidebar.active #hamburger-btn {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .sidebar.active.hide #hamburger-btn {
@@ -61,14 +63,16 @@
 .sidebar .menu-list li {
   margin-top: var(--spacing-03);
   cursor: pointer;
+  position: relative;
 }
 
 .sidebar .menu-list .sidebar-link-heading {
   border-bottom: 1px solid white;
-  height: var(--spacing-06);
+  height: var(--spacing-08);
   width: 90%;
   color: rgb(210, 216, 221);
   border-radius: 5px;
+  margin: 2rem 0;
 }
 
 .sidebar.active .menu-list .sidebar-link-heading {
@@ -81,8 +85,8 @@
   border-radius: 5px;
   color: whitesmoke;
   transition: all 0.4s ease;
-  padding: var(--spacing-03) 0;
-  font-size: 0.8rem;
+  padding: var(--spacing-05) 0;
+  font-size: 2rem;
 }
 
 .sidebar.active .sidebar-link-name {
@@ -95,40 +99,43 @@
 }
 
 .sidebar .menu-list li a i {
-  min-width: var(--spacing-08);
+  margin: 0 1rem;
   border-radius: 5px;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 
 .sidebar .menu-list li .tooltip {
   position: fixed;
-  font-size: 0.8rem;
-  width: 80px;
-  left: var(--spacing-02);
-  top: 4rem;
+  width: 12rem;
+  left: 1rem;
+  top: 2rem;
   transform: translateY(-50%);
   border-radius: 5px;
   line-height: var(--spacing-06);
-  padding: 0.3rem;
+  padding: 1rem;
   text-align: center;
   background-color: var(--purple-800);
   color: white;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   opacity: 0;
   pointer-events: none;
-  z-index: 990;
+  z-index: 10;
 }
 
 .sidebar.active .menu-list li:hover .tooltip {
-  top: 4rem;
+  top: 2rem;
   opacity: 1;
   transition: all 0.5s ease;
 }
 
+.sidebar.active .menu-list li i{
+  margin-left: 1.3rem;
+}
+
 .sidebar.active ~ .docs-content {
-  width: calc(100% - 4.5rem);
-  left: 4.5rem;
+  width: calc(100% - 6rem);
+  left: 6rem;
 }
 
 .sidebar::-webkit-scrollbar {

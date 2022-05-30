@@ -1,6 +1,6 @@
 .modal {
   background-color: var(--light);
-  width: 20rem;
+  width: 35rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   border-radius: var(--border-radius-sm);
@@ -9,7 +9,7 @@
   text-align: justify;
   transition: 0.4s box-shadow ease;
   position: relative;
-  padding: var(--spacing-03);
+  padding: 1rem;
 }
 
 .modal .modal-header {
@@ -20,7 +20,7 @@
 }
 
 .modal .modal-content {
-  font-size: 0.85rem;
+  font-size: 1.6rem;
 }
 
 .modal .modal-footer {

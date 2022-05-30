@@ -2,11 +2,11 @@
 
 .chip {
   display: inline-block;
-  padding: 0.5rem 0.7rem;
+  padding: 1rem 2rem;
   margin: 0.2rem;
-  line-height: 1;
-  font-size: 0.9rem;
-  border-radius: var(--border-radius-lg);
+  font-size: 1.5rem;
+  border-radius: 25px;
+  line-height: 1.5rem;
 }
 
 /* STACKED */

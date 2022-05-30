@@ -26,6 +26,8 @@ Copy & Paste these two links in the head section of your page!<br>
 />
 ```
 
+### [Temporary Link](https://bubbles-9.netlify.app/) - https://bubbles-9.netlify.app/
+
 # Component List
 
 ### [Alerts](https://bubbles-nine.netlify.app/docs.html#Alerts)

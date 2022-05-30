@@ -164,11 +164,13 @@
         To start using the components in your project import the stylesheet in your css or html file.
       </p>
 
+    <div class="code-frame flex flex-center">
       <iframe
         src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=9px&ph=9px&ln=false&fl=1&fm=Hack&fs=12.5px&lh=148%25&si=false&es=2x&wm=false&code=%250A%2520%2520%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fbubbles-nine.netlify.app%252Fstyles%252Fcomponents%252Findex.css%2522%253E%250A%250A%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fcdnjs.cloudflare.com%252Fajax%252Flibs%252Ffont-awesome%252F4.7.0%252Fcss%252Ffont-awesome.min.css%2522%253E%2520"
         style="width: 100%; height: 100%; border:0; transform: scale(1); overflow:hidden;"
         sandbox="allow-scripts allow-same-origin">
       </iframe>
+    </div>
     </section>
 
     <section id="Colors" class="component-section">
@@ -407,7 +409,7 @@
         with <span class="code-highlight">.alert</span> to
         get the basic variants.</p>
 
-      <div class="component-display">
+      <div class="component-display flex-col">
         <article class="alert alert-error">
           This is an error alert — check it out!
         </article>
@@ -433,7 +435,7 @@
         with <span class="code-highlight">.alert</span> to
         get outline variants.</p>
 
-      <div class="component-display">
+      <div class="component-display flex-col">
         <article class="alert alert-error-outline">
           This is an error alert — check it out!
         </article>
@@ -459,7 +461,7 @@
         with <span class="code-highlight">.alert</span> to
         get filled variants.</p>
 
-      <div class="component-display">
+      <div class="component-display flex-col">
         <article class="alert alert-error-filled">
           This is an error alert — check it out!
         </article>
@@ -483,7 +485,7 @@
         alert to check the demo.</p>
       <p class="warning-text">Note: Only works for font awesome icon or X letter for cancel button.</p>
 
-      <div class="component-display">
+      <div class="component-display flex-col">
         <article class="alert alert-success-outline">
           This is a success alert — check it out!
           <button class="alert-cancel">X</button>
@@ -810,6 +812,14 @@
         <button class="btn-icon danger">
           <i class="fas fa-cloud-download-alt"></i>
         </button>
+
+        <a class="btn-icon btn-sm default">
+          <i class="fas fa-headset"></i>
+        </a>
+
+        <a class="btn-icon btn-lg default">
+          <i class="fas fa-headset"></i>
+        </a>
       </div>
 
       <h4 class="h4 component-type">Floating Action Button</h4>
@@ -823,6 +833,14 @@
 
         <a class="btn-float primaryLight">
           +
+        </a>
+
+        <a class="btn-float btn-sm primaryLight">
+          x
+        </a>
+
+        <a class="btn-float btn-lg primaryLight">
+          /
         </a>
       </div>
 
@@ -1453,7 +1471,6 @@
       <h2 class="section-heading h2">Inputs</h2>
       <p class="component-description">Form Inputs let users enter and edit data.</p>
 
-      <h4 class="h4 component-type">Without Validation</h4>
       <p class="component-description">Supports 3 colours (Primary, Warning, Secondary). By default it has the
         default
         colour.</p>
@@ -1516,7 +1533,7 @@
         </iframe>
       </div>
 
-      <h4 class="h4 component-type">Validation</h4>
+      <!-- <h4 class="h4 component-type">Validation</h4>
       <p class="component-description">Has 2 states - Success & Error</p>
 
       <div class="component-display flex-col flex-center">
@@ -1533,7 +1550,7 @@
           <p class="success-message">Valid Input</p>
         </div>
 
-      </div>
+      </div> -->
 
 
       <h4 class="h4 component-type">Search Bar</h4>
@@ -1794,7 +1811,7 @@
           <div class="brand">
             <!-- Optional -->
             <img src="./assets/images/logo2.png" alt="" class="brand-icon">
-            <h6 class="h6 brand-name">Ecomm</h6>
+            <h6 class="h4 brand-name">Ecomm</h6>
           </div>
 
           <ul class="nav-links">
@@ -1833,7 +1850,7 @@
             <div class="brand">
               <!-- Optional -->
               <img src="./assets/images/logo2.png" alt="" class="brand-icon">
-              <h6 class="h6 brand-name">Ecomm</h6>
+              <h6 class="h4 brand-name">Quiz</h6>
             </div>
 
             <button class="navbar-toggle-btn" id="navbar-res-hamburger"><i class="fa-solid fa-bars"></i></button>
@@ -1843,7 +1860,7 @@
 
           <div class="search-box navbar-search">
             <i class="fas fa-search search-icon"></i>
-            <input type="search" name="search" id="search" class="search-bar" placeholder="Search for products">
+            <input type="search" name="search" id="search" class="search-bar" placeholder="Search for quiz">
           </div>
 
           <ul class="nav-links">
