@@ -1,31 +1,25 @@
-const lightTheme = () => {
-  document.documentElement.style.setProperty("--white", "whitesmoke");
-  document.documentElement.style.setProperty("--dark", "black");
+// function to set a given theme/color-scheme
+const setTheme = (themeName) => {
+  localStorage.setItem("bubbleTheme", themeName);
+  document.documentElement.className = themeName;
 };
 
-const darkTheme = () => {
-  document.documentElement.style.setProperty("--white", "#212529");
-  document.documentElement.style.setProperty("--dark", "whitesmoke");
-};
-
-const changeTheme = () => {
-  if (JSON.parse(localStorage.getItem("darkTheme"))) {
-    darkTheme();
+// function to toggle between light and dark theme
+const toggleTheme = () => {
+  if (localStorage.getItem("bubbleTheme") === "theme-dark") {
+    setTheme("theme-light");
   } else {
-    lightTheme();
+    setTheme("theme-dark");
   }
 };
 
-const indexThemeBtn = document.getElementById("indexThemebtn");
-
-indexThemeBtn.addEventListener("click", () => {
-  if (window.localStorage.getItem("darkTheme")) {
-    let theme = JSON.parse(window.localStorage.getItem("darkTheme"));
-    window.localStorage.setItem("darkTheme", !theme);
+// Immediately invoked function to set the theme on initial load
+(() => {
+  if (localStorage.getItem("bubbleTheme") === "theme-dark") {
+    setTheme("theme-dark");
+    document.getElementById("theme-toggler").checked = false;
   } else {
-    window.localStorage.setItem("darkTheme", true);
+    setTheme("theme-light");
+    document.getElementById("theme-toggler").checked = true;
   }
-  changeTheme();
-});
-
-changeTheme();
+})();

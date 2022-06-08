@@ -1,39 +1,56 @@
-.page-navbar {
-  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
-  position: sticky;
-  top: 0;
-  background-color: var(--white);
-  padding: 0.2rem 1.5rem;
+.header {
+  background: transparent;
+  margin: 2rem;
+  border-radius: var(--border-radius-md);
+  padding: 0.5rem 2rem;
   transition: 0.5s all ease;
   height: 8rem;
+  box-shadow: rgba(var(--shadow), 0.3) 0px 0.0625em 0.0625em,
+    rgba(var(--shadow), 0.3) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0.8;
 }
 
-.brand-logo img {
+.header__logo__image {
   height: 8rem;
-  padding-left: var(--spacing-05);
 }
 
-.page-navbar-options {
-  margin-left: auto;
-  margin-right: 1rem;
-  padding: 0.5rem;
+.header__menu {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
 }
 
-.page-navbar-options li > a:link {
-  padding: 0 var(--spacing-03);
-  font-size: 3rem;
-  color: var(--purple-500);
-  transition: 0.5s color;
+.header__menu__items > a {
+  font-size: 2.2rem;
+  color: whitesmoke;
+  background: rgba(0, 0, 0, 0.3);
+  transition: 0.5s all;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius-sm);
 }
 
-.page-navbar-options li > a:active {
-  color: var(--purple-800);
+.header__menu__items > a:visited {
+  color: whitesmoke;
 }
 
-.page-navbar-options li > a:visited {
-  color: var(--purple-500);
+.header__menu__items > a:hover {
+  background: rgba(0, 0, 0, 0.6);
 }
 
-.page-navbar-options li > a:hover {
-  color: var(--purple-800);
+@media only screen and (max-width: 600px) {
+  .header__logo__image {
+    height: 6rem;
+  }
+
+  .header__menu__items > a {
+    font-size: 3.2rem;
+  }
+
+  .header__menu__items span {
+    display: none;
+  }
 }
