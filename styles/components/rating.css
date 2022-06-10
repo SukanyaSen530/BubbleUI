@@ -31,7 +31,7 @@
   font-weight: 900;
   font-family: "Font Awesome 5 Free";
   font-size: 1.6rem;
-  color: var(--warning);
+  color: var(--warningDark);
   position: absolute;
   opacity: 0;
   transition: 0.5s;

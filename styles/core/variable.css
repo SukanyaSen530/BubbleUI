@@ -9,10 +9,6 @@
   --purple-900: #7251b5;
   --purple-1000: #6247aa; */
 
-:root {
-  --textSecondary: ;
-}
-
 .theme-light {
   --bgColor: #eee;
   --textColor: #121212;

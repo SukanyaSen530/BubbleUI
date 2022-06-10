@@ -29,7 +29,6 @@
 
 .header__logo__image {
   height: 6rem;
-  border-radius: var(--border-radius-circle);
 }
 
 .header__menu {

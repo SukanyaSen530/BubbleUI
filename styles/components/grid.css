@@ -72,7 +72,7 @@
 /* Media Queries */
 
 /* Smart Phones */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
   [class*="grid-c"] {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }

@@ -464,20 +464,16 @@
           </p>
 
           <div class="component-display flex-col">
-            <article class="alert alert-error">
-              This is an error alert — check it out!
-            </article>
+            <article class="alert alert-error">This is an error alert!</article>
 
-            <article class="alert alert-info">
-              This is a warning alert — check it out!
-            </article>
+            <article class="alert alert-info">This is an info alert!</article>
 
             <article class="alert alert-warning">
-              This is an info alert — check it out!
+              This is a warning alert!
             </article>
 
             <article class="alert alert-success">
-              This is a success alert — check it out!
+              This is a success alert!
             </article>
           </div>
 
@@ -485,9 +481,9 @@
             <code class="language-html">
               &lt;article class="alert alert-error"&gt; This is an error alert &lt;/article&gt;
                
-              &lt;article class="alert alert-info"&gt; This is a warning alert &lt;/article&gt;
+              &lt;article class="alert alert-info"&gt; This is a info alert &lt;/article&gt;
 
-              &lt;article class="alert alert-warning"&gt; This is an info alert  &lt;/article&gt;
+              &lt;article class="alert alert-warning"&gt; This is an warning alert  &lt;/article&gt;
               
               &lt;article class="alert alert-success"&gt; This is a success alert &lt;/article&gt; 
             </code>
@@ -507,19 +503,19 @@
 
           <div class="component-display flex-col">
             <article class="alert alert-error-outline">
-              This is an error alert — check it out!
+              This is an error alert!
             </article>
 
             <article class="alert alert-info-outline">
-              This is a warning alert — check it out!
+              This is a info alert!
             </article>
 
             <article class="alert alert-warning-outline">
-              This is an info alert — check it out!
+              This is an warning alert!
             </article>
 
             <article class="alert alert-success-outline">
-              This is a success alert — check it out!
+              This is a success alert!
             </article>
           </div>
 
@@ -547,19 +543,19 @@
 
           <div class="component-display flex-col">
             <article class="alert alert-error-filled">
-              This is an error alert — check it out!
+              This is an error alert!
             </article>
 
             <article class="alert alert-info-filled">
-              This is a warning alert — check it out!
+              This is a info alert!
             </article>
 
             <article class="alert alert-warning-filled">
-              This is an info alert — check it out!
+              This is an warning alert!
             </article>
 
             <article class="alert alert-success-filled">
-              This is a success alert — check it out!
+              This is a success alert!
             </article>
           </div>
 
@@ -589,7 +585,7 @@
 
           <div class="component-display flex-col">
             <article class="alert alert-warning" id="demo-alert">
-              This is a success alert — check it out!
+              Demo warning alert!
               <button class="alert-cancel">
                 <i class="fas fa-times"></i>
               </button>
@@ -608,7 +604,7 @@
           <pre>
               <code class="language-html">
                  &lt;article class="alert alert-warning" id="demo-alert"&gt;
-                    This is a success alert
+                    Warning alert!
                     &lt;button class="alert-cancel"&gt; &lt;i class="fas fa-times"&gt; &lt;/i> &lt;/button&gt;
                  &lt;/article&gt;
               </code>
@@ -1818,7 +1814,7 @@
                 </article>
                 <div class="notification">
                   <p class="notification-message">
-                    <strong>Sarah Jones</strong> followed you back! 🔥 
+                    <strong>Sarah Jones</strong> followed you back! 🔥
                   </p>
                   <span class="social-info">2h ago</span>
                   <span class="social-info seperator">Vibes Social Media</span>
@@ -1843,7 +1839,7 @@
                 &lt;/article&gt;
                 &lt;div class="notification"&gt;
                   &lt;p class="notification-message"&gt;
-                    &lt;strong>Sarah Jones</strong> followed you back! 🔥 
+                    &lt;strong>Sarah Jones&lt;/strong&gt; followed you back! 🔥 
                   &lt;/p>
                   &lt;span class="social-info"&gt;2h ago&lt;/span&gt;
                   &lt;span class="social-info seperator">Vibes Social Media&lt;/span&gt;
@@ -1852,13 +1848,672 @@
             &lt;/article&gt;
             </code>
           </pre>
+        </section>
+
+        <section id="Chips" class="component-section">
+          <h2 class="section-heading h2">Chips</h2>
+          <p>
+            Chips are compact elements that represent an attribute, or action.
+          </p>
+          <p>Base Class - <span class="code-highlight">chip</span></p>
+
+          <!-- Basic Chips -->
+
+          <h4 class="h4 component-type">Basic Chips</h4>
+          <p>Supports all colour classes.</p>
+
+          <div class="component-display flex-row">
+            <span class="chip primary">React</span>
+            <p class="chip danger">Angular</p>
+          </div>
+
+          <!-- Stacked Chips -->
+
+          <h4 class="h4">Stacked Chips</h4>
+          <p>Takes full width of the container.</p>
+          <p>
+            Additional Class -
+            <span class="code-highlight">stacked</span>
+          </p>
+
+          <div class="component-display flex-col">
+            <span class="chip stacked warning">Warning</span>
+            <p class="chip stacked successLight">Success Light</p>
+          </div>
+
+          <!-- Chips with cancel icon -->
+
+          <h4 class="h4">Chips with Cancel Icon</h4>
+          <p>Class provides the icon.</p>
+
+          <p class="class-description">
+            Additional Class -
+            <span class="code-highlight">chip-cancel</span>
+          </p>
+
+          <div class="component-display flex-row flex-center">
+            <span class="chip chip-cancel danger">Cancel</span>
+            <p class="chip chip-cancel secondary">Javascript</p>
+          </div>
+
+          <pre>
+            <code class="language-html">
+               &lt;!-- Basic Chip --&gt;
+               &lt;p class="chip danger">Angular&lt;/p&gt;
+
+               &lt;!-- Stacked Chip --&gt;
+               &lt;span class="chip stacked warning"&gt;Warning&lt;/span&gt;
+
+               &lt;!-- Chip with cancel icon --&gt;
+               &lt;p class="chip chip-cancel secondary"&gt;Javascript&lt;/p&gt;
+            </code>
+           </pre>
+        </section>
+
+        <!-- Grids -->
+
+        <section id="Grids" class="component-section">
+          <h2 class="section-heading h2">Grids</h2>
+
+          <p>
+            You can use mix and match the classes as per your layout. For small
+            screens - All the classes will have 1 column. For Medium Screen -
+            All classes will have max 2 columns. For Large screens - All classes
+            will have maximum of 3 columns. For XL screen column 4,5 and 6
+            classes will work. For Demo - view the grids in different screens.
+          </p>
+          <p>Base Class - <span class="code-highlight">grid</span></p>
+
+          <h4 class="h4">Column</h4>
+          <p>You can put min 1 and max 6 items in a column</p>
+          <p>
+            Additional Classes -
+            <span class="code-highlight">grid-c-1</span> ,<span
+              class="code-highlight"
+              >grid-c-2</span
+            >
+            ,<span class="code-highlight">grid-c-3</span> ,<span
+              class="code-highlight"
+              >grid-c-4</span
+            >
+            ,<span class="code-highlight">grid-c-5</span>,
+            <span class="code-highlight">grid-c-6</span>
+          </p>
+
+          <p class="class-description">
+            Classes applied for this demo are -
+            <span class="code-highlight">grid</span>,
+            <span class="code-highlight">grid-c-6</span>,
+            <span class="code-highlight">gap-lg</span>
+          </p>
+
+          <div class="component-display">
+            <section class="grid gap-lg grid-c-6">
+              <img
+                src="https://images.unsplash.com/photo-1575580280904-905f466584e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=841&q=80"
+                class="img-responsive"
+                alt="Photo_by_TobiasOlivier"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1575580280904-905f466584e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=841&q=80"
+                class="img-responsive"
+                alt="Photo_by_TobiasOlivier"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1575580280904-905f466584e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=841&q=80"
+                class="img-responsive"
+                alt="Photo_by_TobiasOlivier"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1575580280904-905f466584e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=841&q=80"
+                class="img-responsive"
+                alt="Photo_by_TobiasOlivier"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1575580280904-905f466584e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=841&q=80"
+                class="img-responsive"
+                alt="Photo_by_TobiasOlivier"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1575580280904-905f466584e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=841&q=80"
+                class="img-responsive"
+                alt="Photo_by_TobiasOlivier"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1575580280904-905f466584e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=841&q=80"
+                class="img-responsive"
+                alt="Photo_by_TobiasOlivier"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1575580280904-905f466584e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=841&q=80"
+                class="img-responsive"
+                alt="Photo_by_TobiasOlivier"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1575580280904-905f466584e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=841&q=80"
+                class="img-responsive"
+                alt="Photo_by_TobiasOlivier"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1575580280904-905f466584e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=841&q=80"
+                class="img-responsive"
+                alt="Photo_by_TobiasOlivier"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1575580280904-905f466584e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=841&q=80"
+                class="img-responsive"
+                alt="Photo_by_TobiasOlivier"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1575580280904-905f466584e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=841&q=80"
+                class="img-responsive"
+                alt="Photo_by_TobiasOlivier"
+              />
+            </section>
+          </div>
+
+          <p>
+            Classes applied for this are -
+            <span class="code-highlight">grid</span>,
+            <span class="code-highlight">grid-c-5</span>,
+            <span class="code-highlight">gap-md</span>
+          </p>
+
+          <div class="component-display">
+            <section class="grid gap-md grid-c-5">
+              <img
+                src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                class="img-responsive"
+                alt="Photo_by_SergeyShmidt"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                class="img-responsive"
+                alt="Photo_by_SergeyShmidt"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                class="img-responsive"
+                alt="Photo_by_SergeyShmidt"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                class="img-responsive"
+                alt="Photo_by_SergeyShmidt"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                class="img-responsive"
+                alt="Photo_by_SergeyShmidt"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                class="img-responsive"
+                alt="Photo_by_SergeyShmidt"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                class="img-responsive"
+                alt="Photo_by_SergeyShmidt"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                class="img-responsive"
+                alt="Photo_by_SergeyShmidt"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                class="img-responsive"
+                alt="Photo_by_SergeyShmidt"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                class="img-responsive"
+                alt="Photo_by_SergeyShmidt"
+              />
+            </section>
+          </div>
+
+          <p class="class-description">
+            Classes applied for this are -
+            <span class="code-highlight">grid</span>,
+            <span class="code-highlight">grid-c-4</span>,
+            <span class="code-highlight">gap-sm</span>
+          </p>
+
+          <div class="component-display">
+            <section class="grid gap-sm grid-c-4">
+              <img
+                src="https://images.unsplash.com/photo-1591420699297-88e82958f324?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                class="img-responsive"
+                alt="Photo_by_SrinivasanVenkataraman"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1591420699297-88e82958f324?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                class="img-responsive"
+                alt="Photo_by_SrinivasanVenkataraman"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1591420699297-88e82958f324?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                class="img-responsive"
+                alt="Photo_by_SrinivasanVenkataraman"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1591420699297-88e82958f324?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                class="img-responsive"
+                alt="Photo_by_SrinivasanVenkataraman"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1591420699297-88e82958f324?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                class="img-responsive"
+                alt="Photo_by_SrinivasanVenkataraman"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1591420699297-88e82958f324?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                class="img-responsive"
+                alt="Photo_by_SrinivasanVenkataraman"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1591420699297-88e82958f324?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                class="img-responsive"
+                alt="Photo_by_SrinivasanVenkataraman"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1591420699297-88e82958f324?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                class="img-responsive"
+                alt="Photo_by_SrinivasanVenkataraman"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1591420699297-88e82958f324?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                class="img-responsive"
+                alt="Photo_by_SrinivasanVenkataraman"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1591420699297-88e82958f324?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                class="img-responsive"
+                alt="Photo_by_SrinivasanVenkataraman"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1591420699297-88e82958f324?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                class="img-responsive"
+                alt="Photo_by_SrinivasanVenkataraman"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1591420699297-88e82958f324?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                class="img-responsive"
+                alt="Photo_by_SrinivasanVenkataraman"
+              />
+            </section>
+          </div>
+
+          <!-- Grid Row -->
+
+          <h4 class="h4">Row</h4>
+          <p>You can put min 1 and max 6 items in a row.</p>
+          <p>
+            Additional Classes -
+            <span class="code-highlight">grid-r-1</span> ,<span
+              class="code-highlight"
+              >grid-r-2</span
+            >
+            ,<span class="code-highlight">grid-r-3</span> ,<span
+              class="code-highlight"
+              >grid-r-4</span
+            >
+            ,<span class="code-highlight">grid-r-5</span>,
+            <span class="code-highlight">grid-r-6</span>
+          </p>
+
+          <!-- Grid Gap -->
+          <h4 class="h4">Grid gap</h4>
+          <p>Deifines the space between rows and columns.</p>
+          <p>
+            Additional Classes -
+            <span class="code-highlight">gap-sm</span>(0.5rem) ,<span
+              class="code-highlight"
+              >gap-md</span
+            >
+            (1rem) ,<span class="code-highlight">gap-lg</span>(1.5rem)
+          </p>
+        </section>
+
+        <!-- Images -->
+
+        <section id="Images" class="component-section">
+          <h2 class="section-heading h2">Images</h2>
+          <p>Images are one of the important part of web.</p>
+
+          <!-- Responsive Image -->
+
+          <h4 class="h4">Responsive Image</h4>
+          <p>
+            Responsive Image will take full height and width of the parent
+            container.
+          </p>
+          <p>Class: <span class="code-highlight">img-responsive</span></p>
+
+          <div class="component-display flexible-height-width">
+            <img
+              src="https://images.unsplash.com/photo-1612141862591-a689bade02d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              alt="Photo_by_KameronKincade"
+              class="img-responsive"
+            />
+          </div>
+
+          <!-- Round Image -->
+
+          <h4 class="h4">Round Image</h4>
+          <p>Available in default dimension of 10rem x 10rem.</p>
+          <p>Class: <span class="code-highlight">img-round</span></p>
+
+          <div class="component-display flex-row">
+            <img
+              src="https://weebofigurines.sirv.com/CL/round-img.jpg"
+              alt="mitusri"
+              class="img-round"
+            />
+          </div>
+
+          <pre>
+            <code class="language-html">
+               &lt;!-- Responsive Image   --&gt;
+               &lt;div&gt;
+                 &lt;img src=".." alt=".." class="img-responsive"&gt;
+               &lt;/div&gt;
+
+               &lt;!-- Round Image --&gt; 
+               &lt;img src=".." alt=".." class="img-round"&gt;
+            </code>
+          </pre>
+        </section>
+
+        <!-- Form Inputs -->
+
+        <section id="Inputs" class="component-section">
+          <h2 class="section-heading h2">Inputs</h2>
+          <p>Form Inputs let users enter and edit data.</p>
+          <p>
+            Classes - <span class="code-highlight">input-group</span>,
+            <span class="code-highlight">input-group__label</span>,
+            <span class="code-highlight">input-group__input</span>,
+            <span class="code-highlight">input-group__focus-border</span>
+          </p>
+          <p>Input type - text, number, textarea, dropdown</p>
+
+          <div class="component-display flex-col">
+            <div class="input-group">
+              <label class="input-group__label">Text Input</label>
+              <input
+                type="text"
+                class="input-group__input"
+                placeholder="Enter text!"
+              />
+              <span class="input-group__focus-border"></span>
+            </div>
+
+            <div class="input-group">
+              <label class="input-group__label">Input Type Number</label>
+              <input
+                type="number"
+                class="input-group__input"
+                placeholder="Enter number!"
+              />
+              <span class="input-group__focus-border"></span>
+            </div>
+
+            <div class="input-group">
+              <label class="input-group__label">Input Type Textarea</label>
+              <textarea
+                class="input-group__input"
+                placeholder="Enter a long text!"
+                rows="2"
+              ></textarea>
+              <span class="input-group__focus-border"></span>
+            </div>
+
+            <div class="input-group">
+              <label class="input-group__label">Gender</label>
+              <select class="input-group__input">
+                <option>Male</option>
+                <option>Female</option>
+                <option>Others</option>
+              </select>
+              <span class="input-group__focus-border"></span>
+            </div>
+
+            <div class="input-group disabled">
+              <label class="input-group__label">Text Input</label>
+              <input
+                type="text"
+                class="input-group__input"
+                placeholder="Enter text!"
+              />
+              <span class="input-group__focus-border"></span>
+            </div>
+
+            <div class="input-group required">
+              <label class="input-group__label">Text Input</label>
+              <input
+                type="text"
+                class="input-group__input"
+                placeholder="Enter text!"
+              />
+              <span class="input-group__focus-border"></span>
+            </div>
+          </div>
 
 
-          <!-- Chips -->
-          
+          <pre>
+            <code class="language-html">
+              &lt;div class="input-group"&gt;
+               &lt;label class="input-group__label">Text Input&lt;/label&gt;
+               &lt;input
+                 type="text"
+                 class="input-group__input"
+                 placeholder="Enter text!"
+               />
+              &lt;span class="input-group__focus-border"&gt;&lt;/span&gt;
+             &lt;/div&gt;
 
+             &lt;div class="input-group"&gt;
+               &lt;label class="input-group__label">Input type number&lt;/label&gt;
+               &lt;input
+                 type="number"
+                 class="input-group__input"
+                 placeholder="Enter number!"
+               />
+              &lt;span class="input-group__focus-border"&gt;&lt;/span&gt;
+             &lt;/div&gt;
 
+            &lt;div class="input-group"&gt;
+              &lt;label class="input-group__label"&gt;Input Type Textarea&lt;/label&gt;
+              &lt;textarea
+                class="input-group__input"
+                placeholder="Enter a long text!"
+                rows="2"
+              &gt;&lt;/textarea&gt;
+              &lt;span class="input-group__focus-border"&gt;&lt;/span&gt;
+            &lt;/div&gt;
 
+             &lt;div class="input-group"&gt;
+              &lt;label class="input-group__label">Gender&lt;/label&gt;
+              &lt;select class="input-group__input"&gt;
+                &lt;option>Male&lt;/option&gt;
+                &lt;option>Female&lt;/option&gt;
+                &lt;option>Others&lt;/option&gt;
+              &lt;/select&gt;
+              &lt;span class="input-group__focus-border"&gt;&lt;/span&gt;
+            &lt;/div&gt;
+
+             &lt;div class="input-group disabled"&gt;
+              &lt;label class="input-group__label"&gt;Text Input&lt;/label&gt;
+              &lt;input
+                type="text"
+                class="input-group__input"
+                placeholder="Enter text!"
+              /&gt;
+              &lt;span class="input-group__focus-border"&gt;&lt;/span&gt;
+            &lt;/div&gt;
+
+            &lt;div class="input-group required"&gt;
+              &lt;label class="input-group__label"&gt;Text Input&lt;/label&gt;
+              &lt;input
+                type="text"
+                class="input-group__input"
+                placeholder="Enter text!"
+              /&gt;
+              &lt;span class="input-group__focus-border"&gt;&lt;/span&gt;
+            &lt;/div&gt;
+            </code>
+          </pre>
+
+          <!-- Checkboxes and Radio -->
+
+          <h4 class="h4">Checkboxes and Radio</h4>
+
+          <div class="component-display flex-row">
+            <div class="input-group--check">
+              <input type="checkbox" name="checkbox-1" id="checkbox-1" />
+              <label for="checkbox-1">Checkbox</label>
+            </div>
+
+            <div class="input-group--check">
+              <input type="radio" name="radio-1" id="radio-1"/>
+              <label for="radio-1">Radio</label>
+            </div>
+          </div>
+
+          <pre>
+            <code class="language-html">
+            &lt;div class="input-group--check"&gt;
+              &lt;input type="checkbox" name="checkbox-1" id="checkbox-1" /&gt;
+              &lt;label for="checkbox-1"&gt;Checkbox&lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class="input-group--check"&gt;
+              &lt;input type="radio" name="radio-1" id="radio-1"/&gt;
+              &lt;label for="radio-1">Radio&lt;/label&gt;
+            &lt;/div&gt;
+            </code>
+          </pre>
+
+          <!-- Search Bar -->
+
+          <h4 class="h4">Search Bar</h4>
+
+          <div class="component-display flex-row">
+            <div class="search-box">
+              <i class="fas fa-search search-icon"></i>
+              <input
+                type="search"
+                name="search"
+                id="search"
+                class="search-box__bar"
+                placeholder="Search for products"
+              />
+              <span class="search-box__focus-border"></span>
+            </div>
+          </div>
+
+          <pre>
+            <code class="language-html">
+            &lt;div class="search-box"&gt;
+              &lt;i class="fas fa-search search-icon"&gt;&lt;/i&gt;
+              &lt;input
+                type="search"
+                name="search"
+                id="search"
+                class="search-box__bar"
+                placeholder="Search for products"
+              /&gt;
+              &lt;span class="search-box__focus-border"&gt;&lt;/span&gt;
+            &lt;/div&gt;
+            </code>
+          </pre>
+
+          <!-- Slider -->
+
+          <h4 class="h4">Slider</h4>
+
+          <div class="component-display flex-row">
+            <input type="range" min="1" max="100" value="50" class="slider" />
+          </div>
+
+          <pre>
+            <code class='language-html'>
+              &lt;input type="range" min="1" max="100" value="50" class="slider" /&gt;
+            </code>
+          </pre>
+        </section>
+
+        
+
+        <!--------- Rating ----------->
+
+        <section id="Rating" class="component-section">
+          <h2 class="section-heading h2">Rating</h2>
+          <p>Allows the user to submit a rating of a product or experience.</p>
+
+          <!-- 5 star Rating -->
+
+          <h4 class="h4">Normal Rating</h4>
+          <p>
+            Use font awesome star icons to generate this star rating component.
+          </p>
+          <p>
+            Class : <span class="code-highlight">star-rating-container</span>
+          </p>
+
+          <div class="component-display flex-row">
+            <fieldset class="star-rating-container">
+              <input type="radio" name="star" id="star1" class="rating-radio" />
+              <label for="star1"></label>
+              <input type="radio" name="star" id="star2" class="rating-radio" />
+              <label for="star2"></label>
+              <input type="radio" name="star" id="star3" class="rating-radio" />
+              <label for="star3"></label>
+              <input type="radio" name="star" id="star4" class="rating-radio" />
+              <label for="star4"></label>
+              <input type="radio" name="star" id="star5" class="rating-radio" />
+              <label for="star5"></label>
+            </fieldset>
+          </div>
+
+          <pre>
+            <code class="language-html">
+            &lt;fieldset class="star-rating-container"&gt;
+              &lt;input type="radio" name="star" id="star1" class="rating-radio" /&gt;
+              &lt;label for="star1"&gt;&lt;/label&gt;
+              &lt;input type="radio" name="star" id="star2" class="rating-radio" /&gt;
+              &lt;label for="star2"&gt;&lt;/label&gt;
+              &lt;input type="radio" name="star" id="star3" class="rating-radio" /&gt;
+              &lt;label for="star3"&gt;&lt;/label&gt;
+              &lt;input type="radio" name="star" id="star4" class="rating-radio" /&gt;
+              &lt;label for="star4"&gt;&lt;/label&gt;
+              &lt;input type="radio" name="star" id="star5" class="rating-radio" /&gt;
+              &lt;label for="star5"&gt;&lt;/label&gt;
+            &lt;/fieldset&gt;
+            </code>
+          </pre>
+
+          <!-- Single star Rating -->
+
+          <h4 class="h4">Average Rating</h4>
+          <p>
+            For this you don't need to add any icon. Just add the class and it
+            will add the star.
+          </p>
+          <p>Class : <span class="code-highlight">single-star-rating</span></p>
+
+          <div class="component-display flex-row">
+            <p class="single-star-rating">4.5</p>
+          </div>
+
+          <pre>
+            <code class="language-html">
+               &lt;p class="single-star-rating"&gt;4.5&lt;/p&gt;
+            </code>
+          </pre>
         </section>
 
         <!-- End -->
@@ -1866,11 +2521,10 @@
     </main>
 
     <footer></footer>
-
+    <script src="./scripts/index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
     <script>
       hljs.initHighlightingOnLoad();
     </script>
-    <script src="./scripts/index.js"></script>
   </body>
 </html>

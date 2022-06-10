@@ -134,12 +134,12 @@
 
 .alert.alert-error-filled {
   background-color: var(--danger);
-  color: black;
+ color: black;
 }
 
 .alert.alert-warning-filled {
   background-color: var(--warning);
-  color: black;
+ color: black;
 }
 
 .alert.alert-info-filled {
