@@ -1,6 +1,4 @@
-:root {
-  /* CTA for Application */
-  /* --purple-100: #dec9e9;
+/* --purple-100: #dec9e9;
   --purple-200: #dac3e8;
   --purple-300: #d2b7e5;
   --purple-400: #c19ee0;
@@ -10,14 +8,19 @@
   --purple-800: #815ac0;
   --purple-900: #7251b5;
   --purple-1000: #6247aa; */
+
+:root {
+  --textSecondary: ;
 }
 
 .theme-light {
   --bgColor: #eee;
   --textColor: #121212;
   --docPrimary: #a06cd5;
-  --docSecondary: #475569;
+  --textSecondary: #adb5bd;
+  --docSecondary: #64748b;
   --shadow: 0, 0, 0;
+  --shadow2: 206, 212, 218;
 }
 
 .theme-dark {
@@ -25,5 +28,7 @@
   --textColor: #fff;
   --docPrimary: #c19ee0;
   --docSecondary: #94a3b8;
+  --textSecondary: #ced4da;
   --shadow: 255, 255, 255;
+   --shadow2: 52, 58, 64;
 }

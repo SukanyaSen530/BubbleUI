@@ -1,0 +1,1876 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentation | Bubbles</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="./styles/pages/documentation.css" />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/atom-one-dark.min.css"
+    />
+
+    <!-- font-awesome -->
+    <script
+      src="https://kit.fontawesome.com/b428bff4ec.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+  </head>
+
+  <body>
+    <nav class="header bg">
+      <div class="header__logo">
+        <img
+          src="./assets/images/logo.png"
+          alt="Bubble_UI_Logo"
+          class="header__logo__image"
+        />
+        <p>Bubbles</p>
+      </div>
+
+      <ul class="header__menu">
+        <label class="switch">
+          <input type="checkbox" onchange="toggleTheme()" id="theme-toggler" />
+          <span class="slider"></span>
+        </label>
+        <li class="header__menu__items">
+          <a
+            href="https://github.com/SukanyaSen530/ComponentLib"
+            target="_blank"
+          >
+            <i class="fab fa-github-alt"></i>
+            <span>Github</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="docs__main">
+      <!-- ------------------------------ Sidebar ----------------------------- -->
+
+      <aside class="sidebar">
+        <ul>
+          <li class="sidebar__heading">Get Started</li>
+
+          <li>
+            <a href="#Installation">
+              <i class="fas fa-circle-notch"></i>
+              <span class="sidebar-link-name">Installation</span>
+            </a>
+          </li>
+          <li>
+            <a href="#Colors">
+              <i class="fas fa-palette"></i>
+              <span class="sidebar-link-name">Colors</span>
+            </a>
+          </li>
+          <li>
+            <a href="#Typography">
+              <i class="fas fa-paragraph"></i>
+              <span class="sidebar-link-name">Typography</span>
+            </a>
+          </li>
+
+          <li class="sidebar__heading">Components</li>
+
+          <li>
+            <a href="#Alerts">
+              <i class="far fa-bell"></i>
+              <span class="sidebar-link-name">Alert</span>
+            </a>
+          </li>
+          <li>
+            <a href="#Avatars">
+              <i class="far fa-user"></i>
+              <span class="sidebar-link-name">Avatar</span>
+            </a>
+          </li>
+          <li>
+            <a href="#Badges">
+              <i class="far fa-id-badge"></i>
+              <span class="sidebar-link-name">Badge</span>
+            </a>
+          </li>
+          <li>
+            <a href="#Buttons">
+              <i class="fas fa-play-circle"></i>
+              <span class="sidebar-link-name">Button</span>
+            </a>
+          </li>
+          <li>
+            <a href="#Cards">
+              <i class="far fa-id-card"></i>
+              <span class="sidebar-link-name">Card</span>
+            </a>
+          </li>
+          <li>
+            <a href="#Chips">
+              <i class="fas fa-clipboard-check"></i>
+              <span class="sidebar-link-name">Chips</span>
+            </a>
+          </li>
+          <li>
+            <a href="#Grids">
+              <i class="fa-solid fa-grip-vertical"></i>
+              <span class="sidebar-link-name">Grids</span>
+            </a>
+          </li>
+          <li>
+            <a href="#Images">
+              <i class="far fa-image"></i>
+              <span class="sidebar-link-name">Image</span>
+            </a>
+          </li>
+          <li>
+            <a href="#Inputs">
+              <i class="far fa-keyboard"></i>
+              <span class="sidebar-link-name">Input</span>
+            </a>
+          </li>
+          <li>
+            <a href="#Lists">
+              <i class="fas fa-list"></i>
+              <span class="sidebar-link-name">Lists</span>
+            </a>
+          </li>
+          <li>
+            <a href="#Modal">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              <span class="sidebar-link-name">Modal</span>
+            </a>
+          </li>
+          <li>
+            <a href="#Navbar">
+              <i class="fa-solid fa-compass"></i>
+              <span class="sidebar-link-name">Navbar</span>
+            </a>
+          </li>
+          <li>
+            <a href="#Rating">
+              <i class="far fa-star"></i>
+              <span class="sidebar-link-name">Rating</span>
+            </a>
+          </li>
+          <li>
+            <a href="#Snackbar">
+              <i class="fa-solid fa-bars-progress"></i>
+              <span class="sidebar-link-name">Snackbar</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+
+      <section class="docs__content">
+        <!------- Installation ------->
+
+        <section id="Installation" class="component-section">
+          <h2 class="h2 section-heading">Installation</h2>
+
+          <div>
+            <p>
+              To start using the components in your project import the
+              stylesheet in your html file.
+            </p>
+
+            <pre>
+                <code class="language-html">
+                  &lt;link rel="stylesheet" href="https://bubbles-nine.netlify.app/styles/components/index.css"&gt;
+                  &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"&gt;
+                </code>
+            </pre>
+
+            <p>Or import this file in your main CSS file.</p>
+
+            <pre>
+                <code class="css">
+                  @import url(https://bubbles-nine.netlify.app/styles/components/index.css)
+                </code>
+            </pre>
+          </div>
+        </section>
+
+        <!------- Colors ------->
+
+        <section id="Colors" class="component-section">
+          <h2 class="h2 section-heading">Colors</h2>
+
+          <p>
+            Bubble provides 23 colours to create a small pallete for the
+            components available. You can use the variables names provided for
+            your own custom styles. The background class names are exactly same
+            as the variables names.
+          </p>
+
+          <h4 class="h4">Primary Colors</h4>
+
+          <div class="pallete">
+            <div class="primary">
+              --primary
+              <span>#3b82f6</span>
+            </div>
+            <div class="secondary">
+              --secondary
+              <span>##6b7280</span>
+            </div>
+            <div class="success">
+              --success
+              <span>#22c55e</span>
+            </div>
+            <div class="danger">
+              --danger
+              <span>#ef4444</span>
+            </div>
+            <div class="warning">
+              --warning
+              <span>#eab308</span>
+            </div>
+            <div class="info">
+              --info
+              <span>#06b6d4</span>
+            </div>
+            <div class="default">
+              --default
+              <span>#19374d</span>
+            </div>
+          </div>
+
+          <h4 class="h4">Lighter Shades</h4>
+
+          <div class="pallete">
+            <div class="primaryLight">
+              --primaryLight
+              <span>#bfdbfe</span>
+            </div>
+            <div class="secondaryLight">
+              --secondaryLight
+              <span>#e5e7eb</span>
+            </div>
+            <div class="successLight">
+              --successLight
+              <span>#bbf7d0</span>
+            </div>
+            <div class="dangerLight">
+              --dangerLight
+              <span>#fecaca</span>
+            </div>
+            <div class="warningLight">
+              --warningLight
+              <span>#fde68a</span>
+            </div>
+            <div class="infoLight">
+              --infoLight
+              <span>#a5f3fc</span>
+            </div>
+            <div class="defaultLight">
+              --defaultLight
+              <span>#254e6e</span>
+            </div>
+          </div>
+
+          <h4 class="h4">Darker Shades</h4>
+
+          <div class="pallete">
+            <div class="primaryDark">
+              --primaryDark
+              <span>#1e3a8a</span>
+            </div>
+            <div class="secondaryDark">
+              --secondaryDark
+              <span>#111827</span>
+            </div>
+            <div class="successDark">
+              --successDark
+              <span>#14532d</span>
+            </div>
+            <div class="dangerDark">
+              --dangerDark
+              <span>#7f1d1d</span>
+            </div>
+            <div class="warningDark">
+              --warningDark
+              <span>#78350f</span>
+            </div>
+            <div class="infoDark">
+              --infoDark
+              <span>#155e75</span>
+            </div>
+            <div class="defaultDark">
+              --defaultDark
+              <span>#0d1e2999</span>
+            </div>
+          </div>
+
+          <h4 class="h4">Neutral Shades</h4>
+
+          <div class="pallete">
+            <div class="dark">
+              --dark
+              <span>#000000</span>
+            </div>
+            <div class="light">
+              --light
+              <span>#f5f5f5</span>
+            </div>
+          </div>
+        </section>
+
+        <!------- Typography ------->
+
+        <section id="Typography" class="component-section">
+          <h2 class="h2 section-heading">Typography</h2>
+
+          <p>
+            Default Font is set to Roboto. Has 6 font weights -
+            <span class="code-highlight">100; 300; 400; 500; 700; 900</span>.
+          </p>
+
+          <!----------------------- Headings ------------------------>
+
+          <h4 class="h4">Headings</h4>
+
+          <p class="class-description">
+            Classes : <span class="code-highlight"> h1</span>,
+            <span class="code-highlight"> h2</span>,
+            <span class="code-highlight"> h3</span>,
+            <span class="code-highlight"> h4</span>,
+            <span class="code-highlight"> h5</span>,
+            <span class="code-highlight"> h6</span>
+          </p>
+
+          <div class="component-display flex-col">
+            <h1 class="h1">H1-Heading</h1>
+            <h2 class="h2">H2-Heading</h2>
+            <h3 class="h3">H3-Heading</h3>
+            <h4 class="h4">H4-Heading</h4>
+            <h5 class="h5">H5-Heading</h5>
+            <h6 class="h6">H6-Heading</h6>
+          </div>
+
+          <!----------------------- Text Alignement ------------------------>
+
+          <h4 class="h4">Text Alignement</h4>
+
+          <p>
+            Classes : <span class="code-highlight"> center-aligned</span>,
+            <span class="code-highlight"> left-aligned</span>,
+            <span class="code-highlight"> right-aligned</span>
+          </p>
+
+          <div class="component-display">
+            <p class="left-aligned">Left Aligned</p>
+            <div class="divider"></div>
+
+            <p class="center-aligned">Center Aligned</p>
+            <div class="divider"></div>
+
+            <p class="right-aligned">Right Aligned</p>
+          </div>
+
+          <!----------------------- Text Colors ------------------------>
+
+          <h4 class="h4">Text Colors</h4>
+
+          <p>
+            Classes : <span class="code-highlight"> primary-text</span>,
+            <span class="code-highlight"> danger-text</span>,
+            <span class="code-highlight"> warning-text</span>,
+            <span class="code-highlight"> success-text</span>,
+            <span class="code-highlight"> secondary-text</span>,
+            <span class="code-highlight"> default-text</span>,
+            <span class="code-highlight"> info-text</span>.
+          </p>
+
+          <div class="component-display flex-col">
+            <p class="primary-text">HI! I am Blue :)</p>
+            <p class="danger-text">Use me for error messages!</p>
+            <p class="warning-text">Use me for warning messages!</p>
+            <p class="success-text">Use me for success messages!</p>
+            <p class="secondary-text">Gray!</p>
+            <p class="default-text">I am the default color of this library!</p>
+            <p class="info-text">Use me for info messages!</p>
+          </div>
+
+          <!----------------------- Text Sizes ------------------------>
+
+          <h4 class="h4">Text Sizes</h4>
+
+          <p>
+            Classes : <span class="code-highlight"> para-sm </span>,
+            <span class="code-highlight"> para-md </span>,
+            <span class="code-highlight"> para-lg </span>.
+          </p>
+
+          <div class="component-display flex-col">
+            <p class="para-sm">Small para Text</p>
+            <p class="para-md">Medium para Text</p>
+            <span class="para-lg">Large para Text</span>
+          </div>
+
+          <!----------------------- Special Texts ------------------------>
+
+          <h4 class="h4">Special Texts</h4>
+
+          <p>
+            Classes : <span class="code-highlight"> text-strike</span>,
+            <span class="code-highlight"> code-highlight</span>,
+            <span class="code-highlight"> divider</span> .
+          </p>
+
+          <div class="component-display">
+            <p class="text-strike para-sm">Text Striked Off</p>
+            <div class="divider"></div>
+            <p>
+              Use This if you want to
+              <span class="code-highlight">hightlight</span> some code or words.
+            </p>
+          </div>
+
+          <p class="default-text">
+            Note: Divider will give a underline after any text or section, use
+            it with div element.
+          </p>
+        </section>
+
+        <!------------------------------------------------------- Components --------------------------------------------------->
+
+        <!-- 1. Alerts -->
+
+        <section id="Alerts" class="component-section">
+          <h2 class="h2 section-heading">Alerts</h2>
+
+          <p>
+            Bubble has 4 types of Alerts - success, warning, info and warning.
+            To get the icons use the font awesome cdn. Icons are attached to
+            special classes.<span class="code-highlight"> alert</span> is the
+            base class.
+          </p>
+
+          <p>Base Class - <span class="code-highlight">.alert</span></p>
+
+          <!-- Basic Alerts -->
+
+          <h4 class="h4">Basic Alerts</h4>
+
+          <p>
+            Additional Classes -
+            <span class="code-highlight">alert-error</span>,
+            <span class="code-highlight">alert-info</span>,
+            <span class="code-highlight">alert-warning</span>,
+            <span class="code-highlight">alert-success</span>
+          </p>
+
+          <div class="component-display flex-col">
+            <article class="alert alert-error">
+              This is an error alert — check it out!
+            </article>
+
+            <article class="alert alert-info">
+              This is a warning alert — check it out!
+            </article>
+
+            <article class="alert alert-warning">
+              This is an info alert — check it out!
+            </article>
+
+            <article class="alert alert-success">
+              This is a success alert — check it out!
+            </article>
+          </div>
+
+          <pre>
+            <code class="language-html">
+              &lt;article class="alert alert-error"&gt; This is an error alert &lt;/article&gt;
+               
+              &lt;article class="alert alert-info"&gt; This is a warning alert &lt;/article&gt;
+
+              &lt;article class="alert alert-warning"&gt; This is an info alert  &lt;/article&gt;
+              
+              &lt;article class="alert alert-success"&gt; This is a success alert &lt;/article&gt; 
+            </code>
+          </pre>
+
+          <!-- Outlined Alerts -->
+
+          <h4 class="h4">Outlined Alerts</h4>
+
+          <p>
+            Additional Classes -
+            <span class="code-highlight">alert-error-outline</span>,
+            <span class="code-highlight">alert-info-outline</span>,
+            <span class="code-highlight">alert-warning-outline</span>,
+            <span class="code-highlight">alert-success-outline</span>
+          </p>
+
+          <div class="component-display flex-col">
+            <article class="alert alert-error-outline">
+              This is an error alert — check it out!
+            </article>
+
+            <article class="alert alert-info-outline">
+              This is a warning alert — check it out!
+            </article>
+
+            <article class="alert alert-warning-outline">
+              This is an info alert — check it out!
+            </article>
+
+            <article class="alert alert-success-outline">
+              This is a success alert — check it out!
+            </article>
+          </div>
+
+          <pre>
+            <code class="language-html">
+              &lt;article class="alert alert-error-outline"&gt; This is an error alert &lt;/article&gt;
+               
+              &lt;article class="alert alert-info-outline"&gt; This is a warning alert &lt;/article&gt;
+
+              &lt;article class="alert alert-warning-outline"&gt; This is an info alert  &lt;/article&gt;
+              
+              &lt;article class="alert alert-success-outline"&gt; This is a success alert &lt;/article&gt; 
+            </code>
+          </pre>
+
+          <h4 class="h4">Filled Alerts</h4>
+
+          <p>
+            Additional Classes -
+            <span class="code-highlight">alert-error-filled</span>,
+            <span class="code-highlight">alert-info-filled</span>,
+            <span class="code-highlight">alert-warning-filled</span>,
+            <span class="code-highlight">alert-success-filled</span>.
+          </p>
+
+          <div class="component-display flex-col">
+            <article class="alert alert-error-filled">
+              This is an error alert — check it out!
+            </article>
+
+            <article class="alert alert-info-filled">
+              This is a warning alert — check it out!
+            </article>
+
+            <article class="alert alert-warning-filled">
+              This is an info alert — check it out!
+            </article>
+
+            <article class="alert alert-success-filled">
+              This is a success alert — check it out!
+            </article>
+          </div>
+
+          <pre>
+            <code class="language-html">
+              &lt;article class="alert alert-error-filled"&gt; This is an error alert &lt;/article&gt;
+               
+              &lt;article class="alert alert-info-filled"&gt; This is a warning alert &lt;/article&gt;
+
+              &lt;article class="alert alert-warning-filled"&gt; This is an info alert  &lt;/article&gt;
+              
+              &lt;article class="alert alert-success-filled"&gt; This is a success alert &lt;/article&gt; 
+            </code>
+          </pre>
+
+          <!-- Action Alerts -->
+
+          <h4 class="h4">Action Alert</h4>
+
+          <p>
+            Alert with cancel option. Can be used with any of the above variant
+            classes. Click the cancel button on second alert to check the demo.
+            <span class="warning-text">
+              Only works for font awesome icon or X letter for cancel button.
+            </span>
+          </p>
+
+          <div class="component-display flex-col">
+            <article class="alert alert-warning" id="demo-alert">
+              This is a success alert — check it out!
+              <button class="alert-cancel">
+                <i class="fas fa-times"></i>
+              </button>
+            </article>
+
+            <div class="center">
+              <button
+                class="btn btn-contained btn-sm primary"
+                id="alert-demo-undoBtn"
+              >
+                Bring Back Alert
+              </button>
+            </div>
+          </div>
+
+          <pre>
+              <code class="language-html">
+                 &lt;article class="alert alert-warning" id="demo-alert"&gt;
+                    This is a success alert
+                    &lt;button class="alert-cancel"&gt; &lt;i class="fas fa-times"&gt; &lt;/i> &lt;/button&gt;
+                 &lt;/article&gt;
+              </code>
+            </pre>
+
+          <pre>
+              <code class="javascript">
+                demoAlertCloseBtn = document.querySelector("#demo-alert .alert-cancel");
+                demoAlert = document.querySelector("#demo-alert");
+                showAlertButton = document.querySelector("#alert-demo-undoBtn");
+
+                demoAlertCloseBtn.addEventListener("click", () => {
+                   demoAlert.style.visibility = "hidden";
+                });
+
+                showAlertButton.addEventListener("click", () => {
+                  demoAlert.style.visibility = "visible";
+                });
+              </code>
+            </pre>
+        </section>
+
+        <!-- 2. Avatars -->
+
+        <section id="Avatars" class="component-section">
+          <h2 class="section-heading h2">Avatars</h2>
+          <p>
+            Avatar are images which can be used to show user's profile image.
+          </p>
+          <p>Base Class - <span class="code-highlight"> avatar</span></p>
+
+          <!-- Image Avatar -->
+
+          <h4 class="h4">Image Avatars</h4>
+          <p>
+            Additional Class -
+            <span class="code-highlight"> avatar-img</span> (add to image)
+          </p>
+
+          <div class="component-display flex-row">
+            <figure class="avatar avatar-md">
+              <img
+                class="avatar-img"
+                src="https://weebofigurines.sirv.com/CL/rengoku.jpg"
+                alt="renguko_image"
+              />
+            </figure>
+
+            <figure class="avatar avatar-md">
+              <img
+                class="avatar-img"
+                src="https://weebofigurines.sirv.com/CL/tengen.png"
+                alt="tengen__image"
+              />
+            </figure>
+
+            <figure class="avatar avatar-md">
+              <img
+                class="avatar-img"
+                src="https://weebofigurines.sirv.com/CL/tomioka.jpg"
+                alt="giyu_image"
+              />
+            </figure>
+          </div>
+
+          <pre>
+              <code class="language-html">
+                 &lt;figure class="avatar avatar-md"&gt;
+                   &lt;img
+                     class="avatar-img"
+                     src="https://weebofigurines.sirv.com/CL/tomioka.jpg"
+                     alt="giyu_image"
+                   /&gt;
+                 &lt;/figure&gt;
+              </code>
+            </pre>
+
+          <!-- Letter Avatar -->
+
+          <h4 class="h4">Letter Avatars</h4>
+          <p>
+            Bubble supports letter avatars. Add the color classes to apply color
+            to the avatars. This can be used with maximum of 2 letters.
+          </p>
+          <p>
+            Addition Class -
+            <span class="code-highlight"> avatar-letter </span>
+          </p>
+
+          <div class="component-display flex-row">
+            <figure class="avatar avatar-letter avatar-sm warning">
+              <span>S</span>
+            </figure>
+
+            <figure class="avatar avatar-letter avatar-md defaultLight">
+              <span>RK</span>
+            </figure>
+
+            <figure class="avatar avatar-letter avatar-lg dangerDark">
+              <span>TU</span>
+            </figure>
+          </div>
+
+          <pre>
+              <code class="language-html">
+                 &lt;figure class="avatar avatar-letter avatar-md defaultLight"&gt;
+                   &lt;span&gt; RK &lt;/span&gt;
+                 &lt;/figure&gt;
+              </code>
+            </pre>
+
+          <!-- Sizes -->
+
+          <h4 class="h4">Avatar Sizes</h4>
+          <p>
+            An avatar can have any of the 3 sizes - small, medium and large.
+          </p>
+          <p>
+            Additional Classes -
+            <span class="code-highlight"> avatar-sm </span>,
+            <span class="code-highlight"> avatar-md </span>,
+            <span class="code-highlight"> avatar-lg </span>
+          </p>
+
+          <div class="component-display flex-row">
+            <figure class="avatar avatar-sm">
+              <img
+                class="avatar-img"
+                src="https://weebofigurines.sirv.com/CL/rengoku.jpg"
+                alt="renguko_image"
+              />
+            </figure>
+
+            <figure class="avatar avatar-md">
+              <img
+                class="avatar-img"
+                src="https://weebofigurines.sirv.com/CL/tengen.png"
+                alt="tengen__image"
+              />
+            </figure>
+
+            <figure class="avatar avatar-lg">
+              <img
+                class="avatar-img"
+                src="https://weebofigurines.sirv.com/CL/tomioka.jpg"
+                alt="giyu_image"
+              />
+            </figure>
+          </div>
+
+          <!-- Icon Avatars -->
+
+          <h4 class="h4">Icon Avatars</h4>
+          <p>Icon avatars support images, svgs and font-awesome icons.</p>
+          <p>
+            Additional Class -
+            <span class="code-highlight"> avatar-icon </span>
+          </p>
+
+          <div class="component-display flex-row">
+            <figure class="avatar avatar-icon avatar-sm primary">
+              <img
+                class="avatar-icon"
+                src="./assets/svgs/camera.svg"
+                alt="Demo Image"
+              />
+            </figure>
+
+            <figure class="avatar avatar-icon avatar-md warningLight">
+              <i class="far fa-bell"></i>
+            </figure>
+
+            <figure class="avatar avatar-icon avatar-lg success">
+              <img src="./assets/svgs/folder.svg" alt="Demo Image" />
+            </figure>
+          </div>
+
+          <pre>
+              <code class="language-html">
+                    &lt;figure class="avatar avatar-icon avatar-lg success"&gt;
+                        &lt;img src="./assets/svgs/folder.svg" alt="svg"&gt;
+                    &lt;/figure&gt;
+
+                    &lt;figure class="avatar avatar-icon avatar-md warningLight"&gt;
+                          &lt;i class="far fa-bell"&gt;&lt;/i&gt;
+                    &lt;/figure&gt;
+              </code>
+            </pre>
+
+          <!-- Sqaure Avatars -->
+
+          <h4 class="h4">Square Avatar</h4>
+          <p>Additional Class - <span class="code-highlight">square</span></p>
+
+          <div class="component-display flex-row">
+            <figure class="avatar square avatar-lg">
+              <img
+                class="avatar-img"
+                src="https://weebofigurines.sirv.com/CL/rengoku.jpg"
+                alt="renguko_image"
+              />
+            </figure>
+          </div>
+
+          <pre>
+              <code class="language-html">
+                &lt;figure class="avatar square avatar-lg"&gt;
+                  &lt;img
+                   class="avatar-img"
+                   src="https://weebofigurines.sirv.com/CL/rengoku.jpg"
+                   alt="renguko_image"
+                  /&gt;
+                &lt;/figure&gt;
+              </code>
+            </pre>
+
+          <!-- Avatar with Badges -->
+
+          <h4 class="h4">Avatar with Border</h4>
+          <p>
+            Additional Class -
+            <span class="code-highlight"> avatar-border </span>
+          </p>
+
+          <div class="component-display flex-row">
+            <figure class="avatar avatar-border avatar-lg">
+              <img
+                class="avatar-img"
+                src="https://weebofigurines.sirv.com/CL/rengoku.jpg"
+                alt="renguko_image"
+              />
+            </figure>
+
+            <figure class="avatar square avatar-border avatar-lg">
+              <img
+                class="avatar-img"
+                src="https://weebofigurines.sirv.com/CL/tomioka.jpg"
+                alt="giyu_image"
+              />
+            </figure>
+          </div>
+
+          <pre>
+              <code class="language-html">
+                &lt;figure class="avatar avatar-border avatar-lg"&gt;
+                  &lt;img
+                  class="avatar-img"
+                  src="https://weebofigurines.sirv.com/CL/rengoku.jpg"
+                  alt="renguko_image"
+                  /&gt;
+                &lt;/figure&gt;
+              </code>
+            </pre>
+        </section>
+
+        <!-- 3. Badges -->
+
+        <section id="Badges" class="component-section">
+          <h2 class="section-heading h2">Badges</h2>
+          <p>
+            Badges are used to display a notification count or status
+            information.
+          </p>
+          <p>Base Class - <span class="code-highlight">badge</span></p>
+
+          <!-- Status Badge -->
+
+          <h4 class="h4">Status Badges</h4>
+          <p>Three types of status are available - online, busy and offline.</p>
+          <p>
+            Additional Classes - <span class="code-highlight">online</span>,
+            <span class="code-highlight">offline</span>,
+            <span class="code-highlight">busy</span>.
+          </p>
+
+          <div class="component-display flex-row">
+            <article class="badge">
+              <figure class="avatar avatar-sm">
+                <img
+                  class="avatar-img"
+                  src="https://weebofigurines.sirv.com/CL/tengen.png"
+                  alt="tengen__image"
+                />
+              </figure>
+              <span class="online"></span>
+            </article>
+
+            <article class="badge">
+              <figure class="avatar avatar-md square">
+                <img
+                  class="avatar-img"
+                  src="https://weebofigurines.sirv.com/CL/rengoku.jpg"
+                  alt="renguko_image"
+                />
+              </figure>
+              <span class="offline"></span>
+            </article>
+
+            <article class="badge">
+              <figure class="avatar avatar-lg">
+                <img
+                  class="avatar-img"
+                  src="https://weebofigurines.sirv.com/CL/tomioka.jpg"
+                  alt="giyu_image"
+                />
+              </figure>
+              <span class="busy"></span>
+            </article>
+          </div>
+
+          <pre>
+              <code class="language-html">
+                &lt;article class="badge"&gt;
+                   &lt;figure class="avatar avatar-lg"&gt;
+                     &lt;img
+                       class="avatar-img"
+                       src="https://weebofigurines.sirv.com/CL/tomioka.jpg"
+                       alt="giyu_image"
+                     /&gt;
+                   &lt;/figure&gt;
+                   &lt;span class="busy"&gt;&lt;/span&gt;
+                &lt;/article&gt;
+              </code>
+          </pre>
+
+          <!-- Icon badges -->
+
+          <h4 class="h4">Icon Badges</h4>
+          <p>
+            Additional Classes - <span class="code-highlight">badge-icon</span>,
+            <span class="code-highlight">badge-count</span>
+          </p>
+
+          <div class="component-display flex-col">
+            <article class="badge">
+              <img
+                class="badge-icon"
+                src="./assets/svgs/cart.svg"
+                alt="Demo Image"
+              />
+              <span class="badge-count primary">9</span>
+            </article>
+
+            <article class="badge">
+              <img
+                class="badge-icon"
+                src="./assets/svgs/letter.svg"
+                alt="Demo Image"
+              />
+              <span class="badge-count danger">9+</span>
+            </article>
+
+            <article class="badge">
+              <img
+                class="badge-icon"
+                src="./assets/svgs/camera.svg"
+                alt="Demo Image"
+              />
+              <span class="badge-count warning">99+</span>
+            </article>
+
+            <article class="badge">
+              <img
+                class="badge-icon"
+                src="./assets/svgs/folder.svg"
+                alt="Demo Image"
+              />
+              <span class="badge-count info">3</span>
+            </article>
+          </div>
+
+          <pre>
+            <code class="language-html">
+              &lt;article class="badge"&gt;
+                &lt;img class="badge-icon" src="" alt=""/&gt;
+                &lt;span class="badge-count info"&gt;3&lt;/span&gt;
+              &lt;/article&gt;
+            </code>
+          </pre>
+
+          <!-- Button Badge -->
+
+          <h4 class="h4">Button Badges</h4>
+          <p>Button can also be made into badges.</p>
+
+          <div class="component-display flex-row">
+            <button class="btn btn-contained default badge">
+              Click Me! <span class="badge-count danger">3+</span>
+            </button>
+          </div>
+
+          <pre>
+            <code class="language-html">
+                &lt;button class="btn btn-contained default badge"&gt;
+                  Click Me! &lt;span class="badge-count danger"&gt;3+&lt;/span&gt;
+                &lt;/button&gt;
+            </code>
+          </pre>
+
+          <h4 class="h4">Text with a Badge</h4>
+          <p>Badges can be added to normal texts.</p>
+
+          <div class="component-display flex-col">
+            <p class="badge">
+              Text with a badge
+              <span class="badge-count success">9</span>
+            </p>
+
+            <p class="badge">
+              Text with a badge
+              <span class="badge-count warning">1+</span>
+            </p>
+          </div>
+
+          <pre>
+            <code class="language-html">
+                &lt;p class="badge"&gt; Text with a badge
+                  &lt;span class="badge-count warning"&gt;1+&lt;/span&gt;
+                &lt;/p&gt;
+            </code>
+          </pre>
+        </section>
+
+        <!-- 4. Buttons -->
+
+        <section id="Buttons" class="component-section">
+          <h2 class="section-heading h2">Buttons</h2>
+          <p>
+            Buttons allow users to take actions, and make choices, with a single
+            tap. Add the color classes to add color to the buttons.
+          </p>
+          <p>Base Class - <span class="code-highlight">btn</span></p>
+
+          <!-- Contained Buttons -->
+
+          <h4 class="h4">Contained Buttons</h4>
+          <p>
+            These buttons are filled. They contain actions that are primary to
+            your app. Available for both button and link elements. Has disabled
+            state. You can also add font awesome icons.
+          </p>
+          <p>
+            Additional Class -
+            <span class="code-highlight">btn-contained </span>
+          </p>
+
+          <div class="component-display flex-row flex-center flex-wrap">
+            <button class="btn btn-contained default">Button</button>
+            <a class="btn btn-contained warning"> Link </a>
+            <button class="btn btn-contained dangerLight">
+              <i class="fab fa-android"></i>
+              Icon Support
+            </button>
+            <a class="btn btn-contained" disabled> Link Disabled </a>
+          </div>
+
+          <pre>
+            <code class="language-html">
+              &lt;button class="btn btn-contained default"&gt;Button&lt;/button&gt;
+
+              &lt;a class="btn btn-contained warning"&gt; Link &lt;/a&gt;
+
+              &lt;a class="btn btn-contained" disabled&gt; Link Disabled &lt;/a&gt;
+            </code>
+          </pre>
+
+          <!-- Outlined Buttons -->
+
+          <h4 class="h4">Outlined Buttons</h4>
+          <p>
+            Supports 5 colors - success, warning, info, error and default. They
+            contain actions that are important but aren't the primary action in
+            an app. Available both for button and link elements.
+          </p>
+
+          <p class="class-description">
+            Additional Classes:
+            <span class="code-highlight">btn-success-outline </span>,
+            <span class="code-highlight">btn-warning-outline</span>,
+            <span class="code-highlight">btn-default-outline</span>,
+            <span class="code-highlight">btn-error-outline</span>,
+            <span class="code-highlight">btn-info-outline</span>.
+          </p>
+
+          <div class="component-display flex-row">
+            <button class="btn btn-success-outline">Success</button>
+            <button class="btn btn-warning-outline">Warning</button>
+            <a class="btn btn-default-outline">
+              <i class="fa-brands fa-amazon-pay"></i> Pay
+            </a>
+            <a class="btn btn-error-outline"> Link Error </a>
+            <a class="btn btn-info-outline"> Link Info </a>
+          </div>
+
+          <pre>
+            <code class="language-html">
+              &lt;button class="btn btn-success-outline"&gt;Button&lt;/button&gt;
+
+              &lt;a class="btn btn-error-outline"&gt; Link &lt;/a&gt;
+            </code>
+          </pre>
+
+          <!-- Link Button -->
+
+          <h4 class="h4">Link Button</h4>
+          <p>This is only for link elements.</p>
+          <p>Class: <span class="code-highlight">btn-link</span>.</p>
+
+          <div class="component-display flex-row">
+            <a class="btn-link"> Link </a>
+          </div>
+
+          <pre>
+            <code class="language-html">
+              &lt;a class="btn-link"&gt; Link &lt;/a&gt;
+            </code>
+          </pre>
+
+          <!-- Icon Buttons -->
+
+          <h4 class="h4">Icon Buttons</h4>
+          <p>Available both for button and link element.</p>
+          <p>Base Class - <span class="code-highlight">btn-icon</span></p>
+
+          <p>
+            Two size variants. Additional Class -
+            <span class="code-highlight">btn-sm</span>,
+            <span class="code-highlight">btn-lg</span>.
+          </p>
+
+          <div class="component-display flex-row">
+            <a class="btn-icon btn-sm defaultDark">
+              <i class="fas fa-headset"></i>
+            </a>
+
+            <button class="btn-icon danger">
+              <i class="fas fa-cloud-download-alt"></i>
+            </button>
+
+            <a class="btn-icon btn-lg warning">
+              <i class="fas fa-headset"></i>
+            </a>
+          </div>
+
+          <pre>
+             <code class="language-html">
+                &lt;a class="btn-icon btn-sm defaultDark"&gt;
+                  &lt;i class="fas fa-headset"&lt;&gt;/i&gt;
+                &lt;/a>
+
+                &lt;button class="btn-icon danger"&gt;
+                  &lt;i class="fas fa-cloud-download-alt"&lt;&gt;/i&gt;
+                &lt;/button>
+
+                &lt;a class="btn-icon btn-lg warning"&gt;
+                  &lt;i class="fas fa-headset"&lt;&gt;/i&gt;
+                &lt;/a>
+             </code>
+           </pre>
+
+          <!-- Floating Action Button -->
+
+          <h4 class="h4">Floating Action Button</h4>
+          <p>Available both for button and link element.</p>
+          <p>Base Class - <span class="code-highlight">btn-float</span>.</p>
+          <p>
+            Two size variants. Additional Class -
+            <span class="code-highlight">btn-sm</span>,
+            <span class="code-highlight">btn-lg</span>.
+          </p>
+
+          <div class="component-display flex-row">
+            <button class="btn-float btn-sm primary">
+              <i class="fa-solid fa-pen-to-square"></i>
+            </button>
+            <a class="btn-float defaultLight"> + </a>
+            <a class="btn-float btn-lg danger">
+              <i class="fa-solid fa-trash"></i>
+            </a>
+          </div>
+
+          <pre>
+            <code class="language-html">
+              &lt;button class="btn-float btn-sm primary"&gt;
+                &lt;i class="fa-solid fa-pen-to-square"&gt;&lt;/i&gt;
+              &lt;/button&gt;
+
+              &lt;a class="btn-float defaultLight"&gt; + &lt;/a&gt;
+
+              &lt;a class="btn-float btn-lg danger"&gt;
+                &lt;i class="fa-solid fa-trash">&lt;/i&gt;
+              &lt;/a>
+            </code>
+          </pre>
+
+          <!-- Block Button -->
+
+          <h4 class="h4">Block Buttons</h4>
+          <p>Takes full width of container. Generally used in forms.</p>
+          <p>
+            Additional Class -
+            <span class="code-highlight">block-btn</span>.
+          </p>
+
+          <div class="component-display flex-row">
+            <button class="btn block-btn btn-contained success">
+              Block Button
+            </button>
+          </div>
+
+          <pre>
+            <code class="language-html">
+              &lt;button class="btn block-btn btn-contained success"&gt;
+                Block Button
+              &lt;/button&gt;
+            </code>
+          </pre>
+
+          <!-- Button Sizes -->
+
+          <h4 class="h4">Button Sizes</h4>
+          <p>
+            Three extra sizes are available - small, medium, large along with
+            default size.
+          </p>
+          <p>
+            Additional Classes -
+            <span class="code-highlight">btn-sm</span>,
+            <span class="code-highlight">btn-md</span>,
+            <span class="code-highlight">btn-lg</span>.
+          </p>
+
+          <div class="component-display flex-row">
+            <button class="btn btn-contained infoDark">Default</button>
+            <button class="btn btn-sm btn-contained primary">Small</button>
+            <button class="btn btn-md btn-error-outline">Medium</button>
+            <button class="btn btn-lg btn-contained warning">Large</button>
+          </div>
+        </section>
+
+        <section id="Cards" class="component-section">
+          <h2 class="section-heading h2">Cards</h2>
+          <p>Cards contain content and actions about a single subject.</p>
+          <p>Base Class - <span class="code-highlight">card</span></p>
+
+          <!-- Text Only Card -->
+
+          <h4 class="h4">Text Only Card</h4>
+          <div class="component-display flex-row">
+            <article class="card">
+              <header class="card-header" tabindex="0">
+                <div class="card-details">
+                  <h5 class="h5">Our Changing Planet</h5>
+                  <h6 class="h6">by Kurt Wagner</h6>
+                </div>
+                <p class="card-content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                  inventore asperiores quibusdam impedit, sapiente sunt fugit
+                  doloremque at commodi repellendus atque.
+                </p>
+              </header>
+
+              <footer class="card-actions">
+                <div class="card-buttongroup">
+                  <button class="btn btn-contained btn-sm primaryLight">
+                    Read
+                  </button>
+                  <button class="btn btn-contained btn-sm primaryLight">
+                    Bookmark
+                  </button>
+                </div>
+
+                <div class="card-buttongroup">
+                  <button class="btn-float btn-sm secondaryLight">
+                    <i class="far fa-heart"></i>
+                  </button>
+                  <button class="btn-float btn-sm secondaryLight">
+                    <i class="fas fa-share-alt"></i>
+                  </button>
+                  <button class="btn-float btn-sm secondaryLight">
+                    <i class="fas fa-ellipsis-v"></i>
+                  </button>
+                </div>
+              </footer>
+            </article>
+          </div>
+
+          <pre>
+            <code class="language-html">
+              &lt;article class="card"&gt;
+              &lt;header class="card-header" tabindex="0"&gt;
+                &lt;div class="card-details"&gt;
+                  &lt;h5 class="h5">Our Changing Planet&lt;/h5&gt;
+                  &lt;h6 class="h6">by Kurt Wagner&lt;/h6&gt;
+                &lt;/div&gt;
+                &lt;p class="card-content"&gt;
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                  inventore asperiores quibusdam impedit, sapiente sunt fugit
+                  doloremque at commodi repellendus atque.
+                &lt;/p&gt;
+              &lt;/header&gt;
+
+              &lt;footer class="card-actions"&gt;
+                &lt;div class="card-buttongroup"&gt;
+                  &lt;button class="btn btn-contained btn-sm primaryLight"&gt;
+                    Read
+                  &lt;/button&gt;
+                  &lt;button class="btn btn-contained btn-sm primaryLight"&gt;
+                    Bookmark
+                  &lt;/button&gt;
+                &lt;/div&gt;
+
+                &lt;div class="card-buttongroup"&gt;
+                  &lt;button class="btn-float btn-sm secondaryLight"&gt;
+                    &lt;i class="far fa-heart">&lt;/i&gt;
+                  &lt;/button&gt;
+                  &lt;button class="btn-float btn-sm secondaryLight"&gt;
+                    &lt;i class="fas fa-share-alt">&lt;/i&gt;
+                  &lt;/button&gt;
+                  &lt;button class="btn-float btn-sm secondaryLight"&gt;
+                    &lt;i class="fas fa-ellipsis-v">&lt;/i&gt;
+                  &lt;/button&gt;
+                &lt;/div&gt;
+              &lt;/footer&gt;
+            &lt;/article&gt;
+            </code>
+          </pre>
+
+          <!-- Media Card -->
+
+          <h4 class="h4">Media Card (Vertical)</h4>
+          <p>By default, every card is vertical card.</p>
+
+          <div class="component-display flex-row">
+            <article class="card">
+              <header class="card-header" tabindex="0">
+                <div class="card-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1500964757637-c85e8a162699?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1203&q=80"
+                    alt="Photo_by_SimonBerger"
+                    class="img-responsive"
+                  />
+                </div>
+                <div class="card-details">
+                  <h4 class="h4">Sunset</h4>
+                </div>
+                <p class="card-content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                  inventore asperiores quibusdam impedit
+                </p>
+              </header>
+              <footer class="card-actions">
+                <div class="card-buttongroup">
+                  <button class="btn btn-contained btn-sm secondary">
+                    Share
+                  </button>
+                </div>
+              </footer>
+            </article>
+          </div>
+
+          <pre>
+            <code class='language-html'>
+             &lt;article class="card"&gt;
+              &lt;header class="card-header" tabindex="0"&gt;
+                &lt;div class="card-image"&gt;
+                  &lt;img
+                    src="https://images.unsplash.com/photo-1500964757637-c85e8a162699?ixlib=rb-1.2.1&
+                    ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1203&q=80"
+                    alt="Photo_by_SimonBerger"
+                    class="img-responsive"
+                  />
+                &lt;/div&gt;
+                &lt;div class="card-details"&gt;
+                  &lt;h4 class="h4"&gt;Sunset&lt;/h4&gt;
+                &lt;/div>
+                &lt;p class="card-content"&gt;
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                  inventore asperiores quibusdam impedit
+                &lt;/p&gt;
+              &lt;/header&gt;
+              &lt;footer class="card-actions"&gt;
+                &lt;div class="card-buttongroup"&gt;
+                  &lt;button class="btn btn-contained btn-sm secondary"&gt;
+                    Share
+                  &lt;/button&gt;
+                &lt;/div&gt;
+              &lt;/footer&gt;
+            &lt;/article&gt;
+            </code>
+          </pre>
+
+          <!-- Media Card (Horizontal) -->
+
+          <h4 class="h4">Media Card (Horizontal)</h4>
+          <p>Choose a vertical image for this card to keep the aspect ratio.</p>
+
+          <div class="component-display flex-row flex-center">
+            <article class="card card-horizontal">
+              <div class="card-image">
+                <img
+                  src="https://images.unsplash.com/photo-1592743263126-bb241ee76ac7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=386&q=80"
+                  alt="Photo_bt_MaksymKaharlytskyi"
+                  class="img-responsive"
+                />
+              </div>
+              <div class="content">
+                <header class="card-header" tabindex="0">
+                  <div class="card-details">
+                    <h4 class="card-title h4">Autumn Trees</h4>
+                  </div>
+                  <p class="card-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fuga inventore asperiores quibusdam impedit
+                  </p>
+                </header>
+                <footer class="card-actions">
+                  <div class="card-buttongroup">
+                    <button class="btn-icon btn-sm secondaryLight">
+                      <i class="far fa-heart"></i>
+                    </button>
+                    <button class="btn-icon btn-sm secondaryLight">
+                      <i class="fas fa-share-alt"></i>
+                    </button>
+                  </div>
+                </footer>
+              </div>
+            </article>
+          </div>
+
+          <pre>
+            <code class="language-html">
+
+            &lt;article class="card card-horizontal"&gt;
+              &lt;div class="card-image"&gt;
+                &lt;img
+                  src="https://images.unsplash.com/photo-1592743263126-bb241ee76ac7?ixlib=rb-1.2.1&
+                  ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=386&q=80"
+                  alt="Photo_bt_MaksymKaharlytskyi"
+                  class="img-responsive"
+                /&gt;
+              &lt;/div&gt;
+              &lt;div class="content"&gt;
+                &lt;header class="card-header" tabindex="0"&gt;
+                  &lt;div class="card-details"&gt;
+                    &lt;h4 class="card-title h4">Example Title&lt;/h4&gt;
+                  &lt;/div&gt;
+                  &lt;p class="card-content"&gt;
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fuga inventore asperiores quibusdam impedit
+                  &lt;/p&gt;
+                &lt;/header&gt;
+                &lt;footer class="card-actions"&gt;
+                  &lt;div class="card-buttongroup"&gt;
+                    &lt;button class="btn-icon btn-sm secondaryLight"&gt;
+                      &lt;i class="far fa-heart">&lt;/i&gt;
+                    &lt;/button&gt;
+                    &lt;button class="btn-icon btn-sm secondaryLight"&gt;
+                      &lt;i class="fas fa-share-alt"&gt;&lt;/i&gt;
+                    &lt;/button&gt;
+                  &lt;/div&gt;
+                &lt;/footer&gt;
+              &lt;/div&gt;
+            &lt;/article&gt;
+            </code>
+          </pre>
+
+          <!-- Card With Shadow -->
+
+          <h4 class="h4">Card with Shadow on Hover</h4>
+          <p>
+            All cards have shadow. If you want shadow on hover, use this card.
+          </p>
+
+          <div class="component-display flex-row flex-center">
+            <article class="card card-hover">
+              <header class="card-header" tabindex="0">
+                <div class="card-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1596203721435-47040fbf51a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=835&q=80"
+                    alt="Photo_by_JoshuaWoroniecki"
+                    class="img-responsive"
+                  />
+                </div>
+                <div class="card-details">
+                  <h4 class="h4">Glowy Sky</h4>
+                </div>
+                <p class="card-content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
+                  illum corrupti inventore labore sint blanditiis error eligendi
+                  debitis ipsum? Quia, officiis. Ea alias earum saepe totam
+                  placeat fugiat, architecto at?
+                </p>
+              </header>
+            </article>
+          </div>
+
+          <pre>
+            <code class="language-html">
+             &lt;article class="card card-hover"&gt;
+              &lt;header class="card-header" tabindex="0"&gt;
+                &lt;div class="card-image"&gt;
+                  &lt;img
+                    src="https://images.unsplash.com/photo-1596203721435-47040fbf51a1?ixlib=rb-1.2.1&
+                    ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=835&q=80"
+                    alt="Photo_by_JoshuaWoroniecki"
+                    class="img-responsive"
+                  /&gt;
+                &lt;/div&gt;
+                &lt;div class="card-details"&gt;
+                  &lt;h4 class="h4"&lt;Lorem Ipsum&gt;/h4&gt;
+                &lt;/div&gt;
+                &lt;p class="card-content"&gt;
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, illum corrupti inventore labore sint blanditiis 
+                  error eligendi debitis ipsum? Quia, officiis. Ea alias earum saepe totam placeat fugiat, architecto at?
+                &lt;/p&gt;
+              &lt;/header&gt;
+            &lt;/article&gt;
+            </code>
+          </pre>
+
+          <!-- Card with Dismiss Button -->
+
+          <h4 class="h4">Card with Dismiss Button</h4>
+
+          <div class="component-display flex-row">
+            <article class="card card-dismiss">
+              <header class="card-header" tabindex="0">
+                <div class="card-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1600332298178-da28008ee22a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt="Photo_by_ArtemAstashov"
+                    class="img-responsive"
+                  />
+                </div>
+                <div class="card-details">
+                  <div>
+                    <h4 class="h4">Snowy Day</h4>
+                    <h6 class="h6">Photo by Artem Astashov</h6>
+                  </div>
+                  <button class="card-dismiss-button">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+                <p class="card-content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                  inventore asperiores quibusdam impedit
+                </p>
+              </header>
+
+              <footer class="card-actions">
+                <div class="card-buttongroup">
+                  <button class="btn btn-contained primaryLight btn-sm">
+                    Share
+                  </button>
+                </div>
+              </footer>
+            </article>
+          </div>
+
+          <pre>
+            <code class="language-html">
+             &lt;article class="card card-dismiss"&gt;
+              &lt;header class="card-header" tabindex="0"&gt;
+                &lt;div class="card-image"&gt;
+                  &lt;img
+                    src="https://images.unsplash.com/photo-1600332298178-da28008ee22a?ixlib=rb-1.2.1&
+                    ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt="Photo_by_ArtemAstashov"
+                    class="img-responsive"
+                  /&gt;
+                &lt;/div&gt;
+                &lt;div class="card-details"&gt;
+                  &lt;!-- Add the title inside a container for using this layout --&gt;
+                  &lt;div&gt;
+                    &lt;h4 class="h4"&gt;Snowy Day&lt;/h4&gt;
+                    &lt;h6 class="h6"&gt;Photo by Artem Astashov&lt;/h6&gt;
+                  &lt;/div>
+                  &lt;button class="card-dismiss-button"&gt;
+                    &lt;i class="fas fa-times"&gt;&lt;/i&gt;
+                  &lt;/button&gt;
+                &lt;/div&gt;
+                &lt;p class="card-content"&gt;
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                  inventore asperiores quibusdam impedit
+                &lt;/p&gt;
+              &lt;/header&gt;
+
+              &lt;footer class="card-actions"&gt;
+                &lt;div class="card-buttongroup"&gt;
+                  &lt;button class="btn btn-contained primaryLight btn-sm"&gt;
+                    Share
+                  &lt;/button&gt;
+                &lt;/div&gt;
+              &lt;/footer&gt;
+            &lt;/article&gt;
+            </code>
+          </pre>
+
+          <!-- Card with Text Overlay (Hover) -->
+
+          <h4 class="h4">Card with Text Overlay (Hover)</h4>
+          <p>Hover on the card to see the overlay.</p>
+
+          <div class="component-display flex-row">
+            <article class="card card-dismiss card-overlay">
+              <header class="card-header" tabindex="0">
+                <div class="card-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1488543882437-49f6f714ad05?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80"
+                    alt="Photo_by_JoaoBranco"
+                    class="img-responsive"
+                  />
+                </div>
+                <div class="card-details">
+                  <div>
+                    <h5 class="h5">Mühlebach VS, Switzerland</h5>
+                    <h6 class="h6">Photo by Joao Branco</h6>
+                  </div>
+                  <button class="card-dismiss-button">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+                <p class="card-content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                  inventore asperiores quibusdam impedit
+                </p>
+              </header>
+              <footer class="card-actions">
+                <div class="card-buttongroup">
+                  <button class="btn btn-contained success btn-sm">
+                    Book Tour
+                  </button>
+                </div>
+              </footer>
+              <div class="overlay">
+                <p class="overlay-text">Tour Unavailable</p>
+              </div>
+            </article>
+          </div>
+
+          <pre>
+          <code class="language-html">
+             &lt;article class="card card-dismiss card-overlay"&gt;
+              &lt;header class="card-header" tabindex="0"&gt;
+                &lt;div class="card-image"&gt;
+                  &lt;img
+                    src="https://images.unsplash.com/photo-1488543882437-49f6f714ad05?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80"
+                    alt="Photo_by_JoaoBranco"
+                    class="img-responsive"
+                  /&gt;
+                &lt;/div&gt;
+                &lt;div class="card-details"&gt;
+                  &lt;!-- Add the title inside a container for using this layout --&gt;
+                  &lt;div&gt;
+                    &lt;h4 class="h4"&gt;Mühlebach VS, Switzerland&lt;/h4&gt;
+                    &lt;h6 class="h6"&gt;Photo by Joao Branco&lt;/h6&gt;
+                  &lt;/div>
+                  &lt;button class="card-dismiss-button"&gt;
+                    &lt;i class="fas fa-times"&gt;&lt;/i&gt;
+                  &lt;/button&gt;
+                &lt;/div&gt;
+                &lt;p class="card-content"&gt;
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                  inventore asperiores quibusdam impedit
+                &lt;/p&gt;
+              &lt;/header&gt;
+              &lt;footer class="card-actions"&gt;
+                &lt;div class="card-buttongroup"&gt;
+                  &lt;button class="btn btn-contained primaryLight btn-sm"&gt;
+                    Share
+                  &lt;/button&gt;
+                &lt;/div&gt;
+              &lt;/footer&gt;
+              &lt;!-- Add this to get the overlay text, at the end of the card content --&gt; 
+              &lt;div class="overlay"&gt;
+                &lt;p class="overlay-text"&gt;Tour Unavailable&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/article&gt;
+          </code>
+        </pre>
+
+          <!-- Card with Text Overlay (Static) -->
+
+          <h4 class="h4">Card with Text Overlay (Static)</h4>
+          <p>
+            Replcae the <span class="code-highlight">card-overlay</span> class
+            with <span class="code-highlight">card-overlay-static</span>
+          </p>
+
+          <div class="component-display flex-row">
+            <article class="card card-dismiss card-overlay-static">
+              <header class="card-header" tabindex="0">
+                <div class="card-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1488543882437-49f6f714ad05?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80"
+                    alt="Photo_by_JoaoBranco"
+                    class="img-responsive"
+                  />
+                </div>
+                <div class="card-details">
+                  <div>
+                    <h5 class="h5">Mühlebach VS, Switzerland</h5>
+                    <h6 class="h6">Photo by Joao Branco</h6>
+                  </div>
+                  <button class="card-dismiss-button">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+                <p class="card-content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                  inventore asperiores quibusdam impedit
+                </p>
+              </header>
+              <footer class="card-actions">
+                <div class="card-buttongroup">
+                  <button class="btn btn-contained success btn-sm">
+                    Book Tour
+                  </button>
+                </div>
+              </footer>
+              <div class="overlay">
+                <p class="overlay-text">Tour Unavailable</p>
+              </div>
+            </article>
+          </div>
+
+          <!-- Card with badge -->
+
+          <h4 class="h4">Card with Badge</h4>
+          <p>Example of an ecommerce product card with badge.</p>
+
+          <div class="component-display flex-row">
+            <article class="card" tabindex="0">
+              <header class="card-header">
+                <div class="card-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1599669454699-248893623440?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt="Photo_by_JasonLeung"
+                    class="img-responsive"
+                  />
+                </div>
+                <div
+                  class="card-details flex-row flex-space-between flex-center-y"
+                >
+                  <h5 class="h5">Boat Earphones</h5>
+                  <p class="single-star-rating">4.5</p>
+                </div>
+                <p class="card-content">Black Colour, On the Ear</p>
+                <figure class="price-container flex-row flex-center-y">
+                  <p class="price">₹1,799</p>
+                  <p class="secondary-text text-strike">₹2,199</p>
+                  <p class="success-text">18% off</p>
+                </figure>
+              </header>
+              <!-- Add this to get the Badge on Card -->
+              <p class="text-badge success">Limited Offer</p>
+            </article>
+          </div>
+
+          <pre>
+          <code>
+            &lt;article class="card" tabindex="0"&gt;
+              &lt;header class="card-header"&gt;
+                &lt;div class="card-image"&gt;
+                  &lt;img
+                    src="https://images.unsplash.com/photo-1599669454699-248893623440?ixlib=rb-1.2.1&
+                    ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt="Photo_by_JasonLeung"
+                    class="img-responsive"
+                  /&gt;
+                &lt;/div&gt;
+                &lt;div class="card-details flex-row flex-space-between flex-center-y"&gt;
+                  &lt;h5 class="h5"&gt;Boat Earphones&lt;/h5&gt;
+                  &lt;p class="single-star-rating"&gt;4.5&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;p class="card-content">Black Colour, On the Ear&lt;/p&gt;
+                &lt;figure class="price-container flex-row flex-center-y"&gt;
+                  &lt;p class="price">₹1,799&lt;/p&gt;
+                  &lt;p class="secondary-text text-strike">₹2,199&lt;/p&gt;
+                  &lt;p class="success-text">18% off&lt;/p&gt;
+                &lt;/figure&gt;
+              &lt;/header&gt;
+              &lt;!-- Add this to get the Badge on Card --&gt;
+              &lt;p class="text-badge primary">Limited Offer&lt;/p&gt;
+            &lt;/article&gt;
+          </code>
+          </pre>
+
+          <!-- Notification Card -->
+
+          <h4 class="h4">Notification Card</h4>
+          <p>Used to show notification.</p>
+
+          <div class="component-display flex-row flex-center">
+            <article class="card notification-card" tabindex="0">
+              <header class="card-header">
+                <article class="badge">
+                  <figure class="avatar avatar-sm square">
+                    <img
+                      class="avatar-img"
+                      src="https://teachingandlearning.schulich.yorku.ca/wp-content/uploads/2019/10/avatar6.png"
+                      alt="demo_image"
+                    />
+                  </figure>
+                  <span class="online"></span>
+                </article>
+                <div class="notification">
+                  <p class="notification-message">
+                    <strong>Sarah Jones</strong> followed you back! 🔥 
+                  </p>
+                  <span class="social-info">2h ago</span>
+                  <span class="social-info seperator">Vibes Social Media</span>
+                </div>
+              </header>
+            </article>
+          </div>
+
+          <pre>
+            <code class="language-html">
+              &lt;article class="card notification-card" tabindex="0"&gt;
+              &lt;header class="card-header"&gt;
+                &lt;article class="badge"&gt;
+                  &lt;figure class="avatar avatar-sm square"&gt;
+                    &lt;img
+                      class="avatar-img"
+                      src="https://teachingandlearning.schulich.yorku.ca/wp-content/uploads/2019/10/avatar6.png"
+                      alt="demo_image"
+                    /&gt;
+                  &lt;/figure&gt;
+                  &lt;span class="online">&lt;/span&gt;
+                &lt;/article&gt;
+                &lt;div class="notification"&gt;
+                  &lt;p class="notification-message"&gt;
+                    &lt;strong>Sarah Jones</strong> followed you back! 🔥 
+                  &lt;/p>
+                  &lt;span class="social-info"&gt;2h ago&lt;/span&gt;
+                  &lt;span class="social-info seperator">Vibes Social Media&lt;/span&gt;
+                &lt;/div&gt;
+              &lt;/header&gt;
+            &lt;/article&gt;
+            </code>
+          </pre>
+
+
+          <!-- Chips -->
+          
+
+
+
+        </section>
+
+        <!-- End -->
+      </section>
+    </main>
+
+    <footer></footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>

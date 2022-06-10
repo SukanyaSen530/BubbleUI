@@ -1,21 +1,35 @@
 .header {
   background: transparent;
-  margin: 2rem;
+  margin: 1rem;
   border-radius: var(--border-radius-md);
   padding: 0.5rem 2rem;
   transition: 0.5s all ease;
   height: 8rem;
-  box-shadow: rgba(var(--shadow), 0.3) 0px 0.0625em 0.0625em,
-    rgba(var(--shadow), 0.3) 0px 0.125em 0.5em,
-    rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset;
+  box-shadow: rgba(var(--shadow), 0.02) 0px 1px 3px 0px,
+    rgba(var(--shadow), 0.15) 0px 0px 0px 1px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  opacity: 0.8;
+  position: sticky;
+  top: 2rem;
+  z-index: 10;
+}
+
+.header__logo {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.header__logo p {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--docPrimary);
 }
 
 .header__logo__image {
-  height: 8rem;
+  height: 6rem;
+  border-radius: var(--border-radius-circle);
 }
 
 .header__menu {
@@ -27,7 +41,7 @@
 .header__menu__items > a {
   font-size: 2.2rem;
   color: whitesmoke;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.5);
   transition: 0.5s all;
   padding: 0.5rem 1rem;
   border-radius: var(--border-radius-sm);
@@ -38,14 +52,10 @@
 }
 
 .header__menu__items > a:hover {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 @media only screen and (max-width: 600px) {
-  .header__logo__image {
-    height: 6rem;
-  }
-
   .header__menu__items > a {
     font-size: 3.2rem;
   }

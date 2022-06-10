@@ -1,3 +1,4 @@
+// Theme
 // function to set a given theme/color-scheme
 const setTheme = (themeName) => {
   localStorage.setItem("bubbleTheme", themeName);
@@ -23,3 +24,17 @@ const toggleTheme = () => {
     document.getElementById("theme-toggler").checked = true;
   }
 })();
+
+// Alert
+
+demoAlertCloseBtn = document.querySelector("#demo-alert .alert-cancel");
+demoAlert = document.querySelector("#demo-alert");
+showAlert = document.querySelector("#alert-demo-undoBtn");
+
+demoAlertCloseBtn.addEventListener("click", () => {
+  demoAlert.style.visibility = "hidden";
+});
+
+showAlert.addEventListener("click", () => {
+  demoAlert.style.visibility = "visible";
+});

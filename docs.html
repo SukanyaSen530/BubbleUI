@@ -11,21 +11,11 @@
   <title>Bubble UI Docs</title>
 
   <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
-
 </head>
 
 <body>
   <!-- SIDEBAR -->
   <aside class="sidebar" id="sidebar">
-    <div class="logo-container flex-row">
-
-      <a href="./index.html">
-        <img class="logo" src="./assets/images/logo.png" alt="Bubble UI Logo" />
-      </a>
-
-      <span id="hamburger-btn"> <i class="fas fa-bars"></i> </span>
-    </div>
-
     <ul class="menu-list">
       <li class="sidebar-link-heading">Get Started</li>
       <li>
@@ -180,7 +170,8 @@
         names provided for your own custom styles.</p>
 
       <div class="pallete">
-        <div class="primary">
+        <div>
+           <div class="primary">
           --primary
           <span>#3b82f6</span>
         </div>
@@ -212,8 +203,10 @@
           --dark
           <span>#000000</span>
         </div>
+        </div>
 
-        <div class="primaryLight">
+       <div>
+          <div class="primaryLight">
           --primaryLight
           <span>#bfdbfe</span>
         </div>
@@ -241,6 +234,7 @@
           --defaultLight
           <span>#254e6e</span>
         </div>
+       </div>
 
         <div class="primaryDark">
           --primaryDark
@@ -275,13 +269,14 @@
     </section>
 
     <section id="Typography" class="component-section">
+
       <h2 class="section-heading h2">Typography</h2>
       <p class="component-description">Default Font is set to Roboto. Has 6 font weights - <span
           class="code-highlight">100; 300; 400; 500;
           700; 900</span>.</p>
 
-      <h4 class="h4 component-type">Headings</h4>
-      <p class="class-description">Classes : <span class="code-highlight">
+      <h4 class="h4">Headings</h4>
+      <p>Classes : <span class="code-highlight">
           h1</span>, <span class="code-highlight">
           h2</span>, <span class="code-highlight">
           h3</span>, <span class="code-highlight">
@@ -289,7 +284,7 @@
           h5</span>, <span class="code-highlight">
           h6</span></p>
 
-      <div class="component-display component-text">
+      <div class="component-display flex-col">
         <h1 class="h1">H1-Heading</h1>
         <div class="divider"></div>
 
