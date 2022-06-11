@@ -1,10 +1,11 @@
-<p>
-  <img src="./assets/images/logoWithName.png" width="400" title="hover text">
-</p>
+<div align="center">
+  <img src="./assets/images/logo.png" width="150" title="App Logo">
 
-# [Bubbles](https://bubbles-nine.netlify.app/)
+   # [Bubbles](https://bubbles-nine.netlify.app/)
+   ### Design Your Websites Faster with Bubbles!
+</div>
 
-### Design Your Websites Faster with Bubbles!
+
 
 ## Stack Used
 
@@ -26,6 +27,12 @@ Copy & Paste these two links in the head section of your page!<br>
 />
 ```
 
+Or import this in your main css file.
+
+```css
+@import url(https://bubbles-nine.netlify.app/styles/components/index.css)
+```
+
 # Component List
 
 ### [Alerts](https://bubbles-nine.netlify.app/docs.html#Alerts)
@@ -41,6 +48,7 @@ Copy & Paste these two links in the head section of your page!<br>
 - Image Avatars
 - Letter Avatars
 - Icon Avatars
+- Avatar with Border
 - Variants: Circular & Square
 - Sizes: (Small, Medium, Large)
 
@@ -92,12 +100,10 @@ Copy & Paste these two links in the head section of your page!<br>
 
 ### [Inputs](https://bubbles-nine.netlify.app/docs.html#Inputs)
 
-- Input Types: Text, Number, TextArea, Email, Checkbox, Radio
-- Without Validation
+- Input Types: Text, Number, TextArea, Dropdown, Email, Checkbox, Radio
 - Disabled Input
 - Required Input \*
-- With Validation
-- Supports 4 colours (Primary, Warning, Secondary, Default)
+
 
 ### [Lists](https://bubbles-nine.netlify.app/docs.html#Lists)
 
@@ -123,12 +129,10 @@ Copy & Paste these two links in the head section of your page!<br>
 
 ### [Snackbar](https://bubbles-nine.netlify.app/docs.html#Snackbar)
 
-- Light
-- Dark
+- Basic
 
 ### [Slider](https://bubbles-nine.netlify.app/docs.html#Inputs)
-It is inside Input section at the end.
 
 # Demo
 
-![Demo](./assets/DemoGif.gif)<br><br>
+![Demo](./assets/Demo.gif)<br><br>
