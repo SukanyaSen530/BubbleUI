@@ -1,0 +1,104 @@
+/* Common */
+@import url(../core/utilities.css);
+@import url(../core/variable.css);
+
+/* Layout */
+@import url(../layout/header.css);
+@import url(../layout/sidebar.css);
+@import url(../layout/footer.css);
+
+/* Components */
+@import url(../components/index.css);
+
+body {
+  color: var(--textColor);
+  background: var(--bgColor);
+  min-height: 100vh;
+  padding: 5px;
+}
+
+.bg {
+  background-color: var(--bgColor);
+}
+
+.docs__content {
+  flex: 1;
+  min-width: 0;
+  padding: 2rem 0 2rem 12rem;
+  text-align: justify;
+  position: relative;
+}
+
+.section-heading:after {
+  content: "";
+  border-bottom: 8px solid var(--secondary);
+  width: 10rem;
+  display: block;
+  border-radius: var(--border-radius-sm);
+  margin-top: 5px;
+}
+
+.component-section {
+  padding: 1rem var(--spacing-07);
+  margin-bottom: var(--spacing-06);
+}
+
+pre code.hljs {
+  background: #403f4c;
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: var(--border-radius-md);
+}
+
+.pallete {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: var(--spacing-05);
+}
+
+.pallete div {
+  width: 16rem;
+  height: 8rem;
+  padding: var(--spacing-03);
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.component-display {
+  flex-wrap: wrap;
+  margin: 2rem 0;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  box-shadow: 0px 0px 15px 2px rgb(var(--shadow2)) inset;
+  border-radius: var(--border-radius-md);
+}
+
+.grid img {
+  height: 12rem;
+}
+
+.scroll-to-top{
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  z-index: 20;
+}
+
+@media only screen and (max-width: 600px) {
+  .pallete div {
+    width: 8rem;
+    height: 6rem;
+  }
+
+  .docs__content {
+    padding: 1rem 0 1rem 10rem;
+  }
+
+  .component-section {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+}

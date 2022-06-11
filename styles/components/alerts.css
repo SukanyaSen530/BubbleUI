@@ -64,7 +64,7 @@
   font-family: "Font Awesome 5 Free";
   content: "\f05a";
   font-weight: 900;
-   margin-right: 1rem;
+  margin-right: 1rem;
   font-size: 2rem;
 }
 
@@ -129,34 +129,35 @@
 /* FILLED VARIANTS */
 .alert.alert-success-filled {
   background-color: var(--success);
+  color: black;
 }
 
 .alert.alert-error-filled {
   background-color: var(--danger);
+ color: black;
 }
 
 .alert.alert-warning-filled {
   background-color: var(--warning);
+ color: black;
 }
 
 .alert.alert-info-filled {
   background-color: var(--info);
+  color: black;
 }
 
 /* ACTION ALERT */
 
 .alert .alert-cancel {
   margin-left: auto;
-  border-radius: var(--border-radius-circle);
   border: transparent;
   background: transparent;
-  height: var(--spacing-06);
-  width: var(--spacing-06);
-  vertical-align: middle;
-  transition: all 0.2s;
+  cursor: pointer;
+  height: 2.5rem;
+  width: 2.5rem;
 }
 
-.alert .alert-cancel:hover {
-  background: rgb(0, 0, 0, 0.2);
-  color: white;
+.alert .alert-cancel i{
+  font-size: 2.5rem;
 }

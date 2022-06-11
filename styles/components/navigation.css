@@ -15,7 +15,7 @@
 }
 
 .navbar .brand-icon {
-  height: var(--spacing-07);
+  height: 6rem;
   margin-right: 0.3rem;
 }
 
@@ -42,6 +42,9 @@
 
 .navbar-resp .navbar-search {
   width: 40%;
+  background: var(--light);
+  border-radius: var(--border-radius-sm);
+  padding: 0 0.5rem;
 }
 
 .navbar-resp .navbar-toggle-btn:hover {

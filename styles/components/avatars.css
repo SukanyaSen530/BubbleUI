@@ -27,17 +27,19 @@
   text-overflow: ellipsis;
   width: var(--spacing-07);
   text-align: center;
+  font-size: 1.5rem;
 }
 
 .avatar.avatar-icon > i {
-  font-size: var(--spacing-06);
+  font-size: var(--spacing-08);
   color: (--light);
 }
 
 .avatar.avatar-icon > img {
-  font-size: var(--spacing-06);
-  height: var(--spacing-06);
+  font-size: var(--spacing-10);
+  height: var(--spacing-10);
 }
+
 
 /* SIZES */
 .avatar-sm {
@@ -63,4 +65,12 @@
 
 .avatar.square > .avatar-img {
   border-radius: var(--border-radius-md);
+}
+
+
+/* BORDER */
+
+.avatar.avatar-border {
+  padding: 3px;
+  border: 3px solid #d2d4d9;
 }

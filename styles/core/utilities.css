@@ -9,6 +9,10 @@
   gap: 10px;
 }
 
+.flex-space-between{
+  justify-content: space-between;
+}
+
 .flex-center {
   align-items: center;
   justify-content: center;
@@ -38,7 +42,7 @@
   text-align: center;
 }
 
-.eight-height-width {
+.eight-height {
   height: 80vh;
-  width: 80vw;
 }
+

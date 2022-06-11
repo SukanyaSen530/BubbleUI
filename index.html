@@ -1,56 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage | Bubbles</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="./styles/pages/index.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./styles/pages/index.css" />
-  <!-- font-awesome -->
-  <script src="https://kit.fontawesome.com/b428bff4ec.js" crossorigin="anonymous"></script>
-  <title>Bubble UI</title>
+    <!-- font-awesome -->
+    <script
+      src="https://kit.fontawesome.com/b428bff4ec.js"
+      crossorigin="anonymous"
+    ></script>
 
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+  </head>
 
-  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
-</head>
-
-<body>
-  <nav class="page-navbar flex-row flex-center-y">
-    <div class="flex-row flex-center">
-      <div class="brand-logo">
-        <img src="./assets/images/logoWithName.png" alt="Bubble UI Logo" />
-      </div>
-    </div>
-
-    <ul class="page-navbar-options flex-row flex-center">
-      <li>
-        <a href="./docs.html">
-          <i class="fas fa-globe-africa"></i></a>
-      </li>
-      <li>
-        <a href="https://github.com/SukanyaSen530/ComponentLib" target="_blank">
-          <i class="fab fa-github-alt"></i>
+  <body>
+    <section class="homepage">
+      <nav class="header">
+        <a class="header__logo" href="./index.html">
+          <img
+            src="./assets/images/logo.png"
+            alt="Bubble_UI_Logo"
+            class="header__logo__image"
+          />
+          <span>Bubbles</span>
         </a>
-      </li>
-    </ul>
 
-    <button class="btn-icon default" id="indexThemebtn">
-      <i class="fa-solid fa-moon"></i>
-    </button>
-  </nav>
+        <ul class="header__menu">
+          <label class="switch">
+            <input
+              type="checkbox"
+              onchange="toggleTheme()"
+              id="theme-toggler"
+            />
+            <span class="slider"></span>
+          </label>
 
-  <section class="landing-page flex-col flex-center">
+          <li class="header__menu__items">
+            <a href="./documentation.html">
+              <i class="fas fa-globe-africa"></i>
+              <span>Documentation</span>
+            </a>
+          </li>
+          <li class="header__menu__items">
+            <a
+              href="https://github.com/SukanyaSen530/ComponentLib"
+              target="_blank"
+            >
+              <i class="fab fa-github-alt"></i>
+              <span>Github</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
 
-    <div class=" container center-aligned">
+      <div class="homepage__content">
+        <h1 class="h1">
+          <span class="text-emphasis">Bubbles</span> is a vanilla CSS component
+          library!
+        </h1>
+        <h4 class="h4">
+          Build a Clean, Consistent and Responsive UI for your Website with
+          custom bubble components!
+        </h4>
 
-      <p class="landing-page-content">Design Your Websites Faster with <span class="text-emphasis">Bubbles</span>!</p>
+        <div class="homepage__actions">
+          <a
+            class="btn btn-contained default btn-md"
+            href="./documentation.html"
+          >
+            <i class="fa-solid fa-meteor"></i> Get Started
+          </a>
+          <a
+            class="btn btn-default-outline btn-md"
+            href="https://github.com/SukanyaSen530/ComponentLib"
+            target="_blank"
+          >
+            <i class="fab fa-github-alt"></i> <span>Github</span>
+          </a>
+        </div>
+      </div>
+    </section>
 
-      <a class="btn btn-contained secondaryDark btn-lg" href="./docs.html">Get Started</a>
-
-    </div>
-
-  </section>
-  <script src="./scripts/index.js"></script>
-</body>
-
+    <script src="./scripts/index.js"></script>
+  </body>
 </html>

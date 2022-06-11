@@ -113,3 +113,8 @@
   background-color: var(--dangerDark);
   color: var(--light);
 }
+
+.light {
+  color: black;
+  background-color: var(--light);
+}

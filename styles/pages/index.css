@@ -1,5 +1,4 @@
 /* Common */
-@import url(../core/utilities.css);
 @import url(../core/variable.css);
 
 /* Layout */
@@ -8,38 +7,49 @@
 /* Components */
 @import url(../components/index.css);
 
-body {
+.homepage {
+  background: url("../../assets/images/bg.png"), var(--bgColor);
+  height: 100vh;
+  overflow-x: hidden;
   position: relative;
-  background-color: var(--defaultLight);
-}
-
-.landing-page {
-  height: calc(100vh - 8rem);
-}
-
-.landing-page:before {
-  content: " ";
-  display: block;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 80%;
-  opacity: 0.2;
-  background-image: url(../../assets/svgs/landing_page_img.svg);
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  z-index: -1;
+  background-size: 100% 100%;
+  color: var(--textColor);
+  position: relative;
+  transition: 0.3s all;
 }
 
-.landing-page-content {
-  font-size: 5rem;
-  line-height: 5.5rem;
-  font-weight: 700;
-  margin: 5rem 0;
-  color: var(--grey-600);
+.homepage__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60vw;
+}
+
+.homepage__actions {
+  margin: 2rem 0;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  position: relative;
 }
 
 .text-emphasis {
-  color: var(--purple-1000);
+  color: var(--docPrimary);
+}
+
+@media only screen and (max-width: 600px) {
+  .homepage {
+    background: url("../../assets/images/mobile-bg.png"), var(--bgColor);
+    background-size: 100% 100%;
+  }
+
+  .homepage__content {
+    width: 90%;
+  }
+
+  .homepage__actions {
+    gap: 1rem;
+  }
 }
