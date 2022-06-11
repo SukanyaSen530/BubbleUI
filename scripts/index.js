@@ -25,6 +25,28 @@ const toggleTheme = () => {
   }
 })();
 
+//Scroll to top
+
+document.querySelector(".scroll-to-top").addEventListener("click", () => {
+  document.body.scrollTop = document.documentElement.scrollTop = 0;
+});
+
+// Sidebar - Mobile
+
+const sidebarMobileTrigger = document.getElementById("sidebar-trigger");
+const sidebar = document.querySelector(".sidebar");
+const sidebarLists = document.querySelectorAll(".sidebar-option");
+
+sidebarMobileTrigger.addEventListener("click", () => {
+  sidebar.classList.toggle("active");
+});
+
+sidebarLists.forEach((option) => {
+  option.addEventListener("click", () => {
+    sidebar.classList.remove("active");
+  });
+});
+
 // Alert
 
 demoAlertCloseBtn = document.querySelector("#demo-alert .alert-cancel");
@@ -37,4 +59,31 @@ demoAlertCloseBtn.addEventListener("click", () => {
 
 showAlert.addEventListener("click", () => {
   demoAlert.style.visibility = "visible";
+});
+
+// Modal
+
+const modal = document.querySelector(".modal-overlay");
+const openModalButton = document.getElementById("open-modal-button");
+const closeButton = document.querySelector("#demo-modal .modal-close-button");
+function toggleModal() {
+  modal.classList.toggle("show-modal");
+}
+function windowOnClick(event) {
+  if (event.target === modal) {
+    toggleModal();
+  }
+}
+openModalButton.addEventListener("click", toggleModal);
+closeButton.addEventListener("click", toggleModal);
+window.addEventListener("click", windowOnClick);
+
+// Navbar
+
+const resposiveNavbarHamburger = document.querySelector(
+  "#navbar-res-hamburger"
+);
+const navbarResponsive = document.querySelector(".navbar.navbar-resp");
+resposiveNavbarHamburger.addEventListener("click", () => {
+  navbarResponsive.classList.toggle("active");
 });

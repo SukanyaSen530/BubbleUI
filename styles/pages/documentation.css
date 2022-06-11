@@ -26,6 +26,7 @@ body {
   min-width: 0;
   padding: 2rem 0 2rem 12rem;
   text-align: justify;
+  position: relative;
 }
 
 .section-heading:after {
@@ -75,6 +76,29 @@ pre code.hljs {
   border-radius: var(--border-radius-md);
 }
 
-.grid img{
+.grid img {
   height: 12rem;
+}
+
+.scroll-to-top{
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  z-index: 20;
+}
+
+@media only screen and (max-width: 600px) {
+  .pallete div {
+    width: 8rem;
+    height: 6rem;
+  }
+
+  .docs__content {
+    padding: 1rem 0 1rem 10rem;
+  }
+
+  .component-section {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
 }

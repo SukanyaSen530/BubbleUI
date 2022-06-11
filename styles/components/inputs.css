@@ -27,7 +27,7 @@ label {
 
 .input-group__input,
 .search-box__bar {
-  padding: 0.5rem 1rem 1rem 1rem;
+  padding: 1rem;
   font-size: 1.5rem;
   width: 100%;
   transition: 0.4s all ease;

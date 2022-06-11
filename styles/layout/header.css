@@ -37,20 +37,24 @@
   align-items: center;
 }
 
-.header__menu__items > a {
+.header__menu__items > a,
+button.header__menu__items {
   font-size: 2.2rem;
   color: whitesmoke;
   background: rgba(0, 0, 0, 0.5);
   transition: 0.5s all;
   padding: 0.5rem 1rem;
   border-radius: var(--border-radius-sm);
+  border: none;
+  cursor: pointer;
 }
 
 .header__menu__items > a:visited {
   color: whitesmoke;
 }
 
-.header__menu__items > a:hover {
+.header__menu__items > a:hover,
+button.header__menu__items:hover {
   background: rgba(0, 0, 0, 0.7);
 }
 

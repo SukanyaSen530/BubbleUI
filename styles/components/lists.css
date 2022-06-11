@@ -2,6 +2,7 @@
 
 .nested-list {
   counter-reset: decimal;
+  font-size: 1.5rem;
 }
 
 .nested-list > li {
@@ -33,6 +34,7 @@
 .heart-list,
 .check-list {
   margin: 0.3rem 0;
+  font-size: 1.5rem;
 }
 
 .heart-list > li::before,
@@ -57,10 +59,15 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  font-size: 1.5rem;
 }
 
 /* STACKED LIST */
 
 .stacked-list {
   list-style: none;
+}
+
+.stacked-list li{
+  margin-top: 2px;
 }

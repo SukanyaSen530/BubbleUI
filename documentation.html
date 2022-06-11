@@ -22,6 +22,9 @@
   </head>
 
   <body>
+    <!-- Scroll to top -->
+    <button class="btn btn-float defaultDark scroll-to-top"><i class="fa-solid fa-arrow-up"></i></button>
+
     <nav class="header bg">
       <div class="header__logo">
         <img
@@ -51,24 +54,26 @@
 
     <main class="docs__main">
       <!-- ------------------------------ Sidebar ----------------------------- -->
-
-      <aside class="sidebar">
+      <aside class="sidebar custom-scrollbar">
+        <button id="sidebar-trigger">
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
         <ul>
           <li class="sidebar__heading">Get Started</li>
 
-          <li>
+          <li class="sidebar-option">
             <a href="#Installation">
               <i class="fas fa-circle-notch"></i>
               <span class="sidebar-link-name">Installation</span>
             </a>
           </li>
-          <li>
+          <li class="sidebar-option">
             <a href="#Colors">
               <i class="fas fa-palette"></i>
               <span class="sidebar-link-name">Colors</span>
             </a>
           </li>
-          <li>
+          <li class="sidebar-option">
             <a href="#Typography">
               <i class="fas fa-paragraph"></i>
               <span class="sidebar-link-name">Typography</span>
@@ -77,85 +82,85 @@
 
           <li class="sidebar__heading">Components</li>
 
-          <li>
+          <li class="sidebar-option">
             <a href="#Alerts">
               <i class="far fa-bell"></i>
               <span class="sidebar-link-name">Alert</span>
             </a>
           </li>
-          <li>
+          <li class="sidebar-option">
             <a href="#Avatars">
               <i class="far fa-user"></i>
               <span class="sidebar-link-name">Avatar</span>
             </a>
           </li>
-          <li>
+          <li class="sidebar-option">
             <a href="#Badges">
               <i class="far fa-id-badge"></i>
               <span class="sidebar-link-name">Badge</span>
             </a>
           </li>
-          <li>
+          <li class="sidebar-option">
             <a href="#Buttons">
               <i class="fas fa-play-circle"></i>
               <span class="sidebar-link-name">Button</span>
             </a>
           </li>
-          <li>
+          <li class="sidebar-option">
             <a href="#Cards">
               <i class="far fa-id-card"></i>
               <span class="sidebar-link-name">Card</span>
             </a>
           </li>
-          <li>
+          <li class="sidebar-option">
             <a href="#Chips">
               <i class="fas fa-clipboard-check"></i>
               <span class="sidebar-link-name">Chips</span>
             </a>
           </li>
-          <li>
+          <li class="sidebar-option">
             <a href="#Grids">
               <i class="fa-solid fa-grip-vertical"></i>
               <span class="sidebar-link-name">Grids</span>
             </a>
           </li>
-          <li>
+          <li class="sidebar-option">
             <a href="#Images">
               <i class="far fa-image"></i>
               <span class="sidebar-link-name">Image</span>
             </a>
           </li>
-          <li>
+          <li class="sidebar-option">
             <a href="#Inputs">
               <i class="far fa-keyboard"></i>
               <span class="sidebar-link-name">Input</span>
             </a>
           </li>
-          <li>
+          <li class="sidebar-option">
             <a href="#Lists">
               <i class="fas fa-list"></i>
               <span class="sidebar-link-name">Lists</span>
             </a>
           </li>
-          <li>
+          <li class="sidebar-option">
             <a href="#Modal">
               <i class="fa-solid fa-arrow-up-right-from-square"></i>
               <span class="sidebar-link-name">Modal</span>
             </a>
           </li>
-          <li>
+          <li class="sidebar-option">
             <a href="#Navbar">
               <i class="fa-solid fa-compass"></i>
               <span class="sidebar-link-name">Navbar</span>
             </a>
           </li>
-          <li>
+          <li class="sidebar-option">
             <a href="#Rating">
               <i class="far fa-star"></i>
               <span class="sidebar-link-name">Rating</span>
             </a>
           </li>
-          <li>
+          <li class="sidebar-option">
             <a href="#Snackbar">
               <i class="fa-solid fa-bars-progress"></i>
               <span class="sidebar-link-name">Snackbar</span>
@@ -2282,26 +2287,27 @@
             </div>
 
             <div class="input-group disabled">
-              <label class="input-group__label">Text Input</label>
+              <label class="input-group__label">Disabled Text Input</label>
               <input
                 type="text"
                 class="input-group__input"
-                placeholder="Enter text!"
+                placeholder="Disabled!"
+                disabled
               />
               <span class="input-group__focus-border"></span>
             </div>
 
             <div class="input-group required">
-              <label class="input-group__label">Text Input</label>
+              <label class="input-group__label">Required Text Input</label>
               <input
                 type="text"
                 class="input-group__input"
                 placeholder="Enter text!"
+                required
               />
               <span class="input-group__focus-border"></span>
             </div>
           </div>
-
 
           <pre>
             <code class="language-html">
@@ -2346,11 +2352,12 @@
             &lt;/div&gt;
 
              &lt;div class="input-group disabled"&gt;
-              &lt;label class="input-group__label"&gt;Text Input&lt;/label&gt;
+              &lt;label class="input-group__label"&gt;Text Input Disabled&lt;/label&gt;
               &lt;input
                 type="text"
                 class="input-group__input"
-                placeholder="Enter text!"
+                placeholder="Disabled!"
+                disabled
               /&gt;
               &lt;span class="input-group__focus-border"&gt;&lt;/span&gt;
             &lt;/div&gt;
@@ -2361,6 +2368,7 @@
                 type="text"
                 class="input-group__input"
                 placeholder="Enter text!"
+                required
               /&gt;
               &lt;span class="input-group__focus-border"&gt;&lt;/span&gt;
             &lt;/div&gt;
@@ -2378,7 +2386,7 @@
             </div>
 
             <div class="input-group--check">
-              <input type="radio" name="radio-1" id="radio-1"/>
+              <input type="radio" name="radio-1" id="radio-1" />
               <label for="radio-1">Radio</label>
             </div>
           </div>
@@ -2446,9 +2454,543 @@
           </pre>
         </section>
 
-        
+        <!-- Lists -->
 
-        <!--------- Rating ----------->
+        <section id="Lists" class="component-section">
+          <h2 class="section-heading h2">Lists</h2>
+          <p>Lists are continuous, vertical indexes of text or images.</p>
+
+          <!-- Nested Ordered Lists -->
+
+          <h4 class="h4 component-type">Nested Ordered Lists</h4>
+          <p class="component-description">Supprts 2 levels of nesting.</p>
+          <p class="class-description">
+            Class : <span class="code-highlight">nested-list</span>
+          </p>
+
+          <div class="component-display flex-row">
+            <ol class="nested-list">
+              <li>Apple</li>
+              <li>Mango</li>
+              <li>
+                Vegetables
+                <ol>
+                  <li>Tomato</li>
+                  <li>Potato</li>
+                </ol>
+              </li>
+              <li>Grape</li>
+            </ol>
+          </div>
+
+          <pre>
+            <code class="language-html">
+             &lt;ol class="nested-list"&gt;
+              &lt;li&gt;Apple&lt;/li&gt;
+              &lt;li&gt;
+                Vegetables
+                &lt;ol&gt;
+                  &lt;li>&gt;omato&lt;/li&gt;
+                &lt;/ol&gt;
+              &lt;/li&gt;
+              &lt;li>Grape&lt;/li&gt;
+            &lt;/ol&gt;
+            </code>
+          </pre>
+
+          <!-- Icon Ordered List -->
+
+          <h4 class="h4">Icon Unordered Lists</h4>
+          <p>Supports Two icons and only 1 level of nesting.</p>
+          <p>
+            Classes : <span class="code-highlight">check-list</span>,
+            <span class="code-highlight">heart-list</span>
+          </p>
+
+          <div class="component-display flex-col">
+            <ul class="check-list">
+              <li>Eggs</li>
+              <li>Milk</li>
+              <li>Bread</li>
+            </ul>
+
+            <ul class="heart-list">
+              <li>Eggs</li>
+              <li>Milk</li>
+              <li>Bread</li>
+            </ul>
+          </div>
+
+          <!-- Spaced Stack list -->
+
+          <h4 class="h4">Spaced Lists</h4>
+          <p>The child items take the space available.</p>
+          <p>Class : <span class="code-highlight">spaced-list</span></p>
+
+          <div class="component-display flex-col">
+            <ul class="spaced-list">
+              <li>Eggs</li>
+              <li>Milk</li>
+              <li>Bread</li>
+              <li>Sugar</li>
+              <li>Chocolate Powder</li>
+              <li>Flour</li>
+              <li>Wipped Cream</li>
+              <li>Vanilla Extract</li>
+              <li>Food Color</li>
+            </ul>
+          </div>
+
+          <!-- Stacked-Notification List -->
+
+          <h4 class="h4">Stacked Notification Lists</h4>
+          <p>
+            Add desired component inside "li" element. For Example -
+            Notification Card is used for this demo.
+          </p>
+          <p>Class : <span class="code-highlight">stacked-list</span></p>
+
+          <div class="component-display flex-row flex-center">
+            <ul class="stacked-list">
+              <li>
+                <article class="card notification-card" tabindex="0">
+                  <header class="card-header">
+                    <article class="badge">
+                      <figure class="avatar avatar-sm square">
+                        <img
+                          class="avatar-img"
+                          src="https://teachingandlearning.schulich.yorku.ca/wp-content/uploads/2019/10/avatar6.png"
+                          alt="demo_image"
+                        />
+                      </figure>
+                      <span class="online"></span>
+                    </article>
+                    <div class="notification">
+                      <p class="notification-message">
+                        <strong>Sarah Jones</strong> followed you back! 🔥
+                      </p>
+                      <span class="social-info">2h ago</span>
+                      <span class="social-info seperator"
+                        >Vibes Social Media</span
+                      >
+                    </div>
+                  </header>
+                </article>
+              </li>
+              <li>
+                <article class="card notification-card" tabindex="0">
+                  <header class="card-header">
+                    <article class="badge">
+                      <figure class="avatar avatar-sm square">
+                        <img
+                          class="avatar-img"
+                          src="https://cdn-icons-png.flaticon.com/512/168/168726.png"
+                          alt="demo_image"
+                        />
+                      </figure>
+                      <span class="busy"></span>
+                    </article>
+                    <div class="notification">
+                      <p class="notification-message">
+                        <strong>John Daniel</strong> liked your post!
+                      </p>
+                      <span class="social-info">5h ago</span>
+                      <span class="social-info seperator"
+                        >Vibes Social Media</span
+                      >
+                    </div>
+                  </header>
+                </article>
+              </li>
+            </ul>
+          </div>
+
+          <pre>
+            <code>
+              &lt;ul class="stacked-list"&gt;
+                &lt;li&gt;
+                   &lt;!-- Notification card or your custom element! --&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            </code>
+          </pre>
+        </section>
+
+        <!-- Modals -->
+
+        <section id="Modal" class="component-section">
+          <h2 class="section-heading h2">Modal</h2>
+          <p class="component-description">
+            Modal / Dialogs are used to show user some option or data which need
+            immediate attention.
+          </p>
+
+          <!-- Basic Modal -->
+
+          <h4 class="h4">Simple Modal</h4>
+
+          <div class="component-display flex-row">
+            <article class="modal">
+              <div class="modal-header">
+                <h5 class="h5">Modal Title</h5>
+                <button class="modal-close-button">
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+              </div>
+              <div class="modal-content">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Itaque accusamus deleniti quo soluta, laudantium est eaque
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <pre>
+            <code class="language-html">
+            &lt;article class="modal"&gt;
+              &lt;div class="modal-header"&gt;
+                &lt;h5 class="h5">Modal Title&lt;/h5&gt;
+                &lt;button class="modal-close-button"&gt;
+                  &lt;i class="fa-solid fa-xmark"&gt;&lt;/i&gt;
+                &lt;/button&gt;
+              &lt;/div&gt;
+              &lt;div class="modal-content"&gt;
+                &lt;p&gt;
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Itaque accusamus deleniti quo soluta, laudantium est eaque
+                &lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/article&gt;
+            </code>
+          </pre>
+
+          <!-- Action Modal -->
+
+          <h4 class="h4">Confirmation Modal</h4>
+
+          <div class="component-display flex-row flex-center">
+            <article class="modal">
+              <div class="modal-header">
+                <h5 class="h5">Modal Title</h5>
+                <button class="modal-close-button">
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+              </div>
+              <div class="modal-content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officiis facere obcaecati, commodi praesentium dolor
+                  cupiditate? Provident temporibus atque eaque, odio enim
+                  exercitationem earum...
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-contained btn-sm secondaryLight">
+                  Cancel
+                </button>
+                <button class="btn btn-contained btn-sm secondary">
+                  Accept
+                </button>
+              </div>
+            </article>
+          </div>
+
+          <pre>
+            <code class="language-html">
+            &lt;article class="modal"&gt;
+              &lt;div class="modal-header"&gt;
+                &lt;h5 class="h5">Modal Title&lt;/h5&gt;
+                &lt;button class="modal-close-button"&gt;
+                  &lt;i class="fa-solid fa-xmark"&gt;&lt;/i&gt;
+                &lt;/button&gt;
+              &lt;/div&gt;
+              &lt;div class="modal-content"&gt;
+                &lt;p&gt;
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officiis facere obcaecati, commodi praesentium dolor
+                  cupiditate? Provident temporibus atque eaque, odio enim
+                  exercitationem earum...
+                &lt;/p&gt;
+              &lt;/div&gt;
+              &lt;div class="modal-footer"&gt;
+                &lt;button class="btn btn-contained btn-sm secondaryLight"&gt;
+                  Cancel
+                &lt;/button&gt;
+                &lt;button class="btn btn-contained btn-sm secondary"&gt;
+                  Accept
+                &lt;/button&gt;
+              &lt;/div&gt;
+            &lt;/article&gt;
+            </code>
+          </pre>
+
+          <!-- Modal with Overlay   -->
+
+          <h4 class="h4">Modal with Overlay</h4>
+          <p>Modal closes when you click on overlay and close button.</p>
+
+          <button class="btn btn-contained defaultDark" id="open-modal-button">
+            Open Modal
+          </button>
+
+          <div class="modal-overlay" id="demo-modal">
+            <article class="modal">
+              <div class="modal-header">
+                <h5 class="h5">Modal Title</h5>
+                <button class="modal-close-button">
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+              </div>
+              <div class="modal-content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officiis facere obcaecati, commodi praesentium dolor
+                  cupiditate? Provident temporibus atque eaque, odio enim
+                  exercitationem earum...
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-contained btn-sm secondaryLight">
+                  Cancel
+                </button>
+                <button class="btn btn-contained btn-sm secondary">
+                  Accept
+                </button>
+              </div>
+            </article>
+          </div>
+
+          <pre>
+            <code class="language-html">
+          &lt;div class="modal-overlay" id="demo-modal"&gt;
+            &lt;article class="modal"&gt;
+              &lt;div class="modal-header"&gt;
+                &lt;h5 class="h5">Modal Title&lt;/h5&gt;
+                &lt;button class="modal-close-button"&gt;
+                  &lt;i class="fa-solid fa-xmark"&gt;&lt;/i&gt;
+                &lt;/button&gt;
+              &lt;/div&gt;
+              &lt;div class="modal-content"&gt;
+                &lt;p&gt;
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officiis facere obcaecati, commodi praesentium dolor
+                  cupiditate? Provident temporibus atque eaque, odio enim
+                  exercitationem earum...
+                &lt;/p&gt;
+              &lt;/div&gt;
+              &lt;div class="modal-footer"&gt;
+                &lt;button class="btn btn-contained btn-sm secondaryLight"&gt;
+                  Cancel
+                &lt;/button&gt;
+                &lt;button class="btn btn-contained btn-sm secondary"&gt;
+                  Accept
+                &lt;/button&gt;
+              &lt;/div&gt;
+            &lt;/article&gt;
+          &lt;/div&gt; 
+            </code>
+          </pre>
+
+          <pre>
+            <code class="javascript">
+              const modal = document.querySelector(".modal-overlay");
+              const openModalButton = document.getElementById('open-modal-button');
+              const closeButton = document.querySelector("#demo-modal .modal-close-button");
+
+               function toggleModal() {
+                 modal.classList.toggle("show-modal");
+               }
+
+               function windowOnClick(event) {
+                 if (event.target === modal) {
+                   toggleModal();
+                 }
+               }
+
+               openModalButton.addEventListener("click", toggleModal);
+               closeButton.addEventListener("click", toggleModal);
+               window.addEventListener("click", windowOnClick);
+            </code>
+          </pre>
+        </section>
+
+        <!--------- Navigation ----------->
+
+        <section id="Navbar" class="component-section">
+          <h2 class="section-heading h2">Navbar</h2>
+          <p class="component-description">
+            Navigation bar is used to navigate to diffrent pages of a website.
+            Apply the color classes to the parent element to get desired color
+            of navbar.
+          </p>
+
+          <!-- Normal Navbar -->
+
+          <h4 class="h4">Normal Navbar</h4>
+
+          <div class="component-display flex-row flex-center">
+            <nav class="navbar dark">
+              <div class="brand">
+                <!-- Optional -->
+                <img src="./assets/images/logo.png" alt="" class="brand-icon" />
+                <h6 class="h4 brand-name">Ecomm</h6>
+              </div>
+
+              <ul class="nav-links">
+                <button class="btn-icon">
+                  <i class="fa-solid fa-user"></i>
+                </button>
+
+                <button class="btn-float btn-sm badge">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <span class="badge-count danger">3</span>
+                </button>
+
+                <button class="btn-float default btn-sm badge">
+                  <i class="fa-solid fa-hand-holding-heart"></i>
+                  <span class="badge-count danger">1</span>
+                </button>
+              </ul>
+            </nav>
+          </div>
+
+          <pre>
+        <code class='language-html'>
+          &lt;nav class="navbar dark"&gt;
+          &lt;div class="brand"&gt;
+            &lt;!-- Optional --&gt;
+            &lt;img src="./assets/images/logo2.png" alt="" class="brand-icon"&gt;
+            &lt;h6 class="h4 brand-name"&gt;Ecomm&lt;/h6&gt;
+          &lt;/div>
+           &lt;ul class="nav-links"&gt;
+            &lt;button class="btn-icon"&gt;
+              &lt;i class="fa-solid fa-user"&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button class="btn-float btn-sm badge"&gt;
+              &lt;i class="fa-solid fa-cart-shopping">&lt;/i&gt;
+              &lt;span class="badge-count danger"&gt;3&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button class="btn-float default btn-sm badge"&gt;
+              &lt;i class="fa-solid fa-hand-holding-heart"&gt;&lt;/i&gt;
+              &lt;span class="badge-count danger"&gt;1&lt;/span&gt;
+            &lt;/button&gt;
+          &lt;/ul&gt;
+        &lt;/nav&gt;
+        </code>
+      </pre>
+
+          <!-- Navbar with Hamburger Menu -->
+
+          <h4 class="h4">Navbar with Hamburger Icon</h4>
+          <p>You need to add JS for this navbar.</p>
+
+          <div class="component-display flex-row">
+            <nav class="navbar navbar-resp defaultLight">
+              <section class="navbar-toggle-section">
+                <div class="brand">
+                  <!-- Optional -->
+                  <img
+                    src="./assets/images/logo2.png"
+                    alt=""
+                    class="brand-icon"
+                  />
+                  <h6 class="h4 brand-name">Quiz</h6>
+                </div>
+
+                <button class="navbar-toggle-btn" id="navbar-res-hamburger">
+                  <i class="fa-solid fa-bars"></i>
+                </button>
+              </section>
+
+              <div class="search-box navbar-search">
+                <i class="fas fa-search search-icon"></i>
+                <input
+                  type="search"
+                  name="search"
+                  id="search"
+                  class="search-box__bar"
+                  placeholder="Search for quiz"
+                />
+              </div>
+
+              <ul class="nav-links">
+                <button class="btn-icon">
+                  <i class="fa-solid fa-user"></i>
+                </button>
+
+                <button class="btn-float btn-sm badge">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <span class="badge-count danger">3</span>
+                </button>
+
+                <button class="btn-icon secondaryLight btn-sm badge">
+                  <i class="fa-solid fa-right-from-bracket"></i>
+                </button>
+              </ul>
+            </nav>
+          </div>
+
+          <pre>
+            <code>
+            &lt;nav class="navbar navbar-resp defaultLight"&gt;
+              &lt;section class="navbar-toggle-section"&gt;
+                &lt;div class="brand"&gt;
+                  &lt;!-- Optional --&gt;
+                  &lt;img
+                    src="./assets/images/logo2.png"
+                    alt=""
+                    class="brand-icon"
+                  /&gt;
+                  &lt;h6 class="h4 brand-name">Quiz&lt;/h6&gt;
+                &lt;/div&gt;
+
+                &lt;button class="navbar-toggle-btn" id="navbar-res-hamburger"&gt;
+                  &lt;i class="fa-solid fa-bars"&gt;&lt;/i&gt;
+                &lt;/button>
+              &lt;/section&gt;
+
+              &lt;div class="search-box navbar-search"&gt;
+                &lt;i class="fas fa-search search-icon"&gt;&lt;/i&gt;
+                &lt;input
+                  type="search"
+                  name="search"
+                  id="search"
+                  class="search-box__bar"
+                  placeholder="Search for quiz"
+                /&gt;
+              &lt;/div&gt;
+
+              &lt;ul class="nav-links"&gt;
+                &lt;button class="btn-icon"&gt;
+                  &lt;i class="fa-solid fa-user"&gt;&lt;/i&gt;
+                &lt;/button&gt;
+
+                &lt;button class="btn-float btn-sm badge">
+                  &lt;i class="fa-solid fa-cart-shopping"&gt;&lt;/i&gt;
+                  &lt;span class="badge-count danger"&gt;3&lt;/span&gt;
+                &lt;/button>
+
+                &lt;button class="btn-icon secondaryLight btn-sm badge"&gt;
+                  &lt;i class="fa-solid fa-right-from-bracket"&gt;&lt;/i&gt;
+                &lt;/button&gt;
+              &lt;/ul&gt;
+            &lt;/nav&gt;
+            </code>
+          </pre>
+
+          <pre>
+            <code class="javascript">
+              const resposiveNavbarHamburger = document.querySelector("#navbar-res-hamburger");
+              const navbarResponsive = document.querySelector(".navbar.navbar-resp");
+              resposiveNavbarHamburger.addEventListener("click", () => {
+                navbarResponsive.classList.toggle("active");
+              });
+            </code>
+          </pre>
+        </section>
+
+        <!--------- Rating --------------->
 
         <section id="Rating" class="component-section">
           <h2 class="section-heading h2">Rating</h2>
