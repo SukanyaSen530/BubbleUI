@@ -87,3 +87,17 @@ const navbarResponsive = document.querySelector(".navbar.navbar-resp");
 resposiveNavbarHamburger.addEventListener("click", () => {
   navbarResponsive.classList.toggle("active");
 });
+
+//Snackbar
+
+const snackbar = document.getElementById("demo-snackbar");
+
+document
+  .getElementById("open-snackbar-button")
+  .addEventListener("click", () => {
+    snackbar.classList.add("snackbar-show");
+
+    setTimeout(() => {
+      snackbar.classList.remove("snackbar-show");
+    }, 3000);
+  });

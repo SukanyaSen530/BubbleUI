@@ -21,18 +21,22 @@
   <body>
     <section class="homepage">
       <nav class="header">
-        <div class="header__logo">
+        <a class="header__logo" href="./index.html">
           <img
             src="./assets/images/logo.png"
             alt="Bubble_UI_Logo"
             class="header__logo__image"
           />
-          <p>Bubbles</p>
-        </div>
+          <span>Bubbles</span>
+        </a>
 
         <ul class="header__menu">
           <label class="switch">
-            <input type="checkbox" onchange="toggleTheme()" id="theme-toggler" />
+            <input
+              type="checkbox"
+              onchange="toggleTheme()"
+              id="theme-toggler"
+            />
             <span class="slider"></span>
           </label>
 
@@ -55,7 +59,6 @@
       </nav>
 
       <div class="homepage__content">
-
         <h1 class="h1">
           <span class="text-emphasis">Bubbles</span> is a vanilla CSS component
           library!
@@ -66,10 +69,17 @@
         </h4>
 
         <div class="homepage__actions">
-          <a class="btn btn-contained default btn-md" href="./documentation.html">
+          <a
+            class="btn btn-contained default btn-md"
+            href="./documentation.html"
+          >
             <i class="fa-solid fa-meteor"></i> Get Started
           </a>
-          <a class="btn btn-default-outline btn-md" href="https://github.com/SukanyaSen530/ComponentLib" target="_blank">
+          <a
+            class="btn btn-default-outline btn-md"
+            href="https://github.com/SukanyaSen530/ComponentLib"
+            target="_blank"
+          >
             <i class="fab fa-github-alt"></i> <span>Github</span>
           </a>
         </div>

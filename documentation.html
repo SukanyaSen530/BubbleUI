@@ -28,14 +28,14 @@
     </button>
 
     <nav class="header bg">
-      <div class="header__logo">
+      <a class="header__logo" href="./index.html">
         <img
           src="./assets/images/logo.png"
           alt="Bubble_UI_Logo"
           class="header__logo__image"
         />
-        <p>Bubbles</p>
-      </div>
+        <span>Bubbles</span>
+      </a>
 
       <ul class="header__menu">
         <label class="switch">
@@ -3060,6 +3060,39 @@
           </pre>
         </section>
 
+        <!--------- Snackbar --------->
+
+        <section id="Snackbar" class="component-section">
+          <h2 class="section-heading h2">Snackbar</h2>
+          <p>
+            Snackbar inform users of a process that an app has performed or will
+            perform. They appear temporarily, towards the bottom of the screen
+            and disappear within few seconds.
+          </p>
+
+          <button class="btn btn-contained defaultDark" id="open-snackbar-button">
+            Open Snackbar
+          </button>
+
+          <article class="snackbar" id="demo-snackbar">
+            <p class="snackbar-text">Can't send photo. Retry in 5 seconds.</p>
+            <button class="snackbar-close-button">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </article>
+
+          <pre>
+            <code>
+               &lt;article class="snackbar" id="demo-snackbar"&gt;
+                 &lt;p class="snackbar-text">Can't send photo. Retry in 5 seconds.&lt;/p&gt;
+                 &lt;button class="snackbar-close-button"&gt;
+                   &lt;i class="fa-solid fa-xmark"&gt;&lt;/i&gt;
+                 &lt;/button&gt;
+               &lt;/article&gt;
+            </code>
+          </pre>
+        </section>
+
         <!-- End -->
       </section>
 
@@ -3067,9 +3100,17 @@
         <div class="footer-content">
           <p class="footer-title">Made with 💜 Sukanya Sen</p>
           <div class="footer-links">
-            <a href="https://github.com/SukanyaSen530" target="_blank"><i class="fa-brands fa-github-square"></i></a>
-            <a href="https://www.linkedin.com/in/sukanya-sen-615980130/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://twitter.com/Sukanya530" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+            <a href="https://github.com/SukanyaSen530" target="_blank"
+              ><i class="fa-brands fa-github-square"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/sukanya-sen-615980130/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="https://twitter.com/Sukanya530" target="_blank"
+              ><i class="fa-brands fa-twitter-square"></i
+            ></a>
           </div>
         </div>
       </footer>
