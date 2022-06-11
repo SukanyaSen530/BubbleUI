@@ -3082,13 +3082,28 @@
           </article>
 
           <pre>
-            <code>
+            <code class="language-html">
                &lt;article class="snackbar" id="demo-snackbar"&gt;
                  &lt;p class="snackbar-text">Can't send photo. Retry in 5 seconds.&lt;/p&gt;
                  &lt;button class="snackbar-close-button"&gt;
                    &lt;i class="fa-solid fa-xmark"&gt;&lt;/i&gt;
                  &lt;/button&gt;
                &lt;/article&gt;
+            </code>
+          </pre>
+
+          <pre>
+            <code class='javascript'>
+              const snackbar = document.getElementById("demo-snackbar");
+              document
+                .getElementById("open-snackbar-button")
+                .addEventListener("click", () => {
+                  snackbar.classList.add("snackbar-show");
+
+                  setTimeout(() => {
+                    snackbar.classList.remove("snackbar-show");
+                  }, 3000);
+                });
             </code>
           </pre>
         </section>
