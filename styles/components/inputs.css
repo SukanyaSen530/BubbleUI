@@ -3,7 +3,7 @@ input,
 select,
 textarea,
 label {
-  font-family: Roboto;
+  font-family: inherit;
 }
 
 .input-group,
@@ -19,7 +19,6 @@ label {
   margin: 0;
   font-size: 1.5rem;
   color: #9a9a9a;
-  font-family: Roboto;
   text-align: left;
   width: fit-content;
   display: inline-block;
@@ -97,10 +96,10 @@ label {
 
 .search-box__bar ~ .search-box__focus-border {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   width: 0;
-  height: 2px;
+  height: 3px;
   background-color: var(--defaultDark);
   transition: 0.4s;
 }

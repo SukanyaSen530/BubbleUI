@@ -89,7 +89,6 @@ pre code.hljs {
 
 @media only screen and (max-width: 600px) {
   .pallete div {
-    width: 8rem;
     height: 6rem;
   }
 

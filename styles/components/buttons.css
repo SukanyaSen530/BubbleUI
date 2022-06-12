@@ -9,8 +9,8 @@
   margin: 0 var(--spacing-02);
   border: 1.5px solid transparent;
   cursor: pointer;
-  font-family: Roboto;
   font-weight: 500;
+  font-family: inherit;
 }
 
 .btn:disabled,
