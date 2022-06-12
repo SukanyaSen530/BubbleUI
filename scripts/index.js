@@ -18,10 +18,10 @@ const toggleTheme = () => {
 (() => {
   if (localStorage.getItem("bubbleTheme") === "theme-dark") {
     setTheme("theme-dark");
-    document.getElementById("theme-toggler").checked = false;
+    document.getElementById("theme-toggler").checked = true;
   } else {
     setTheme("theme-light");
-    document.getElementById("theme-toggler").checked = true;
+    document.getElementById("theme-toggler").checked = false;
   }
 })();
 
